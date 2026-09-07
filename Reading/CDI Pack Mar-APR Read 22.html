@@ -1,0 +1,487 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 22 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-a29fdd45.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-22-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+                        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Computer Games for Preschoolers: Nintendo's Research and Design Process</h3>
+                    <p>Designing computer games for young children is a daunting task for game producers, who, for a long time, have concentrated on more "hard core" game fans. This article chronicles the design process and research involved in creating Nintendo DS for preschool gamers.</p>
+                    <p>After speaking with our producers who have a keen interest in designing for the DS, we finally agreed on three key goals for our project. First, to understand the range of physical and cognitive abilities of preschoolers in the context of handheld system game play; second, to understand how preschool gamers interact with the DS, specifically how they control the different forms of play and game mechanics offered by the games presently on the market for this platform; third, to understand the expectations of preschoolers' parents concerning the handheld systems as well as the purchase and play contexts within which game play occurs.</p>
+                    <p>The team of research decided that in-home ethnographies with preschoolers and their families would yield a comprehensive database with which to give our producers more information and insights, so we started by conducting 26 in-home ethnographies in three markets across the United States: an East coast urban/suburban area, a West coast urban/suburban area, and a Midwest suburban/rural area.</p>
+                    <p>The subjects in this study included 15 girls and 11 boys ranging from 3 years and 3 months old to 5 years and 11 months old. Also, because previous research had shown the effects of older siblings on game play (demonstrated, for example, by more advanced motor coordination when using a computer mouse), households were employed to have a combination of preschoolers with and without elder peers. In order to understand both "experienced" and "new" preschool users of the platform, we divided the sample so that 13 families owned at least one Nintendo DS and the others did not. For those households that did not own a DS, one was brought to the interview for the child to play. This allowed us to see both the instinctive and intuitive movements of the new players (and of the more experienced players when playing new games), as well as the learned movements of the more experienced players.</p>
+                    <p>Each of those interviews took about 60 to 120 minutes and included the preschooler, at least one parent, and often siblings and another caregiver.</p>
+                    <p>Three kinds of information were collected after each interview. From any older siblings and the parents that were available, we gathered data about the buying decisions surrounding game systems in the household, the family's typical game play patterns, levels of parental moderation with regard to computer gaming, and the most favorite games played by family members. We could also understand the ideology of gaming in these homes because of these in-home interviews: what types of spaces were used for game play, how the systems were installed, where the handheld play occurred in the house (as well as on-the-go play), and the number and type of games and game systems owned. The most important is, we gathered the game-playing information for every single kid.</p>
+                    <p>Before carrying out the interviews, the research team had closely discussed with the in-house game producers to create a list of game mechanics and problems tied to preschoolers' motor and cognitive capabilities that were critical for them to understand prior to writing the games. These ranged from general dexterity issues related to game controllers to the effectiveness of in-game instructions to specific mechanics in current games that the producers were interested in implementing for future preschool titles.</p>
+                    <p>During the interviews, the moderator gave specific guidance to the preschooler through a series of games, so that he or she could observe the interaction and probe both the preschooler and his or her parents on feelings, attitudes, and frustrations that arose in the different circumstances.</p>
+                    <p>If the subject in the experiment had previous exposure to the DS system, he or she was first asked to play his or her favorite game on the machine. This gave the researchers information about current level of gaming skill related to the complexity of the chosen one, allowing them to see the child playing a game with mechanics he or she was already familiar with. Across the 26 preschoolers, the Nintendo DS selections were very broad, including New Super Mario Bros, Sonic Rush, Nintendogs, and Tony Hawk's Proving Ground. The interview observed the child play, noting preferences for game mechanics and motor interactions with the device as well as the complexity level each game mechanic was for the tested subject.</p>
+                    <p>The researchers asked all of the preschoolers to play with a specific game in consultation with our producers, The Little Mermaid: Ariel's Undersea Adventure. The game was chosen for two major reasons. First, it was one of the few games on the market with characters that appeal to this young age group. Second, it incorporated a large variety of mechanics that highlighted the uniqueness of the DS platform, including using the microphone for blowing or singing.</p>
+                    <p>The findings from this initial experiment were extensive. After reviewing the outcomes and discussing the implications for the game design with our internal game production team, we then outlined the designing needs and presented the findings to a firm specializing in game design. We worked closely with those experts to set the game design for the two preschool-targeted DS games under development on what we had gathered.</p>
+                    <p>As the two DS games went into the development process, a formative research course of action was set up. Whenever we developed new game mechanics, we brought preschoolers into our in-house utility lab to test the mechanics and to evaluate both their simplicity and whether they were engaging. We tested either alpha or beta versions of different elements of the game, in addition to looking at overarching game structure.</p>
+                    <p>Once a full version of the DS game was ready, we went back into the field test with a dozen preschoolers and their parents to make sure that each of the game elements worked for the children, that the overall objective of the game was understandable, and that the process was enjoyable for players. We also collected parents' feedback on whether they thought the game was appropriate, engaging, and worth the purchase.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-5</div>
+                    <p>Complete the sentences below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>Exploratory Research Project</strong></p>
+                    <p><strong>Main Objectives:</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="1"></span>Determine the relevant <input type="text" name="q1" placeholder="1" class="input-field inline-input"> in the context</p>
+                    <p>Observe how preschoolers manage playing</p>
+                    <p><span class="question-anchor" data-question-anchor="2"></span>Investigate attitudes of <input type="text" name="q2" placeholder="2" class="input-field inline-input"> towards games</p>
+                    <p><strong>Subjects:</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="3"></span>26 children from different US <input type="text" name="q3" placeholder="3" class="input-field inline-input"></p>
+                    <p>Age range: 3 years and 3 months to 5 years and 11 months</p>
+                    <p><span class="question-anchor" data-question-anchor="4"></span>Some children have older <input type="text" name="q4" placeholder="4" class="input-field inline-input"></p>
+                    <p><span class="question-anchor" data-question-anchor="5"></span>Equal number of new and <input type="text" name="q5" placeholder="5" class="input-field inline-input"> players</p>
+                    <p>Some households have Nintendo DS and some don't</p>
+                    <p>Length of Interview: 1-2 hours</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 6-9</div>
+                    <p>Do the following statements agree with the information given in the text? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 <span class="question-anchor" data-question-anchor="6"></span>One area of research is how far mothers and fathers controlled children's playing after school.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="7">
+                        <div class="question-text">7 <span class="question-anchor" data-question-anchor="7"></span>The researchers are allowed free access to the subjects' houses.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q7" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q7" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 <span class="question-anchor" data-question-anchor="8"></span>The researchers regarded The Little Mermaid: Ariel's Undersea Adventure as likely to appeal to preschoolers.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 <span class="question-anchor" data-question-anchor="9"></span>The Little Mermaid: Ariel's Undersea Adventure is operated entirely by hand controls.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 10-13</div>
+                    <p>Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the passage for each answer.</p>
+                    <div class="flow-chart">
+                        <p>Using the results of the study</p>
+                        <p>Presentation of design requirements to a specialist <input type="text" name="q10" placeholder="10" class="input-field inline-input"></p>
+                        <p>Testing the mechanics of two new games in the Nintendo lab (assess <input type="text" name="q11" placeholder="11" class="input-field inline-input"> and interest)</p>
+                        <p>A <input type="text" name="q12" placeholder="12" class="input-field inline-input"> of the games trialed by twelve children</p>
+                        <p>Collection of <input type="text" name="q13" placeholder="13" class="input-field inline-input"> from parents</p>
+                    </div>
+                </div>
+            </div>
+<!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</strong></p>
+                    <h3>Paternity Leave</h3>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="14"></span><span class="drop-zone" data-target="q14" data-placeholder="14" data-group="p2-headings">14</span><input type="text" name="q14" class="input-field" style="display:none;" aria-hidden="true"><strong>A</strong> At a course for fathers-to-be in New York, participants are introduced to baby maintenance for beginners: how to keep their babies fed, warm and clean. The City Dads Group was founded by them, Matt Schneider's friends. Schneider explained, "We've all discovered that people saw their place as firmly outside the home." New York was full of parents' support groups, but nearly all were aimed at mothers. Frustrated, the friends set up their own group, which has spread to 17 cities in the USA, helping fathers who want to get involved from day one.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="15"></span><span class="drop-zone" data-target="q15" data-placeholder="15" data-group="p2-headings">15</span><input type="text" name="q15" class="input-field" style="display:none;" aria-hidden="true"><strong>B</strong> In general, legal and financial support for new parents is better than it has ever been. According to the International Labour Organization (ILO), 85% of countries now provide at least 12 weeks' maternity leave. In all but two of the 185 countries it surveys, mothers are entitled to some leave paid for by the state, companies or some combination of the two. Although only a third of countries meet the ILO's recommended minimum of at least 14 weeks off for new mothers, paid at two-thirds their salary and funded publicly, the picture is improving.</p>
+                    <p>But how many countries meet the ILO's guidelines on paternity leave? None, because no such guidelines exist. Though it publishes detailed advice regarding female employees, the organization has drawn up no formal recommendations on fathers' rights and duties. Until recently, national governments have been similarly uninterested: less than half of countries offer paternity leave of any sort. Only around half a dozen offer new fathers more than a few days, and companies, not the state, usually foot the bill for the costs of paternity leave. In the eyes of most people, responsibility for bringing up a baby still falls squarely on the mother.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="16"></span><span class="drop-zone" data-target="q16" data-placeholder="16" data-group="p2-headings">16</span><input type="text" name="q16" class="input-field" style="display:none;" aria-hidden="true"><strong>C</strong> Now a different view is slowly emerging, as growing evidence suggests that children benefit from seeing more of their fathers. But much of the demand for a shift in the approach to childcare has come from women, who have started to conclude that they are victims as well as beneficiaries of generous maternity-leave policies.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="17"></span><span class="drop-zone" data-target="q17" data-placeholder="17" data-group="p2-headings">17</span><input type="text" name="q17" class="input-field" style="display:none;" aria-hidden="true"><strong>D</strong> This may appear paradoxical, as most countries have found that when they offer decent maternity leave, they increase female employment. If women have no right to take time off, or are entitled only to short or poorly paid spells of absence, many have little choice but to leave the workforce when their baby is born. If they can take a few months of paid leave before returning to their old job, they are much more likely to continue working. But it turns out that long maternity breaks have unintended consequences. Time away from the labour market not only holds women's earning power, as their skills degrade and they miss the chance to gain experience and win promotion. Moving into senior management roles is also quite hard, partly because of discrimination (businesses avoid hiring women, who reject candidates they think may be away a lot). And the effect is magnified when lengthy maternity leave is combined with policies to encourage part-time work, which tempt more women back into the labour force but help keep them in junior positions.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="18"></span><span class="drop-zone" data-target="q18" data-placeholder="18" data-group="p2-headings">18</span><input type="text" name="q18" class="input-field" style="display:none;" aria-hidden="true"><strong>E</strong> Rather than simply cutting maternity leave in response to such findings, a growing number of governments are trying to spread the child-rearing burden more fairly, depending on how one looks at it. Britain recently became the latest country to combine maternity and paternity leave into a single chunk of parental leave, to be split between mother and father however they see fit. Several European countries, as well as Australia and New Zealand, already have such a system. The problem is that dads tend not to take up the offer. In Austria, the Czech Republic and Switzerland, parental leave is transferable; only about 3% of dads make use of it. In Britain, the government estimates that only 2-8% of dads will take more than their existing fortnight. The main reason for low take-up by fathers is financial: even pre-childbirth, women are paid less than men and their partners are far less able to forgo earning a period of unpaid or low-paid leave. But pressures related to culture also weigh heavily. Mothers still tend to be seen as the main carers, with dads portrayed in domestic terms as bumbling sidekicks or well-meaning buffoons.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="19"></span><span class="drop-zone" data-target="q19" data-placeholder="19" data-group="p2-headings">19</span><input type="text" name="q19" class="input-field" style="display:none;" aria-hidden="true"><strong>F</strong> To overcome these obstacles, some countries are giving fathers a firm nudge. In a few, including Chile, Italy and Portugal, paternity leave is compulsory. Others offer incentives that are hard to turn down. Sweden grants a bonus to parents who share leave more equally. Swedish fathers now account for more than a fifth of all parental leave taken, compared with almost none when shared leave was introduced. Germany introduced the same system and saw the proportion of fathers taking time off rise from 3% in 2006 to 32% in 2013, and Poland has switched to gender-specific quotas, replacing three months with six weeks of shared leave. Where leave is well-paid and not seen as "belonging" to the mother, fathers seem willing to request it. State meddling in what has historically been regarded as a natural division of labour may annoy some people. But traditional maternity leave, which channels men into breadwinning and women into child-rearing, is hardly neutral. And shared involvement by parents stands to improve women's careers, children's development and perhaps even dads' life satisfaction.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-19</div>
+                    <p>Reading Passage 2 has six sections, A-F. Drag each heading from the list below onto the matching paragraph in the passage.</p>
+                    <div class="heading-drop">
+                        <strong>Available Headings</strong>
+                        <small>Drag any heading to the correct paragraph above.</small>
+                    </div>
+                   
+                    <div class="drag-options" data-group="p2-headings">
+                        <div class="drag-item" data-option="i" data-answer="i" data-label="Opposition by employers to parental leave" data-group="p2-headings"><strong>i</strong> Opposition by employers to parental leave</div>
+                        <div class="drag-item" data-option="ii" data-answer="ii" data-label="An illustration of a trend in one country" data-group="p2-headings"><strong>ii</strong> An illustration of a trend in one country</div>
+                        <div class="drag-item" data-option="iii" data-answer="iii" data-label="An explanation for the limited success of government initiatives" data-group="p2-headings"><strong>iii</strong> An explanation for the limited success of government initiatives</div>
+                        <div class="drag-item" data-option="iv" data-answer="iv" data-label="Pressure for change from an unlikely source" data-group="p2-headings"><strong>iv</strong> Pressure for change from an unlikely source</div>
+                        <div class="drag-item" data-option="v" data-answer="v" data-label="The need for cooperation at a global level" data-group="p2-headings"><strong>v</strong> The need for cooperation at a global level</div>
+                        <div class="drag-item" data-option="vi" data-answer="vi" data-label="The contrast in attitudes towards leave for mothers and fathers" data-group="p2-headings"><strong>vi</strong> The contrast in attitudes towards leave for mothers and fathers</div>
+                        <div class="drag-item" data-option="vii" data-answer="vii" data-label="A range of measures to encourage more equal responsibility" data-group="p2-headings"><strong>vii</strong> A range of measures to encourage more equal responsibility</div>
+                        <div class="drag-item" data-option="viii" data-answer="viii" data-label="The implications of maternity leave" data-group="p2-headings"><strong>viii</strong> The implications of maternity leave</div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 20-21</div>
+                    <p>According to the writer, which TWO problems may be caused by maternity leave? Choose <strong>TWO</strong> options in this question.</p>
+                    <div class="question multi-select-question" data-question="20">
+                        <div class="question-text">20-21 <span class="question-anchor" data-question-anchor="20"></span><span class="question-anchor" data-question-anchor="21"></span>Choose any two letters.</div>
+                        <div class="options">
+                            <label><input type="checkbox" class="multi-checkbox" name="q20_21" value="A"> A Women may be less effective at work after maternity leave.</label>
+                            <label><input type="checkbox" class="multi-checkbox" name="q20_21" value="B"> B Women may find it difficult to find suitable part-time work.</label>
+                            <label><input type="checkbox" class="multi-checkbox" name="q20_21" value="C"> C Women may find they are paid less for doing the same work.</label>
+                            <label><input type="checkbox" class="multi-checkbox" name="q20_21" value="D"> D Women's chances of professional advancement may be affected.</label>
+                            <label><input type="checkbox" class="multi-checkbox" name="q20_21" value="E"> E Women's pay may be insufficient to support them during maternity leave.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 22-26</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>Please write your answers in order.</p>
+                    <p><strong>Encouraging more fathers to take paternity leave</strong></p>
+                    <p>Even in countries where paternity leave is easy to get, few fathers make use of it, chiefly for <span class="question-anchor" data-question-anchor="22"></span><input type="text" name="q22" placeholder="22" class="input-field inline-input"> reasons. However, issues connected with <span class="question-anchor" data-question-anchor="23"></span><input type="text" name="q23" placeholder="23" class="input-field inline-input">, including traditional views of male and female roles in the family, may also play a part.</p>
+                    <p>Some countries, such as Chile, have made it <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input"> for men to take paternity leave.</p>
+                    <p>Sweden and Germany both offer a bonus to families where parents share leave, and in Poland, mothers and fathers each have <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input"> of leave which are specified for them. Sharing childcare in this way may be good for both mothers and fathers, and may also support the <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input"> of the child.</p>
+                </div>
+            </div>
+<!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Living dunes</h3>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="27"></span><span class="drop-zone" data-target="q27" data-placeholder="27" data-group="p3-headings">27</span><input type="text" name="q27" class="input-field" style="display:none;" aria-hidden="true"><strong>A</strong> Armies of giant sand dunes are advancing across the world's deserts, engulfing anything that crosses their path. They are tens of metres tall and hundreds of metres long. Fortunately, they aren't going very fast. Even the smallest, speediest dunes only travel about 100 metres over the course of a year, while the bigger ones, which weigh something in the order of 10,000 tonnes, barely move one metre in that time. However, their insidious creep can have serious consequences if there is an oil installation or a railway line in their path.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="28"></span><span class="drop-zone" data-target="q28" data-placeholder="28" data-group="p3-headings">28</span><input type="text" name="q28" class="input-field" style="display:none;" aria-hidden="true"><strong>B</strong> About 47% of the world's land mass, including Antarctica, most of Australia and large areas of Africa, is classified as arid or semi-arid desert. Only around 20% of that is sand-covered, however, and over half of that is classified as 'linear' sand dunes. These form in a long curving wave, as a result of wind blowing strongly from several quarters, flipping them from side to side. Although linear dunes are static, sand blowing off them can cause problems for desert villages, burying crops and buildings.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="29"></span><span class="drop-zone" data-target="q29" data-placeholder="29" data-group="p3-headings">29</span><input type="text" name="q29" class="input-field" style="display:none;" aria-hidden="true"><strong>C</strong> Moving dunes make up just a small percentage of the rest, but they are of the most interest to scientists. They are known as 'barchans': heavy, crescent-shaped sand piles with a ridged crest and two elongated arms, one curving away to either side. 'Barchan dunes' only tend to form where you have one-directional winds on the edge of sandy deserts near coastal areas, says Giles Wiggs, a geomorphologist at Oxford University, who has been studying the formation and movement of sand dunes for more than a decade.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="30"></span><span class="drop-zone" data-target="q30" data-placeholder="30" data-group="p3-headings">30</span><input type="text" name="q30" class="input-field" style="display:none;" aria-hidden="true"><strong>D</strong> But even with strong winds, how can entire barchans move while retaining their form? That question was first answered in the mid-20th century by British explorer Ralph Alger Bagnold, and his answer hinges on the fact that dunes aren't solid, but granular. Bagnold figured out how barchan dunes are able to move grain by grain. Imagine a single grain of sand being blown up the back of a dune by the wind and deposited on the top. More grains follow the same pattern, until the accumulated weight of piled-up sand finally pushes the top down the dune face. The grain tumbles, then stops on the face until subsequent mini-avalanches bury it. Eventually, it reappears at the back of the dune, ready to repeat the process. As this happens to every grain of sand in the dune, the whole thing creeps in the direction of the prevailing wind.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="31"></span><span class="drop-zone" data-target="q31" data-placeholder="31" data-group="p3-headings">31</span><input type="text" name="q31" class="input-field" style="display:none;" aria-hidden="true"><strong>E</strong> The relationship between the wind and barchan dunes is complex. As a dune grows, it modifies the speed and course of the wind, which in turn alters how that dune and its neighbours evolve. 'Interestingly the dune can regulate its own shape, and maintain it as it moves,' says Dr Stephane Douady, a physicist at Ecole Normale Superieure (ENS) in France. 'Even when two dunes collide, they quickly take on their distinctive shapes again. It is like a living organism.'</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="32"></span><span class="drop-zone" data-target="q32" data-placeholder="32" data-group="p3-headings">32</span><input type="text" name="q32" class="input-field" style="display:none;" aria-hidden="true"><strong>F</strong> Douady and his colleagues have also been studying an even odder phenomenon than moving dunes: some barchans actually sing. Local legends attributed the sounds to dangerous spirits which were trying to trap unwary travellers. Douady is more pragmatic. "It's a strong booming noise with a low frequency," he explains, making a noise like a foghorn to demonstrate. "It can last for a long time - up to several minutes. It's a very loud sound and you don't understand where it's coming from when you first hear it." There are about 50 dunes distributed across 35 deserts round the world that are known to sing. Douady says the sound is caused by the way sand avalanches down the faces of particular dunes. Rather than tumbling randomly, the sand grains flow in synchrony and set each other vibrating like the membrane on a gigantic loudspeaker. The synchronisation causes the air to move in and out between the grains, creating a powerful sound wave.</p>
+                    <p class="drop-paragraph"><span class="question-anchor" data-question-anchor="33"></span><span class="drop-zone" data-target="q33" data-placeholder="33" data-group="p3-headings">33</span><input type="text" name="q33" class="input-field" style="display:none;" aria-hidden="true"><strong>G</strong> What really surprised the scientists, however, was that they were able to take samples of the singing sand back to France and replicate the sound at ENS, proving that it's the sand, not the dune shape, that causes the sound. Their studies show the grains are a uniform shape, wellrounded from years of striking each other, and that the variations in size affect the tone. Crucially, the grains are coated with a special veneer, which Douady calls 'desert glaze', made from a precise combination of minerals from surrounding rocks including iron, aluminium, manganese, silicon and calcium. The team found that after a month or so, the veneer wore off and the grains lost their 'voice'. "We managed to reproduce the desert glaze and then the grains started to sing again," says Douady. "We tried putting the coating onto different grains, but they weren't round enough and it didn't work. But some American colleagues made some artificial grains and managed to make them sing, after covering them in desert glaze." Douady has now made recordings of dunesong from all over the world which is to be made into a CD.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-33</div>
+                    <p>Reading Passage 3 has seven paragraphs, A-G. Drag each heading from the list below onto the matching paragraph in the passage.</p>
+                    <div class="heading-drop">
+                        <strong>Available Headings</strong>
+                        <small>Drag any heading to the correct paragraph above.</small>
+                    </div>
+                  
+                    <div class="drag-options" data-group="p3-headings">
+                        <div class="drag-item" data-option="i" data-answer="i" data-label="Moving rapidly across the desert" data-group="p3-headings"><strong>i</strong> Moving rapidly across the desert</div>
+                        <div class="drag-item" data-option="ii" data-answer="ii" data-label="Recreating the process in a laboratory" data-group="p3-headings"><strong>ii</strong> Recreating the process in a laboratory</div>
+                        <div class="drag-item" data-option="iii" data-answer="iii" data-label="Strange music created by human movement" data-group="p3-headings"><strong>iii</strong> Strange music created by human movement</div>
+                        <div class="drag-item" data-option="iv" data-answer="iv" data-label="A potential threat to industry and communications" data-group="p3-headings"><strong>iv</strong> A potential threat to industry and communications</div>
+                        <div class="drag-item" data-option="v" data-answer="v" data-label="Dunes coming together and re-forming" data-group="p3-headings"><strong>v</strong> Dunes coming together and re-forming</div>
+                        <div class="drag-item" data-option="vi" data-answer="vi" data-label="Needing a specific combination of conditions" data-group="p3-headings"><strong>vi</strong> Needing a specific combination of conditions</div>
+                        <div class="drag-item" data-option="vii" data-answer="vii" data-label="A continuous cycle" data-group="p3-headings"><strong>vii</strong> A continuous cycle</div>
+                        <div class="drag-item" data-option="viii" data-answer="viii" data-label="The commonest type of dune" data-group="p3-headings"><strong>viii</strong> The commonest type of dune</div>
+                        <div class="drag-item" data-option="ix" data-answer="ix" data-label="Old superstitions demystified" data-group="p3-headings"><strong>ix</strong> Old superstitions demystified</div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 34-36</div>
+                    <p>Choose the correct option for each statement below.</p>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 <span class="question-anchor" data-question-anchor="34"></span>What are we told about linear dunes?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="A"> A They are formed by strong winds blowing from one direction.</label>
+                            <label><input type="radio" name="q34" value="B"> B They can move up to 100 metres in a twelve-month period.</label>
+                            <label><input type="radio" name="q34" value="C"> C They develop in a recognisable shape.</label>
+                            <label><input type="radio" name="q34" value="D"> D They make up about 20% of the world's deserts.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 <span class="question-anchor" data-question-anchor="35"></span>Bagnold discovered that movement in barchans was caused by</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="A"> A the long straight shape of the dunes.</label>
+                            <label><input type="radio" name="q35" value="B"> B the particular composition of the dunes.</label>
+                            <label><input type="radio" name="q35" value="C"> C the exceptionally heavy nature of the sand grains.</label>
+                            <label><input type="radio" name="q35" value="D"> D the unusual strength of the wind in certain seasons.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 <span class="question-anchor" data-question-anchor="36"></span>Why does Dr Douady compare a barchan dune to a living organism?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="A"> A It starts small and then increases in size.</label>
+                            <label><input type="radio" name="q36" value="B"> B It has an effect on its immediate surroundings.</label>
+                            <label><input type="radio" name="q36" value="C"> C Its relations with desert organisms are quite developed.</label>
+                            <label><input type="radio" name="q36" value="D"> D Its outline stays the same even after a period of movement.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Complete the summary below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p><strong>Singing dunes</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="37"></span>Singing dunes, which belong to the type of dunes known as <input type="text" name="q37" placeholder="37" class="input-field inline-input">, produce a very loud sound which is transmitted at a low frequency. Researchers have worked out that sand grains fall down the dune and start vibrating against other grains, forming a sound wave.</p>
+                    <p><span class="question-anchor" data-question-anchor="38"></span>Research proves that the individual grains have a similar <input type="text" name="q38" placeholder="38" class="input-field inline-input">, but the differences in dimensions alter the <span class="question-anchor" data-question-anchor="39"></span><input type="text" name="q39" placeholder="39" class="input-field inline-input"> of the 'song'. Each grain is covered with a mixture of different <span class="question-anchor" data-question-anchor="40"></span><input type="text" name="q40" placeholder="40" class="input-field inline-input">, and this is vital to the sound production.</p>
+                </div>
+            </div>
+</div>        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_22',
+            label: 'Reading Full 22',
+            correctAnswers: {
+            q1: "ABILITIES",
+            q2: "PARENTS",
+            q3: "MARKETS",
+            q4: "SIBLINGS",
+            q5: "EXPERIENCED",
+            q6: "NOT GIVEN",
+            q7: "TRUE",
+            q8: "TRUE",
+            q9: "FALSE",
+            q10: "FIRM",
+            q11: "SIMPLICITY",
+            q12: "FULL VERSION",
+            q13: "FEEDBACK",
+            q14: "II",
+            q15: "VI",
+            q16: "IV",
+            q17: "VIII",
+            q18: "III",
+            q19: "VII",
+            q20: "A",
+            q21: "D",
+            q22: "FINANCIAL",
+            q23: "CULTURE",
+            q24: "COMPULSORY",
+            q25: "QUOTAS",
+            q26: "DEVELOPMENT",
+            q27: "IV",
+            q28: "VIII",
+            q29: "VI",
+            q30: "VII",
+            q31: "V",
+            q32: "IX",
+            q33: "II",
+            q34: "C",
+            q35: "B",
+            q36: "D",
+            q37: "BARCHANS",
+            q38: "SHAPE",
+            q39: "TONE",
+            q40: "MINERALS"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-22.js?v=20260731-reading-clear-22-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-22-v1"></script>
+</body>
+
+
+
+</html>
+
+

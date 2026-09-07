@@ -1,0 +1,319 @@
+.transcript-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.transcript-toggle:hover {
+    border-color: #60a5fa;
+    background: #dbeafe;
+}
+
+.transcript-toggle:focus-visible,
+.transcript-close:focus-visible,
+.transcript-cue:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 2px;
+}
+
+.transcript-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 248;
+    background: rgba(15, 23, 42, 0.24);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+}
+
+.transcript-backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.transcript-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 249;
+    display: flex;
+    width: min(320px, 92vw);
+    flex-direction: column;
+    border-left: 1px solid #dbe4f0;
+    background: #fff;
+    box-shadow: -18px 0 50px rgba(15, 23, 42, 0.18);
+    transform: translateX(105%);
+    transition: transform 220ms ease;
+}
+
+.transcript-panel.is-open {
+    transform: translateX(0);
+}
+
+.transcript-panel-header {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 16px;
+    border-bottom: 1px solid #dbe4f0;
+}
+
+.transcript-panel-title {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.transcript-close {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #475569;
+    font-size: 1.65rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.transcript-close:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.transcript-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 6px 10px 32px;
+    scroll-behavior: smooth;
+}
+
+.transcript-answer-key {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 14px 8px 4px;
+    padding: 10px 12px;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 0.86rem;
+    font-weight: 650;
+    line-height: 1.4;
+}
+
+.transcript-answer-key-swatch {
+    width: 18px;
+    height: 12px;
+    flex: 0 0 auto;
+    border-radius: 3px;
+    background: #bbf7d0;
+    box-shadow: inset 0 0 0 1px #4ade80;
+}
+
+.transcript-part-title {
+    margin: 18px 7px 8px;
+    color: #1f6b9a;
+    font-size: 1rem;
+    font-weight: 850;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.transcript-cue {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 6px;
+    margin: 2px 0;
+    padding: 8px 9px;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: #111827;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.transcript-cue:hover {
+    background: #f1f5f9;
+}
+
+.transcript-cue.is-active {
+    background: #eaf2f8;
+    box-shadow: inset 3px 0 0 #2f7aa8;
+}
+
+.transcript-time {
+    padding-top: 2px;
+    color: #64748b;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.88rem;
+    font-weight: 650;
+}
+
+.transcript-cue-text {
+    color: inherit;
+    font-size: 0.93rem;
+    line-height: 1.48;
+}
+
+.transcript-answer {
+    position: relative;
+    padding: 1px 3px;
+    border-radius: 4px;
+    background: #bbf7d0;
+    color: #14532d;
+    font-weight: 750;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.transcript-answer::after {
+    content: "Q" attr(data-question);
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 4px;
+    border: 1px solid #4ade80;
+    border-radius: 999px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 0.64em;
+    font-weight: 850;
+    line-height: 1.2;
+    vertical-align: 0.18em;
+    white-space: nowrap;
+}
+
+body.transcript-open {
+    overflow: hidden;
+}
+
+@media (min-width: 769px) {
+    #testInterface {
+        width: 100%;
+        transition: width 220ms ease;
+    }
+
+    .bottom-navigation {
+        transition: right 220ms ease;
+    }
+
+    body.transcript-open {
+        overflow: auto;
+    }
+
+    body.transcript-open #testInterface {
+        width: calc(100% - 320px);
+    }
+
+    body.transcript-open .bottom-navigation {
+        right: 320px;
+    }
+
+    .transcript-backdrop {
+        display: none;
+    }
+}
+
+.contrast-white-black .transcript-panel,
+.contrast-white-black .transcript-panel-header {
+    border-color: #4a5568;
+    background: #111827;
+}
+
+.contrast-white-black .transcript-panel-title,
+.contrast-white-black .transcript-cue,
+.contrast-white-black .transcript-cue-text {
+    color: #f7fafc;
+}
+
+.contrast-white-black .transcript-cue:hover,
+.contrast-white-black .transcript-cue.is-active {
+    background: #243244;
+}
+
+.contrast-white-black .transcript-answer-key,
+.contrast-white-black .transcript-answer {
+    border-color: #34d399;
+    background: #064e3b;
+    color: #ecfdf5;
+}
+
+.contrast-white-black .transcript-answer::after {
+    border-color: #6ee7b7;
+    background: #022c22;
+    color: #d1fae5;
+}
+
+.contrast-yellow-black .transcript-panel,
+.contrast-yellow-black .transcript-panel-header {
+    border-color: #5f4b16;
+    background: #050505;
+}
+
+.contrast-yellow-black .transcript-panel-title,
+.contrast-yellow-black .transcript-cue,
+.contrast-yellow-black .transcript-cue-text,
+.contrast-yellow-black .transcript-part-title {
+    color: #f6e05e;
+}
+
+.contrast-yellow-black .transcript-cue:hover,
+.contrast-yellow-black .transcript-cue.is-active {
+    background: #211b08;
+}
+
+.contrast-yellow-black .transcript-answer-key,
+.contrast-yellow-black .transcript-answer {
+    border-color: #facc15;
+    background: #422006;
+    color: #fef08a;
+}
+
+.contrast-yellow-black .transcript-answer::after {
+    border-color: #facc15;
+    background: #050505;
+    color: #fef08a;
+}
+
+@media (max-width: 768px) {
+    .audio-controller-bar {
+        flex-wrap: wrap;
+    }
+
+    .transcript-toggle {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .transcript-panel {
+        width: 100%;
+        border-left: 0;
+    }
+
+    .transcript-content {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

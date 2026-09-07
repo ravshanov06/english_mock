@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your full IELTS mock results and reopen submitted Listening, Reading, and Writing attempts.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://ieltsmaterials.uz/mock-results">
+  <link rel="icon" type="image/png" href="/assets/brand-logo.png">
+  <title>Mock Results | IELTS CDI Materials</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"></noscript>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body {
+      min-height: 100vh;
+      font-family: "Plus Jakarta Sans", Arial, sans-serif;
+      color: #2f2323;
+      overflow-x: hidden;
+      scroll-padding-top: 98px;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255, 173, 173, 0.28) 0%, transparent 31%),
+        radial-gradient(circle at 88% 8%, rgba(255, 210, 194, 0.24) 0%, transparent 30%),
+        linear-gradient(180deg, #fffafa 0%, #fff2f2 54%, #ffefef 100%);
+    }
+    .topbar {
+      --menu-accent: #cf3f3f;
+      --menu-panel-bg: #fff5f6;
+      --menu-panel-border: #e4aaaa;
+      --menu-panel-text: #3a2627;
+      --menu-drawer-bg: #ffeef0;
+      --menu-drawer-text: #3a2426;
+      --menu-drawer-subtext: #5a3a3d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 12px;
+      border: 1px solid #e4aaaa;
+      border-bottom: 2px solid #cf3f3f;
+      background: linear-gradient(135deg, #fff6f6 0%, #ffecec 52%, #fff2f2 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1200;
+    }
+    .top-left {
+      display: flex;
+      align-items: center;
+      gap: 112px;
+      min-width: 0;
+      flex: 1;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .brand img {
+      width: 74px;
+      height: 46px;
+      display: block;
+      object-fit: contain;
+    }
+    .brand-text {
+      font-family: "Space Grotesk", Arial, sans-serif;
+      font-size: 1.16rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1;
+      color: #b02f2f;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 2px 8px rgba(108, 35, 35, 0.2);
+      white-space: nowrap;
+    }
+    nav { display: flex; align-items: center; }
+    .menu-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .menu-item { position: relative; }
+    .menu-link {
+      text-decoration: none;
+      color: #232c34;
+      font-size: .68rem;
+      font-weight: 700;
+      display: inline-block;
+      padding: 4px 0;
+    }
+    .menu-link::after {
+      content: " \25BE";
+      font-size: .54rem;
+      color: #49535c;
+    }
+    .submenu {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeaea 100%);
+      border-top: 2px solid #cf3f3f;
+      box-shadow: 0 14px 24px rgba(96, 35, 35, .16);
+      display: none;
+      z-index: 50;
+    }
+    .submenu a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #1d2630;
+      font-size: .92rem;
+    }
+    .submenu a:hover { background: linear-gradient(180deg, #ffeeee 0%, #ffdede 100%); }
+    .menu-item:hover .submenu,
+    .menu-item:focus-within .submenu { display: block; }
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 120px 0 64px;
+    }
+    .hero {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      color: #b02f2f;
+      font-size: .82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    h1 {
+      font-family: "Space Grotesk", Arial, sans-serif;
+      color: #2f1f1f;
+      font-size: clamp(2rem, 5vw, 3.7rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 760px;
+      color: #654949;
+      font-size: clamp(.98rem, 2vw, 1.12rem);
+      line-height: 1.65;
+    }
+    .report-panel,
+    .empty-card {
+      border: 1px solid rgba(207, 63, 63, .24);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .9);
+      box-shadow: 0 20px 44px rgba(150, 58, 58, .12);
+      backdrop-filter: blur(2px);
+    }
+    .report-panel {
+      padding: 24px;
+    }
+    .report-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(207, 63, 63, .2);
+    }
+    .report-head h2 {
+      color: #2f1f1f;
+      font-family: "Space Grotesk", Arial, sans-serif;
+      font-size: 1.35rem;
+    }
+    .overall-badge {
+      min-width: 172px;
+      padding: 14px 18px;
+      border: 1px solid rgba(180, 0, 0, .2);
+      border-radius: 8px;
+      background: #fff6f6;
+      color: #2f1f1f;
+      text-align: center;
+    }
+    .overall-badge span {
+      display: block;
+      color: #7b3b3b;
+      font-size: .76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .overall-score {
+      font-family: "Space Grotesk", Arial, sans-serif;
+      color: #b40000;
+      font-size: 2.55rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .result-table {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .result-row {
+      display: grid;
+      grid-template-columns: minmax(130px, .75fr) minmax(170px, 1fr) 120px minmax(120px, .6fr) minmax(170px, .9fr) 190px;
+      align-items: center;
+      gap: 14px;
+      padding: 16px;
+      border: 1px solid rgba(207, 63, 63, .18);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .result-label {
+      color: #2f1f1f;
+      font-family: "Space Grotesk", Arial, sans-serif;
+      font-size: 1.06rem;
+      font-weight: 800;
+    }
+    .score-line {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      color: #b40000;
+      font-family: "Space Grotesk", Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+    }
+    .score-line small {
+      color: #7b3b3b;
+      font-size: .85rem;
+      font-weight: 800;
+    }
+    .result-meta {
+      color: #654949;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+    .review-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 14px;
+      border: 1px solid #b53030;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #f24848, #b72b2b);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 900;
+      text-align: center;
+      box-shadow: 0 12px 24px rgba(181, 48, 48, .2);
+    }
+    .page-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid #dfaaaa;
+      border-radius: 8px;
+      background: #fff7f7;
+      color: #8f2c2c;
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .empty-card {
+      padding: 28px;
+      color: #654949;
+      line-height: 1.65;
+    }
+    @media (max-width: 840px) {
+      .topbar { gap: 8px; padding: 6px 10px; }
+      .top-left { flex-direction: row; align-items: center; gap: 8px; min-width: 0; }
+      .brand-text { font-size: 0.84rem; max-width: 38vw; overflow: hidden; text-overflow: ellipsis; }
+      .menu-list { gap: 12px; }
+      .menu-link::after { content: ""; }
+      .submenu { position: static; display: none; box-shadow: none; border: 1px solid #e4aaaa; margin-top: 6px; }
+      .report-head {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .result-row {
+        grid-template-columns: 1fr;
+      }
+      .brand img {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/header-enhance.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-left">
+      <a class="brand" href="/">
+        <img src="assets/brand-logo.png" alt="IELTS CDI">
+        <span class="brand-text">IELTS Materials</span>
+      </a>
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="/">Home</a>
+            <ul class="submenu"><li><a href="/">Homepage</a></li></ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/listening">Listening</a>
+            <ul class="submenu">
+              <li><a href="/listening#all">All</a></li>
+              <li><a href="/listening#section1">Section 1</a></li>
+              <li><a href="/listening#section2">Section 2</a></li>
+              <li><a href="/listening#section3">Section 3</a></li>
+              <li><a href="/listening#section4">Section 4</a></li>
+              <li><a href="/listening#full">Full Listening</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/reading">Reading</a>
+            <ul class="submenu">
+              <li><a href="/reading#all">All</a></li>
+              <li><a href="/reading#passage1">Passage 1</a></li>
+              <li><a href="/reading#passage2">Passage 2</a></li>
+              <li><a href="/reading#passage3">Passage 3</a></li>
+              <li><a href="/reading#full">Full Reading</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/speaking">Speaking</a>
+            <ul class="submenu">
+              <li><a href="/speaking">Part 1 Topics</a></li>
+              <li><a href="/speaking">Part 2 Cue Cards</a></li>
+              <li><a href="/speaking">Part 3 Answers</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/writing">Writing</a>
+            <ul class="submenu">
+              <li><a href="/writing">Task 1 Reports</a></li>
+              <li><a href="/writing">Task 2 Essays</a></li>
+              <li><a href="/writing">Band Feedback</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/mock">Mock</a>
+            <ul class="submenu">
+              <li><a href="/mock">Full Mock</a></li>
+              <li><a href="/mock-results">Mock Results</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/books">Books</a>
+            <ul class="submenu">
+              <li><a href="/books">IELTS Book List</a></li>
+              <li><a href="/books">Vocabulary Books</a></li>
+              <li><a href="/books">Writing Practice Books</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="top-actions" aria-label="Header actions">
+      <a class="login-quick" href="/login">Login</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Full mock completed</div>
+      <h1>Mock Results</h1>
+      <p>Your Listening, Reading, and Writing attempts are saved. Choose a section below to reopen that attempt and analyze your answers.</p>
+    </section>
+
+    <section id="resultsContent"></section>
+  </main>
+
+  <script src="assets/header-enhance.js?v=20260522-safari-stable" defer></script>
+  <script src="assets/progress-tracker.js?v=20260727-premium-exit"></script>
+  <script>
+    (function () {
+      var MOCK_KEY = 'ielts_mock_active';
+      var MOCK_ID_KEY = 'ielts_mock_active_id';
+      var MOCK_LAST_COMPLETED_KEY = 'ielts_mock_last_completed';
+      var MOCK_FULLSCREEN_KEY = 'ielts_mock_fullscreen_lock';
+      var parts = [
+        { key: 'listening', label: 'Listening', timing: '30 minutes' },
+        { key: 'reading', label: 'Reading', timing: '1 hour' },
+        { key: 'writing', label: 'Writing', timing: '1 hour' }
+      ];
+      var content = document.getElementById('resultsContent');
+
+      function exitFullscreen() {
+        var fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+        if (!fullscreenElement) return;
+        var closeFullscreen = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+        if (!closeFullscreen) return;
+        try {
+          var result = closeFullscreen.call(document);
+          if (result && typeof result.catch === 'function') result.catch(function () {});
+        } catch (e) {}
+      }
+
+      try {
+        sessionStorage.removeItem(MOCK_FULLSCREEN_KEY);
+        sessionStorage.removeItem('ielts_mock_active_part');
+      } catch (e) {}
+      exitFullscreen();
+
+      function clearActiveMockSession() {
+        try {
+          sessionStorage.removeItem(MOCK_KEY);
+          sessionStorage.removeItem(MOCK_ID_KEY);
+          sessionStorage.removeItem(MOCK_FULLSCREEN_KEY);
+          sessionStorage.removeItem('ielts_mock_active_part');
+        } catch (e) {}
+        try {
+          localStorage.removeItem(MOCK_KEY);
+          localStorage.removeItem(MOCK_ID_KEY);
+          localStorage.removeItem(MOCK_FULLSCREEN_KEY);
+          localStorage.removeItem('ielts_mock_active_part');
+        } catch (e) {}
+      }
+
+      function loadMock() {
+        try {
+          var mock = JSON.parse(sessionStorage.getItem(MOCK_KEY) || 'null');
+          if (mock && mock.tests) return mock;
+          mock = JSON.parse(localStorage.getItem(MOCK_KEY) || 'null');
+          if (mock && mock.tests) return mock;
+          mock = JSON.parse(sessionStorage.getItem(MOCK_LAST_COMPLETED_KEY) || 'null');
+          if (mock && mock.tests) return mock;
+        } catch (e) {
+        }
+        return loadSavedMockFromProgress();
+      }
+
+      function loadSavedMockFromProgress() {
+        if (!window.IELTSProgress || typeof window.IELTSProgress.loadData !== 'function') return null;
+        var data = window.IELTSProgress.loadData() || {};
+        var results = (((data.tests || {}).mock || {}).results) || [];
+        if (!Array.isArray(results) || !results.length) return null;
+        var requestedAttempt = '';
+        try {
+          requestedAttempt = new URLSearchParams(window.location.search || '').get('attempt') || '';
+        } catch (e) {}
+        var saved = null;
+        if (requestedAttempt) {
+          saved = results.find(function (entry) {
+            return String(entry && entry.attempt_id || '') === requestedAttempt;
+          }) || null;
+        }
+        saved = saved || results[0];
+        if (!saved || !saved.tests || !saved.sections) return null;
+        return {
+          id: saved.attempt_id || saved.test_id || '',
+          createdAt: saved.created_at || saved.submitted_at || '',
+          tests: saved.tests || {},
+          completed: { listening: true, reading: true, writing: true },
+          results: saved.sections || {}
+        };
+      }
+
+      function escapeHtml(value) {
+        return String(value || '').replace(/[&<>"']/g, function (char) {
+          return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char];
+        });
+      }
+
+      function resultPercent(result) {
+        var score = Number(result && result.score);
+        var total = Number(result && result.total);
+        if (!isFinite(score) || !isFinite(total) || total <= 0) return null;
+        return Math.round((score / total) * 100);
+      }
+
+      function formatScore(result) {
+        if (!result) return 'Pending';
+        var score = Number(result.score);
+        var total = Number(result.total);
+        if (!isFinite(score) || !isFinite(total) || total <= 0) return 'Submitted';
+        return score + '/' + total;
+      }
+
+      function buildReviewUrl(test, result) {
+        var href = (test && test.href) || '';
+        if (!href || !result || !result.attempt_id) return href || 'mock';
+        var separator = href.indexOf('?') === -1 ? '?' : '&';
+        return href + separator + 'attempt=' + encodeURIComponent(result.attempt_id);
+      }
+
+      function submittedDate(result) {
+        if (!result || !result.submitted_at) return 'Saved attempt';
+        var date = new Date(result.submitted_at);
+        if (isNaN(date.getTime())) return 'Saved attempt';
+        return date.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+      }
+
+      function renderEmpty() {
+        content.innerHTML =
+          '<div class="empty-card">' +
+            '<h2>No completed mock found</h2>' +
+            '<p>Start and finish a full mock first. Your overall result will appear here after Writing is submitted.</p>' +
+            '<div class="page-actions"><a class="secondary-link" href="mock">Back to mock</a></div>' +
+          '</div>';
+      }
+
+      function render() {
+        var mock = loadMock();
+        if (!mock || !mock.completed || !(mock.completed.listening && mock.completed.reading && mock.completed.writing)) {
+          renderEmpty();
+          return;
+        }
+
+        mock.results = mock.results || {};
+        var percents = parts.map(function (part) {
+          return resultPercent(mock.results[part.key]);
+        }).filter(function (value) {
+          return value !== null;
+        });
+        var overall = percents.length
+          ? Math.round(percents.reduce(function (sum, value) { return sum + value; }, 0) / percents.length)
+          : null;
+
+        var rows = parts.map(function (part) {
+          var result = mock.results[part.key];
+          var test = mock.tests[part.key] || {};
+          var percent = resultPercent(result);
+          var href = buildReviewUrl(mock.tests[part.key], result);
+          return '<article class="result-row">' +
+              '<div class="result-label">' + part.label + '</div>' +
+              '<div class="result-meta"><strong>' + escapeHtml(test.title || part.label + ' test') + '</strong><br>Saved full mock attempt</div>' +
+              '<div class="result-meta">' + part.timing + '</div>' +
+              '<div class="score-line">' + escapeHtml(formatScore(result)) + '<small>' + (percent === null ? 'saved' : percent + '%') + '</small></div>' +
+              '<div class="result-meta">' + escapeHtml(submittedDate(result)) + '</div>' +
+              '<a class="review-link" href="' + escapeHtml(href) + '">Review answers</a>' +
+            '</article>';
+        }).join('');
+
+        content.innerHTML =
+          '<section class="report-panel">' +
+            '<div class="report-head">' +
+              '<div><h2>Overall mock results</h2><p class="result-meta">Listening, Reading, and Writing are complete. Review each saved attempt below to analyze the answers.</p></div>' +
+              '<div class="overall-badge"><span>Overall score</span><div class="overall-score">' + (overall === null ? 'Done' : overall + '%') + '</div></div>' +
+            '</div>' +
+            '<div class="result-table">' + rows + '</div>' +
+          '</section>' +
+          '<div class="page-actions"><a class="secondary-link" href="mock" id="startNewMockLink">Start new mock</a><a class="secondary-link" href="/">Home</a></div>';
+        var startNewMockLink = document.getElementById('startNewMockLink');
+        if (startNewMockLink) {
+          startNewMockLink.addEventListener('click', clearActiveMockSession);
+        }
+        clearActiveMockSession();
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>

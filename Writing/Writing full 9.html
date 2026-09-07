@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" spellcheck="false">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IELTS Writing Full 9 with Task 1 and Task 2 workspace, timer, autosave, and review mode.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ieltsmaterials.uz/Writing/Writing%20full%209.html">
+  <link rel="icon" type="image/png" href="/assets/brand-logo.png">
+  <title>Writing Full 9 | IELTS Writing Practice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/writing-test.css">
+  <link rel="stylesheet" href="../assets/ai-writing-feedback.css">
+  <link rel="stylesheet" href="../assets/writing-results-panel.css">
+  <link rel="stylesheet" href="../assets/ai-recommendation.css">
+</head>
+<body data-track-section="writing" spellcheck="false">
+  <div class="loading-screen" id="loadingScreen"><div class="loading-content"><div class="spinner" aria-hidden="true"></div><div class="loading-title">Preparing your writing workspace</div><div class="loading-subtitle">Loading your timer, draft, and saved attempt data.</div></div></div>
+  <div class="start-screen hidden" id="startScreen"><div class="start-content"><div class="start-title">Writing Full 9</div><p class="start-subtitle">Task 1 and Task 2 in a split-screen workspace similar to the official exam layout.</p><div class="start-actions"><button class="start-button" id="startButton" type="button">Start Writing Test</button></div></div></div>
+  <main class="exam-shell hidden" id="examShell">
+    <header>
+      <div class="brand" id="headerBrand" role="button" tabindex="0" aria-label="Open Telegram channel">
+        <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek">
+        <span class="passage-info">IELTSwithJurabek</span>
+      </div>
+      <div class="timer" id="globalTimer" aria-live="polite" style="margin-left:auto;margin-right:auto">
+        <i class="fas fa-clock" aria-hidden="true"></i>
+        <span id="timerValue">60:00</span>
+      </div>
+      <div class="header-right">
+        <a href="../writing.html" class="header-menu-link" id="submittedMenuLink" style="display:none">Back to Menu</a>
+        <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="" style="width:24px;height:24px;object-fit:contain;margin-right:6px" aria-hidden="true">
+        <button type="button" class="logo-area" id="telegramBtn" aria-label="Telegram IELTSwithJurabek">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i>
+          <span>IELTSwithJurabek</span>
+        </button>
+        <button class="icon-button" id="fullscreenBtn" type="button" aria-label="Toggle fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i>
+        </button>
+        <button class="menu-button" id="optionsMenuBtn" type="button" aria-label="Options menu">
+          <div class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+        </button>
+      </div>
+    </header>
+    <div class="writing-task-strip" id="writingTaskStrip">
+      <div class="writing-task-strip-title" id="taskHeaderTitle">Task 1</div>
+      <div class="writing-task-strip-sub" id="taskHeaderSubtitle">You should spend about 20 minutes on this task. Write at least 150 words.</div>
+    </div>
+    <section class="review-banner hidden" id="reviewBanner">Review mode is active for this saved attempt. Students can switch between Task 1 and Task 2 and inspect the submitted writing.</section>
+    <section class="workspace">
+      <section class="prompt-panel" id="promptPanel">
+        <div class="prompt-frame" aria-label="Writing task">
+          <div class="prompt-body" id="promptBody"></div>
+        </div>
+      </section>
+      <div class="resize-handle" id="resizeHandle" aria-hidden="true" title="Drag to resize columns"></div>
+      <section class="editor-panel">
+        <div class="editor-wrap">
+          <textarea class="editor-box" id="essayInput" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" data-lt-blocked="true" data-ms-editor="false"></textarea>
+          <div class="word-counter" id="wordCounter">Words: 0</div>
+        </div>
+      </section>
+    </section>
+    <footer class="bottom-bar">
+      <button class="bottom-cell bottom-cell--p1 is-active" id="bottomTaskOne" type="button" aria-selected="true">
+        <span class="bottom-tab__title">Task 1</span>
+        <span class="bottom-tab__count" id="partOneCount">0 of 1</span>
+      </button>
+      <button class="bottom-cell bottom-cell--p2" id="bottomTaskTwo" type="button" aria-selected="false">
+        <span class="bottom-tab__title">Task 2</span>
+        <span class="bottom-tab__count" id="partTwoCount">0 of 1</span>
+      </button>
+      <button class="bottom-cell bottom-cell--submit" id="submitButton" type="button" aria-label="Submit writing">&#10003;</button>
+    </footer>
+  </main>
+  <div class="modal options-modal" id="options-modal">
+    <div class="modal-content" id="options-content">
+      <div class="options-header">
+        <button type="button" class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;margin-right:8px">&#8249;</button>
+        <div class="options-title" id="options-title">Options</div>
+        <button type="button" class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+      </div>
+      <div id="options-home">
+        <div class="options-list">
+          <div class="option-row" data-target="contrast">
+            <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </div>
+          <div class="option-row" data-target="textsize">
+            <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div id="contrast-menu" style="display:none">
+        <div class="options-list submenu">
+          <button type="button" data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+          <button type="button" data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+          <button type="button" data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+        </div>
+      </div>
+      <div id="textsize-menu" style="display:none">
+        <div class="options-list submenu">
+          <button type="button" data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+          <button type="button" data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+          <button type="button" data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+          <button type="button" data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="submit-modal" id="submitModal" aria-hidden="true"><div class="submit-card"><h2>Submit Writing Test</h2><p>Your draft will be saved as a finished attempt and reopened in review mode.</p><div class="submit-meta"><div class="submit-meta-row"><span>Task 1 words</span><strong id="modalTaskOneWords">0</strong></div><div class="submit-meta-row"><span>Task 2 words</span><strong id="modalTaskTwoWords">0</strong></div><div class="submit-meta-row"><span>Total words</span><strong id="modalTotalWords">0</strong></div></div><div class="submit-actions"><button class="cancel-btn" id="cancelSubmitButton" type="button">Cancel</button><button class="modal-btn" id="confirmSubmitButton" type="button">Confirm Submit</button></div></div></div>
+    <script src="../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+  <script src="../assets/writing-test-engine.js?v=20260522-safari-compat-all"></script>
+  <script src="../assets/ai-writing-feedback.js"></script>
+  <script src="../assets/writing-results-panel.js"></script>
+  <script src="../assets/ai-recommendation.js"></script>
+  <script>
+    window.IELTSWritingTest.init({
+      testId: 'writing_full_9',
+      label: 'Writing Full 9',
+      href: 'Writing/Writing full 9.html',
+      defaultSeconds: 3600,
+      saveDebounceMs: 500,
+      tasks: {
+        task1:{index:1,label:'Task 1',minimum:150,header:'You should spend about 20 minutes on this task. Write at least 150 words.',promptHtml:'<div class="task1-intro" spellcheck="false"><p><strong>The pie charts below show the percentage of five kinds of books sold by a bookseller between 1972 and 2012.</strong></p><p><strong>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</strong></p></div><div class="task1-chart"><img src="writing%20full%209%20task%201.png" alt="Pie charts of five kinds of books sold in 1972, 1992 and 2012" style="display:block;width:100%;height:auto;border:1px solid #111;"></div>'},
+        task2:{index:2,label:'Task 2',minimum:250,header:'You should spend about 40 minutes on this task. Write at least 250 words.',promptHtml:'<div class="task2-prompt-frame" spellcheck="false"><p class="prompt-topic-lead"><strong>Write about the following topic:</strong></p><table class="task2-topic-table" aria-label="Writing topic"><tr><td><p><strong><em>Many people think modern communication technology is having some negative effects on social relationships.</em></strong></p><p><strong><em>Do you agree or disagree?</em></strong></p></td></tr></table><p class="prompt-topic-foot">Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p></div>'}
+      }
+    });
+  </script>
+</body>
+</html>

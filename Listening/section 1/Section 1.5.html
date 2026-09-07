@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-6978e8fa.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 1.5.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">SECTION 1</h1>
+            </div>
+                <p class="part-instructions" id="partInstructions">Complete the notes below. Questions 1-5 allow no more than two words and/or a number; Questions 6-10 allow no more than three words and/or a number.</p>
+            </div>
+            <!-- Questions Section -->
+            <div class="questions-section">
+                <h2 class="questions-title" id="questionsTitle">Questions 1-10</h2>
+                <p class="questions-description" id="questionsDescription">Listen for the Residence Survey information and complete the notes.</p>
+                
+                <!-- Part 1 Content -->
+                <div id="part1Content">
+                    <div class="section-instructions">
+                        <p class="section-heading">PART 1</p>
+                        <p class="section-subheading">Complete the notes below.</p>
+                        <p class="section-subheading-small">Questions 1-5: Write NO MORE THAN TWO WORDS AND/OR A NUMBER. Questions 6-10: Write NO MORE THAN THREE WORDS AND/OR A NUMBER.</p>
+                    </div>
+                    <div class="form-card">
+                        <div class="form-card-title">A Residence Survey</div>
+                        <div class="card-note">Questions 1-5</div>
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <span class="row-label">Example: Age of the interviewee:</span>
+                                <span class="row-value">19</span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Current occupation:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">1</span>
+                                    <input type="text" id="q1" class="blank-input" oninput="saveAnswer(1, this.value)" aria-label="Current occupation answer">
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Length of living in the north:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">2</span>
+                                    <input type="text" id="q2" class="blank-input" oninput="saveAnswer(2, this.value)" aria-label="Length living north answer">
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Exact living area:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">3</span>
+                                    <input type="text" id="q3" class="blank-input" oninput="saveAnswer(3, this.value)" aria-label="Exact living area answer">
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Type of accommodation:</span>
+                                <span class="row-value">
+                                    a shared
+                                    <span class="fill-inline">
+                                        <span class="fill-number">4</span>
+                                        <input type="text" id="q4" class="blank-input blank-short" oninput="saveAnswer(4, this.value)" aria-label="Type of accommodation answer">
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="form-row multi-line">
+                                <span class="row-label">Means of transport:</span>
+                                <span class="row-value">
+                                    <span>private: walking and bicycles</span>
+                                    <span>public: <span class="fill-number">5</span>
+                                        <input type="text" id="q5" class="blank-input blank-short" oninput="saveAnswer(5, this.value)" aria-label="Public transport answer">
+                                        and taxi
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-card">
+                        <div class="form-card-title">Leisure and study</div>
+                        <div class="card-note">Questions 6-10</div>
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <span class="row-label">Frequency of eating out:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">6</span>
+                                    <input type="text" id="q6" class="blank-input" oninput="saveAnswer(6, this.value)" aria-label="Frequency of eating out answer">
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Places for entertainment:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">7</span>
+                                    <input type="text" id="q7" class="blank-input" oninput="saveAnswer(7, this.value)" aria-label="Places for entertainment answer">
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Other free time activity:</span>
+                                <span class="row-value">
+                                    go to the
+                                    <span class="fill-inline">
+                                        <span class="fill-number">8</span>
+                                        <input type="text" id="q8" class="blank-input blank-short" oninput="saveAnswer(8, this.value)" aria-label="Other free time activity answer">
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Preferred exercises:</span>
+                                <span class="row-value">
+                                    <ul class="activity-list">
+                                        <li>- go swimming</li>
+                                        <li>- go to the gym</li>
+                                        <li>- go <span class="fill-inline"><span class="fill-number">9</span>
+                                                <input type="text" id="q9" class="blank-input blank-short" oninput="saveAnswer(9, this.value)" aria-label="Preferred exercise answer">
+                                            </span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="form-row">
+                                <span class="row-label">Part-time course:</span>
+                                <span class="row-value">
+                                    <span class="fill-number">10</span>
+                                    <input type="text" id="q10" class="blank-input blank-short" oninput="saveAnswer(10, this.value)" aria-label="Part-time course answer">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+                    <button class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 1</button>
+                    <div class="question-numbers" id="part1Questions">
+                        <button class="question-number" onclick="focusQuestion(1)">1</button>
+                        <button class="question-number" onclick="focusQuestion(2)">2</button>
+                        <button class="question-number" onclick="focusQuestion(3)">3</button>
+                        <button class="question-number" onclick="focusQuestion(4)">4</button>
+                        <button class="question-number" onclick="focusQuestion(5)">5</button>
+                        <button class="question-number" onclick="focusQuestion(6)">6</button>
+                        <button class="question-number" onclick="focusQuestion(7)">7</button>
+                        <button class="question-number" onclick="focusQuestion(8)">8</button>
+                        <button class="question-number" onclick="focusQuestion(9)">9</button>
+                        <button class="question-number" onclick="focusQuestion(10)">10</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+                <div class="score-summary">
+                    <div class="score-item">
+                        <div class="score-number" id="totalScore">0/10</div>
+                        <div class="score-label">Total Score</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part1Score">0/10</div>
+                        <div class="score-label">Part 1</div>
+                    </div>
+                </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-aa8e95e1.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section1-5.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

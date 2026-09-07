@@ -1,0 +1,675 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 13 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-f344fee3.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-13-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Historical impact of the California Gold Rush</h3>
+                    <p>The California Gold Rush of 1849-1855 radically transformed California and the USA. It prompted one of the largest migrations in US history, with hundreds of thousands of migrants across the USA and the globe travelling to California to find gold in the foothills of the Sierra Nevada mountains. This led to the establishment of boomtowns, rapid economic growth and prosperity, as well as the improvement of transport links. The significant increase in population and infrastructure allowed California to qualify for statehood in 1850, only a few years after the USA bought the territory from Mexico as part of the Treaty of Guadalupe Hidalgo.</p>
+                    <p>For all its significance, the onset of the Gold Rush originated from a seemingly insignificant event.</p>
+                    <p>In January 1848, James Marshall, a carpenter, was building a sawmill for John Sutter at Sutter's Fort, a trade and agricultural colony, when he spotted something shiny in the American River. Not sure of what he had found, he collected the apparent gold flecks and ran some rudimentary tests on them - including biting them and hitting them with a hammer. When their appearance did not change, Marshall realised they were genuine gold and quickly notified John Sutter. Sensing that the discovery would negatively impact his business and bring a large number of people to his land, Sutter told his employees to keep the gold a secret. However, news of the discovery quickly got out and spread across the region. Soon, gold seekers arrived at Sutter's Fort, and just as Sutter had feared, his employees all left to look for gold.</p>
+                    <p>Within a few months, news of the gold discovery expanded beyond the region, with the Baltimore Sun becoming the first US newspaper to report on it in late summer. In the autumn, the New York Herald ran a subsequent story on the gold discovery and by December, President Polk announced to Congress that significant amounts of gold were being discovered in California. The year 1849 prompted a massive migration to California from many parts of the USA as well as places as far away as China, Chile and France. The migrants, dubbed the "forty-niners" for the year of their trip, flocked to cities such as San Francisco and present-day Sacramento, which were experiencing rapid development. The population of San Francisco, for example, exploded from 500 in 1847 to more than 150,000 in 1852.</p>
+                    <p>With the massive influx of migrants, California underwent a radical transformation in a very short amount of time. It changed from a sparsely populated region to a territory with enough people to constitute a state. At the time, the population of California was still predominantly Mexican; however, the arrival of many US migrants quickly reshaped the local demographics. The newcomers often wanted to keep in touch with family around the USA and pushed for the development of new communication and transportation links. So the famed Pony Express was created to send mail and parcels from California to the Midwest within a two-week period using ponies, while a mail delivery service, the California Star Express, connected California with Missouri.</p>
+                    <p>Although the Gold Rush allowed some of the early miners to become rich, it was the ensuing economic development that sprang up around gold mining that would result in the greatest profits; the merchants who aimed to satisfy the needs of gold prospectors would ultimately become very wealthy. Not only did the Gold Rush lead to an explosion in the manufacturing of mining machinery and equipment for hydraulic operations, it also saw more of the leather goods and clothes that miners required being produced.</p>
+                    <p>The rapid development of agriculture - thanks to heightened demand and the availability of more sophisticated tools - was another major outcome of the Gold Rush. In fact, many who did not succeed in mining turned to California's "green gold", taking full advantage of the territory's favourable climate to produce massive amounts of fruits, vegetables and grains to feed the expanding mining communities.</p>
+                    <p>The fervour surrounding the Gold Rush led to a revolution in transportation. At the time, California was relatively isolated, but improvements were made to the road network and the number of steamships being constructed increased. San Francisco, which experienced the largest economic boom at the time, saw its rapid modernisation and economic development rewarded, when it was chosen as the site for the western terminus for the first transcontinental railway, linking the east coast of the USA with California.</p>
+                    <p>The Gold Rush was not beneficial to all, however. It led to increased violence against Native Americans, while immigrants, who had come to California in the hope of making their fortunes, often experienced intense discrimination. Some Americans were convinced that immigrants were taking revenue and employment opportunities away from Americans and argued for restrictions on immigration and a tax on all foreign miners working in California. The Gold Rush also had a severe environmental impact. Rivers became clogged with sediment; forests were cut down; biodiversity was compromised and soil was polluted with chemicals from the mining process. Despite these drawbacks, the Gold Rush had a lasting positive impact. It propelled significant industrial and agricultural development and helped shape California's future by turning it into an economic powerhouse.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 1-6, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="1">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="1"></span>1 Few other migrations in the USA have been equal in size to that of the California Gold Rush.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="2"></span>2 The population growth caused by the Gold Rush was a key factor in California becoming a state.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="3"></span>3 It took a long time for the USA and Mexico to agree on a figure for the purchase of California.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="4"></span>4 When gold was discovered, John Sutter was confident his staff would continue working for him.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="5"></span>5 The Pony Express was in operation in California before the Gold Rush.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="6"></span>6 A large number of the people who failed to find gold became farmers.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-13</div>
+                    <p>Complete the notes below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+
+                    <p><strong>The first discovery of gold</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="7"></span>7 James Marshall was working on the construction of a <input type="text" name="q7" class="input-field" placeholder="7"> when he found flecks of gold</p>
+                    <p><span class="question-anchor" data-question-anchor="8"></span>8 Marshall bit on the gold flecks and used a <input type="text" name="q8" class="input-field" placeholder="8"> to check they were real</p>
+                    <p><span class="question-anchor" data-question-anchor="9"></span>9 John Sutter wanted the discovery to be a <input type="text" name="q9" class="input-field" placeholder="9"></p>
+                    <p>the news soon spread</p>
+
+                    <p><strong>1849</strong></p>
+                    <p>many people went to California in search of gold</p>
+                    <p>the population of California grew rapidly</p>
+
+                    <p><strong>The Impact of the Gold Rush</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="10"></span>10 the largest <input type="text" name="q10" class="input-field" placeholder="10"> were achieved by machine manufacturers and businesses supplying miners with items of clothing and products made from <span class="question-anchor" data-question-anchor="11"></span>11 <input type="text" name="q11" class="input-field" placeholder="11"></p>
+                    <p><span class="question-anchor" data-question-anchor="12"></span>12 the people supplying miners with food benefited from the area's <input type="text" name="q12" class="input-field" placeholder="12"></p>
+
+                    <p><strong>The negative consequences</strong></p>
+                    <p>some immigrant workers were discriminated against</p>
+                    <p><span class="question-anchor" data-question-anchor="13"></span>13 mining resulted in <input type="text" name="q13" class="input-field" placeholder="13"> contaminating the soil</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>The Impact of Invasive Species</h3>
+
+                    <p><strong>A</strong> Invasive species are among the leading threats to the native wildlife of most countries, with approximately 42 percent of endangered species at risk from them. Invasive species can be any kind of organism - for example, a mammal, amphibian, fish, insect or plant - that is not native to an ecosystem. Often, they reproduce and spread with great speed. Contrary to popular belief, a plant or animal classified as an invasive species does not necessarily originate in another country. For example, lake trout are native to the Great Lakes of North America, but are considered to be an invasive species in Yellowstone Lake in Wyoming because they compete with native cutthroat trout for habitat.</p>
+                    <p><strong>B</strong> When a new species is introduced into an ecosystem, native wildlife may struggle to compete with it for food and other resources. Invasive species can change the food web in an ecosystem by destroying or replacing native food sources, while providing little or no food for local wildlife. In extreme cases, the invader may prey on the native species. Above all, invasive species threaten biodiversity in many habitats. For instance, the climbing plant species kudzu (which is native to East Asia) can easily replace a habitat that had a wide range of plants with a monoculture consisting solely of kudzu, as has started to happen in the southern states of the USA.</p>
+                    <p><strong>C</strong> The phenomenon is not an exclusively modern one. Humans have always transferred a variety of species from one region to another, but the development of rapid means of transportation has increased the frequency of such introductions. Aquatic organisms can be shipped across the oceans, while insects can easily get into the wooden crates that are transported around the world in this way. In addition, climate change has enabled some invasive plant species to colonise new areas. Other invasive species include pets such as snakes or turtles which are intentionally set free into the wild.</p>
+                    <p><strong>D</strong> Invasive species do not all present the same level of threat to native ecosystems and can be classified into three types. The first of these may be introduced species which can maintain themselves in a limited range of habitats without upsetting the ecological equilibrium of the area. Some scientists have even argued that in these cases the introduction enhances the diversity of animal and plant life in that specific area. A second group of invaders present a greater threat because their spread is at the expense of one native species. The North American grey squirrel, for example, was introduced to the UK in 1876 largely because wealthy landowners thought it would be a fashionable and attractive addition to the local wildlife on their estates. It spread widely, leading directly to the dramatic decline in the population of the native red squirrel. However, it would appear that this is the only definite negative impact of the grey squirrel.</p>
+                    <p><strong>E</strong> There is a third level of threat in which the dominance of the introduced species has an extremely destructive effect on the entire ecosystem. One of the most damaging examples involved a species of comb jellyfish. Native to estuaries along the western Atlantic coast from the northern United States to the Valdes peninsula in Argentina, this species was released from a ship into the Black Sea in Eastern Europe in 1982, almost certainly by accident. The Black Sea has levels of industrial waste which are by international standards exceptionally high. Despite this, fishing boats were still able to catch healthy numbers of fish. But when the invading jellyfish underwent a population explosion in the space of just six years, the entire marine ecosystem was transformed, and fish numbers declined dramatically because they were in competition with the jellyfish, preying on exactly the same microscopic creatures. The jellyfish had a more serious impact on the ecosystem than the heavily polluted water.</p>
+                    <p><strong>F</strong> More than a century after its introduction outside its native range on the Amazon River in South America, a plant known as a water hyacinth can be found in tropical lakes, streams, and rivers around the world. Its beauty attracted botanists seeking exotic plants for botanical gardens and they imported it to a horticultural exhibition in New Orleans in 1884. Visitors were so impressed they planted it in many locations during the 1880s and 1890s, resulting in the aquatic ecosystems of the southeastern United States being progressively colonized by vast, floating, dense carpets of water hyacinth. Today it is present around the globe, damaging boat engines and even blocking cooling pipes for power plants, occasionally leading to massive blackouts. The impact of the water hyacinth on native water plants is largely undiscussed, as is unfortunately the case for most ecosystems invaded by new plant species.</p>
+                    <p><strong>G</strong> In the United States, more than 7,000 introduced species have established themselves, of which at least 15 percent cause ecological damage. As the number of invasive species expands, legislation to deal with this problem is rare or non-existent in the majority of countries. Unfortunately, ordinary people outside the scientific community have a very limited understanding of the threat posed by invasive species, which means that other environmental threats receive considerably more media attention. The introduction of new species can initially seem highly desirable, but the full extent of their impact is consistently underestimated.</p>
+                    <p><strong>H</strong> Although ultimately measures need to be taken at an international level, limited action is possible by individuals. One way is for people to plant native plants in their gardens rather than species from abroad. It is also useful to learn to identify invasive species, and report any sightings to wildlife organisations. Regularly cleaning clothing, boots, boats, tires, and any other equipment regularly used outdoors can remove insects and plant parts that may introduce invasive species into new locations.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-20</div>
+                    <p>Reading Passage 2 has eight paragraphs, <strong>A-H</strong>.</p>
+                    <p>Which paragraph contains the following information?</p>
+                    <p>Write the correct letter, <strong>A-H</strong>, in boxes 14-20.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 50%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                            <th style="text-align: center;">H</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 A suggestion that people have moved numerous species across the globe throughout history</td>
+                            <td><input type="radio" name="q14" value="A"></td>
+                            <td><input type="radio" name="q14" value="B"></td>
+                            <td><input type="radio" name="q14" value="C"></td>
+                            <td><input type="radio" name="q14" value="D"></td>
+                            <td><input type="radio" name="q14" value="E"></td>
+                            <td><input type="radio" name="q14" value="F"></td>
+                            <td><input type="radio" name="q14" value="G"></td>
+                            <td><input type="radio" name="q14" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 An example of how an ecosystem can be damaged very rapidly</td>
+                            <td><input type="radio" name="q15" value="A"></td>
+                            <td><input type="radio" name="q15" value="B"></td>
+                            <td><input type="radio" name="q15" value="C"></td>
+                            <td><input type="radio" name="q15" value="D"></td>
+                            <td><input type="radio" name="q15" value="E"></td>
+                            <td><input type="radio" name="q15" value="F"></td>
+                            <td><input type="radio" name="q15" value="G"></td>
+                            <td><input type="radio" name="q15" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 A description of what can be done to restrict the spread of invasive species</td>
+                            <td><input type="radio" name="q16" value="A"></td>
+                            <td><input type="radio" name="q16" value="B"></td>
+                            <td><input type="radio" name="q16" value="C"></td>
+                            <td><input type="radio" name="q16" value="D"></td>
+                            <td><input type="radio" name="q16" value="E"></td>
+                            <td><input type="radio" name="q16" value="F"></td>
+                            <td><input type="radio" name="q16" value="G"></td>
+                            <td><input type="radio" name="q16" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 A reference to the lack of research on the effects of some invasive species</td>
+                            <td><input type="radio" name="q17" value="A"></td>
+                            <td><input type="radio" name="q17" value="B"></td>
+                            <td><input type="radio" name="q17" value="C"></td>
+                            <td><input type="radio" name="q17" value="D"></td>
+                            <td><input type="radio" name="q17" value="E"></td>
+                            <td><input type="radio" name="q17" value="F"></td>
+                            <td><input type="radio" name="q17" value="G"></td>
+                            <td><input type="radio" name="q17" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="18"></span>18 A mention of a current lack of public awareness of the problem of invasive species</td>
+                            <td><input type="radio" name="q18" value="A"></td>
+                            <td><input type="radio" name="q18" value="B"></td>
+                            <td><input type="radio" name="q18" value="C"></td>
+                            <td><input type="radio" name="q18" value="D"></td>
+                            <td><input type="radio" name="q18" value="E"></td>
+                            <td><input type="radio" name="q18" value="F"></td>
+                            <td><input type="radio" name="q18" value="G"></td>
+                            <td><input type="radio" name="q18" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="19"></span>19 That an introduced species may benefit a specific ecosystem</td>
+                            <td><input type="radio" name="q19" value="A"></td>
+                            <td><input type="radio" name="q19" value="B"></td>
+                            <td><input type="radio" name="q19" value="C"></td>
+                            <td><input type="radio" name="q19" value="D"></td>
+                            <td><input type="radio" name="q19" value="E"></td>
+                            <td><input type="radio" name="q19" value="F"></td>
+                            <td><input type="radio" name="q19" value="G"></td>
+                            <td><input type="radio" name="q19" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 A mention of the fact that the definition of the term "invasive species" is frequently misunderstood</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                            <td><input type="radio" name="q20" value="F"></td>
+                            <td><input type="radio" name="q20" value="G"></td>
+                            <td><input type="radio" name="q20" value="H"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 21 and 22</div>
+                    <p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>
+                    <p>Which TWO statements does the writer make about the water hyacinth?</p>
+                    <div class="question" id="q21-22-group">
+                        <div class="question-text">
+                            <span class="question-anchor" data-question-anchor="21"></span>
+                            <span class="question-anchor" data-question-anchor="22"></span>
+                            21 and 22
+                        </div>
+                        <div class="options">
+                            <label><input type="checkbox" name="q21_22" value="A"> A It is native to almost every region of the world.</label>
+                            <label><input type="checkbox" name="q21_22" value="B"> B It was brought to North America in the late nineteenth century.</label>
+                            <label><input type="checkbox" name="q21_22" value="C"> C Its beauty has led people to ignore the negative effects it has.</label>
+                            <label><input type="checkbox" name="q21_22" value="D"> D Its spread has caused some practical problems in recent years.</label>
+                            <label><input type="checkbox" name="q21_22" value="E"> E Scientists recommended its introduction to the USA.</label>
+                        </div>
+                        <div class="question-note">Select up to two options.</div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Complete the sentences below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <div class="question" data-question="23">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="23"></span>23 Kudzu has reduced the <input type="text" name="q23" class="input-field"> of certain areas in the south east of the USA.</div>
+                    </div>
+                    <div class="question" data-question="24">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="24"></span>24 Some introduced species present a low level of threat if they remain within a small area and do not disturb the <input type="text" name="q24" class="input-field"> of the surrounding ecosystem.</div>
+                    </div>
+                    <div class="question" data-question="25">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="25"></span>25 Bringing grey squirrels to the UK caused a serious <input type="text" name="q25" class="input-field"> in its native squirrel species.</div>
+                    </div>
+                    <div class="question" data-question="26">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="26"></span>26 An invasive species of jellyfish was brought to the Black Sea by a <input type="text" name="q26" class="input-field"> which had come from America.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Music soothes and awes &ndash; and may help us heal</h3>
+
+                    <p>Tapping into the brain's ability to process music, researchers are using songs and sounds in novel ways</p>
+                    <p>Dan Ellsey, 33, was sitting in his wheelchair, his virtually useless arms and weak torso strapped to the chair for safety. As we were introduced, he arched his back, grinned broadly and aimed the power of his dark brown eyes at me, as if eye contact were his only means of transcending the prison of his body.</p>
+                    <p>But it isn't. In the last few years, Ellsey, who was born with cerebral palsy, has discovered another, almost miraculous way of expressing himself: composing music with a special computerized system called Hyperscore. For Ellsey, as for most human beings, music has almost inexplicable power. It can rouse armies to battle, soothe babies to sleep, communicate peaks of joy and depths of sorrow that mere words cannot.</p>
+                    <p>Why evolution would have endowed our brains with the neural machinery to make music is a mystery. "It's unclear why humans are so uniquely sensitive to music. Certainly, music shares many features with spoken language, and our brains are particularly developed to process the rapid tones and segments of sound that are common to both," said neurologist and author Dr Oliver Sacks, whose latest book is Musicophilia: Tales of Music and the Brain. "Some researchers," he added in an e-mail interview, "think that in primitive cultures, music and speech were not distinct. Other researchers debate which came first in evolution, speech or song." What is clear is that the brain is abundantly wired to process music.</p>
+                    <p>Scientists at the Montreal Neurological Institute and Hospital, for instance, have found dramatic evidence on brain scans that the chills, or visceral feelings of awe, that people report when listening to their favorite music are real. Reactions to music appear to vary greatly. Music that a person likes, but not music that is disliked, activates the higher thinking centers in the brain's cortex and, perhaps more importantly, the "ancient circuitry, the motivation and reward system," according to experimental psychologist Robert Zatorre, a member of the Montreal team. This primeval part of the brain also governs basic drives such as hunger, thirst and sex, suggesting that the brain may consider music on a par with them.</p>
+                    <p>Music has the power not just to awe but also to heal. If a person has a stroke on the left side of the brain, where the speech centers in most people are, that "wipes out a major part of communication," said Dr Gottfried Schlaug, chief of the Cerebrovascular Disorder Division and Stroke Recovery Laboratory at Beth Israel Deaconess Medical Center. But if the right side, where a lot of music is processed, is intact, some stroke patients can use melodic intonation therapy, which involves singing using two tones relatively close in pitch, to communicate. Schlaug's research suggests that with intensive therapy, some patients can even move from this two-tone singing back to actual speech.</p>
+                    <p>Stroke patients with gait problems also profit from music therapy. At the Center for Biomedical Research in Music at Colorado State University in Fort Collins, director Michael Thaut and his team have shown that people who are partially paralyzed on one side of the body can be retrained to walk faster and in a more coordinated way if they practice walking rhythmically, cued by music or a metronome. Combining rhythmic training with physical therapy also helps stroke patients recover gait faster. "Music helps us organize our movement," said Kathleen Howland, a music therapist who teaches at Lesley University in Cambridge in the USA. In fact, researchers have found that auditory signals are more powerful than visual signals in coordinating movement in healthy people.</p>
+                    <p>Patients undergoing colonoscopy seem to feel less pain and need fewer sedative drugs if they listen to music during the procedure, according to several studies. But not all studies have been so clear-cut. A 2007 review by the Cochrane Collaboration, a nonprofit, international organization that evaluates medical research, pooled data from 51 pain studies and concluded that, although listening to music can reduce the intensity of pain and the need for narcotic drugs, the benefit, overall, was small.</p>
+                    <p>A number of studies, however, show that music therapy can reduce pain, such as a 2001 study on burn patients, whose burns must be frequently scraped to reduce dead tissue. Music therapy may improve mental state and functioning in people with schizophrenia, and communication in children with autistic spectrum disorders, according to Cochrane reviews. Babies, as any parent knows, clearly respond to music. Premature infants who listen to lullabies learn to suck better and gain more weight than those who don't get music therapy. Deforia Lane, director of music therapy at the University Hospitals Ireland Cancer Center in Cleveland, has found an improvement in immune response among hospitalized children who played, sang and created music, compared with children who did not get music therapy. Indeed, the list of potential benefits from music therapy seems long. And for people such as Ellsey, the benefits can be nothing short of liberating.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Do the following statements agree with the views of the writer in Reading Passage 3?</p>
+                    <p>In boxes 27-32, write <strong>YES</strong> if the statement agrees with the views of the writer, <strong>NO</strong> if the statement contradicts the views of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+
+                    <div class="question" data-question="27">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="27"></span>27 Dan Ellsey has been able to communicate through music since he was very young.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="YES"> YES</label>
+                            <label><input type="radio" name="q27" value="NO"> NO</label>
+                            <label><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="28"></span>28 Armies respond to music that is loud and rhythmic.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="YES"> YES</label>
+                            <label><input type="radio" name="q28" value="NO"> NO</label>
+                            <label><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="29"></span>29 Researchers have determined why people react so emotionally to music.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="YES"> YES</label>
+                            <label><input type="radio" name="q29" value="NO"> NO</label>
+                            <label><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="30"></span>30 Both music and speech are composed of sound segments.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="YES"> YES</label>
+                            <label><input type="radio" name="q30" value="NO"> NO</label>
+                            <label><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="31"></span>31 It is clear that song developed more quickly than speech.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="YES"> YES</label>
+                            <label><input type="radio" name="q31" value="NO"> NO</label>
+                            <label><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="32">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="32"></span>32 Emotional reactions to music have been scientifically demonstrated.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="YES"> YES</label>
+                            <label><input type="radio" name="q32" value="NO"> NO</label>
+                            <label><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-35</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+                    <div class="question" data-question="33">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="33"></span>33 According to the article, music stimulates higher brain activity when it</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="A"> A provokes hunger.</label>
+                            <label><input type="radio" name="q33" value="B"> B requires thought.</label>
+                            <label><input type="radio" name="q33" value="C"> C is soothing.</label>
+                            <label><input type="radio" name="q33" value="D"> D is pleasing.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="34"></span>34 According to Dr Schlaug's research, some stroke patients may regain speech if</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="A"> A they practise making sounds that are close together.</label>
+                            <label><input type="radio" name="q34" value="B"> B they reactivate the left side of the brain.</label>
+                            <label><input type="radio" name="q34" value="C"> C they receive music therapy daily.</label>
+                            <label><input type="radio" name="q34" value="D"> D they listen to tunes in groups.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="35"></span>35 According to the Cochrane Collaboration review, some research into the link between music and pain relief suggests</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="A"> A the value of music is underestimated.</label>
+                            <label><input type="radio" name="q35" value="B"> B the value of music may be limited.</label>
+                            <label><input type="radio" name="q35" value="C"> C more studies are needed in these areas.</label>
+                            <label><input type="radio" name="q35" value="D"> D patients welcome this research.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 36-40</div>
+                    <p>Complete each sentence with the correct ending, <strong>A-H</strong>, below.</p>
+                    <p>Drag the correct letter into each box 36-40.</p>
+
+                    <p><strong>Endings</strong></p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="optA" data-answer="A" data-label="rely less on drugs">A rely less on drugs.</div>
+                        <div class="drag-item" draggable="true" data-option="optB" data-answer="B" data-label="get heavier">B get heavier.</div>
+                        <div class="drag-item" draggable="true" data-option="optC" data-answer="C" data-label="exhibit improved social interaction">C exhibit improved social interaction.</div>
+                        <div class="drag-item" draggable="true" data-option="optD" data-answer="D" data-label="experience psychological benefits">D experience psychological benefits.</div>
+                        <div class="drag-item" draggable="true" data-option="optE" data-answer="E" data-label="sleep more soundly">E sleep more soundly.</div>
+                        <div class="drag-item" draggable="true" data-option="optF" data-answer="F" data-label="suffer less discomfort">F suffer less discomfort.</div>
+                        <div class="drag-item" draggable="true" data-option="optG" data-answer="G" data-label="accept their situation more easily">G accept their situation more easily.</div>
+                        <div class="drag-item" draggable="true" data-option="optH" data-answer="H" data-label="have stronger resistance to disease">H have stronger resistance to disease.</div>
+                    </div>
+
+                    <p><span class="question-anchor" data-question-anchor="36"></span>36 Burn victims who receive music therapy
+                        <span class="drop-zone" data-target="q36" data-placeholder="36">36</span>
+                        <input type="text" name="q36" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="37"></span>37 People with schizophrenia who receive music therapy
+                        <span class="drop-zone" data-target="q37" data-placeholder="37">37</span>
+                        <input type="text" name="q37" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="38"></span>38 Autistic children who receive music therapy
+                        <span class="drop-zone" data-target="q38" data-placeholder="38">38</span>
+                        <input type="text" name="q38" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="39"></span>39 Premature babies who receive music therapy
+                        <span class="drop-zone" data-target="q39" data-placeholder="39">39</span>
+                        <input type="text" name="q39" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="40"></span>40 Hospitalised children who receive music therapy
+                        <span class="drop-zone" data-target="q40" data-placeholder="40">40</span>
+                        <input type="text" name="q40" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_13',
+            label: 'Reading Full 13',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "TRUE",
+            q3: "NOT GIVEN",
+            q4: "FALSE",
+            q5: "FALSE",
+            q6: "TRUE",
+            q7: "SAWMILL",
+            q8: "HAMMER",
+            q9: "SECRET",
+            q10: "PROFITS",
+            q11: "LEATHER",
+            q12: "CLIMATE",
+            q13: "CHEMICALS",
+            q14: "C",
+            q15: "E",
+            q16: "H",
+            q17: "F",
+            q18: "G",
+            q19: "D",
+            q20: "A",
+            q21: "B",
+            q22: "D",
+            q23: "BIODIVERSITY",
+            q24: "EQUILIBRIUM",
+            q25: "DECLINE",
+            q26: "SHIP",
+            q27: "NO",
+            q28: "NOT GIVEN",
+            q29: "NO",
+            q30: "YES",
+            q31: "NO",
+            q32: "YES",
+            q33: "D",
+            q34: "A",
+            q35: "B",
+            q36: "F",
+            q37: "D",
+            q38: "C",
+            q39: "B",
+            q40: "H"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-13.js?v=20260731-reading-clear-13-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-13-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

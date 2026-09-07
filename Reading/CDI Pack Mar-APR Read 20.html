@@ -1,0 +1,612 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 20 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-b25b4923.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-20-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+       <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+                        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>Answer Questions 1-13, which are based on the text below.</strong></p>
+                    <h3>Early Photographic Processes</h3>
+                    <p>The decades following photography's experimental beginnings in the 1820s and the public availability of a practical photographic process from 1839 were characterized by the introduction of a wide number of photographic processes. The following are a few of the most significant.</p>
+                    <p>Announced in Paris in 1839, the daguerreotype was the first publicly available photographic process. The daguerreotype image was created on a silvered metal plate exposed to iodine fumes, forming a light-sensitive surface of silver iodide. Development was achieved by exposing the plate to fumes of heated mercury and then fixing the image in a salt solution. The daguerreotype produced remarkably sharp pictures, but unlike competing processes, each daguerreotype was unique. This proved to be its major drawback, compared to other processes from which unlimited copies could be made.</p>
+                    <p>One of the oldest and longest surviving photographic processes, the cyanotype or blueprint, was invented by Sir John Herschel in 1840, using a mixture of ferric ammonium citrate and potassium ferricyanide to produce a light sensitive paper. As a relatively simple process to prepare and manipulate - it required no development or fixing other than washing - it was popular among amateurs throughout the nineteenth century and has also been widely used by engineers and architects for reproducing technical drawings (blueprints).</p>
+                    <p>William Henry Fox Talbot's calotype process, the first practical negative-positive photographic process, was patented by him in 1841. A sheet of good quality paper was first treated with light-sensitive silver compounds before exposure in the camera. This produced an image in reverse, known as a negative, which was then developed in gallo-nitrate of silver and fixed. This concept of photography, allowing the production of an unlimited number of prints from a single image, has formed the basis of photographic practice until recently, when it started being challenged by digital imagery. The calotype negative was the subject of many refinements in the 1840s and 50s, and it was common practice for photographers to apply heated wax in order to increase printing transparency and lessen the visibility of the paper fibres.</p>
+                    <p>Frederick Scott Archer's wet collodion process, announced in 1851, became the standard photographic process for both amateurs and professionals from the mid-1850s until the early 1880s. The process proved immediately popular, and within a decade had superseded both the daguerreotype and the calotype processes. To prepare the negative for exposure, a sheet of glass was coated with a solution of iodised collodion (a syrupy liquid composed of soluble gun-cotton, ether and alcohol) and then made light-sensitive by immersion in a bath of silver nitrate. Known as a wet process because the glass negative required sensitising, exposing and processing while the chemicals were still damp, it required significant skill to manipulate, but produced a negative of unsurpassed sharpness and a broad tonal range.</p>
+                    <p>The albumen print, announced by the French photographer and publisher Louis-Desire Blanquart-Evrard in 1850, was the most widespread print medium in use between the mid-1850s and the 1890s. While the printing process was chemically similar to an earlier process which was called the 'salted paper process', the albumen print was generally distinguishable by the glossy sheen imparted by a preliminary sizing of the paper with albumen (egg white) and salt. After the albumen coating had been applied, the paper was made light sensitive by the addition of silver nitrate, and printed in contact with the negative. The fixed print could then be toned to create a wide variety of colours, ranging from purple-black to a rich chocolate brown. Although it continued to be used well into the twentieth century, its popularity declined after the mid-1890s, in favour of a variety of manufactured papers.</p>
+                    <p>The fact that all silver-based photographic images tended to fade was a source of concern from the earliest days of photography, and considerable research was carried out in attempts to produce permanent images. Perhaps the most successful of these was the carbon process. First patented by A L Poitevin in 1855, the process utilised the fact that gelatin mixed with an alkaline bichromate becomes insoluble when exposed to light. When printing from a negative, those parts of the image representing shadow tones were hardened by the exposure to light, while light areas, protected from exposure, remained unhardened and could be subsequently washed away. Carbon and other pigments could be used as colouring agents to obtain an almost unlimited range of tones in the final image. Because the process does not employ compounds derived from silver, the resulting image is less likely to fade and was widely used in book illustration in the 1870s and 1880s.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Complete the table below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Process</th>
+                                <th>Advantage</th>
+                                <th>Disadvantage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>daguerreotype</td>
+                                <td>Images were very <input type="text" name="q1" placeholder="1" class="input-field inline-input"></td>
+                                <td>Each image was <input type="text" name="q2" placeholder="2" class="input-field inline-input"></td>
+                            </tr>
+                            <tr>
+                                <td>cyanotype</td>
+                                <td>Was comparatively <input type="text" name="q3" placeholder="3" class="input-field inline-input"> to use</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>calotype</td>
+                                <td>First process which created an image called <input type="text" name="q4" placeholder="4" class="input-field inline-input">, from which unlimited copies could be made</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>wet collodion process</td>
+                                <td>Produced high-quality images</td>
+                                <td>Needed considerable <input type="text" name="q5" placeholder="5" class="input-field inline-input"> to use</td>
+                            </tr>
+                            <tr>
+                                <td>albumen print</td>
+                                <td>Produced glossy images in a range of <input type="text" name="q6" placeholder="6" class="input-field inline-input"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>carbon process</td>
+                                <td>Produced permanent images because it did not use any products based on <input type="text" name="q7" placeholder="7" class="input-field inline-input"></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-13</div>
+                    <p>Do the following statements agree with the information given in the text? Write <strong>TRUE</strong> if it agrees, <strong>FALSE</strong> if it contradicts, or <strong>NOT GIVEN</strong> if there is no information.</p>
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 <span class="question-anchor" data-question-anchor="8"></span>The cyanotype has proved helpful in professional fields outside that of photography.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 <span class="question-anchor" data-question-anchor="9"></span>The calotype process was modified and improved upon a number of times after its invention.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 <span class="question-anchor" data-question-anchor="10"></span>The wet collodion process took many years to achieve success.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 <span class="question-anchor" data-question-anchor="11"></span>The albumen print was the most widespread print medium between the mid-1850s and the 1890s.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 <span class="question-anchor" data-question-anchor="12"></span>The inventor of the carbon process solved fading issues by using a special quality of gelatin.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 <span class="question-anchor" data-question-anchor="13"></span>The carbon process greatly increased the sales of illustrated books during the 1870s and 1890s.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>Answer Questions 14-26, which are based on the text below.</strong></p>
+                    <h3>The Remarkable Power of Placebos</h3>
+                    <p><strong>A</strong> It's one of our most powerful medical treatments, and certainly our most widely effective. In recent years, it's been found to help eliminate or lessen the symptoms associated with clinical depression, irritable bowel syndrome, panic attacks, coughing and ADHD, among other conditions. This name of this wonderful treatment? It's the 'placebo effect', the remarkable power of the human brain to unconsciously influence the functioning and perception of the body.</p>
+                    <p><strong>B</strong> The term, which is Latin for 'I shall please', was first used some time during the 1700s, but the concept itself dates back centuries. Historically, doctors believed that one of their key duties, in addition to curing a patient, was to console him or her, providing a boost to the morale that could help them to get better faster - sometimes in the form of a dummy medicine that had no effect beyond instilling the expectation of improvement in the patient's brain. It's now widely recognised that, while largely ineffective in improving objective symptoms, such as high blood pressure or an infection, for instance, placebos are genuinely effective in treating subjective, self-reported symptoms, including all sorts of pain. Placebos can take all sorts of forms: inert sugar pills, sham surgeries and saline injections.</p>
+                    <p><strong>C</strong> The singular power of expectations has been demonstrated in a variety of studies. In one, for example, patients given a placebo pill that is referred to as a muscle relaxer will experience muscle relaxation, while those given a placebo called a muscle stimulator will experience muscle tension. The flip side of the placebo, the nocebo effect, is just as powerful - negative expectations can cause as much harm as positive ones can do good. In other studies, it's been shown that pills which are red, yellow or orange in colour are more likely to provide a stimulating effect, while blue and green ones are more often perceived as sedating. One study even found that bigger pills are better when it comes to placebo performance.</p>
+                    <p><strong>D</strong> The science that underlies all of these studies isn't well understood at this point. Scientists have conducted some imaging research into the brain on placebos, and they've found that ingestion of a placebo billed as a painkiller leads to increased activity in several areas of the cerebral cortex, as compared to an actual painkiller. These areas are involved in so-called 'higher' functions like memory, attention, thought and consciousness. A pain-killing placebo, it seems, works differently from a painkiller.</p>
+                    <p><strong>E</strong> In a recent headache study, conducted by researchers at Harvard Medical School, 66 participants who suffer from chronic migraines were given six envelopes, each containing a pill to be taken after their next migraine attack. Two envelopes were labelled 'Maxalt' - the brand name for the widely-used migraine drug rizatriptan - in order to generate positive expectations, while two had no label, to produce neutral expectations, and two were labelled 'placebo,' to generate negative expectations. But for each of the three labels, one envelope held a genuine rizatriptan pill, and one contained a placebo. This allowed the researchers to cross-compare the effectiveness of rizatriptan + positive expectations, rizatriptan alone, and rizatriptan + negative expectations, as well as positive, neutral and negative expectations in isolation.</p>
+                    <p><strong>F</strong> When the scientists analysed the participants' self-reported pain reductions after taking the pills, the power of the placebo was proven yet again. People who'd taken a placebo pill labelled Maxalt got just as much pain relief as those who'd taken a Maxalt pill labelled as a placebo. Additionally, people who took a Maxalt correctly labelled as Maxalt reported about twice as much pain reduction as those who took a Maxalt pill labelled as placebo. In other words, in treating a complex, chronic form of pain like migraine, the effectiveness of pure expectations was roughly equal to the effectiveness of the pharmaceutical itself.</p>
+                    <p><strong>G</strong> For a doctor, harnessing the placebo's power doesn't mean intentionally mislabelling pills. Instead, a doctor could simply provide a slightly more positive message about a treatment, lending the power of expectations to that of pharmaceuticals. 'When doctors set patients' expectations high, Maxalt becomes more effective,' lead author of the study Rami Burstein said in a press statement. Of course, this sort of intentional expectation-setting needs to be done carefully. Doctors have an ethical obligation not to mislead patients or withhold important information. But that doesn't mean that making sure to provide subtle positive cues about the effectiveness of a medication - especially when those very cues might well make it work more effectively - is a bad idea. As Ted Kaptchuk, one of the study's co-authors, put it, 'the placebo effect is an unacknowledged partner for powerful medications.'</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-17</div>
+                    <p>The text has seven paragraphs, A-G. Which paragraph contains the following information?</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>F</th>
+                                <th>G</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>14 an explanation of the neurological process by which placebos work</td>
+                                <td><label><input type="radio" name="q14" value="A"> A</label></td>
+                                <td><label><input type="radio" name="q14" value="B"> B</label></td>
+                                <td><label><input type="radio" name="q14" value="C"> C</label></td>
+                                <td><label><input type="radio" name="q14" value="D"> D</label></td>
+                                <td><label><input type="radio" name="q14" value="E"> E</label></td>
+                                <td><label><input type="radio" name="q14" value="F"> F</label></td>
+                                <td><label><input type="radio" name="q14" value="G"> G</label></td>
+                            </tr>
+                            <tr>
+                                <td>15 the origin of the word 'placebo'</td>
+                                <td><label><input type="radio" name="q15" value="A"> A</label></td>
+                                <td><label><input type="radio" name="q15" value="B"> B</label></td>
+                                <td><label><input type="radio" name="q15" value="C"> C</label></td>
+                                <td><label><input type="radio" name="q15" value="D"> D</label></td>
+                                <td><label><input type="radio" name="q15" value="E"> E</label></td>
+                                <td><label><input type="radio" name="q15" value="F"> F</label></td>
+                                <td><label><input type="radio" name="q15" value="G"> G</label></td>
+                            </tr>
+                            <tr>
+                                <td>16 a recommendation as to how medical professionals can take advantage of the placebo effect</td>
+                                <td><label><input type="radio" name="q16" value="A"> A</label></td>
+                                <td><label><input type="radio" name="q16" value="B"> B</label></td>
+                                <td><label><input type="radio" name="q16" value="C"> C</label></td>
+                                <td><label><input type="radio" name="q16" value="D"> D</label></td>
+                                <td><label><input type="radio" name="q16" value="E"> E</label></td>
+                                <td><label><input type="radio" name="q16" value="F"> F</label></td>
+                                <td><label><input type="radio" name="q16" value="G"> G</label></td>
+                            </tr>
+                            <tr>
+                                <td>17 mention of how the appearance of placebos can affect how well they work</td>
+                                <td><label><input type="radio" name="q17" value="A"> A</label></td>
+                                <td><label><input type="radio" name="q17" value="B"> B</label></td>
+                                <td><label><input type="radio" name="q17" value="C"> C</label></td>
+                                <td><label><input type="radio" name="q17" value="D"> D</label></td>
+                                <td><label><input type="radio" name="q17" value="E"> E</label></td>
+                                <td><label><input type="radio" name="q17" value="F"> F</label></td>
+                                <td><label><input type="radio" name="q17" value="G"> G</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 18-24</div>
+                    <p>Complete the sentences below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>18 <span class="question-anchor" data-question-anchor="18"></span>It appears that placebos can treat or reduce the <input type="text" name="q18" placeholder="18" class="input-field inline-input"> of a wide range of conditions.</p>
+                    <p>19 <span class="question-anchor" data-question-anchor="19"></span>The placebo effect happens when our <input type="text" name="q19" placeholder="19" class="input-field inline-input"> has an effect on how our body feels.</p>
+                    <p>20 <span class="question-anchor" data-question-anchor="20"></span>Doctors have long believed it to be their responsibility not only to treat patients' medical conditions, but also to improve their <input type="text" name="q20" placeholder="20" class="input-field inline-input">.</p>
+                    <p>21 <span class="question-anchor" data-question-anchor="21"></span>An example of a situation where a placebo has little or no effect is if a patient has an <input type="text" name="q21" placeholder="21" class="input-field inline-input">.</p>
+                    <p>22 <span class="question-anchor" data-question-anchor="22"></span>It has been shown that patients will feel <input type="text" name="q22" placeholder="22" class="input-field inline-input"> in their muscles if they are given a placebo called a muscle stimulator.</p>
+                    <p>23 <span class="question-anchor" data-question-anchor="23"></span>A related phenomenon, known as the <input type="text" name="q23" placeholder="23" class="input-field inline-input"> effect, convinces people that a treatment will do them harm.</p>
+                    <p>24 <span class="question-anchor" data-question-anchor="24"></span>Two factors which influence the effectiveness of a placebo pill are its <input type="text" name="q24" placeholder="24" class="input-field inline-input"> and its size.</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 25-26</div>
+                    <p>Choose <strong>TWO</strong> correct answers.</p>
+                    <p>Which TWO findings were observed in the Harvard Medical School study?</p>
+                    <div class="question" data-question="25">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="25"></span><span class="question-anchor" data-question-anchor="26"></span>25-26 Select TWO options</div>
+                        <div class="options">
+                            <label><input type="checkbox" name="q25_26" value="A"> Placebos taken with the patient's knowledge were reported as less effective than those taken without their knowledge.</label>
+                            <label><input type="checkbox" name="q25_26" value="B"> People who took Maxalt without realising it reported less pain relief than those who were aware they were taking it.</label>
+                            <label><input type="checkbox" name="q25_26" value="C"> Where pills had misleading labels, the placebo and the genuine drug appeared to produce a similar level of pain relief.</label>
+                            <label><input type="checkbox" name="q25_26" value="D"> Maxalt without a label and Maxalt labelled as a placebo appeared to be equally effective.</label>
+                            <label><input type="checkbox" name="q25_26" value="E"> People who were given no indication of what they were taking reported the lowest levels of pain relief.</label>
+                        </div>
+                        <input type="text" name="q25" class="input-field" style="display:none;" aria-hidden="true">
+                        <input type="text" name="q26" class="input-field" style="display:none;" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+<!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3.</strong></p>
+                    <h3>Rewilding</h3>
+                    <p>Ecologist Derek Gow looks at the challenges of 'rewilding' - restoring areas of land to the wild and reintroducing their original animal species.</p>
+                    <p>In Holland they have developed a creative landscape philosophy called 'New Nature', and the most iconic illustration of this is the site called the Oostvaardersplassen, near Amsterdam. Here, throughout 6,000 enclosed hectares, feral Heck bulls excavate amphibian ponds with their hooves and horns, while stags and stallions battle fiercely for possession of herds of females. These creatures present a living vision that many 'rewilders' adore. Although this project may present a primeval impression, in reality it is a completely artificial though courageous creation, limited by fences, budgets, an adjacent main railway line, surrounding land users and fickle political support. Less than a lifetime ago the landscape these 'wild' herbivores now occupy was the bed of the North Sea.</p>
+                    <p>Despite the contention that surrounds such projects, the Oostvaardersplassen has produced some inspirational results. Spoonbills have returned to breed in ever increasing numbers, creating a surplus population which has overlapped back into Britain. Sea eagles have raised their first nestlings in centuries, nourished by the ample supply of deer that the site affords. Projects of this type, which restore key species or re-engineer landscapes to allow natural processes such as seasonal flooding or forest fires to reoccur, have demonstrated that when nature is given free rein, the results which arise can be truly spectacular. Are we, however, prepared to live in landscapes where these processes, even if appropriately modified, become part of our own experience?</p>
+                    <p>While space is without a doubt one of the biggest obstacles facing rewilders, a range of structural, social and cultural issues can also conspire to hinder change. As an example, I have been involved with the restoration of the Eurasian beaver - a large rodent that builds complex structures from wood, stones and mud across rivers - in Britain since the early 1990s. Although they once had a world range which extended from Britain to China and numbered tens of millions, beavers were hunted virtually to extinction by humans as a result of an insatiable demand for their fur, scent glands and meat. They have been widely reintroduced throughout much of their former European range as an awareness of their critical function in the creation of wetland habitats has developed. Beaver-generated landscapes also play a significant part in the retention and purification of water. There is an abundance of entirely suitable beaver habitat available in Britain, and despite the fact that occasional conflicts will arise between beavers' engineering activities and human land use, European experience again demonstrates quite ably that these conflicts are manageable. Despite this well-established knowledge, the restoration of beavers in Britain has proven to be a pitifully slow process. Political apathy and indifference have coupled with the total lack of knowledge of opponents who simply want no change to the status quo. The official trials in Scotland and England have focused on the creation of tiny populations which remain extremely fragile.</p>
+                    <p>If a species as benevolent as the beaver presents a significant challenge, then how much more difficult will it be to restore predators? While science and experience may dictate that wolves pose no significant threat to humans, their tentative re-colonisation of many western European countries over the course of the last few decades has often evoked a primal response. Farmers' groups have trapped them in pits in France and burnt them to death; hunters have poisoned them for killing 'their' deer; kindergarten teachers have implored forest authorities to remove them from the landscape to ensure that this medieval menace does not lurk in the dark when their tiny children go to school on a winter's morning. Attitude change, it would seem, is a slow and painful process, one not easily turned round by knowledge.</p>
+                    <p>Any start to rewilding is therefore likely to be humble. Despite a measured approach, it is probable that fishermen and their strident support groups may not welcome the addition of the pelican, a 15kg water bird, to the large number of predators which they already detest. The scientific community may dislike the pragmatism required on a semi-industrial scale to restore small species to remake the base of essential food chains if newly available habitats emerge. Many farmers, despite the sums they would be paid, will not wish to see their once-drained bogs rehydrated, their dead animals consumed by sea eagles or their pastures revert to scrub.</p>
+                    <p>In the end it comes down to changing patterns. We have moulded the landscapes of the world as a species to suit our own passing needs, predilections and pleasures. While change is commonly opposed on whatever basis arises, change is nevertheless a constant in life. It is likely that 'rewilding' or 'New Nature' - call it what you will - could become a base movement which affords a fresh opportunity to approach nature conservation in a fashion which will, over time, be all the more rewarding for the surprises it presents.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <p>Choose the correct letter, A, B, C or D.</p>
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 <span class="question-anchor" data-question-anchor="27"></span>What does the writer say about the Oostvaardersplassen in the first paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A. It is not a typical example of a successful rewilding project.</label>
+                            <label><input type="radio" name="q27" value="B"> B. It is not an ecologically sustainable project in the long term.</label>
+                            <label><input type="radio" name="q27" value="C"> C. It is not a true reconstruction of how the area originally was.</label>
+                            <label><input type="radio" name="q27" value="D"> D. It is not faithful to the principles of its underlying philosophy.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 <span class="question-anchor" data-question-anchor="28"></span>What is the writer's attitude towards the Oostvaardersplassen?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A. admiration for what it has achieved</label>
+                            <label><input type="radio" name="q28" value="B"> B. disappointment over its inevitable limitations</label>
+                            <label><input type="radio" name="q28" value="C"> C. optimism that the project will be imitated elsewhere</label>
+                            <label><input type="radio" name="q28" value="D"> D. concern about the choice of species introduced there</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 <span class="question-anchor" data-question-anchor="29"></span>What point about beavers is emphasised in the third paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A. Their numbers are falling dramatically.</label>
+                            <label><input type="radio" name="q29" value="B"> B. They play a key role within local ecosystems.</label>
+                            <label><input type="radio" name="q29" value="C"> C. They require a very specific kind of habitat in order to survive.</label>
+                            <label><input type="radio" name="q29" value="D"> D. There are environmental problems associated with their reintroduction.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 <span class="question-anchor" data-question-anchor="30"></span>The writer refers to beavers in the fourth paragraph in order to provide an</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A. indication of the likely resistance to the reintroduction of other species.</label>
+                            <label><input type="radio" name="q30" value="B"> B. illustration of a species that urgently needs to be restored to its habitat.</label>
+                            <label><input type="radio" name="q30" value="C"> C. example of some lessons learnt about how not to try to reintroduce species.</label>
+                            <label><input type="radio" name="q30" value="D"> D. example of a species whose restoration has faced more problems than most.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 <span class="question-anchor" data-question-anchor="31"></span>By putting inverted commas ' ' around the word 'their' in line 49, the writer suggests that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A. he has some sympathy for the hunters' situation.</label>
+                            <label><input type="radio" name="q31" value="B"> B. there is some doubt as to who the deer belong to.</label>
+                            <label><input type="radio" name="q31" value="C"> C. restoration of wolves caused harm to local wildlife.</label>
+                            <label><input type="radio" name="q31" value="D"> D. the hunters have no right to claim ownership of the deer.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-36</div>
+                    <p>Complete the summary using the list of words, A - H, below. Write the correct letter in boxes 32-36 on your answer sheet.</p>
+                    <p>Problems of Rewilding Projects</p>
+                    <p>Rewilding projects have to deal with numerous challenges. For example, the reintroduction of beavers to Britain has faced <span class="question-anchor" data-question-anchor="32"></span><span class="drop-zone" data-target="q32" data-placeholder="32" data-group="rewilding-summary"></span> from government ministers together with <span class="question-anchor" data-question-anchor="33"></span><span class="drop-zone" data-target="q33" data-placeholder="33" data-group="rewilding-summary"></span> on the part of opponents to the scheme. Where wolves have been reintroduced in western Europe, there has been widespread <span class="question-anchor" data-question-anchor="34"></span><span class="drop-zone" data-target="q34" data-placeholder="34" data-group="rewilding-summary"></span> against these animals, despite clear <span class="question-anchor" data-question-anchor="35"></span><span class="drop-zone" data-target="q35" data-placeholder="35" data-group="rewilding-summary"></span> that the species poses virtually no <span class="question-anchor" data-question-anchor="36"></span><span class="drop-zone" data-target="q36" data-placeholder="36" data-group="rewilding-summary"></span> to them.</p>
+                    <p class="hint-text">Drag the correct letter from the list below and drop it onto the matching gap.</p>
+                    <div class="drag-options" data-group="rewilding-summary">
+                        <div class="drag-item" data-option="rewilding-A" data-answer="A" data-label="advice" data-group="rewilding-summary">A. advice</div>
+                        <div class="drag-item" data-option="rewilding-B" data-answer="B" data-label="ignorance" data-group="rewilding-summary">B. ignorance</div>
+                        <div class="drag-item" data-option="rewilding-C" data-answer="C" data-label="danger" data-group="rewilding-summary">C. danger</div>
+                        <div class="drag-item" data-option="rewilding-D" data-answer="D" data-label="wildlife" data-group="rewilding-summary">D. wildlife</div>
+                        <div class="drag-item" data-option="rewilding-E" data-answer="E" data-label="damage" data-group="rewilding-summary">E. damage</div>
+                        <div class="drag-item" data-option="rewilding-F" data-answer="F" data-label="prejudice" data-group="rewilding-summary">F. prejudice</div>
+                        <div class="drag-item" data-option="rewilding-G" data-answer="G" data-label="evidence" data-group="rewilding-summary">G. evidence</div>
+                        <div class="drag-item" data-option="rewilding-H" data-answer="H" data-label="disinterest" data-group="rewilding-summary">H. disinterest</div>
+                    </div>
+                    <input type="text" name="q32" style="display:none;">
+                    <input type="text" name="q33" style="display:none;">
+                    <input type="text" name="q34" style="display:none;">
+                    <input type="text" name="q35" style="display:none;">
+                    <input type="text" name="q36" style="display:none;">
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Do the following statements agree with the claims of the writer in the text? Write <strong>YES</strong> if it agrees, <strong>NO</strong> if it contradicts, or <strong>NOT GIVEN</strong> if it is impossible to say.</p>
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 <span class="question-anchor" data-question-anchor="37"></span>Beaver restoration in Britain is being held back by a lack of appropriate land.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="YES"> YES</label>
+                            <label><input type="radio" name="q37" value="NO"> NO</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text">38 <span class="question-anchor" data-question-anchor="38"></span>Scientists have tried to persuade local residents of the benefits of restoring wolves.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="YES"> YES</label>
+                            <label><input type="radio" name="q38" value="NO"> NO</label>
+                            <label><input type="radio" name="q38" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text">39 <span class="question-anchor" data-question-anchor="39"></span>Financial incentives will encourage most farmers to welcome rewilding on their land.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="YES"> YES</label>
+                            <label><input type="radio" name="q39" value="NO"> NO</label>
+                            <label><input type="radio" name="q39" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text">40 <span class="question-anchor" data-question-anchor="40"></span>The results of rewilding will be unpredictable.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="YES"> YES</label>
+                            <label><input type="radio" name="q40" value="NO"> NO</label>
+                            <label><input type="radio" name="q40" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_20',
+            label: 'Reading Full 20',
+            correctAnswers: {
+            q1: "SHARP",
+            q2: "UNIQUE",
+            q3: "SIMPLE",
+            q4: "NEGATIVE",
+            q5: "SKILL",
+            q6: "COLOURS",
+            q7: "SILVER",
+            q8: "TRUE",
+            q9: "TRUE",
+            q10: "FALSE",
+            q11: "TRUE",
+            q12: "TRUE",
+            q13: "NOT GIVEN",
+            q14: "D",
+            q15: "B",
+            q16: "G",
+            q17: "C",
+            q18: "SYMPTOMS",
+            q19: "BRAIN",
+            q20: "MORALE",
+            q21: "INFECTION",
+            q22: "TENSION",
+            q23: "NOCEBO",
+            q24: "COLOUR",
+            q25: "B",
+            q26: "C",
+            q27: "C",
+            q28: "A",
+            q29: "B",
+            q30: "A",
+            q31: "D",
+            q32: "H",
+            q33: "B",
+            q34: "F",
+            q35: "G",
+            q36: "C",
+            q37: "NO",
+            q38: "NOT GIVEN",
+            q39: "NO",
+            q40: "YES"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-20.js?v=20260731-reading-clear-20-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-20-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

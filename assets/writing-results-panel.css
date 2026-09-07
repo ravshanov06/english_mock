@@ -1,0 +1,275 @@
+/* Writing Results Panel — appears after Writing submission */
+
+.wr-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  background: rgba(8, 16, 32, 0.62);
+  backdrop-filter: blur(3px);
+  z-index: 1450;
+  padding: 24px 16px;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.wr-modal.is-open { display: flex; }
+
+.wr-card {
+  width: min(560px, 100%);
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #d6e1f5;
+  box-shadow: 0 28px 60px rgba(18, 36, 70, 0.32);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #1a2540;
+  margin: auto 0;
+}
+
+.wr-head {
+  padding: 22px 24px 14px;
+  text-align: center;
+  border-bottom: 1px solid #eaf0fb;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+}
+.wr-head h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #1a2540;
+}
+.wr-head-sub {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  color: #5c6a8c;
+}
+
+.wr-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 18px 22px;
+  background: #f8faff;
+}
+.wr-cell {
+  background: #fff;
+  border: 1px solid #e1e8f6;
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+}
+.wr-cell-value {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #18a266;
+  line-height: 1.1;
+}
+.wr-cell-label {
+  font-size: 0.78rem;
+  color: #5c6a8c;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.wr-body {
+  padding: 4px 22px 12px;
+}
+.wr-question {
+  text-align: center;
+  margin: 6px 0 14px;
+  font-size: 0.95rem;
+  color: #1a2540;
+  font-weight: 700;
+}
+
+.wr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 22px 22px;
+}
+.wr-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 18px;
+  border-radius: 12px;
+  border: 1px solid #c8d3eb;
+  background: #fff;
+  color: #1f3268;
+  font-weight: 700;
+  font-size: 0.98rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.wr-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(31,50,104,.14); }
+.wr-btn-pdf {
+  border-color: #18a266;
+  background: linear-gradient(135deg, #1ec27a, #138c55);
+  color: #fff;
+}
+.wr-btn-primary {
+  border-color: #3b6cd6;
+  background: linear-gradient(135deg, #3b6cd6, #6a3fd6);
+  color: #fff;
+}
+.wr-btn-feedback {
+  border-color: #3b6cd6;
+  background: linear-gradient(135deg, #3b6cd6, #6a3fd6);
+  color: #fff;
+}
+.wr-btn-secondary {
+  border-color: #c8d3eb;
+  background: #fff;
+  color: #1f3268;
+}
+.wr-btn-close {
+  border-color: #b9c2d4;
+  background: #5a6781;
+  color: #fff;
+}
+
+/* Floating "AI Writing Feedback" button is mounted by writing engine — we
+   leave it alone; styles below are only for the modal/print path. */
+
+/* ------------- Print / PDF sheet with watermark ------------- */
+#writingPrintSheet {
+  /* Hidden by default; shown only during print. */
+  display: none;
+}
+
+@media print {
+  /* Hide the whole UI; only show the print sheet. */
+  body > *:not(#writingPrintSheet) { display: none !important; }
+  body { background: #fff !important; }
+  #writingPrintSheet {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #111;
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Watermark: a large, evenly-tiled diagonal "IELTSwithJurabek" pattern
+     that stays clearly visible behind the content on every PDF page while
+     still feeling like a watermark (not opaque). */
+  #writingPrintSheet::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320'><g transform='rotate(-28 260 160)'><text x='0' y='200' fill='%231f3268' fill-opacity='0.14' font-family='Helvetica, Arial, sans-serif' font-size='58' font-weight='800' letter-spacing='3'>IELTSwithJurabek</text></g></svg>");
+    background-repeat: repeat;
+    background-size: 520px 320px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  #writingPrintSheet > * { position: relative; z-index: 1; }
+
+  .wr-print-header {
+    text-align: center;
+    border-bottom: 2pt solid #1f3268;
+    padding-bottom: 10pt;
+    margin-bottom: 18pt;
+  }
+  .wr-print-brand {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #1f3268;
+    letter-spacing: 0.6pt;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  .wr-print-sub {
+    font-size: 10pt;
+    color: #444;
+    margin-top: 4pt;
+  }
+  .wr-print-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10pt;
+    font-size: 10pt;
+    color: #2a2a2a;
+    margin-bottom: 18pt;
+    padding: 8pt 12pt;
+    background: #f3f6fd;
+    border: 1px solid #cfd9ee;
+    border-radius: 4pt;
+  }
+  .wr-print-meta strong { color: #1f3268; }
+  .wr-print-task {
+    page-break-inside: avoid;
+    margin-bottom: 20pt;
+  }
+  .wr-print-task + .wr-print-task { page-break-before: always; }
+  .wr-print-task h2 {
+    font-size: 15pt;
+    color: #1f3268;
+    margin: 0 0 6pt;
+    border-left: 4pt solid #3b6cd6;
+    padding-left: 10pt;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.3pt;
+  }
+  .wr-print-task .wr-print-meta-mini {
+    font-size: 9.5pt;
+    color: #555;
+    margin-bottom: 10pt;
+    font-style: italic;
+  }
+  .wr-print-task .wr-print-essay {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 1.75;
+    padding: 8pt 0;
+    color: #111;
+  }
+  .wr-print-task .wr-print-prompt {
+    background: rgba(247, 249, 254, 0.92);
+    border-left: 3pt solid #1f3268;
+    padding: 8pt 12pt;
+    margin-bottom: 12pt;
+    font-size: 10pt;
+    color: #2a3554;
+  }
+  .wr-print-task .wr-print-prompt img {
+    max-width: 88%;
+    height: auto;
+    display: block;
+    margin: 8pt auto;
+  }
+  .wr-print-footer {
+    margin-top: 24pt;
+    border-top: 1px solid #cfd9ee;
+    padding-top: 8pt;
+    font-size: 9pt;
+    color: #666;
+    text-align: center;
+  }
+
+  @page {
+    margin: 18mm 16mm;
+    size: A4 portrait;
+  }
+}
+
+@media (max-width: 520px) {
+  .wr-summary { grid-template-columns: 1fr 1fr; }
+}

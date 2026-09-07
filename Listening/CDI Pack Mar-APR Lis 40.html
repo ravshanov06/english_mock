@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="CDI Pack Mar-APR Lis 40 on IELTS Materials. Practice CDI Pack Mar-APR Lis 40 with IELTS listening tasks, timed format, saved progress, and answer review.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ieltsmaterials.uz/Listening/CDI%20Pack%20Mar-APR%20Lis%2040.html">
+    <link rel="icon" type="image/png" href="/assets/brand-logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="CDI Pack Mar-APR Lis 40 | IELTS Listening Practice">
+    <meta property="og:description" content="CDI Pack Mar-APR Lis 40 on IELTS Materials. Practice CDI Pack Mar-APR Lis 40 with IELTS listening tasks, timed format, saved progress, and answer review.">
+    <meta property="og:url" content="https://ieltsmaterials.uz/Listening/CDI%20Pack%20Mar-APR%20Lis%2040.html">
+    <title>CDI Pack Mar-APR Lis 40 | IELTS Listening Practice</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/listening-full-test-cde038db.css">
+    <link rel="stylesheet" href="../assets/listening-transcript.css?v=20260729-all-tests">
+</head>
+
+
+
+
+<body>
+        <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">Review mode - use this player to re-listen while checking your answers.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto"></audio>
+    </div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="../listening.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                <div class="part-title-wrapper">
+                   
+                <h1 class="part-title" id="partTitle">SECTION 1</h1>
+            </div>
+                <p class="part-instructions" id="partInstructions">Listen and answer questions 1-10.</p>
+            </div>
+            <!-- Questions Section -->
+            <div class="questions-section">
+                <h2 class="questions-title" id="questionsTitle">Questions 1-40</h2>
+                <p class="questions-description selectable-text" id="questionsDescription">Follow the instructions for each section and enter the correct responses.</p>
+
+                <!-- Part 1 Content -->
+                <div id="part1Content">
+                    <div class="section-instructions">
+                        <div class="section4-header-row selectable-text">
+                            <span>SECTION 1</span>
+                            <span>Listen and answer questions 1-10.</span>
+                        </div>
+                        <p class="section4-intro selectable-text">Complete the form.</p>
+                        <p class="section4-intro selectable-text" style="margin-bottom: 18px;">Write <strong>ONE WORD AND/OR A NUMBER</strong> for each answer.</p>
+                    </div>
+                    <div class="question-group notes-board exam-sheet section4-box">
+                        <div class="section4-title selectable-text">Weekend Course Booking Form</div>
+                        <div class="form-card" style="margin:12px 0 0;">
+                            <p class="selectable-text"><strong>Booking for:</strong> a guitar workshop</p>
+                            <p class="selectable-text"><strong>Start date:</strong> <span class="inline-answer"><span class="qno">1</span><input type="text" class="question-input line-input" id="q1" oninput="saveAnswer(1, this.value)" aria-label="Question 1 answer"></span></p>
+                            <p class="selectable-text"><strong>Course code:</strong> <span class="inline-answer"><span class="qno">2</span><input type="text" class="question-input line-input" id="q2" oninput="saveAnswer(2, this.value)" aria-label="Question 2 answer"></span></p>
+                            <p class="selectable-text"><strong>Previous course attended:</strong> Editing <span class="inline-answer"><span class="qno">3</span><input type="text" class="question-input line-input" id="q3" oninput="saveAnswer(3, this.value)" aria-label="Question 3 answer"></span></p>
+                            <p class="selectable-text"><strong>Name:</strong> Nick <span class="inline-answer"><span class="qno">4</span><input type="text" class="question-input line-input" id="q4" oninput="saveAnswer(4, this.value)" aria-label="Question 4 answer"></span></p>
+                            <p class="selectable-text"><strong>Address:</strong> 27 Hawthorn <span class="inline-answer"><span class="qno">5</span><input type="text" class="question-input line-input" id="q5" oninput="saveAnswer(5, this.value)" aria-label="Question 5 answer"></span>, Bristol, BS4 2QG</p>
+                            <p class="selectable-text"><strong>Contact number:</strong> 07707 438297</p>
+                            <p class="selectable-text"><strong>Age:</strong> 26</p>
+                            <p class="selectable-text"><strong>Occupation:</strong> <span class="inline-answer"><span class="qno">6</span><input type="text" class="question-input line-input" id="q6" oninput="saveAnswer(6, this.value)" aria-label="Question 6 answer"></span></p>
+                            <p class="selectable-text"><strong>Dietary requests:</strong> no <span class="inline-answer"><span class="qno">7</span><input type="text" class="question-input line-input" id="q7" oninput="saveAnswer(7, this.value)" aria-label="Question 7 answer"></span></p>
+                            <p class="selectable-text"><strong>One-to-one lesson selected:</strong> <span class="inline-answer"><span class="qno">8</span><input type="text" class="question-input line-input" id="q8" oninput="saveAnswer(8, this.value)" aria-label="Question 8 answer"></span> guitar</p>
+                            <p class="selectable-text"><strong>First heard about us from:</strong> a <span class="inline-answer"><span class="qno">9</span><input type="text" class="question-input line-input" id="q9" oninput="saveAnswer(9, this.value)" aria-label="Question 9 answer"></span></p>
+                            <p class="selectable-text"><strong>Additional request:</strong> would like <span class="inline-answer"><span class="qno">10</span><input type="text" class="question-input line-input" id="q10" oninput="saveAnswer(10, this.value)" aria-label="Question 10 answer"></span> if possible</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Content -->
+                <div id="part2Content" class="hidden">
+                    <div class="section-instructions">
+                        <div class="section4-header-row selectable-text">
+                            <span>SECTION 2</span>
+                            <span>Listen and answer questions 11-20.</span>
+                        </div>
+                    </div>
+                    <div class="question-group notes-board">
+                        <div class="notes-heading">Questions 11-15</div>
+                        <p class="selectable-text">What is the main attraction in each of the following areas of the festival?</p>
+                        <p class="selectable-text">Choose the correct answer.</p>
+                        <div class="section4-title selectable-text">Dentford Festival</div>
+                        <div class="matching-layout compact-options">
+                            <div class="drop-column">
+                                <div class="matching-title selectable-text">Area</div>
+                                <div class="drop-item"><span class="selectable-text">11 Bridge Street</span><div class="drop-zone" data-target="q11" data-placeholder="Drop A-G here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">12 King's Park</span><div class="drop-zone" data-target="q12" data-placeholder="Drop A-G here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">13 Oakvale School</span><div class="drop-zone" data-target="q13" data-placeholder="Drop A-G here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">14 Green Road</span><div class="drop-zone" data-target="q14" data-placeholder="Drop A-G here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">15 Sun Lane</span><div class="drop-zone" data-target="q15" data-placeholder="Drop A-G here"></div></div>
+                            </div>
+                            <div class="options-column">
+                                <div class="matching-title selectable-text">Attractions</div>
+                                <div class="drag-options vertical">
+                                    <div class="drag-item" draggable="true" data-option="opt17A" data-answer="A" data-label="A talks about gardening">A talks about gardening</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17B" data-answer="B" data-label="B live music">B live music</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17C" data-answer="C" data-label="C an art exhibition">C an art exhibition</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17D" data-answer="D" data-label="D a children's playground">D a children's playground</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17E" data-answer="E" data-label="E evening entertainment">E evening entertainment</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17F" data-answer="F" data-label="F a competition for adults">F a competition for adults</div>
+                                    <div class="drag-item" draggable="true" data-option="opt17G" data-answer="G" data-label="G vegetable market">G vegetable market</div>
+                                </div>
+                                <div class="drag-options"></div>
+                            </div>
+                        </div>
+
+                        <div class="notes-heading" style="margin-top: 18px;">Questions 16-20</div>
+                        <p class="selectable-text">Choose the correct answer.</p>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">16 What does Sam say about the festival tickets?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q16" value="A" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">A They allow you to get into all the festival events.</span></label>
+                                <label class="choice-item"><input type="radio" name="q16" value="B" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">B They are more expensive to buy on the day.</span></label>
+                                <label class="choice-item"><input type="radio" name="q16" value="C" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">C They have nearly all been sold.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">17 On the last night of the festival, visitors will be able to</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q17" value="A" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">A take part in a dance.</span></label>
+                                <label class="choice-item"><input type="radio" name="q17" value="B" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">B go to a theatre performance.</span></label>
+                                <label class="choice-item"><input type="radio" name="q17" value="C" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">C watch some fireworks.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">18 What will be provided for international visitors?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q18" value="A" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">A discounts on accommodation.</span></label>
+                                <label class="choice-item"><input type="radio" name="q18" value="B" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">B tours of the local area.</span></label>
+                                <label class="choice-item"><input type="radio" name="q18" value="C" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">C a guide written in different languages.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">19 What information is given about car park A?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q19" value="A" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">A It is bigger than car park B.</span></label>
+                                <label class="choice-item"><input type="radio" name="q19" value="B" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">B It is closer to town than car park B.</span></label>
+                                <label class="choice-item"><input type="radio" name="q19" value="C" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">C It will close earlier than car park B.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">20 What change have the organisers made to the programme this year?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q20" value="A" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">A replacing the programme with an app</span></label>
+                                <label class="choice-item"><input type="radio" name="q20" value="B" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">B reducing the number of programmes printed</span></label>
+                                <label class="choice-item"><input type="radio" name="q20" value="C" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">C introducing a charge for the programmes</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Content -->
+                <div id="part3Content" class="hidden">
+                    <div class="section-instructions">
+                        <div class="section4-header-row selectable-text">
+                            <span>SECTION 3</span>
+                            <span>Listen and answer questions 21-30.</span>
+                        </div>
+                    </div>
+                    <div class="question-group notes-board exam-sheet section4-box">
+                        <div class="section4-title selectable-text">Action Research Course for Practising Teachers</div>
+                        <div class="notes-heading">Questions 21-23</div>
+                        <p class="selectable-text">Complete the notes.</p>
+                        <p class="selectable-text">Write <strong>NO MORE THAN TWO WORDS</strong> for each answer.</p>
+                        <div class="form-card" style="margin:12px 0 18px;">
+                            <p class="selectable-text"><strong>Course leader:</strong> Alan Cummer (get his recent book called '<span class="inline-answer"><span class="qno">21</span><input type="text" class="question-input line-input" id="q21" oninput="saveAnswer(21, this.value)" aria-label="Question 21 answer"></span>')</p>
+                            <p class="selectable-text sheet-strong" style="margin:16px 0 8px;">Course objectives - to develop skills in:</p>
+                            <div class="star-line"><span class="star selectable-text">-</span><div class="selectable-text">using different research techniques</div></div>
+                            <div class="star-line"><span class="star selectable-text">-</span><div class="selectable-text">researching as part of a <span class="inline-answer"><span class="qno">22</span><input type="text" class="question-input line-input" id="q22" oninput="saveAnswer(22, this.value)" aria-label="Question 22 answer"></span></div></div>
+                            <div class="star-line"><span class="star selectable-text">-</span><div class="selectable-text"><span class="inline-answer"><span class="qno">23</span><input type="text" class="question-input line-input" id="q23" oninput="saveAnswer(23, this.value)" aria-label="Question 23 answer"></span> (in a collaborative culture)</div></div>
+                        </div>
+
+                        <div class="notes-heading">Questions 24-27</div>
+                        <p class="selectable-text">Complete the table.</p>
+                        <p class="selectable-text">Write <strong>NO MORE THAN TWO WORDS</strong> for each answer.</p>
+                        <div class="table-panel" style="margin-top:12px;">
+                            <table class="course-table">
+                                <thead>
+                                    <tr>
+                                        <th>Observational Techniques</th>
+                                        <th>Additional Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="selectable-text">Using observation checklists</td>
+                                        <td class="selectable-text">To record aspects of lesson, e.g. <span class="inline-answer"><span class="qno">24</span><input type="text" class="question-input line-input" id="q24" oninput="saveAnswer(24, this.value)" aria-label="Question 24 answer"></span> of pupils</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="selectable-text">Writing a <span class="inline-answer"><span class="qno">25</span><input type="text" class="question-input line-input" id="q25" oninput="saveAnswer(25, this.value)" aria-label="Question 25 answer"></span></td>
+                                        <td class="selectable-text">Used to improve skill of reflection</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="inline-answer"><span class="qno">26</span><input type="text" class="question-input line-input" id="q26" oninput="saveAnswer(26, this.value)" aria-label="Question 26 answer"></span></td>
+                                        <td class="selectable-text">Try out on fellow students (in classroom <span class="inline-answer"><span class="qno">27</span><input type="text" class="question-input line-input" id="q27" oninput="saveAnswer(27, this.value)" aria-label="Question 27 answer"></span>)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="notes-heading" style="margin-top:18px;">Questions 28-30</div>
+                        <p class="selectable-text">Complete the table.</p>
+                        <p class="selectable-text">Write <strong>NO MORE THAN TWO WORDS</strong> for each answer.</p>
+                        <div class="table-panel" style="margin-top:12px;">
+                            <table class="course-table">
+                                <thead>
+                                    <tr>
+                                        <th>Non-Observational Techniques</th>
+                                        <th>Additional Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="selectable-text">Analysing <span class="inline-answer"><span class="qno">28</span><input type="text" class="question-input line-input" id="q28" oninput="saveAnswer(28, this.value)" aria-label="Question 28 answer"></span></td>
+                                        <td class="selectable-text">Use statistics based on own students</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="selectable-text">Using questionnaires</td>
+                                        <td class="selectable-text">Use the <span class="inline-answer"><span class="qno">29</span><input type="text" class="question-input line-input" id="q29" oninput="saveAnswer(29, this.value)" aria-label="Question 29 answer"></span> to find respondents</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="selectable-text">Using <span class="inline-answer"><span class="qno">30</span><input type="text" class="question-input line-input" id="q30" oninput="saveAnswer(30, this.value)" aria-label="Question 30 answer"></span></td>
+                                        <td class="selectable-text">Own choice of respondents</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4 Content -->
+                <div id="part4Content" class="hidden">
+                    <div class="section-instructions">
+                        <div class="section4-header-row selectable-text">
+                            <span>SECTION 4</span>
+                            <span>Listen and answer questions 31-40.</span>
+                        </div>
+                    </div>
+                    <div class="question-group notes-board">
+                        <div class="notes-heading">Questions 31-33</div>
+                        <p class="selectable-text">Choose the correct answer.</p>
+                        <div class="section4-title selectable-text">Digital Technology in Education</div>
+
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">31 What impact does Marc Prensky believe that digital technology has had on young people?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q31" value="A" class="choice-input" onchange="saveAnswer(31, this.value)"><span class="selectable-text">A It has altered their thinking patterns.</span></label>
+                                <label class="choice-item"><input type="radio" name="q31" value="B" class="choice-input" onchange="saveAnswer(31, this.value)"><span class="selectable-text">B It has harmed their physical development.</span></label>
+                                <label class="choice-item"><input type="radio" name="q31" value="C" class="choice-input" onchange="saveAnswer(31, this.value)"><span class="selectable-text">C It has limited their brain capacity.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">32 Digital immigrants tend to access computers</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q32" value="A" class="choice-input" onchange="saveAnswer(32, this.value)"><span class="selectable-text">A using their native language.</span></label>
+                                <label class="choice-item"><input type="radio" name="q32" value="B" class="choice-input" onchange="saveAnswer(32, this.value)"><span class="selectable-text">B less efficiently than young people.</span></label>
+                                <label class="choice-item"><input type="radio" name="q32" value="C" class="choice-input" onchange="saveAnswer(32, this.value)"><span class="selectable-text">C for less important information.</span></label>
+                            </div>
+                        </div>
+                        <div class="multiple-choice-block">
+                            <div class="selectable-text" style="font-weight:500; color:#4b5563;">33 What example is given of having a digital accent?</div>
+                            <div class="multiple-choice">
+                                <label class="choice-item"><input type="radio" name="q33" value="A" class="choice-input" onchange="saveAnswer(33, this.value)"><span class="selectable-text">A having less effective typing skills</span></label>
+                                <label class="choice-item"><input type="radio" name="q33" value="B" class="choice-input" onchange="saveAnswer(33, this.value)"><span class="selectable-text">B doing things the old-fashioned way</span></label>
+                                <label class="choice-item"><input type="radio" name="q33" value="C" class="choice-input" onchange="saveAnswer(33, this.value)"><span class="selectable-text">C being unable to understand instructions</span></label>
+                            </div>
+                        </div>
+
+                        <div class="notes-heading" style="margin-top: 18px;">Questions 34-40</div>
+                        <p class="selectable-text">Which theorist makes each of the following points?</p>
+                        <p class="selectable-text">Choose the correct group: <strong>A</strong>, <strong>B</strong>, or <strong>C</strong>. You may choose any group more than once.</p>
+                        <div class="matching-layout compact-options">
+                            <div class="drop-column">
+                                <div class="matching-title selectable-text">Points Made</div>
+                                <div class="drop-item"><span class="selectable-text">34 Current teaching methods don't work</span><div class="drop-zone" data-target="q34" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">35 Many students don't understand computers.</span><div class="drop-zone" data-target="q35" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">36 Computer technology doesn't interest all students.</span><div class="drop-zone" data-target="q36" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">37 Students can still learn the traditional way.</span><div class="drop-zone" data-target="q37" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">38 Students still need to learn research skills.</span><div class="drop-zone" data-target="q38" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">39 We should use computer games to teach.</span><div class="drop-zone" data-target="q39" data-placeholder="Drop A-C here"></div></div>
+                                <div class="drop-item"><span class="selectable-text">40 Computers can't replace educators.</span><div class="drop-zone" data-target="q40" data-placeholder="Drop A-C here"></div></div>
+                            </div>
+                            <div class="options-column">
+                                <div class="matching-title selectable-text">Theorists</div>
+                                <div class="drag-options vertical">
+                                    <div class="drag-item" draggable="true" data-option="opt21A" data-answer="A" data-label="A Allen" data-multiple="true">A Allen</div>
+                                    <div class="drag-item" draggable="true" data-option="opt21B" data-answer="B" data-label="B James" data-multiple="true">B James</div>
+                                    <div class="drag-item" draggable="true" data-option="opt21C" data-answer="C" data-label="C Vander" data-multiple="true">C Vander</div>
+                                </div>
+                                <div class="drag-options"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                        <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                    </div>
+                </div>
+                </div>
+<!-- Bottom Navigation -->
+        <div class="bottom-navigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+                    <button class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 1</button>
+                    <div class="question-numbers" id="part1Questions">
+                        <button class="question-number" onclick="focusQuestion(1)">1</button>
+                        <button class="question-number" onclick="focusQuestion(2)">2</button>
+                        <button class="question-number" onclick="focusQuestion(3)">3</button>
+                        <button class="question-number" onclick="focusQuestion(4)">4</button>
+                        <button class="question-number" onclick="focusQuestion(5)">5</button>
+                        <button class="question-number" onclick="focusQuestion(6)">6</button>
+                        <button class="question-number" onclick="focusQuestion(7)">7</button>
+                        <button class="question-number" onclick="focusQuestion(8)">8</button>
+                        <button class="question-number" onclick="focusQuestion(9)">9</button>
+                        <button class="question-number" onclick="focusQuestion(10)">10</button>
+                    </div>
+                </div>
+                <div class="part-nav-item">
+                    <button class="part-button" onclick="switchPart(1)" id="part2Btn">Part 2</button>
+                    <div class="question-numbers hidden" id="part2Questions">
+                        <button class="question-number" onclick="focusQuestion(11)">11</button>
+                        <button class="question-number" onclick="focusQuestion(12)">12</button>
+                        <button class="question-number" onclick="focusQuestion(13)">13</button>
+                        <button class="question-number" onclick="focusQuestion(14)">14</button>
+                        <button class="question-number" onclick="focusQuestion(15)">15</button>
+                        <button class="question-number" onclick="focusQuestion(16)">16</button>
+                        <button class="question-number" onclick="focusQuestion(17)">17</button>
+                        <button class="question-number" onclick="focusQuestion(18)">18</button>
+                        <button class="question-number" onclick="focusQuestion(19)">19</button>
+                        <button class="question-number" onclick="focusQuestion(20)">20</button>
+                    </div>
+                </div>
+                <div class="part-nav-item">
+                    <button class="part-button" onclick="switchPart(2)" id="part3Btn">Part 3</button>
+                    <div class="question-numbers hidden" id="part3Questions">
+                        <button class="question-number" onclick="focusQuestion(21)">21</button>
+                        <button class="question-number" onclick="focusQuestion(22)">22</button>
+                        <button class="question-number" onclick="focusQuestion(23)">23</button>
+                        <button class="question-number" onclick="focusQuestion(24)">24</button>
+                        <button class="question-number" onclick="focusQuestion(25)">25</button>
+                        <button class="question-number" onclick="focusQuestion(26)">26</button>
+                        <button class="question-number" onclick="focusQuestion(27)">27</button>
+                        <button class="question-number" onclick="focusQuestion(28)">28</button>
+                        <button class="question-number" onclick="focusQuestion(29)">29</button>
+                        <button class="question-number" onclick="focusQuestion(30)">30</button>
+                    </div>
+                </div>
+                <div class="part-nav-item">
+                    <button class="part-button" onclick="switchPart(3)" id="part4Btn">Part 4</button>
+                    <div class="question-numbers hidden" id="part4Questions">
+                        <button class="question-number" onclick="focusQuestion(31)">31</button>
+                        <button class="question-number" onclick="focusQuestion(32)">32</button>
+                        <button class="question-number" onclick="focusQuestion(33)">33</button>
+                        <button class="question-number" onclick="focusQuestion(34)">34</button>
+                        <button class="question-number" onclick="focusQuestion(35)">35</button>
+                        <button class="question-number" onclick="focusQuestion(36)">36</button>
+                        <button class="question-number" onclick="focusQuestion(37)">37</button>
+                        <button class="question-number" onclick="focusQuestion(38)">38</button>
+                        <button class="question-number" onclick="focusQuestion(39)">39</button>
+                        <button class="question-number" onclick="focusQuestion(40)">40</button>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-arrow" onclick="nextPart()" id="nextButton">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+                <div class="score-summary">
+                    <div class="score-item">
+                        <div class="score-number" id="totalScore">0/40</div>
+                        <div class="score-label">Total Score</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part1Score">0/10</div>
+                        <div class="score-label">Part 1</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part2Score">0/10</div>
+                        <div class="score-label">Part 2</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part3Score">0/10</div>
+                        <div class="score-label">Part 3</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part4Score">0/10</div>
+                        <div class="score-label">Part 4</div>
+                    </div>
+                </div>
+                <a class="back-menu-button" href="../listening.html">Back to Menu</a>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <script src="../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+        <script src="../assets/listening-full-test-script-vol4-test40.js?v=20260524-test40"></script>
+        <script src="../assets/listening-answer-flex.js"></script>
+<script src="../assets/listening-full-test-fixes.js?v=20260726-fresh-start"></script>
+    <script src="../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../assets/listening-transcript-data-test40.js?v=20260729-all-tests"></script>
+    <script src="../assets/listening-transcript.js?v=20260729-all-tests"></script>
+</body>
+
+</html>

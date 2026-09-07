@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-86c44e3d.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 2.8.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">PART 2</h1>
+            </div>
+	                <p class="part-instructions" id="partInstructions">Listen to the talk and answer Questions 11-20.</p>
+            </div>
+            <!-- Questions Section -->
+                <div class="questions-section">
+                    <h2 class="questions-title" id="questionsTitle">Questions 11-20</h2>
+	                <p class="questions-description" id="questionsDescription">The Elmsden Way.</p>
+
+	                    <!-- Part 2 Content -->
+	                    <div id="part1Content">
+	                        <div class="section-instructions">
+	                            <p class="section-heading">SECTION 2</p>
+	                            <p class="section-subheading"><strong>The Elmsden Way</strong></p>
+	                        </div>
+	
+	                        <div class="multiple-choice-card" aria-label="Questions 11-20">
+	                            <h3 class="scenario-title selectable-text">The Elmsden Way</h3>
+	                            <div class="question-group">
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 8px;">Questions 11-14</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Label the map below. Write the correct letter, A-I, next to questions 11-14.</p>
+	                                <div class="map-wrapper" style="margin-bottom: 16px;">
+	                                    <img src="https://cdn.kiberai.uz/content/uploads/2026/02/Pasted_image.png" alt="The Elmsden Way map" style="max-width: 70%; height: auto; border: 1px solid #e5e7eb; border-radius: 12px; display: block; margin: 0 auto;">
+	                                </div>
+	                                <div class="table-wrapper" aria-label="Map labels">
+	                                    <table class="bicycling-table">
+	                                        <thead>
+	                                            <tr>
+	                                                <th>Question</th>
+	                                                <th>Label</th>
+	                                                <th>A</th>
+	                                                <th>B</th>
+	                                                <th>C</th>
+	                                                <th>D</th>
+	                                                <th>E</th>
+	                                                <th>F</th>
+	                                                <th>G</th>
+	                                                <th>H</th>
+	                                                <th>I</th>
+	                                            </tr>
+	                                        </thead>
+	                                        <tbody>
+	                                            <tr id="q11">
+	                                                <td>11</td>
+	                                                <td>Rocks</td>
+	                                                <td><input type="radio" name="q11" value="A" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="B" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="C" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="D" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="E" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="F" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="G" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="H" onchange="saveAnswer(11, this.value)"></td>
+	                                                <td><input type="radio" name="q11" value="I" onchange="saveAnswer(11, this.value)"></td>
+	                                            </tr>
+	                                            <tr id="q12">
+	                                                <td>12</td>
+	                                                <td>Colleen Nature Reserve</td>
+	                                                <td><input type="radio" name="q12" value="A" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="B" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="C" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="D" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="E" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="F" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="G" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="H" onchange="saveAnswer(12, this.value)"></td>
+	                                                <td><input type="radio" name="q12" value="I" onchange="saveAnswer(12, this.value)"></td>
+	                                            </tr>
+	                                            <tr id="q13">
+	                                                <td>13</td>
+	                                                <td>Ashington China Factory</td>
+	                                                <td><input type="radio" name="q13" value="A" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="B" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="C" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="D" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="E" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="F" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="G" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="H" onchange="saveAnswer(13, this.value)"></td>
+	                                                <td><input type="radio" name="q13" value="I" onchange="saveAnswer(13, this.value)"></td>
+	                                            </tr>
+	                                            <tr id="q14">
+	                                                <td>14</td>
+	                                                <td>Langton forest</td>
+	                                                <td><input type="radio" name="q14" value="A" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="B" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="C" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="D" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="E" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="F" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="G" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="H" onchange="saveAnswer(14, this.value)"></td>
+	                                                <td><input type="radio" name="q14" value="I" onchange="saveAnswer(14, this.value)"></td>
+	                                            </tr>
+	                                        </tbody>
+	                                    </table>
+	                                </div>
+	
+	                                <h4 class="selectable-text" style="font-weight: 500; margin: 18px 0 12px;">Questions 15-20</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Choose the correct letter, A, B or C.</p>
+	                                <div id="q15" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">15. What kind of warning does the speaker give to cyclists?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q15" value="A" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">A. there may be traffic jams</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q15" value="B" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">B. avoid wet cycle paths</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q15" value="C" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">C. there may be animals in the way</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q16" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">16. The starting point of Elmsden station is</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q16" value="A" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">A. very busy</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q16" value="B" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">B. more modern</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q16" value="C" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">C. re-opened recently</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q17" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">17. What can people do at the visitor's centre?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q17" value="A" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">A. rent a bike</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q17" value="B" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">B. buy refreshments</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q17" value="C" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">C. learn local history</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q18" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">18. To commute between Langton and Elmston by train, you need to</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q18" value="A" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">A. book in advance</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q18" value="B" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">B. go on weekends</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q18" value="C" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">C. pay additional charges</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q19" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">19. What should you be aware of when visiting River Elm?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q19" value="A" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">A. it takes a long time</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q19" value="B" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">B. the waterfall is inaccessible</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q19" value="C" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">C. go by bike</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q20" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 16px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">20. Where can you get the information if you want to join the local route?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q20" value="A" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">A. the local newspaper</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q20" value="B" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">B. the station website</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q20" value="C" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">C. national cycling network</span></label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation hidden" id="bottomNavigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+	                    <button type="button" class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 2</button>
+	                    <div class="question-numbers" id="part1Questions">
+	                        <button type="button" class="question-number" onclick="focusQuestion(11)">11</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(12)">12</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(13)">13</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(14)">14</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(15)">15</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(16)">16</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(17)">17</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(18)">18</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(19)">19</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(20)">20</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+        <div class="score-summary">
+            <div class="score-item">
+                <div class="score-number" id="totalScore">0/10</div>
+                <div class="score-label">Total Score</div>
+            </div>
+            <div class="score-item">
+                <div class="score-number" id="part2Score">0/10</div>
+                <div class="score-label">Part 2</div>
+            </div>
+        </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-dea9d91e.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section2-8.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+

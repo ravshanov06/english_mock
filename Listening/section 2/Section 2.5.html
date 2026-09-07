@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-bfed198d.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 2.5.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">PART 2</h1>
+            </div>
+	                <p class="part-instructions" id="partInstructions">Listen to the talk and answer Questions 11-20.</p>
+            </div>
+            <!-- Questions Section -->
+                <div class="questions-section">
+                    <h2 class="questions-title" id="questionsTitle">Questions 11-20</h2>
+	                <p class="questions-description" id="questionsDescription">UK Driving Licence and Traffic Management.</p>
+
+	                    <!-- Part 2 Content -->
+	                    <div id="part1Content">
+	                        <div class="section-instructions">
+	                            <p class="section-heading">SECTION 2</p>
+	                            <p class="section-subheading"><strong>UK Driving Licence and Traffic Management</strong></p>
+	                        </div>
+	
+	                        <div class="multiple-choice-card" aria-label="Questions 11-20">
+	                            <h3 class="scenario-title selectable-text">UK Driving Licence and Traffic Management</h3>
+	                            <div class="question-group">
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Questions 11-15</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Choose the correct answer.</p>
+	
+	                                <div id="q11" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">11. What is the basic requirement for applying for a UK driving licence?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q11" value="A" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">A. A medical report.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q11" value="B" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">B. A valid licence from another country.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q11" value="C" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">C. Current residency in the UK.</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q12" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">12. What is true about the translation of original licences?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q12" value="A" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">A. Applicants need to go to a recognised organisation.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q12" value="B" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">B. It is not always necessary for foreigners when applying for a UK licence.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q12" value="C" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">C. Applicants need to pay an extra fee for translation services.</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q13" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">13. When applying for a UK licence, which type of photos will NOT be approved?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q13" value="A" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">A. Photos in which the applicant is wearing glasses.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q13" value="B" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">B. Photos with a cream background.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q13" value="C" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">C. Photos that are undersized.</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q14" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">14. What does the speaker think of the licence checking service?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q14" value="A" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">A. The process is too slow.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q14" value="B" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">B. The application form is confusing.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q14" value="C" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">C. Some of the steps are unnecessary.</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q15" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 16px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">15. What does the speaker recommend about making an application?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q15" value="A" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">A. Choosing a quiet location.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q15" value="B" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">B. Visiting the nearest branch.</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q15" value="C" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">C. Completing the forms online.</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <h4 class="selectable-text" style="font-weight: 500; margin: 18px 0 12px;">Questions 16-20</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">What is the current feature of traffic management in each of the following cities?</p>
+	                                <p class="section-subheading-small">Questions 16-20 - Pick the matching letters from the box (A-H).</p>
+	
+	                                <div class="matching-section" aria-label="Questions 16-20">
+	                                    <div class="matching-header" aria-hidden="true">
+	                                        <span class="matching-header-left">Cities</span>
+	                                        <span class="matching-header-right">Letter</span>
+	                                    </div>
+	                                    <div class="matching-layout">
+	                                        <div class="people-column">
+	                                            <div class="person-row">
+	                                                <span class="person-label">London</span>
+	                                                <div class="drop-zone" id="q16" tabindex="0" data-target="q16" data-group="traffic" data-placeholder="16" aria-label="London feature"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">Edinburgh</span>
+	                                                <div class="drop-zone" id="q17" tabindex="0" data-target="q17" data-group="traffic" data-placeholder="17" aria-label="Edinburgh feature"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">Cardiff</span>
+	                                                <div class="drop-zone" id="q18" tabindex="0" data-target="q18" data-group="traffic" data-placeholder="18" aria-label="Cardiff feature"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">Manchester</span>
+	                                                <div class="drop-zone" id="q19" tabindex="0" data-target="q19" data-group="traffic" data-placeholder="19" aria-label="Manchester feature"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">Oxford</span>
+	                                                <div class="drop-zone" id="q20" tabindex="0" data-target="q20" data-group="traffic" data-placeholder="20" aria-label="Oxford feature"></div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="responsibility-list" aria-label="Traffic management features">
+	                                            <button type="button" class="drag-item responsibility-item" data-option="A" data-label="A" data-group="traffic">A. good signage</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="B" data-label="B" data-group="traffic">B. multiple access roads</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="C" data-label="C" data-group="traffic">C. police control points</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="D" data-label="D" data-group="traffic">D. ring roads</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="E" data-label="E" data-group="traffic">E. one-way streets</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="F" data-label="F" data-group="traffic">F. effective traffic lights</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="G" data-label="G" data-group="traffic">G. additional lanes</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="H" data-label="H" data-group="traffic">H. pedestrianised areas</button>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation hidden" id="bottomNavigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+	                    <button type="button" class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 2</button>
+	                    <div class="question-numbers" id="part1Questions">
+	                        <button type="button" class="question-number" onclick="focusQuestion(11)">11</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(12)">12</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(13)">13</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(14)">14</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(15)">15</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(16)">16</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(17)">17</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(18)">18</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(19)">19</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(20)">20</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+        <div class="score-summary">
+            <div class="score-item">
+                <div class="score-number" id="totalScore">0/10</div>
+                <div class="score-label">Total Score</div>
+            </div>
+            <div class="score-item">
+                <div class="score-number" id="part2Score">0/10</div>
+                <div class="score-label">Part 2</div>
+            </div>
+        </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-a061a076.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section2-5.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

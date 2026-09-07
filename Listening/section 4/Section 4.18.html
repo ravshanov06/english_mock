@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-d54dcd39.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 4.18.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">SECTION 4</h1>
+            </div>
+                <p class="part-instructions" id="partInstructions">Complete the notes below. Write ONE WORD ONLY for each answer.</p>
+            </div>
+            <!-- Questions Section -->
+                <div class="questions-section">
+                    <h2 class="questions-title" id="questionsTitle">Questions 31-40</h2>
+                    <p class="questions-description" id="questionsDescription">Complete the notes below. Write ONE WORD ONLY for each answer.</p>
+
+                    <div id="part1Content">
+                        <h3 class="scenario-title selectable-text">Fish Farming</h3>
+                        <div class="question-group">
+                            <p class="selectable-text" style="margin-bottom: 12px;"><strong>Complete the notes below. Write ONE WORD ONLY for each answer.</strong></p>
+                            <div class="notes-board fish-farming-notes">
+                                <div class="notes-heading">Fish Farming</div>
+
+                                <div class="notes-section">
+                                    <div class="notes-entry">
+                                        <span class="notes-text">Local fish farmers are afraid that genetically modified fish will</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q31" oninput="saveAnswer(31, this.value)" placeholder="31"></div>
+                                        <span class="notes-text">into the sea.</span>
+                                    </div>
+                                    <div class="notes-entry">
+                                        <span class="notes-bullet">&bull;</span><span class="notes-text">like to breed fish with special features, like</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q32" oninput="saveAnswer(32, this.value)" placeholder="32"></div>
+                                    </div>
+                                    <div class="notes-entry"><span class="notes-bullet">&bull;</span><span class="notes-text">other solutions:</span></div>
+                                    <div class="notes-entry notes-subitem">
+                                        <span class="notes-text">- to build some cages to prevent the fish from</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q33" oninput="saveAnswer(33, this.value)" placeholder="33"></div>
+                                    </div>
+                                    <div class="notes-entry notes-subitem">
+                                        <span class="notes-text">- to use</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q34" oninput="saveAnswer(34, this.value)" placeholder="34"></div>
+                                        <span class="notes-text">nets to support the frames of the cages</span>
+                                    </div>
+                                </div>
+
+                                <div class="notes-section">
+                                    <div class="notes-title">Problems facing the local fishermen:</div>
+                                    <div class="notes-entry">
+                                        <span class="notes-bullet">&bull;</span><span class="notes-text">lack of land on the</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q35" oninput="saveAnswer(35, this.value)" placeholder="35"></div>
+                                    </div>
+                                    <div class="notes-entry">
+                                        <span class="notes-bullet">&bull;</span><span class="notes-text">lack of</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q36" oninput="saveAnswer(36, this.value)" placeholder="36"></div>
+                                        <span class="notes-text">fish</span>
+                                    </div>
+                                </div>
+
+                                <div class="notes-section">
+                                    <div class="notes-title">Initiatives taken by the government:</div>
+                                    <div class="notes-entry">
+                                        <span class="notes-bullet">&bull;</span><span class="notes-text">encourages fish farmers to</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q37" oninput="saveAnswer(37, this.value)" placeholder="37"></div>
+                                        <span class="notes-text">local fish farming business</span>
+                                    </div>
+                                    <div class="notes-entry"><span class="notes-bullet">&bull;</span><span class="notes-text">helps fish farmers to sell seaweed and oyster:</span></div>
+                                    <div class="notes-entry notes-subitem">
+                                        <span class="notes-text">- Seaweed can be used to make</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q38" oninput="saveAnswer(38, this.value)" placeholder="38"></div>
+                                    </div>
+                                    <div class="notes-entry notes-subitem">
+                                        <span class="notes-text">- Oyster is a source of seafood which can supply local</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q39" oninput="saveAnswer(39, this.value)" placeholder="39"></div>
+                                        <span class="notes-text">industry.</span>
+                                    </div>
+                                    <div class="notes-entry">
+                                        <span class="notes-bullet">&bull;</span><span class="notes-text">saves local fishing business by encouraging aquaculture, recreation and</span>
+                                        <div class="notes-input-group"><input type="text" class="form-input" id="q40" oninput="saveAnswer(40, this.value)" placeholder="40"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation hidden" id="bottomNavigation">
+	            <div class="parts-navigation">
+	                <div class="part-nav-item">
+		                    <button type="button" class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 4</button>
+	                    <div class="question-numbers" id="part1Questions">
+		                        <button type="button" class="question-number" onclick="focusQuestion(31)">31</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(32)">32</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(33)">33</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(34)">34</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(35)">35</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(36)">36</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(37)">37</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(38)">38</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(39)">39</button>
+		                        <button type="button" class="question-number" onclick="focusQuestion(40)">40</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+        <div class="score-summary">
+            <div class="score-item">
+                <div class="score-number" id="totalScore">0/10</div>
+                <div class="score-label">Total Score</div>
+            </div>
+            <div class="score-item">
+                <div class="score-number" id="part3Score">0/10</div>
+                <div class="score-label">Part 4</div>
+            </div>
+        </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-52d24743.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section4-18.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

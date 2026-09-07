@@ -1,0 +1,614 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 16 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-16-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Sleep Study on Modern-Day Hunter-Gatherers Dispels Popular Notions</h3>
+                    <p>The sleep troubles common in modern life have long been blamed on our industrial society, from the city lights, long work hours and commutes, to caffeine and the Internet. Sleep researchers often look back on a time when humans were able to get more rest by sleeping and waking to the rhythms of the sun. It turns out that may not be quite right. In fact, our ancestors may not have been getting the recommended eight hours of sleep, either.</p>
+                    <p>In a recent study, researchers traveled all over the world to examine sleep in some of the world's last remaining hunter-gatherer societies - the Hadza of Tanzania, the San of Namibia, and the Tsimane of Bolivia. Cut off from media, electricity and other distractions, these pre-industrial societies are thought to sleep the way humans did more than 10,000 years ago. Traveling to where they lived, often in humid remote locations, researchers used medical devices to record the sleeping habits of 94 of these tribespeople and ended up collecting data representing 1,165 days.</p>
+                    <p>They found very similar sleep patterns despite their geographic isolation. On average, all three groups sleep a little less than 6.5 hours a night, do not take naps, and don't go to sleep when it gets dark. Like many of us, the Hadza, San, and Tsimane spend more time in bed - from 6.9 to 8.5 hours - than they do actually sleeping. This adds up to a sleep efficiency that is very similar to today's industrial populations.</p>
+                    <p>According to Jerome Siegel, director of the University of California's Center for Sleep Research, evidence suggests sleep habits may not be environmental or cultural, but central to the physical makeup of humans. These findings question the millions of dollars that have been spent on research that tries to explain why some sleepers get only about six hours of sleep a night. Also, such findings question whether lack of sleep is a cause of obesity, mood disorders, and other physical and mental illnesses which have become so common in recent decades. Scientists have documented that people's energy often falls in the mid-afternoon. Some have suggested that it's because we've managed to suppress a natural desire for a nap.</p>
+                    <p>However, the new study provides evidence that this is unlikely, and that napping was actually rare in hunter-gatherer societies. The researchers estimated that naps may have occurred on up to 7 percent of winter days and 22 percent of summer days. They noted that their devices were only good at detecting longer naps, so it is possible that some of the study subjects took naps that were short, perhaps 15 minutes or less.</p>
+                    <p>Another fascinating finding from the study had to do with the circadian rhythms, our daily activity cycles related to sunlight. Instead of going to sleep right at dusk, tribespeople were staying awake an average of between 2.5 and 4.4 hours after sunset. All three tribes had fires going, but the light itself was much lower than you might get from a light bulb. They did, however, have a tendency to wake up anywhere between an hour before and an hour after sunrise.</p>
+                    <p>Siegel and his co-authors investigated this further by looking into the significance of temperature. They found that it also played a big role, though was somewhat less important than light in influencing sleep patterns. They wrote that "sleep in both the winter and summer usually occurred during the period of cooling and that waking times usually occurred near the height of the daily warming trend."</p>
+                    <p>The tribespeople that were studied are different from people living in modern conditions in a number of respects. Importantly, almost none of them were troubled by sleeplessness. In interviews with the researchers conducted through interpreters, only 1.5 to 2.5 percent of the study subjects said they had severe difficulties sleeping more than once a year. This figure is far lower than the 10 to 30 percent recorded in many industrialized countries today. Siegel suggested that 'mimicking aspects of the natural environment' may therefore help treat some sleep disorders.</p>
+                    <p>The tribespeople are also much healthier. Not a single one is overweight, indicating their overall higher levels of physical fitness. They also tended to have healthier hearts. Thus comes a critical question. If we can't blame our health problems on our lack of sleep, could it be that the reason we feel so unrested is because of poor health?</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-4</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 1-4, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 <span class="question-anchor" data-question-anchor="1"></span>Scientists studied hunter-gatherer societies because their sleep patterns are assumed to be similar to those of humans more than 10,000 years ago.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 <span class="question-anchor" data-question-anchor="2"></span>The medical devices used in the research were especially designed for humid conditions.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 <span class="question-anchor" data-question-anchor="3"></span>Researchers found that tribespeople stayed longer in bed than inhabitants of industrialised regions.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 <span class="question-anchor" data-question-anchor="4"></span>Jerome Siegel believes that environment and culture have little effect on sleep patterns.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 5-13</div>
+                    <p>Complete the notes below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>New Evidence on Sleep Patterns</strong></p>
+                    <p><strong>New ideas about napping</strong></p>
+                    <p>scientists have recorded an afternoon drop in <span class="question-anchor" data-question-anchor="5"></span><input type="text" name="q5" placeholder="5" class="input-field inline-input"></p>
+                    <p>studies of hunter-gatherer societies show that napping was rare and occurred more often during the <span class="question-anchor" data-question-anchor="6"></span><input type="text" name="q6" placeholder="6" class="input-field inline-input"></p>
+                    <p>the devices may not have detected <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input"> naps</p>
+
+                    <p><strong>Daily activity cycles</strong></p>
+                    <p>the tribespeople went to sleep several hours after sunset</p>
+                    <p>even with <span class="question-anchor" data-question-anchor="8"></span><input type="text" name="q8" placeholder="8" class="input-field inline-input"> there was little light</p>
+                    <p>tribespeople usually woke up around <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input"></p>
+                    <p>scientists found that <span class="question-anchor" data-question-anchor="10"></span><input type="text" name="q10" placeholder="10" class="input-field inline-input"> had almost as much influence on sleep patterns as light</p>
+
+                    <p><strong>Differences between tribespeople and people in industrialised regions</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="11"></span><input type="text" name="q11" placeholder="11" class="input-field inline-input"> is something that very few of the tribespeople suffered from</p>
+                    <p>the environment of tribespeople may have been more suitable for sleep</p>
+                    <p>tribespeople had better fitness than industrialised populations and were not <span class="question-anchor" data-question-anchor="12"></span><input type="text" name="q12" placeholder="12" class="input-field inline-input"></p>
+                    <p>tribespeople also had stronger <span class="question-anchor" data-question-anchor="13"></span><input type="text" name="q13" placeholder="13" class="input-field inline-input"></p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->            <!-- ===== PASSAGE 2 ===== -->            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>The Constant Evolution of the Humble Tomato</h3>
+                    <p>Heirloom tomatoes - varieties that have been passed down through several generations of a family because they are thought to have a particularly good flavor - are really no more 'natural' than the varieties available in grocery stores. New studies promise to restore their lost, healthy genes.</p>
+                    <p><strong>A</strong> Famous for their taste, color and organic appearance, heirloom tomatoes are favorites of gardeners and advocates of locally grown foods. The tomato enthusiast might conclude that, given the immense varieties, heirlooms must have a more diverse and superior set of genes than the tomatoes available in grocery stores, those ordinary hybrid varieties such as cherry and plum. However, their seeming diversity is only skin-deep: heirlooms are actually feeble and inbred - the defective product of breeding experiments that began hundreds of years ago, and exploded thanks to enthusiastic backyard gardeners. 'The irony of all this,' says Steven Tanksley, a geneticist at Cornell University, 'is all that diversity of heirlooms can be accounted for by a handful of genes. There're probably no more than 10 mutant genes that create the diversity of heirlooms you see.' But rather than simply proving that the myth about the heirloom's diversity is wrong, Tanksley's deconstruction of the tomato genome, along with work by others, is showing how a small berry-like fruit from the Andes became one of the world's top crops.</p>
+                    <p><strong>B</strong> The cultivated tomato is a member of the nightshade family that includes New World crops such as the potato, which spread around the globe after Christopher Columbus brought them back to Spain in the 15th century. But whereas scientists have uncovered a wealth of archaeological evidence on early farming practices in the New World, the record is blank when it comes to the tomato. The modern tomato seems to have its origins in the Andes in South America, and may have been domesticated in Vera Cruz, Mexico. Primitive varieties still grow throughout the Americas. All told, botanists call as many as 13 species 'tomatoes', and consider an additional four to be closely related.</p>
+                    <p><strong>C</strong> One might assume that one of these known wild species became today's cultivated crop, but that's not the case; the Mother Tomato has never been found. The closest relative is the currant tomato which, based on genetic comparisons, split from today's tomato some 1.4 million years ago. So researchers like Tanksley have to work backward, crossing tomato varieties and species in order to understand how various genes influence shape and size. Once isolated, Tanksley later inserts those genes into other tomato varieties to make his case with a dramatic transformation.</p>
+                    <p><strong>D</strong> Tanksley concludes from his analyses that in their effort to make bigger, tastier and faster-growing fruit, our ancestors ultimately exploited just 30 mutations out of the tomato's 35,000 genes. Most of these genes have only small effects on tomato size and shape, but recently Tanksley and his colleagues reported that they found a gene that increases fruit size by 50 percent. It was probably the most important event in domestication. The first written record of tomatoes - from Spain in the 1500s - confirms that this mutation, which enlarges tomatoes by producing compartments known as locules, existed back in the same yellow tomatoes that gave Italians the word pomodoro, or golden apple. Besides size, tomato farmers also selected for shape. To discover those genes, Esther van der Knaap, a Tanksley alumnus now at The Ohio State University, took a gene from one heirloom tomato and inserted it into a wild relative. She observed that, as a result, the tiny fruits became shaped like pears.</p>
+                    <p><strong>E</strong> The selection of these traits has, however, affected the heirloom's hardiness. They often suffer from infections that cause the fruit to crack, split and otherwise rot quickly. Wild plants must continuously evolve to fend off such infections, points out Roger Chetelat of the Tomato Genetics Resource Center at the University of California. But in their quest for size, shape and flavor, humans have inadvertently eliminated defensive genes. As a result, most possess only a single disease-resistant gene. Chetelat elaborates that heirlooms' taste may have less to do with their genes than with the productivity of the plant and the growing environment. Any plant that produces only two fruits, as heirlooms sometimes do, is highly likely to produce juicier, sweeter and more flavorful fruit than varieties that produce 100, as commercial types do. In addition, heirlooms are sold ripened on the vine, a certain way to get tastier results than allowing them to mature on the shelf. This means breeders feel confident that getting germ-beating genes back into heirlooms won't harm the desirable aspects of the fruit. Modern breeding has resuscitated grocery store tomatoes with an influx of wild genes; in the past 50 years, as many as 40 disease-resistant genes have been bred back into commercial crops.</p>
+                    <p><strong>F</strong> In 1996 a tomato breeder and former Tanksley student named Doug Heath began a favorite project. After 12 years of traditional breeding with the help of molecular markers, he created a new multi-colored tomato less prone to cracking and also endowed with 12 disease-resistant genes. The original heirloom plant, Heath explains, had defective flowers, which is one reason why it produced only two fruits compared with the 30 he gets from his new variety. He claims he is also able to maintain a comparable flavor and sugar profile even on productive plants. The heirloom's defects are, after all, just an accident of a narrow breeding strategy left over from the very beginning of genetic modification.</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-17</div>
+                    <p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p>
+                    <p>Which paragraph contains the following information?</p>
+                    <p>Write the correct letter, <strong>A-F</strong>, in boxes 14-17.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 an explanation of research aimed at restoring the health of the heirloom tomato</td>
+                            <td><input type="radio" name="q14" value="A"></td>
+                            <td><input type="radio" name="q14" value="B"></td>
+                            <td><input type="radio" name="q14" value="C"></td>
+                            <td><input type="radio" name="q14" value="D"></td>
+                            <td><input type="radio" name="q14" value="E"></td>
+                            <td><input type="radio" name="q14" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 a reference to a false belief about the heirloom tomato</td>
+                            <td><input type="radio" name="q15" value="A"></td>
+                            <td><input type="radio" name="q15" value="B"></td>
+                            <td><input type="radio" name="q15" value="C"></td>
+                            <td><input type="radio" name="q15" value="D"></td>
+                            <td><input type="radio" name="q15" value="E"></td>
+                            <td><input type="radio" name="q15" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 a description of the flavour of the heirloom tomato</td>
+                            <td><input type="radio" name="q16" value="A"></td>
+                            <td><input type="radio" name="q16" value="B"></td>
+                            <td><input type="radio" name="q16" value="C"></td>
+                            <td><input type="radio" name="q16" value="D"></td>
+                            <td><input type="radio" name="q16" value="E"></td>
+                            <td><input type="radio" name="q16" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 a reference to a single gene that significantly improves the cultivation of tomatoes</td>
+                            <td><input type="radio" name="q17" value="A"></td>
+                            <td><input type="radio" name="q17" value="B"></td>
+                            <td><input type="radio" name="q17" value="C"></td>
+                            <td><input type="radio" name="q17" value="D"></td>
+                            <td><input type="radio" name="q17" value="E"></td>
+                            <td><input type="radio" name="q17" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 18-21</div>
+                    <p>Look at the following statements (Questions 18-21) and the list of researchers below.</p>
+                    <p>Match each statement with the correct researcher, <strong>A-D</strong>.</p>
+                    <p><strong>NB</strong> You may use any letter more than once.</p>
+                    <p><strong>List of Researchers</strong></p>
+                    <p>A Steven Tanksley &nbsp;&nbsp; B Esther van der Knaap &nbsp;&nbsp; C Roger Chetelat &nbsp;&nbsp; D Doug Heath</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="18"></span>18 The transplanting of certain genes into tomatoes can change their shape.</td>
+                            <td><input type="radio" name="q18" value="A"></td>
+                            <td><input type="radio" name="q18" value="B"></td>
+                            <td><input type="radio" name="q18" value="C"></td>
+                            <td><input type="radio" name="q18" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="19"></span>19 The flavour of the heirloom tomato is largely dependent on actual yield and cultivation.</td>
+                            <td><input type="radio" name="q19" value="A"></td>
+                            <td><input type="radio" name="q19" value="B"></td>
+                            <td><input type="radio" name="q19" value="C"></td>
+                            <td><input type="radio" name="q19" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 A new type of tomato can be produced that is stronger than the original heirloom tomato yet equally sweet and flavoursome.</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 The wide variety of heirloom tomatoes is due to only a small number of genes.</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 22-26</div>
+                    <p>Complete the sentences below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>22 There is little information on the origin of the tomato despite the existence of <span class="question-anchor" data-question-anchor="22"></span><input type="text" name="q22" placeholder="22" class="input-field inline-input"> data on the growing of other New World crops.</p>
+                    <p>23 Although it is uncertain, the tomato is thought to have first grown in the <span class="question-anchor" data-question-anchor="23"></span><input type="text" name="q23" placeholder="23" class="input-field inline-input"></p>
+                    <p>24 In regard to genetic similarities, the <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input"> tomato is the nearest to the earliest type of tomato.</p>
+                    <p>25 A genetic <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input"> which is evident in pomodoro produced larger tomatoes.</p>
+                    <p>26 <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input"> are a problem for heirloom tomatoes because they frequently lead to damage and deterioration.</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->            <!-- ===== PASSAGE 3 ===== -->            <!-- ===== PASSAGE 3 ===== -->
+                <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Rewards for scientific achievement</h3>
+                    <p>While the Nobel Prizes are over 115 years old, rewards for scientific achievement have been around much longer. As early as the 17th century, at the very origins of modern experimental science, promoters of science realized the need for some system of recognition and reward that would provide incentive for advances in the field.</p>
+                    <p>Before the prize, it was the gift that dominated in science. Precursors to modern scientists - the early astronomers, philosophers, physicians, alchemists and engineers - offered wonderful discoveries, inventions and works of literature or art as gifts to powerful patrons, often royalty. Many scientists prefaced their publications with extravagant letters of dedication; they might, or they might not, be rewarded with a gift in return. Eventually, different kinds of incentives, including prizes and awards, as well as new, salaried academic positions, became more common and the favor of particular wealthy patrons diminished in importance. But at the height of the Renaissance, early scientists relied on gifts from powerful princes to compensate and advertise their efforts.</p>
+                    <p>With courtiers all vying for a patron's attention, scientific gifts had to be presented with drama and flair. The astronomer Galileo Galilei (1564-1642) presented his newly discovered moons of Jupiter to the Medici dukes of Italy as a 'gift' that was literally out of this world. In return, the Medici family 'ennobled' Galileo with the title and position of court philosopher and mathematician. If a gift succeeded, the gift-giver might, like Galileo in this case, be fortunate enough to receive a gift in return. Gift-givers could not, however, predict what form a patron's gift would take, and they might find themselves burdened with offers they couldn't refuse. Tycho Brahe (1546-1601), the great Danish Renaissance astronomer, received everything from exotic animals to chemical secrets in return for his discoveries.</p>
+                    <p>By the early-17th century, scientific promoters realized that gift-giving was ill-suited to encouraging experimental science. Experimentation required many individuals to collect data in many places across long periods of time. Gifts emphasized competitive individualism at a time when scientific collaboration and the often-humdrum work of empirical observation were paramount.</p>
+                    <p>While it was accepted that some competitive rivalry helped to inspire and advance science, scientific reformers believed that too much led to the ostentation that too often plagued courtly giftgiving. Most of all, reformers feared an individual would not tackle a problem that couldn't be finished and presented to a patron in his or her lifetime - or even if they did, their findings might die with them.</p>
+                    <p>For these reasons, promoters of experimental science saw the reform of rewards as integral to radical changes in the pace and scale of scientific discovery. For example, Sir Francis Bacon (1561-1626), lord chancellor of England and an influential booster of experimental science, emphasized the importance even of 'approximations' or unfinished attempts at reaching a particular goal. Instead of dissipating their efforts attempting to appease patrons, many researchers, he hoped, could be stimulated to work toward the same ends via a well-publicized research wish list. Bacon coined the term 'desiderata', still used by researchers today to denote widespread research goals. He also suggested many ingenious ways to advance discovery by stimulating the human hunger for fame; a row of statues celebrating famous inventors of the past, for example, could be paired with a row of empty plinths upon which researchers might imagine their own busts one day resting.</p>
+                    <p>Bacon's techniques inspired one of his chief admirers, the reformer Samuel Hartlib (circa 1600-1662) to collect many schemes for reforming the system of recognition. One proposed that rewards should go not only 'to such as exactly hit the marke, but even to those that probably misse it', because their errors would stimulate others and make 'active braines to beate about for New Inventions'. Hartlib planned a centralized office systematizing rewards for those who 'expect Rewards for Services done to the King or State, and know not where to pitch and what to desire'.</p>
+                    <p>Collaborative scientific societies, beginning in the mid-17th century, distanced rewards from the whims and demands of individual patrons. The periodicals that many new scientific societies started publishing offered a new medium that allowed authors to tackle ambitious research problems that might not individually produce a complete publication pleasing to a dedicatee. The societies saw their periodicals as a means to entice discovery by offering credit. Today's Leopoldina, the German national scientific society, founded its publication in 1670. According to its bylaws, those who might not otherwise publish their findings could see them 'exhibited to the world ... with the praiseworthy mention of their name' - an important step on the way to standardizing scientific citation.</p>
+                    <p>States might also offer rewards for solutions to problems, most famously in the case of the prize offered by the British government in 1714 for figuring out how to determine longitude at sea. Some in the 17th century likened this long-sought discovery to the philosopher's stone. The idea of using a prize to highlight a specific problem is alive and well today. In fact, some contemporary scientific prizes, such as the Simons Foundation's 'Cracking the Glass Problem', set forth specific questions that still need to be resolved.</p>
+                    <p>The shift from gift-giving to prize-giving completely transformed the rules of engagement in scientific discovery. Of course, the need for monetary support hasn't gone away. Obtaining financial support can still be a sizable part of what it takes to get science done today. Succeeding in grant competitions might seem mystifying, and winning a career-changing Nobel might come as a bolt out of the blue. But researchers can take comfort that they no longer have to present their innovations on bended knee as wondrous gifts that will appeal to the whims of individual patrons.</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-30</div>
+                    <p>Do the following statements agree with the views of the writer in the text?</p>
+                    <p>In boxes 27-30, write <strong>YES</strong> if the statement agrees with the claims of the writer, <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 <span class="question-anchor" data-question-anchor="27"></span>The belief that progress depended on scientists benefiting from their work dates from the 17th century.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="YES"> YES</label>
+                            <label><input type="radio" name="q27" value="NO"> NO</label>
+                            <label><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 <span class="question-anchor" data-question-anchor="28"></span>Early scientists could be confident of receiving patronage if they dedicated their work appropriately.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="YES"> YES</label>
+                            <label><input type="radio" name="q28" value="NO"> NO</label>
+                            <label><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 <span class="question-anchor" data-question-anchor="29"></span>Galileo considered his discovery of the moons of Jupiter to be one of his most important contributions to science.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="YES"> YES</label>
+                            <label><input type="radio" name="q29" value="NO"> NO</label>
+                            <label><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 <span class="question-anchor" data-question-anchor="30"></span>Some gifts bestowed by patrons were more welcome than others.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="YES"> YES</label>
+                            <label><input type="radio" name="q30" value="NO"> NO</label>
+                            <label><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 31-35</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 What did promoters of science begin to understand by the early-17th century?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A the benefits of making science more appealing</label>
+                            <label><input type="radio" name="q31" value="B"> B the importance of up-to-date scientific equipment</label>
+                            <label><input type="radio" name="q31" value="C"> C the impact of inaccurate data on scientific research</label>
+                            <label><input type="radio" name="q31" value="D"> D the need for scientists to share their work with one another</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 What was scientific reformers' greatest concern about the patronage system?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="A"> A It was often restricted to royal courts.</label>
+                            <label><input type="radio" name="q32" value="B"> B It led to unhealthy competition for resources.</label>
+                            <label><input type="radio" name="q32" value="C"> C It resulted in scientists' work not always being judged on its merits.</label>
+                            <label><input type="radio" name="q32" value="D"> D It encouraged scientists to avoid research that took many years to complete.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 Why does the writer refer to a row of statues?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="A"> A to propose how research goals should evolve</label>
+                            <label><input type="radio" name="q33" value="B"> B to compare the achievements of different scientists</label>
+                            <label><input type="radio" name="q33" value="C"> C to illustrate how a desire for recognition could be exploited</label>
+                            <label><input type="radio" name="q33" value="D"> D to provide examples of important scientists from the past</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 It was accepted under one of Samuel Hartlib's schemes that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="A"> A inspiration was hard to achieve.</label>
+                            <label><input type="radio" name="q34" value="B"> B failure could bring about positive results.</label>
+                            <label><input type="radio" name="q34" value="C"> C scientists needed assistance in record keeping.</label>
+                            <label><input type="radio" name="q34" value="D"> D scientific research should be given a higher status.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 What is the writer doing in the eighth paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="A"> A explaining how journals contributed to scientific progress</label>
+                            <label><input type="radio" name="q35" value="B"> B describing how research projects became more ambitious</label>
+                            <label><input type="radio" name="q35" value="C"> C indicating how scientific societies expanded their membership</label>
+                            <label><input type="radio" name="q35" value="D"> D suggesting how nations attracted the best scientific researchers</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 36-40</div>
+                    <p>Complete the summary using the list of words, A-J, below.</p>
+                    <p>Write the correct letter, A-J, in boxes 36-40.</p>
+
+                    <p><strong>List of Words</strong></p>
+                    <div class="drag-options" style="margin-top:10px;" aria-label="Answer bank for Questions 36-40">
+                        <div class="drag-item" draggable="true" data-option="rewards-a" data-answer="A" data-label="inventions">A inventions</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-b" data-answer="B" data-label="strategy">B strategy</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-c" data-answer="C" data-label="investigation">C investigation</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-d" data-answer="D" data-label="likelihood">D likelihood</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-e" data-answer="E" data-label="facilities">E facilities</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-f" data-answer="F" data-label="funding">F funding</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-g" data-answer="G" data-label="navigation">G navigation</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-h" data-answer="H" data-label="ambitions">H ambitions</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-i" data-answer="I" data-label="collaboration">I collaboration</div>
+                        <div class="drag-item" draggable="true" data-option="rewards-j" data-answer="J" data-label="interests">J interests</div>
+                    </div>
+
+                    <p><strong>Offering rewards for solutions to problems</strong></p>
+                    <p>Scientific progress has long been encouraged through prizes. A famous case was that of the reward offered in 1714 by the British government to resolve the problem of maritime <span class="question-anchor" data-question-anchor="36"></span><span class="drop-zone" data-target="q36" data-placeholder="36">36</span><input type="text" name="q36" class="input-field" style="display:none;" aria-hidden="true">. The practice of prize-giving persists today, and in some cases, for example the Simons Foundation's 'Cracking the Glass Problem', details are provided on the particular areas of <span class="question-anchor" data-question-anchor="37"></span><span class="drop-zone" data-target="q37" data-placeholder="37">37</span><input type="text" name="q37" class="input-field" style="display:none;" aria-hidden="true"> that should be focused on. Prize-giving changed the way in which people engaged in scientific discovery. Scientists today may still have to secure <span class="question-anchor" data-question-anchor="38"></span><span class="drop-zone" data-target="q38" data-placeholder="38">38</span><input type="text" name="q38" class="input-field" style="display:none;" aria-hidden="true"> for their research. But they should reassure themselves with the fact that although there might be little <span class="question-anchor" data-question-anchor="39"></span><span class="drop-zone" data-target="q39" data-placeholder="39">39</span><input type="text" name="q39" class="input-field" style="display:none;" aria-hidden="true"> of them winning a Nobel Prize, at least they no longer have to satisfy the arbitrary <span class="question-anchor" data-question-anchor="40"></span><span class="drop-zone" data-target="q40" data-placeholder="40">40</span><input type="text" name="q40" class="input-field" style="display:none;" aria-hidden="true"> of individual patrons.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_16',
+            label: 'Reading Full 16',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "NOT GIVEN",
+            q3: "FALSE",
+            q4: "TRUE",
+            q5: "energy",
+            q6: "summer",
+            q7: "short",
+            q8: "fires",
+            q9: "sunrise",
+            q10: "temperature",
+            q11: "sleeplessness",
+            q12: "overweight",
+            q13: "hearts",
+            q14: "F",
+            q15: "A",
+            q16: "E",
+            q17: "D",
+            q18: "B",
+            q19: "C",
+            q20: "D",
+            q21: "A",
+            q22: "archaeological",
+            q23: "Andes",
+            q24: "currant",
+            q25: "mutation",
+            q26: "infections",
+            q27: "YES",
+            q28: "NO",
+            q29: "NOT GIVEN",
+            q30: "YES",
+            q31: "D",
+            q32: "D",
+            q33: "C",
+            q34: "B",
+            q35: "A",
+            q36: "G",
+            q37: "C",
+            q38: "F",
+            q39: "D",
+            q40: "J"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-16.js?v=20260731-reading-clear-16-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-16-v1"></script>
+</body>
+
+
+
+</html>
+
+
+

@@ -1,0 +1,613 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 24 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-ccebef0c.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-24-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- PASSAGE 1 -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 on pages 2 and 3.</strong></p>
+                    <h3>The link between low light and mood</h3>
+                    <p>As far back as the 6th century, historians were describing seasonal peaks of joy and sorrow among the Scandinavian countries of Sweden, Norway and Finland. Because these countries are so far north, there is continuous daylight in summer, and an almost complete absence of it in winter. Today researchers recognise that a lack of light can cause some people to experience a range of negative consequences, from low energy to more serious depression.</p>
+                    <p>At Lindeborg School, in southern Sweden, teacher Anna Odder Milstam arrives at work before dawn for several months of the year. "During the winter, we just feel so tired," she says. Anna teaches a class of 14-year-olds, who are now part of an experiment investigating whether artificial lighting might possibly aid their concentration. A few years ago, Anna's classroom was fitted with ceiling lights that change in colour and intensity. The lights were developed by researchers at a company called BrainLit. The ultimate goal of the experiment is to create a system designed to suit individual workers by adjusting the lights already installed within their offices to optimise physical wellbeing.</p>
+                    <p>BrainLit's artificial lighting system simulates the experience of being outside on a typical day during spring, rather than any other season so, when Anna's pupils arrive at 8.10am, the lights are a bluish-white to wake them up. The lights grow gradually more intense through to lunch time. But then the lights gradually dim and become more yellow as the afternoon progresses. Bright light in the morning quickly stops further production of melatonin. This is the hormone naturally released by the human body that plays a vital role in the sleep-wake cycle. Shutting this off early in the day helps people to feel sleepy at the correct time when night comes around again.</p>
+                    <p>Already, there's some evidence that the artificial lighting system is affecting the pupils' sleep. In a study, in order to monitor sleep cycles, 14 pupils from Anna's class and 14 from a neighbouring class without the lighting system were each given a sleep tracking app and their own diary for making notes. During the second week of the study, significant differences started to emerge between the two groups; in terms of quality, Anna's pupils woke up fewer times during the night and slept for longer. As yet, no one has identified whether the lighting system is affecting the students' scores for examinations but Anna reports that her students are certainly more focused.</p>
+                    <p>While some people report only feelings of tiredness during winter months, other people experience a more serious condition known as seasonal affective disorder (SAD). This kind of depression has been treated with the use of bright lamps in Scandinavian countries since the 1980s. But in Sweden, support for this type of light therapy often went one step further: dressing patients in all-white clothes and sending them into brightly lit rooms. In recent years, however, light therapy has experienced something of a backlash in Sweden, and so now only a handful of clinics remain. In part, this was a response to a study by the Swedish Council on Technology Assessment in Health Care, which reviewed the evidence and concluded that "although treatment in light therapy rooms is well established in Sweden, no satisfactory, controlled studies have been published on the subject," meaning that the value of light therapy for SAD "can be neither confirmed nor dismissed".</p>
+                    <p>A town called Rjukan in Norway has taken a different approach to dealing with winter darkness. In 1913, the concept of erecting large rotatable mirrors on the northern side of the valley overlooking Rjukan was proposed. The intention was to collect sunlight and reflect it down over the town below. However, it wasn't until 2002 that resident Martin Andersen started to develop some concrete plans. These involved a mirror mounted in such a way that it would turn to keep track of the sun while continually reflecting its light down towards the town square. Now three enormous mirrors stand on the mountainside above Rjukan. In January, the sun is only high enough for the mirrors to bring light to the square for a couple of hours per day, from 1 midday until 2pm, but the beam produced by the mirrors is strong. Interestingly, Martin Andersen admits that he was used to the lack of sunlight even before this innovation, and he believes that other residents were too.</p>
+                    <p>This is certainly the case in another Norwegian settlement: Tromso. It is 400 km north of the Arctic Circle and the sun doesn't rise above the horizon between 21 November and 21 January. Yet strangely, studies have found no difference between rates of anxiety and depression in the population in winter and summer months. One suggestion is that this apparent resistance to winter depression is genetic. However, an alternative explanation is culture, meaning some people are just more willing to adapt. Recently, a psychologist called Kari Leibowitz spent ten months in Tromso trying to discover how people cope during winter. She devised a "winter mindset questionnaire" to assess people's attitudes and actually found that, in general, an appreciation of winter was associated with greater life satisfaction and a sense of personal growth.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-8</div>
+                    <p>Complete the notes below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>Experiment with artificial light at Lindeborg School</strong></p>
+                    <p><strong>Aims of the experiment</strong></p>
+                    <p>- to find out if students' <input type="text" name="q1" placeholder="1" class="input-field inline-input"> can be improved</p>
+                    <p>- in the long term, to adapt lighting in <input type="text" name="q2" placeholder="2" class="input-field inline-input"> so that employees feel better</p>
+                    <p><strong>Details about the artificial lighting system</strong></p>
+                    <p>- the artificial lights are designed to reproduce the natural daytime light of <input type="text" name="q3" placeholder="3" class="input-field inline-input"> in Sweden</p>
+                    <p>- the lights turn a shade of <input type="text" name="q4" placeholder="4" class="input-field inline-input"> towards the end of a school day</p>
+                    <p>- the brightness of the lights in the morning helps regulate the amount of <input type="text" name="q5" placeholder="5" class="input-field inline-input"> the body makes</p>
+                    <p><strong>Students who are involved in the experiment</strong></p>
+                    <p>- students in two different classes used technology as well as a <input type="text" name="q6" placeholder="6" class="input-field inline-input"> to record the amount of sleep they got</p>
+                    <p>- the <input type="text" name="q7" placeholder="7" class="input-field inline-input"> of sleep amongst students in Anna's class improved and they woke up later</p>
+                    <p>- the influence of the lighting system on performance during <input type="text" name="q8" placeholder="8" class="input-field inline-input"> is unknown</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 9-13</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 Sweden was the first Scandinavian country to use light therapy.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 Light therapy continues to enjoy great popularity in Sweden.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 The Swedish Council on Technology Assessment in Health Care has found proof that light therapy is effective.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 Martin Andersen's mirrors can provide a full day of light during January.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 Kari Leibowitz's findings suggest people who like winter tend to be content.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PASSAGE 2 -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 on pages 6 and 7.</strong></p>
+                    <h3>Understanding and Protecting Elephants</h3>
+                    <p><strong>A</strong> The future of the African elephant is at risk. They are often shot by poachers for their ivory and this is responsible for most of the decline in elephant numbers. But habitat loss is important too, and not just the changing of bush into farmland. Roads, railways and fences stop elephants moving around, and an elephant needs a lot of room. According to George Wittemyer of Save the Elephants, an average elephant ranges over 1,500 square kilometres over a year and may travel as much as 60 kilometres a day.</p>
+                    <p><strong>B</strong> The question is whether elephants and people can ever coexist peacefully. People who worry that the answer may be 'no' fear the loss of more than just another species of animal. Elephants seem to have evolved intelligence, and possibly even consciousness. Though they may not be alone in this (similar claims are made for certain whales, some carnivores like lions and hyenas, and some birds), they are certainly part of a small group. Self-awareness is one indication of the vast capacity for thinking and intellect that exists in the elephant. They can, in fact, identify themselves in a mirror, something that is extremely rare in the animal kingdom. Another example of superior intellect is the elephant's ability to have fun and display a sense of humour. Elephants in zoos have even been seen stealing onlookers' caps and hiding them in playful teasing. Losing even one example of how intelligence develops would reduce the ability of biologists to understand the process of how intelligence has evolved in animals.</p>
+                    <p><strong>C</strong> Apart from people, no species on Earth has a more complex society than elephants. Their social arrangements centre around groups of four or five females and their young that are led by a matriarch who is mother, grandmother, great-grandmother, sister or aunt to most of them. Though males are forced to depart their birth group when they mature, females usually remain in it their entire lives. Elephant families are part of bigger 'kinship' groups that come together and separate at will. Moreover, each kinship group is part of what is called a clan. Clans gather in the dry season, when the resources capable of supporting elephants are limited. All clan members know each other and, since a clan will usually have 100 to 200 adult members, this means an adult female can recognise and have meaningful social relations with that many other individuals. A figure of between 100 and 200 acquaintances is similar to the number of people a human being can maintain meaningful social relationships with - a value known as Dunbar's number. Dunbar's number for people is about 150.</p>
+                    <p><strong>D</strong> Being able to recall details of such large numbers of individuals means elephants require enormous mental powers. Details of how their brains work are not known, but one thing which is known is that they have big hippocampuses. These structures, one in each hemisphere of the brain, are involved in the formation of long-term recall. Compared with the size of its brain, an elephant's hippocampuses are about 40 per cent larger than those of a human being.</p>
+                    <p><strong>E</strong> Elephants can seemingly solve problems by thinking about them in abstract terms. Experiments conducted on domesticated Asian elephants show that they are able to manipulate nearby objects, such as branches, as tools to get food which is out of reach. This is something some other species, such as great apes, can do, but which most animals find impossible. For all of these reasons then, elephants are of great scientific interest. But the focus of almost all elephant researchers has shifted from understanding the animals to trying to preserve them.</p>
+                    <p><strong>F</strong> Another, though secondary, cause of elephant decline, is changes in land use in Africa. The human inhabitants of areas around African elephant reserves have traditionally survived by moving herds of cattle from one grazing place to another. One source of conflict with elephants has been competition for pasture, as the herders' populations have grown. But, additionally, some herders have begun to settle down. Buildings and fences are appearing on land which elephants have traditionally crossed as they travel from one place to another. Elephants have places where they prefer to live and, when travelling between these, which they often do at night, they tend to follow narrow corridors. Keeping these corridors clear of development is essential to the well-being of elephants.</p>
+                    <p><strong>G</strong> Understanding elephants' behaviour also permits it to be changed in ways that help reduce direct conflict between elephants and people. One such project uses elephants' fear of bees. Bees are the only animals, apart from humans, that elephants seem truly afraid of. This is because, although a bee's sting cannot penetrate most parts of an elephant's hide, groups of bees tend to attack the eyes and the tips of the trunks, an elephant's most sensitive parts. Elephants can't protect themselves from the bees - not even by swinging their tails and flapping their ears.</p>
+                    <p><strong>H</strong> Knowing this, scientists developed the idea of protecting farms with bee fences. The sort of fence most African farmers can afford is too weak to keep an elephant away from their crops, but a bee fence, though even weaker, will achieve this. The fence consists of pairs of poles placed at three-metre intervals, between which beehives are hung. This fence is enough to stop elephants immediately. They are so scared that half the hives can be fake, and the fence still keeps the elephants out. Bee-fenced farms suffer far fewer elephant attacks than those with conventional protection. As a bonus, the farmers earn extra income from the honey the bees produce.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-20</div>
+                    <p>Reading Passage 2 has eight paragraphs, A-H. Which paragraph contains the following information? Write the correct letter, A-H, in boxes 14-20 on your answer sheet. You may use any letter more than once.</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="14"></span>14 an explanation of why elephants have such good memories</td>
+                                <td><label><input type="radio" name="q14" value="A"></label></td>
+                                <td><label><input type="radio" name="q14" value="B"></label></td>
+                                <td><label><input type="radio" name="q14" value="C"></label></td>
+                                <td><label><input type="radio" name="q14" value="D"></label></td>
+                                <td><label><input type="radio" name="q14" value="E"></label></td>
+                                <td><label><input type="radio" name="q14" value="F"></label></td>
+                                <td><label><input type="radio" name="q14" value="G"></label></td>
+                                <td><label><input type="radio" name="q14" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="15"></span>15 a mention of the possible consequence of elephant extinction on scientific knowledge</td>
+                                <td><label><input type="radio" name="q15" value="A"></label></td>
+                                <td><label><input type="radio" name="q15" value="B"></label></td>
+                                <td><label><input type="radio" name="q15" value="C"></label></td>
+                                <td><label><input type="radio" name="q15" value="D"></label></td>
+                                <td><label><input type="radio" name="q15" value="E"></label></td>
+                                <td><label><input type="radio" name="q15" value="F"></label></td>
+                                <td><label><input type="radio" name="q15" value="G"></label></td>
+                                <td><label><input type="radio" name="q15" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="16"></span>16 a comparison of human and elephant abilities to interact with others</td>
+                                <td><label><input type="radio" name="q16" value="A"></label></td>
+                                <td><label><input type="radio" name="q16" value="B"></label></td>
+                                <td><label><input type="radio" name="q16" value="C"></label></td>
+                                <td><label><input type="radio" name="q16" value="D"></label></td>
+                                <td><label><input type="radio" name="q16" value="E"></label></td>
+                                <td><label><input type="radio" name="q16" value="F"></label></td>
+                                <td><label><input type="radio" name="q16" value="G"></label></td>
+                                <td><label><input type="radio" name="q16" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="17"></span>17 a detail about when elephants most frequently move between different areas</td>
+                                <td><label><input type="radio" name="q17" value="A"></label></td>
+                                <td><label><input type="radio" name="q17" value="B"></label></td>
+                                <td><label><input type="radio" name="q17" value="C"></label></td>
+                                <td><label><input type="radio" name="q17" value="D"></label></td>
+                                <td><label><input type="radio" name="q17" value="E"></label></td>
+                                <td><label><input type="radio" name="q17" value="F"></label></td>
+                                <td><label><input type="radio" name="q17" value="G"></label></td>
+                                <td><label><input type="radio" name="q17" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="18"></span>18 reference to the biggest cause of the decrease in the world's elephant population</td>
+                                <td><label><input type="radio" name="q18" value="A"></label></td>
+                                <td><label><input type="radio" name="q18" value="B"></label></td>
+                                <td><label><input type="radio" name="q18" value="C"></label></td>
+                                <td><label><input type="radio" name="q18" value="D"></label></td>
+                                <td><label><input type="radio" name="q18" value="E"></label></td>
+                                <td><label><input type="radio" name="q18" value="F"></label></td>
+                                <td><label><input type="radio" name="q18" value="G"></label></td>
+                                <td><label><input type="radio" name="q18" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="19"></span>19 a mention of the fact that climate affects the time when elephants group together</td>
+                                <td><label><input type="radio" name="q19" value="A"></label></td>
+                                <td><label><input type="radio" name="q19" value="B"></label></td>
+                                <td><label><input type="radio" name="q19" value="C"></label></td>
+                                <td><label><input type="radio" name="q19" value="D"></label></td>
+                                <td><label><input type="radio" name="q19" value="E"></label></td>
+                                <td><label><input type="radio" name="q19" value="F"></label></td>
+                                <td><label><input type="radio" name="q19" value="G"></label></td>
+                                <td><label><input type="radio" name="q19" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="20"></span>20 reference to how some elephants can use items in their environment to feed themselves</td>
+                                <td><label><input type="radio" name="q20" value="A"></label></td>
+                                <td><label><input type="radio" name="q20" value="B"></label></td>
+                                <td><label><input type="radio" name="q20" value="C"></label></td>
+                                <td><label><input type="radio" name="q20" value="D"></label></td>
+                                <td><label><input type="radio" name="q20" value="E"></label></td>
+                                <td><label><input type="radio" name="q20" value="F"></label></td>
+                                <td><label><input type="radio" name="q20" value="G"></label></td>
+                                <td><label><input type="radio" name="q20" value="H"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 21-22</div>
+                    <p>Choose <strong>TWO</strong> correct answers.</p>
+                    <p>Which TWO of the following statements are true of elephants?</p>
+                    <div class="question" data-question="21">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="21"></span><span class="question-anchor" data-question-anchor="22"></span>21-22 Select TWO options</div>
+                        <div class="options">
+                            <label><input type="checkbox" name="q21_22" value="A"> Elephants can identify potentially dangerous foods.</label>
+                            <label><input type="checkbox" name="q21_22" value="B"> Elephants are capable of learning new skills throughout their lives.</label>
+                            <label><input type="checkbox" name="q21_22" value="C"> Elephants are able to share a habitat with other animal species.</label>
+                            <label><input type="checkbox" name="q21_22" value="D"> Elephants have the ability to recognise their own reflection.</label>
+                            <label><input type="checkbox" name="q21_22" value="E"> Elephants demonstrate a capacity for playful behaviour.</label>
+                        </div>
+                        <input type="text" name="q21" class="input-field" style="display:none;" aria-hidden="true">
+                        <input type="text" name="q22" class="input-field" style="display:none;" aria-hidden="true">
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>Elephants and Bees</strong></p>
+                    <p>Even though most of an elephant's skin is too thick for a bee to sting through, elephants fear bees greatly. This is because the insects sting elephants in their eyes or on their <span class="question-anchor" data-question-anchor="23"></span><input type="text" name="q23" placeholder="23" class="input-field inline-input">, which are easily hurt.</p>
+                    <p>Farmers in Africa use bee fences to stop elephants from coming on to their property and damaging <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input">. These bee fences are simple constructions of regularly spaced <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input"> from which hives are hung. The elephants are so scared of bees that even using some beehives which are <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input"> will frighten elephants away.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 on pages 10 and 11.</strong></p>
+                    <h3>Vitamins</h3>
+                    <p>If there's one thing about nutrition we think we know for sure, it's that vitamins are good for us. In reality, however, most of us know nearly nothing about vitamins. And our faith in vitamin supplements or pills, combined with our current beliefs about nutrition and health, is doing us harm.</p>
+                    <p>Discovered barely a century ago, vitamins were a revolutionary breakthrough in nutritional science, providing cures and ways of preventing some of the world's most terrifying diseases. But it wasn't long before vitamins moved from the labs of scientists to become supplements that could be added to food or taken independently. By the end of World War Two, vitamins were available in forms not found in nature - vitamin-fortified peanut butter, vitamin gum, even vitamin doughnuts. Vitamins had entered the scientific mainstream, yet far from expressing perfectly reasonable scepticism over these products, the public asked for more. This is a process that has continued ever since.</p>
+                    <p>In the 21st century, we're still such believers in vitamins' inherent goodness that we don't realise the extent to which scientists still don't truly comprehend how vitamins work in our bodies, or how much of each vitamin we require. We're not aware that vitamins (and our enthusiasm for them) are what opened the door for the array of supposed wonder nutrients that intrigue and confuse us today, whether they be probiotics or antioxidants or omega-3s.</p>
+                    <p>We don't notice the ways that food marketers and dietary supplement makers use synthetic vitamins to add an appearance of health to otherwise unhealthy products; nor do we acknowledge the extent to which we use vitamins and these other vitamin-inspired nutrients to give ourselves permission to overeat foods of all kinds. And we certainly don't recognise that by believing in the idea that isolated dietary chemicals hold the keys to good health, our obsession with vitamins is making us less healthy.</p>
+                    <p>One assumption about vitamins is definitely true: we do indeed need them. The 13 dietary chemicals that we call vitamins affect each one of us every minute of every day, helping us to think and speak and move our muscles, extract calories from what we eat, even see the words on this page. Deficiencies in these vitamins can cause serious illnesses and even death - something that still occurs around the world today - and when administered soon enough, vitamins can be astoundingly powerful; give vitamin A to a girl suffering from the vitamin A deficiency condition of night blindness, and she can recover full vision within days. Our need for them is no more avoidable than our need for air.</p>
+                    <p>But the very power of vitamins makes them a double-edged sword. Their ability to save lives has promoted the idea that they can do the impossible in all of us, regardless of whether we're actually deficient in them. This has led to beliefs in vitamins that are based more on faith than fact. When we seek out vitamins today, it's not because we're worried about night blindness, or pellagra (a disease caused by a lack of vitamin B3), or beriberi (a disease caused by a vitamin B1 deficiency), or any of the other conditions that vitamins can actually prevent and cure. Instead, we use vitamins as insurance policies against whatever else we might (or might not) be eating, as if by making up for our bad eating habits, vitamins can save us from ourselves. We think that vitamins will help us live longer and stay healthier, even prevent or reverse disease. It is now generally accepted that vitamins will help give us an advantage over other competitors at sporting events.</p>
+                    <p>Many people choose to take more vitamins as they don't want to rely on conventional treatment by doctors. Perhaps that's why when we hear the word 'vitamin', we immediately think of pills, turning substances found naturally in foods into something we don't just eat, but take. Yet, while we all have access to information and research about the side effects of pills, and it seems unlikely that any one drug could possibly fix all our issues, we assume that vitamins are both cures and entirely risk-free.</p>
+                    <p>In a way, our attraction to vitamins, like our general obsession with nutrition, is perfectly logical: our well-being is affected by what we eat, and no one wants to be sick. But that doesn't explain how the term 'vitamin', a word coined by Polish biochemist Casimir Funk before any vitamin had even been chemically identified, has come to be synonymous with health. Isn't it odd, for example, that cyanocobalamin and alpha-tocopherol sound intimidating, while vitamins B12 and E - which are names for the same substances - seem good? Isn't it strange that we worry about hydrogenated oils, high fructose corn syrup, artificial sweeteners, and genetically modified food, but allow synthetic vitamins to be added to nearly anything without question - and then use the presence of those vitamins to define the food as healthy?</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 <span class="question-anchor" data-question-anchor="27"></span>The author mentions that vitamins were discovered 'barely a century ago' in order to</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A show how important timing is in scientific discoveries.</label>
+                            <label><input type="radio" name="q27" value="B"> B suggest that scientists started researching them then.</label>
+                            <label><input type="radio" name="q27" value="C"> C illustrate how quickly awareness of them has become widespread.</label>
+                            <label><input type="radio" name="q27" value="D"> D suggest that we are healthier now than in the past.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 <span class="question-anchor" data-question-anchor="28"></span>What does the writer imply about the food marketing and dietary supplement industries in the fourth paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A They mislead the public into buying unhealthy food.</label>
+                            <label><input type="radio" name="q28" value="B"> B They were the driving forces behind scientific progress.</label>
+                            <label><input type="radio" name="q28" value="C"> C They believe that vitamins improve food quality.</label>
+                            <label><input type="radio" name="q28" value="D"> D They are currently working to discover new vitamins.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 <span class="question-anchor" data-question-anchor="29"></span>Why does the writer refer to vitamin A in the fifth paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A to correct a common misunderstanding about vitamins</label>
+                            <label><input type="radio" name="q29" value="B"> B to question why some people are reluctant to take vitamins</label>
+                            <label><input type="radio" name="q29" value="C"> C to exemplify that vitamins are a necessity for human health</label>
+                            <label><input type="radio" name="q29" value="D"> D to illustrate that some vitamins are less important than others</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 <span class="question-anchor" data-question-anchor="30"></span>What is the writer doing in the last paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A questioning the history of vitamin development</label>
+                            <label><input type="radio" name="q30" value="B"> B outlining the chemical make-up of some vitamin supplements</label>
+                            <label><input type="radio" name="q30" value="C"> C explaining why vitamin supplements can be difficult to manufacture</label>
+                            <label><input type="radio" name="q30" value="D"> D illustrating how we view vitamins differently to other substances</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 <span class="question-anchor" data-question-anchor="31"></span>What is the purpose of this text?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A to raise awareness of the need to eat a balanced diet</label>
+                            <label><input type="radio" name="q31" value="B"> B to challenge the public's trust in vitamin supplements</label>
+                            <label><input type="radio" name="q31" value="C"> C to criticise scientists for not publishing their findings</label>
+                            <label><input type="radio" name="q31" value="D"> D to encourage the food industry to carry out further research</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-37</div>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 At the end of World War Two, the public should have questioned the practices of food manufacturers.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="YES"> YES</label>
+                            <label><input type="radio" name="q32" value="NO"> NO</label>
+                            <label><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 Scientists in the 21st century have a thorough understanding of the function of vitamins.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="YES"> YES</label>
+                            <label><input type="radio" name="q33" value="NO"> NO</label>
+                            <label><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 Omega-3s are more important to a healthy diet than some vitamins.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="YES"> YES</label>
+                            <label><input type="radio" name="q34" value="NO"> NO</label>
+                            <label><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 The presence of vitamins in food encourages people to consume too much of it.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="YES"> YES</label>
+                            <label><input type="radio" name="q35" value="NO"> NO</label>
+                            <label><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 Vitamins are more effective at treating pellagra than beriberi.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="YES"> YES</label>
+                            <label><input type="radio" name="q36" value="NO"> NO</label>
+                            <label><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 The substance identified by Casimir Funk was given the name 'vitamin' by a later scientist.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="YES"> YES</label>
+                            <label><input type="radio" name="q37" value="NO"> NO</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 38-40</div>
+                    <p>Complete the summary below by dragging each phrase to the correct gap.</p>
+                    <p><strong>Vitamins: Why they are necessary and some common beliefs about them</strong></p>
+                    <p>People need vitamins because they are essential for a range of <span class="question-anchor" data-question-anchor="38"></span><div class="drop-zone drop-zone-inline" data-target="q38" data-placeholder="Drop letter" data-group="p3-headings" data-number="38"><span class="drop-number">38</span><span class="drop-value">Drop letter</span></div><input type="hidden" name="q38"></p>
+                    <p>However, people overestimate the power of vitamins. They believe these substances can result in <span class="question-anchor" data-question-anchor="39"></span><div class="drop-zone drop-zone-inline" data-target="q39" data-placeholder="Drop letter" data-group="p3-headings" data-number="39"><span class="drop-number">39</span><span class="drop-value">Drop letter</span></div><input type="hidden" name="q39"> for everyone - even people who are not lacking in vitamins. Many people believe that vitamins can stop them from getting sick or even prolong their lives. Many people also believe that vitamins can lead to <span class="question-anchor" data-question-anchor="40"></span><div class="drop-zone drop-zone-inline" data-target="q40" data-placeholder="Drop letter" data-group="p3-headings" data-number="40"><span class="drop-number">40</span><span class="drop-value">Drop letter</span></div><input type="hidden" name="q40"> in physical activities. It is now common for people to think of vitamins as alternative medicine. People often fail to take into account clear evidence surrounding health and nutrition, and put all their trust in the power of vitamins to solve their problems.</p>
+                    <div class="heading-drop">
+                        <strong>Available phrases</strong>
+                    </div>
+                    <div class="drag-options" data-group="p3-headings">
+                        <div class="drag-item" data-option="A" data-answer="A" data-label="chemical compounds" data-group="p3-headings"><strong>A</strong><span class="drag-label">chemical compounds</span></div>
+                        <div class="drag-item" data-option="B" data-answer="B" data-label="improved performance" data-group="p3-headings"><strong>B</strong><span class="drag-label">improved performance</span></div>
+                        <div class="drag-item" data-option="C" data-answer="C" data-label="common sense" data-group="p3-headings"><strong>C</strong><span class="drag-label">common sense</span></div>
+                        <div class="drag-item" data-option="D" data-answer="D" data-label="amazing transformations" data-group="p3-headings"><strong>D</strong><span class="drag-label">amazing transformations</span></div>
+                        <div class="drag-item" data-option="E" data-answer="E" data-label="bodily functions" data-group="p3-headings"><strong>E</strong><span class="drag-label">bodily functions</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_24',
+            label: 'Reading Full 24',
+            correctAnswers: {
+            q1: "CONCENTRATION",
+            q2: "OFFICES",
+            q3: "SPRING",
+            q4: "YELLOW",
+            q5: "MELATONIN",
+            q6: "DIARY",
+            q7: "QUALITY",
+            q8: "EXAMINATIONS",
+            q9: "NOT GIVEN",
+            q10: "FALSE",
+            q11: "FALSE",
+            q12: "FALSE",
+            q13: "TRUE",
+            q14: "D",
+            q15: "B",
+            q16: "C",
+            q17: "F",
+            q18: "A",
+            q19: "C",
+            q20: "E",
+            q21: "D",
+            q22: "E",
+            q23: "TRUNKS",
+            q24: "CROPS",
+            q25: "POLES",
+            q26: "FAKE",
+            q27: "C",
+            q28: "A",
+            q29: "C",
+            q30: "D",
+            q31: "B",
+            q32: "YES",
+            q33: "NO",
+            q34: "NOT GIVEN",
+            q35: "YES",
+            q36: "NOT GIVEN",
+            q37: "NO",
+            q38: "E",
+            q39: "D",
+            q40: "B"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-24.js?v=20260731-reading-clear-24-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-24-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

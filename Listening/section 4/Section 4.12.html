@@ -1,0 +1,239 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://t.me/IELTSwithJurabek -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-ebd32d8d.css">
+
+    <link rel="stylesheet" href="../../assets/listening-section-test-51b22698.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+<!-- https://t.me/IELTSwithJurabek -->
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 4.12.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Loading audio...</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title">CDI IELTS Listening Test</h1>
+            <p class="start-subtitle">Ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="ielts-logo">IELTS</div>
+                <div class="test-id">Test taker ID</div>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8.111 16.404a5.5 5.5 0 0 1 7.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                    </path>
+                </svg>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-5 5-5-5h5v-5a7.5 7.5 0 00-15 0v5h5l-5 5-5-5h5V7a12 12 0 0124 0v10z"></path>
+                </svg>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox=" 0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+            <div class="part-header">
+                <h1 class="part-title" id="partTitle">SECTION 4</h1>
+                <p class="part-instructions" id="partInstructions">Questions 31-40</p>
+            </div>
+            <!-- Questions Section -->
+            <div class="questions-section">
+                <h2 class="questions-title" id="questionsTitle">Questions 31-40</h2>
+                <p class="questions-description selectable-text" id="questionsDescription">Complete the notes below.
+                    Write ONE WORD ONLY for each answer.</p>
+
+                <!-- Section 4 Content: Gamification -->
+                <div id="part1Content">
+                    <h3 class="scenario-title selectable-text">Gamification</h3>
+                    <div class="question-group">
+                        <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">What is it?</h4>
+                        <div class="question-item">
+                            <span class="selectable-text">In business, it is frequently used for </span>
+                            <input type="text" class="question-input" id="q31" oninput="saveAnswer(31, this.value)"
+                                placeholder="31">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">Uses people's desire to win a reward</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">Not a new idea, e.g. incentive schemes were first used by </span>
+                            <input type="text" class="question-input" id="q32" oninput="saveAnswer(32, this.value)"
+                                placeholder="32">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Uses</h4>
+                        <div class="question-item">
+                            <span class="selectable-text">To get online </span>
+                            <input type="text" class="question-input" id="q33" oninput="saveAnswer(33, this.value)"
+                                placeholder="33">
+                            <span class="selectable-text"> quickly.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">To persuade people to change their </span>
+                            <input type="text" class="question-input" id="q34" oninput="saveAnswer(34, this.value)"
+                                placeholder="34">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">For training purposes, e.g. simulators used by </span>
+                            <input type="text" class="question-input" id="q35" oninput="saveAnswer(35, this.value)"
+                                placeholder="35">
+                            <span class="selectable-text"> and town planners.</span>
+                        </div>
+                        <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Successful examples</h4>
+                        <div class="question-item">
+                            <span class="selectable-text">Australian government: to encourage people to </span>
+                            <input type="text" class="question-input" id="q36" oninput="saveAnswer(36, this.value)"
+                                placeholder="36">
+                            <span class="selectable-text"> more.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">Overseas local authority: to reward drivers for not speeding.</span>
+                        </div>
+                        <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Health</h4>
+                        <div class="question-item">
+                            <span class="selectable-text">A staircase at a station that worked like a </span>
+                            <input type="text" class="question-input" id="q37" oninput="saveAnswer(37, this.value)"
+                                placeholder="37">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">A game that helps recovery when old people hurt their </span>
+                            <input type="text" class="question-input" id="q38" oninput="saveAnswer(38, this.value)"
+                                placeholder="38">
+                            <span class="selectable-text"> in a fall.</span>
+                        </div>
+                        <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Things to consider</h4>
+                        <div class="question-item">
+                            <span class="selectable-text">It's important for gamification to be </span>
+                            <input type="text" class="question-input" id="q39" oninput="saveAnswer(39, this.value)"
+                                placeholder="39">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <div class="question-item">
+                            <span class="selectable-text">Need to think about the laws regarding </span>
+                            <input type="text" class="question-input" id="q40" oninput="saveAnswer(40, this.value)"
+                                placeholder="40">
+                            <span class="selectable-text">.</span>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="submit-section">
+                            <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+                    <button class="part-button active" onclick="switchPart(0)" id="part1Btn">Section 4</button>
+                    <div class="question-numbers" id="part1Questions">
+                        <button class="question-number" onclick="focusQuestion(31)">31</button>
+                        <button class="question-number" onclick="focusQuestion(32)">32</button>
+                        <button class="question-number" onclick="focusQuestion(33)">33</button>
+                        <button class="question-number" onclick="focusQuestion(34)">34</button>
+                        <button class="question-number" onclick="focusQuestion(35)">35</button>
+                        <button class="question-number" onclick="focusQuestion(36)">36</button>
+                        <button class="question-number" onclick="focusQuestion(37)">37</button>
+                        <button class="question-number" onclick="focusQuestion(38)">38</button>
+                        <button class="question-number" onclick="focusQuestion(39)">39</button>
+                        <button class="question-number" onclick="focusQuestion(40)">40</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+                <div class="score-summary">
+                    <div class="score-item">
+                        <div class="score-number" id="totalScore">0/10</div>
+                        <div class="score-label">Total Score</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-number" id="part1Score">0/10</div>
+                        <div class="score-label">Section 4</div>
+                    </div>
+                </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        <script src="../../assets/listening-section-test-script-c85a9956.js?v=20260522-safari-compat-all"></script>
+    </div>
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section4-12.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,628 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 11 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-11-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>How the first trans-Atlantic telegraph cable was laid</h3>
+                    <p>On August 16, 1858, the first telegraphic message crossed the Atlantic Ocean. Travelling along a recently laid cable, the message from Britain's Queen Victoria to US President James Buchanan took just 16 hours. Prior to this, communication across the Atlantic would have been by ship - and taken around 10 days.</p>
+                    <p>People had been communicating via overland telegraph since 1844 and messages had been passing between Britain and France since 1850 when the first submarine cable was laid in the English Channel. But the attempt to span the Atlantic Ocean was the most daring attempt yet - and was the talk of the age, the 19th-century equivalent of the Apollo space mission. The idea that one could seemingly cheat time and space was inspiring and it changed the way people thought about the world and their place in it.</p>
+                    <p>The driving force behind the trans-Atlantic telegraph cable was an American businessman called Cyrus Field. In 1856, he and Englishmen John Watkins Brett and Charles Tilson Bright formed the Atlantic Telegraph company. They raised 350,000 pounds mostly from businessmen in London, Liverpool, Manchester and Glasgow. They also secured 14,000 pounds annually from the British government plus the loan of ships and a similar amount from the US government.</p>
+                    <p>Getting the cable made proved to be difficult. The distance between the west coast of Ireland and Newfoundland is over 3,700km, and Field was unable to find a company that was capable of supplying the required cable in the desired time frame. As a result, two companies were engaged to fulfil the order. The cable had a core of seven copper wires down which the signal would pass. These were insulated with several layers of gutta-percha (a natural plastic made from tree sap) and then armoured with iron wire. When it was complete, the weight of the cable proved too great for any single ship. It was therefore loaded onto two: the British ship, HMS Agamemnon and the American ship, USS Niagara.</p>
+                    <p>The first attempt to lay the cable began on August 5 1857 with both ships departing from the west coast of Ireland, near Ballycarbery Castle. The venture did not go according to plan. The cable snapped on the first day, but was recovered from the bottom and repaired. A few days later, mid-Atlantic, the cable snapped again, this time in water 3km deep. It was lost and the expedition abandoned.</p>
+                    <p>The next summer in 1858 they tried again. On this expedition, the two great ships met mid-Atlantic, each carrying half the cable. The two ends were joined together and the ships sailed away from each other. The cable broke three times and each time they were forced to start again. On July 29, with little hope of success, the cable was joined for the fourth time and the ships sailed for home. This time they succeeded. The cable was landed in Newfoundland on August 4 and in Ireland the following day. And a week or so later Queen Victoria sent that first trans-Atlantic message to President Buchanan.</p>
+                    <p>The celebrations were tremendous. One US newspaper proclaimed:</p>
+                    <p>New York has seldom seen a more complete holiday than that on September 1 1858, in celebration of the successful laying of the Atlantic cable. The enthusiasm of an entire nation was expressed in this jubilee of its metropolis, and the era of a closer connection with Europe was well ushered in by a day of genuine rejoicing and gaiety.</p>
+                    <p>Celebrations were, however, short-lived: the cable performed badly and failed after just three weeks. The project was put on hold, but the concept had been proved possible. By 1865, further research had been carried out into the problems which had plagued the earlier cables. In addition, cables had been successfully laid in the Mediterranean and in the Persian Gulf. The cables that were used were better engineered, with thicker cores and better insulation allowing faster transmission speeds.</p>
+                    <p>In 1865, Field incorporated a second company to raise enough funds to try again. He chartered the largest ship in the world at the time, the SS Great Eastern, which could carry the entire Atlantic cable. Huge salt-water tanks and other state-of-the-art machinery were fitted to ensure it remained in mint condition during its journey. All went well until, in heavy winds 1000km off the coast of Newfoundland, the cable rubbed on the side of the ship, snapped and plunged to the deep ocean floor.</p>
+                    <p>Not one to quit, Field vowed to return the following year. This final 1866 expedition proved to be successful and the cable was put into commercial service on July 28. One month later, the 1865 cable was brought to the surface and repaired, providing a second Atlantic telegraph link. The service had obvious and immediate impact. People in government were able to respond more swiftly to evolving situations. News travelled more quickly, which boosted trade on both sides of the Atlantic. It also had a profound effect on things such as family life and cultural ties. For example, it was no longer so difficult for immigrants in America to keep in touch with their families back home.</p>
+                    <p>The roller-coaster of cable-laying highs and lows between 1857 and 1866 caught the imaginations of a generation the way the space race did in the 20th century. There was immense public interest in the endeavour and in telegraphy more generally. At the time, telegraphic science was reported widely in the newspapers and the fortunes of the telegraph companies were followed closely. Discussions of the pitfalls and solutions to spanning the Atlantic with cable became everyday topics of conversation, and endless articles in the newspapers ensured that the project stayed in people's thoughts.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>Do the following statements agree with the information given in the text?</p>
+                    <p>In boxes 1-6, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 Field failed to find a company that could produce all of the cable needed by the specified date.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 HMS Agamemnon and USS Niagara set sail from different locations on August 5, 1857.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 On the 1858 expedition, the cable broke three times because of a manufacturing fault.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 The newspaper quoted in the passage disapproved of the enthusiasm that met the 1858 expedition.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text">5 Many articles appeared in the press between 1857 and 1866 about the science behind the telegraph.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 Between 1857 and 1866, people talked about the problems related to the telegraph project on a regular basis.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-13</div>
+                    <p>Complete the notes below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the text for each answer.</p>
+                    <p><strong>The history of the trans-Atlantic telegraph</strong></p>
+                    <p><strong>The first attempts to lay cable:</strong></p>
+                    <ul>
+                        <li>the Atlantic Telegraph company was set up by Field, Brett and Bright in 1856</li>
+                        <li>the central wires of the cable were made of <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input"></li>
+                        <li>the cable was put onto two ships due to its <span class="question-anchor" data-question-anchor="8"></span><input type="text" name="q8" placeholder="8" class="input-field inline-input"></li>
+                        <li>the 1857 attempt failed</li>
+                        <li>the cable was successfully laid in 1858</li>
+                    </ul>
+                    <p><strong>Events between 1858 and 1866:</strong></p>
+                    <ul>
+                        <li>celebrations were brief since problems emerged</li>
+                        <li>further research led to the cable's thickness and <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input"> being improved</li>
+                        <li>Field set up another company to get the <span class="question-anchor" data-question-anchor="10"></span><input type="text" name="q10" placeholder="10" class="input-field inline-input"> for another attempt</li>
+                        <li>the strong winds experienced by the SS Great Eastern led to the cable being lost</li>
+                        <li>the 1866 expedition was successful</li>
+                    </ul>
+                    <p><strong>The changes the trans-Atlantic telegraph brought about:</strong></p>
+                    <ul>
+                        <li>members of the <span class="question-anchor" data-question-anchor="11"></span><input type="text" name="q11" placeholder="11" class="input-field inline-input"> could react more quickly to events</li>
+                        <li>news could be relayed faster, thus improving <span class="question-anchor" data-question-anchor="12"></span><input type="text" name="q12" placeholder="12" class="input-field inline-input"></li>
+                        <li>it became easier for US <span class="question-anchor" data-question-anchor="13"></span><input type="text" name="q13" placeholder="13" class="input-field inline-input"> to maintain contact with their families</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>REMOVING UNWANTED NOISE</h3>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="14"></span><span class="drop-zone" data-target="q14" data-placeholder="14">14</span></strong> A noisy restaurant, a busy road, or a windy day are all situations that can be intensely frustrating for the hearing impaired when trying to understand what other people are saying. Some 10 million people in the UK suffer from hearing difficulties and, helpful as hearing aids are, those who wear them often complain that background noise continues to interfere with their understanding. But what if hearing aid wearers could choose to filter out all the troublesome sounds and focus just on the voices they want to hear?
+                        <input type="text" name="q14" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>Engineer Dr Richard Turner believes that this is fast becoming a possibility. He is developing a system that identifies the distracting noise and 'rubs it out'. 'The poor performance in noise of current hearing devices is a major reason why six million people in the UK who would benefit from hearing aids do not use them,' he said. Moreover, as the population ages, a greater number of people will be hindered by the inability to hear clearly. In addition, hearing-impaired patients who have been fitted with cochlear implants - devices implanted to help those whose auditory hair cells have died - suffer from similar limitations.</p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="15"></span><span class="drop-zone" data-target="q15" data-placeholder="15">15</span></strong> The solution lies in the statistics of sound, as Turner explained: 'Many interfering noises are immediately recognisable. Raindrops patter on a surface, a fire crackles, talkers babble at a party and the wind howls. But what makes these different noises sound the way they do? No two rain sounds are identical because the precise arrangement of falling water droplets is never repeated. Nonetheless, there must be statistical similarities in the sounds of these raindrops compared with, say, the crackle of a fire.' He believes that for this reason, the brain may be able to group similar types of sounds together based on their specific characteristics.
+                        <input type="text" name="q15" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>Turner and his colleagues have analysed this process mathematically and then developed algorithms that mimic what the brain is doing. The mathematical system that they have developed is capable of being 'trained' - a process that uses new methods from the field of machine learning - so that it can recognise new sounds. 'Rather surprisingly, it seems that a relatively small set of statistics is sufficient to describe a large number of sounds' he says. Crucially, the system that Turner and his team have come up with is capable of telling the difference between speech and other types of sound.</p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="16"></span><span class="drop-zone" data-target="q16" data-placeholder="16">16</span></strong> 'What we can now do is to erase background noise and pass these cleaned-up sounds to a listener to improve their perception in difficult surroundings,' said Turner. The idea is that future devices will have several different modes in which they can operate. These might include a mode for travelling in a car or on a train, a mode for places like a noisy party or a busy restaurant, a mode that can be used outdoors in windy weather, and so on. The device might intelligently select an appropriate mode based on the characteristics of the incoming sound.
+                        <input type="text" name="q16" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="17"></span><span class="drop-zone" data-target="q17" data-placeholder="17">17</span></strong> 'In a sense we are developing the technology to underpin intelligent hearing devices,' said Turner. An additional possibility would be for users to override the selection made by the device and select a processing mode based upon what sorts of noise they wish to erase. They could even guide the processing on their device using an interface on a mobile phone through wireless communication. Turner anticipates that his team will need two more years of simulating the effect of modifications that clean up sound before they start to work with device specialists. 'If these preliminary tests go well, then we'll be looking to work with hearing device companies to try to adapt their processing in order to incorporate these machine learning techniques.'
+                        <input type="text" name="q17" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="18"></span><span class="drop-zone" data-target="q18" data-placeholder="18">18</span></strong> Tinnitus sufferers, who are plagued by a constant ringing in their ears, could also benefit from the technology. At present, people with tinnitus sometimes use environmental sound generators as a distraction from the ringing in their ears. But such generators offer only a limited selection of sounds - a gently flowing stream, waves lapping on the seashore, or leaves rustling. With the new technology, individual patients could select the best sound to distract them from their tinnitus.
+                        <input type="text" name="q18" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="19"></span><span class="drop-zone" data-target="q19" data-placeholder="19">19</span></strong> The technology not only holds promise for helping the hearing impaired, but it also has the potential to improve phone calls - anyone who has ever tried to hold a conversation with someone phoning from a crowded room will recognise the possible benefits of such a facility. Systems that can deal with unwanted audio content would also be welcomed by the increasing numbers of people using video-sharing websites. For example, a video containing a conversation that takes place by a busy roadside on a windy day could be made more intelligible by isolating the speech from the noises - users could even be offered the chance to de-noise their video during the upload process.
+                        <input type="text" name="q19" class="input-field" style="display:none;" aria-hidden="true"></p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-19</div>
+                    <p>The text has six sections, <strong>A-F</strong>.</p>
+                    <p>Choose the correct heading for each section from the list of headings below.</p>
+                    <p>Drag the correct heading into the paragraph labels in Reading Passage 2 (14-19).</p>
+
+                    <p><strong>List of Headings</strong></p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="I" data-label="How hearing loss may be caused by certain types of sounds">I How hearing loss may be caused by certain types of sounds</div>
+                        <div class="drag-item" draggable="true" data-option="II" data-label="Uses for Turner's research in media and communications">II Uses for Turner's research in media and communications</div>
+                        <div class="drag-item" draggable="true" data-option="III" data-label="Creating a model for the classification of sounds">III Creating a model for the classification of sounds</div>
+                        <div class="drag-item" draggable="true" data-option="IV" data-label="Potential developments that still require further research">IV Potential developments that still require further research</div>
+                        <div class="drag-item" draggable="true" data-option="V" data-label="A drawback in the help currently available to those with hearing problems">V A drawback in the help currently available to those with hearing problems</div>
+                        <div class="drag-item" draggable="true" data-option="VI" data-label="Providing the hearing-impaired with training in new technology">VI Providing the hearing-impaired with training in new technology</div>
+                        <div class="drag-item" draggable="true" data-option="VII" data-label="A more effective way to take attention away from a hearing problem">VII A more effective way to take attention away from a hearing problem</div>
+                        <div class="drag-item" draggable="true" data-option="VIII" data-label="Analysing the sounds produced in the process of speaking">VIII Analysing the sounds produced in the process of speaking</div>
+                        <div class="drag-item" draggable="true" data-option="IX" data-label="The possibility of a hearing aid that can adjust itself to different environments">IX The possibility of a hearing aid that can adjust itself to different environments</div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 20-23</div>
+                    <p>Complete the summary below.</p>
+                    <p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p><strong>Improving the performance of hearing aids</strong></p>
+                    <p>At present, many people find their hearing aids do not work well when there is background noise. This also applies to people without hearing aids who have had implants fitted to help with hearing loss. Dr Richard Turner is looking for a solution to this problem. Although sounds are never <span class="question-anchor" data-question-anchor="20"></span><input type="text" name="q20" placeholder="20" class="input-field inline-input">, he believes they do share some similarities. He and his colleagues have worked on a mathematical system using <span class="question-anchor" data-question-anchor="21"></span><input type="text" name="q21" placeholder="21" class="input-field inline-input"> which replicate how we hear sounds. To allow this system to be 'trained', they have applied procedures used in machine learning and found that many different sounds can be described using a limited number of <span class="question-anchor" data-question-anchor="22"></span><input type="text" name="q22" placeholder="22" class="input-field inline-input">. They have now developed a system that can distinguish <span class="question-anchor" data-question-anchor="23"></span><input type="text" name="q23" placeholder="23" class="input-field inline-input"> from other sounds.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+                    <div class="question" data-question="24">
+                        <div class="question-text">24 Turner's team are now planning a new development involving a device which could</div>
+                        <div class="options">
+                            <label><input type="radio" name="q24" value="A"> A allow sound to be heard at a greater distance.</label>
+                            <label><input type="radio" name="q24" value="B"> B adapt itself to different kinds of background noise.</label>
+                            <label><input type="radio" name="q24" value="C"> C allow a user to remove all types of sound completely.</label>
+                            <label><input type="radio" name="q24" value="D"> D adapt itself to disorders involving other senses.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="25">
+                        <div class="question-text">25 In section E, a stream, waves and leaves are examples of the sounds that tinnitus sufferers</div>
+                        <div class="options">
+                            <label><input type="radio" name="q25" value="A"> A can currently use to help their condition.</label>
+                            <label><input type="radio" name="q25" value="B"> B might choose to use if they were available.</label>
+                            <label><input type="radio" name="q25" value="C"> C hear in their ears as a result of their condition.</label>
+                            <label><input type="radio" name="q25" value="D"> D find to be the most natural solutions to their problem.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="26">
+                        <div class="question-text">26 The writer refers to 'a busy roadside on a windy day' in section F to illustrate that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q26" value="A"> A unwanted noise could be erased from video recordings.</label>
+                            <label><input type="radio" name="q26" value="B"> B some environments are difficult for the hearing-impaired.</label>
+                            <label><input type="radio" name="q26" value="C"> C when noises are combined in a video they are difficult to erase.</label>
+                            <label><input type="radio" name="q26" value="D"> D people must cooperate in order to learn how to apply the technology.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+                <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>The Bug Picture</h3>
+                    <p><em>Lara Zanarini gives her view on insects</em></p>
+
+                    <p>How many other species do we share our planet with? The truth is that scientists don't have the slightest idea. Some early guesses of 30 million or even 100 million have been replaced in the last few years with more reliable ones of somewhere between five to ten million species. But despite this massive uncertainty there is one thing which is indisputable: the vast majority of Earth's inhabitants are invertebrate - without a backbone - and most of those are insects.</p>
+
+                    <p>It is therefore not very surprising that these creatures have a pre-eminent impact on the functioning of global ecosystems. Creatures like us - and I don't just mean primates (such as apes and monkeys), but all vertebrates (back-boned animals) - make up less than three percent of all species.</p>
+
+                    <p>Yet it is these very animals that most people hold dear, especially those with a passing resemblance to ourselves. I use a slide in my lectures which has images of all sorts of insects along with one face-on image of a female slender loris, a wide-eyed furry primate, with a baby on its back. No prizes for guessing the first, and probably the only, thing audiences look at. It seems we can't help ourselves. Appealing they may be, but in the great ecological scheme of things, they are fairly useless. If you really want to understand the world around you - you need to take a serious look at insects.</p>
+
+                    <p>Pollination, the process by which flying insects transfer grains of pollen from one plant to another and so aid their reproduction, is perhaps one of the most essential partnerships ever to have evolved. This plant-insect version of 'I'll scratch your back if you scratch mine', has been around for 100 million years and it has given the world a rich diversity, and not just of flowering plants. Twenty thousand species of bee are responsible for the continued survival of the angiosperms, which includes a very long list of fruit and vegetables from pumpkins, plums and peas to cherries, cucumbers and cocoa.</p>
+
+                    <p>What about herbivory and carnivory - plant- and meat-eating? Ecology really doesn't get much more basic than this. The light energy from the sun is converted to chemical energy and the plants - the producers - that carry out this astonishing transformation are fed on by primary consumers - the herbivores. They in turn are eaten by secondary consumers - the carnivores. But it may come as a surprise to many that all the herds of grazing ungulates - cows, goats and sheep - are entirely 'out-munched', perhaps by a factor of ten to one, by myriads of tiny insects. What about the meat-eaters? Again, insects consume many times more animal flesh than all vertebrate carnivores put together, and ants alone are the major carnivorous species in any habitat you could mention.</p>
+
+                    <p>If this sounds implausible, consider that although insects are individually small, there are an awful lot of them - an estimated ten million, million, million (10^19) with an impressively large biomass. Insects are also the major food source for countless species. Many trillions of creatures a year are eaten by insect-eating species of birds, bats and a multitude of other furry and feathery animals. Space prevents me from extolling the role of insects in global decomposition and nutrient recycling.</p>
+
+                    <p>But there is a problem looming - the first effects of which we are already feeling. Almost every study that has been done to date points to a steady decline in insect species' richness and abundance. The loss of natural habitat and the prodigious amounts of pesticides used in agriculture are taking their toll. The decreases seen in well-studied insect groups such as bees and butterflies are surely taking place in many other groups as well. At what point does the web of life become so frayed that it starts to disintegrate? We may find out sooner rather than later.</p>
+
+                    <p>It is thought that the world's tropical forests hold more than half of all extant species. If these complex habitats are being felled and degraded at even the slowest rate that has been suggested, it will still only be a matter of a few hundred years before they are lost. It is therefore an inescapable conclusion that our planet could lose more than half of all its living species in the time it takes for a tiny acorn to become a veteran oak tree.</p>
+
+                    <p>There's no doubt about it - we are the most intelligent and capable species yet to evolve on Earth. In a very short time after our appearance we covered the entire globe, establishing colonies wherever it was possible to survive. A few of us have walked on the surface of the Moon and visited the deepest abysses of the oceans. We spend vast sums of money to probe the very make-up of matter and remotely examine other parts of our solar system. We want to understand the science of everything from the infinitesimally small to the astronomically large. This truly is 'big' science and of course it's expensive. But do we have to do it right now? What about understanding the environment a bit better? Perhaps what we actually need is a bit more 'bug' science.</p>
+
+                    <p><small>* biomass: the total quantity or weight of organisms in a certain area</small></p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <p>Do the following statements agree with the views of the writer in the text?</p>
+                    <p>In boxes 27-31, write <strong>YES</strong> if the statement agrees with the views of the writer, <strong>NO</strong> if the statement contradicts the views of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 Early guesses probably greatly over-estimated the total number of species on Earth.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="YES"> YES</label>
+                            <label><input type="radio" name="q27" value="NO"> NO</label>
+                            <label><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 Primates play a significant role in the ecology of our planet.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="YES"> YES</label>
+                            <label><input type="radio" name="q28" value="NO"> NO</label>
+                            <label><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 We still have a great deal to learn about the importance of pollination.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="YES"> YES</label>
+                            <label><input type="radio" name="q29" value="NO"> NO</label>
+                            <label><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 Some people may be unaware that the world's insects consume more food overall than mammals.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="YES"> YES</label>
+                            <label><input type="radio" name="q30" value="NO"> NO</label>
+                            <label><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 It will take a long time for us to learn the effects of habitat loss and extensive pesticide use.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="YES"> YES</label>
+                            <label><input type="radio" name="q31" value="NO"> NO</label>
+                            <label><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-36</div>
+                    <p>Complete each sentence with the correct ending, <strong>A-F</strong>, below.</p>
+                    <p>Drag the correct letter into each box 32-36.</p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="A" data-label="a fall in the total number and variety of insects in the world">A a fall in the total number and variety of insects in the world.</div>
+                        <div class="drag-item" draggable="true" data-option="B" data-label="the number of plants that are pollinated by insects">B the number of plants that are pollinated by insects.</div>
+                        <div class="drag-item" draggable="true" data-option="C" data-label="how many different animal species are currently in existence">C how many different animal species are currently in existence.</div>
+                        <div class="drag-item" draggable="true" data-option="D" data-label="how long it will be before the Earth's biodiversity is drastically reduced">D how long it will be before the Earth's biodiversity is drastically reduced.</div>
+                        <div class="drag-item" draggable="true" data-option="E" data-label="the predominance of invertebrates among the Earth's species">E the predominance of invertebrates among the Earth's species.</div>
+                        <div class="drag-item" draggable="true" data-option="F" data-label="the declining numbers of bees and butterflies">F the declining numbers of bees and butterflies.</div>
+                    </div>
+                    <p><span class="question-anchor" data-question-anchor="32"></span>32 Scientists have recently revised their views regarding
+                        <span class="drop-zone" data-target="q32" data-placeholder="32">32</span>
+                        <input type="text" name="q32" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="33"></span>33 There is absolutely no doubt about
+                        <span class="drop-zone" data-target="q33" data-placeholder="33">33</span>
+                        <input type="text" name="q33" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="34"></span>34 Almost every study done so far has indicated
+                        <span class="drop-zone" data-target="q34" data-placeholder="34">34</span>
+                        <input type="text" name="q34" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="35"></span>35 A lot of research on insect groups has focused on
+                        <span class="drop-zone" data-target="q35" data-placeholder="35">35</span>
+                        <input type="text" name="q35" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="36"></span>36 The rate at which tropical forests are being lost can help us calculate
+                        <span class="drop-zone" data-target="q36" data-placeholder="36">36</span>
+                        <input type="text" name="q36" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 In the third paragraph, the writer refers to a particular slide to emphasise</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="A"> A the predominance of insects in the world.</label>
+                            <label><input type="radio" name="q37" value="B"> B a common misunderstanding about global biodiversity.</label>
+                            <label><input type="radio" name="q37" value="C"> C our instinctive reaction towards certain types of animals.</label>
+                            <label><input type="radio" name="q37" value="D"> D the main distinction between vertebrates and invertebrates.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text">38 What does "they" in the third paragraph refer to?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="A"> A lectures about animals given by the writer</label>
+                            <label><input type="radio" name="q38" value="B"> B audiences who attend events focused on insect life</label>
+                            <label><input type="radio" name="q38" value="C"> C images which depict various different types of species</label>
+                            <label><input type="radio" name="q38" value="D"> D creatures which appear comparatively similar to humans</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text">39 What does the writer imply about "big" science in the final paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="A"> A It should not be our priority at the moment.</label>
+                            <label><input type="radio" name="q39" value="B"> B It serves no useful purpose in the long term.</label>
+                            <label><input type="radio" name="q39" value="C"> C It will cost an unreasonable amount in the future.</label>
+                            <label><input type="radio" name="q39" value="D"> D It results from our natural curiosity about the world.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text">40 What point does the writer make overall about insects?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="A"> A Certain insect species are more at risk than others.</label>
+                            <label><input type="radio" name="q40" value="B"> B Insects are more important than many people realise.</label>
+                            <label><input type="radio" name="q40" value="C"> C There is an interdependence between different insect species.</label>
+                            <label><input type="radio" name="q40" value="D"> D The ecological role of insects is likely to change in the near future.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_11',
+            label: 'Reading Full 11',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "FALSE",
+            q3: "NOT GIVEN",
+            q4: "FALSE",
+            q5: "TRUE",
+            q6: "TRUE",
+            q7: "COPPER",
+            q8: "WEIGHT",
+            q9: "INSULATION",
+            q10: "FUNDS",
+            q11: "GOVERNMENT",
+            q12: "TRADE",
+            q13: "IMMIGRANTS",
+            q14: "V",
+            q15: "III",
+            q16: "IX",
+            q17: "IV",
+            q18: "VII",
+            q19: "II",
+            q20: "IDENTICAL",
+            q21: "ALGORITHMS",
+            q22: "STATISTICS",
+            q23: "SPEECH",
+            q24: "B",
+            q25: "A",
+            q26: "A",
+            q27: "YES",
+            q28: "NO",
+            q29: "NOT GIVEN",
+            q30: "YES",
+            q31: "NO",
+            q32: "C",
+            q33: "E",
+            q34: "A",
+            q35: "F",
+            q36: "D",
+            q37: "C",
+            q38: "D",
+            q39: "A",
+            q40: "B"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-11.js?v=20260731-reading-clear-11-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-11-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

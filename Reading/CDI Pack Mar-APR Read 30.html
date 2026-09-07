@@ -1,0 +1,623 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 30 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-30-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+      <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Australia's cane toad problem</h3>
+                    <p>Australia to control pests has itself become a pest</p>
+                    <p><strong>A</strong> In the north of Australia there are many sugar cane plantations, which early in the 20th century were being damaged by a particular pest. This was a species of beetle whose larvae, the infant form of the beetle, live underground in the soil in the sugar cane fields. The sugar cane plants were weakened or died because their roots were eaten by the larvae. This had serious economic consequences for sugar cane farmers. Modern pesticides were not developed until the 1940s, so farmers had to use what was available at the time. Chemicals like arsenic and copper were used, but these were not only expensive but also stayed in the environment and were poisonous to people, plants and animals. It was generally acknowledged by government, farmers and scientists that cheaper and safer methods of pest control had to be found.</p>
+                    <p><strong>B</strong> A promising replacement for copper and arsenic was the use of biological control. Farmers already used some forms of biological pest control in the form of predatory and parasitic wasps and flies, insect-eating birds, and plants from different regions or countries to control pests. Common practice was to release these introduced agents into new environments, the expectation being that they would destroy resident pests. Some species of toad already had successful records as agents of biological control in gardens. For example, in 19th-century France toads were sold to gardeners at markets in Paris to eat insect pests in their gardens. In the early 20th century French sugar cane farmers first took giant toads from South America to control pests in their Caribbean sugar cane plantations. Although there is no evidence that these toads did help to control pests, sugar cane scientists then carried some of these toads from Jamaica and Barbados to Puerto Rico and from there to Hawaii.</p>
+                    <p><strong>C</strong> The idea of biological control of pests was not new to Australia. For example, in 1926 there had been a highly successful prevention of the increase of the exotic prickly-pear cactus by the introduction of a moth from Argentina. This success added strength to the argument that biological control was the answer to the sugar cane industry's pest problems. Accordingly, in the early 1930s a decision was taken to introduce the giant South American toads, which in Australia are now commonly called cane toads, into Australian sugar cane plantations.</p>
+                    <p><strong>D</strong> In 1935, an Australian entomologist brought 101 cane toads from Hawaii and released them in sugar cane plantations in the north of Australia. However, over the following years it became clear that the cane toads were a failure. There was a fatal flaw in the plan to use them as a form of biological control. This was that earthbound cane toads were expected to eat the mostly flying adult beetles in order to eliminate the soil-dwelling beetle larvae that ate the roots of the cane sugar plants. This, of course, cane toads could not do.</p>
+                    <p><strong>E</strong> Prior to their introduction in Australia, there had been very few opponents and only one made his views public. He was a retired former Chief Entomologist from the state government of New South Wales named Walter Froggatt. He forecast that cane toads might become as great a pest in Australia as rabbits. However, Froggatt's peers rebuked him and eminent scientists branded his views 'decidedly pessimistic'. It is estimated that today as many as a hundred million cane toads form a toxic infestation which is slowly spreading throughout the land.</p>
+                    <p><strong>F</strong> Cane toads are large, heavily built amphibians. Average-sized adults are 10-15 cm long and weigh more than a kilo. They have large swellings on each shoulder from which they squirt poison when they are threatened. This venom contains 14 different chemicals, but they do not appear to be harmful to humans as no-one has died in Australia from cane toad poison. Until recently there was no understanding of the toxicity of cane toad poison, but it is now clear that freshwater crocodiles, goannas (large lizards) and dingoes (wild dogs) have died after eating cane toads. Cane toads compete with native Australian fauna for food, and eat the eggs and young of ground-nesting birds. As their numbers increase, they are taking over more and more of the land where native Australian fauna live.</p>
+                    <p><strong>G</strong> The lesson that can be learned from the introduction of cane toads is important. It is wrong to think that such an awful biological event could not be repeated. In this instance, the catalyst was the overwhelming consensus of support for introducing cane toads to Australia. The error was that there was little or no testing of these biological agents before they were introduced to see what unplanned effects they might have on the environment.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Complete the table below. Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <table>
+                        <tr>
+                            <th style="width:35%;">Pest control</th>
+                            <th>Early 20th-century problems in Australia</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">The larvae of a type of <span class="question-anchor" data-question-anchor="1"></span><input type="text" name="q1" placeholder="1" class="input-field inline-input"> were a serious pest in sugar cane fields.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Its larvae ate the <span class="question-anchor" data-question-anchor="2"></span><input type="text" name="q2" placeholder="2" class="input-field inline-input"> of the plant.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Chemical pesticides were unsatisfactory because they were poisonous, <span class="question-anchor" data-question-anchor="3"></span><input type="text" name="q3" placeholder="3" class="input-field inline-input">, and difficult to remove from the ground.</td>
+                        </tr>
+                        <tr>
+                            <th>Experiences with biological pest control</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">In the 19th century French <span class="question-anchor" data-question-anchor="4"></span><input type="text" name="q4" placeholder="4" class="input-field inline-input"> used toads.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">In Australia a <span class="question-anchor" data-question-anchor="5"></span><input type="text" name="q5" placeholder="5" class="input-field inline-input"> stopped the spread of prickly-pear cactus.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Cane toads were brought to Australia from <span class="question-anchor" data-question-anchor="6"></span><input type="text" name="q6" placeholder="6" class="input-field inline-input">.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Cane toads proved to be a <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input"> as pest control.</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-13</div>
+                    <p>Choose <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information.</p>
+                    <div class="question" data-question="8">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="8"></span>8 The outcome of the introduction of cane toads was immediately obvious.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="9"></span>9 Rabbits were introduced to Australia to control weeds.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="10"></span>10 Walter Froggatt was criticised for his efforts to stop the introduction of the cane toad to Australia.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="11"></span>11 The average size of cane toads has increased since their introduction.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="12"></span>12 Australian animals can eat cane toads safely.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="13"></span>13 In many places cane toads are gaining control of the habitats of Australian fauna.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</strong></p>
+                    <h3>Farmers</h3>
+                    <p>An iconic chain store in New Zealand reaches a milestone</p>
+                    <p><strong>A</strong> The chain of stores known as Farmers began one hundred years ago as a mail order company. Today the Farmers chain employs 3,500 staff across 58 branches making it the most venerable institution of its type in New Zealand. Coming to Farmers once a week has become woven into the fabric of New Zealand culture, says business historian Ian Hunter. By 1960, one in every ten people had an account with the company. It was not only a shop but also hosted the largest annual parade in the country, the Santa parade each Christmas time. Gary Blumenthal, whose family have been customers for three generations, understands well the role Farmers have played in New Zealand culture. "We were on holiday in Auckland," he explains, "and I decided that the lookout tower on top of the Farmers building would be a unique place to fit the ring on my new fiancee's finger." The couple has been married for 50 years.</p>
+                    <p><strong>B</strong> Farmers' longevity can be attributed to the philosophy fostered by Robert Laidlaw, the Scottish immigrant who established the business. Right from the outset, Laidlaw guaranteed customer satisfaction, and those who were not entirely happy with a purchase would receive a full refund with no questions asked. This was certainly the first time such a guarantee had been made by a New Zealand retailer and was probably one of the first worldwide. Laidlaw believed that the scheme could work if he ensured that every product sold was of the highest quality relative to its price.</p>
+                    <p><strong>C</strong> Another important aspect of the Farmers' philosophy was to internationalize the New Zealand market. By the time the Hobson Street store opened in 1920 in order to sell directly to customers for the first time, Laidlaw had established buying offices in New York and London so as to offer his customers the latest designs. This was a bold move in those days and won Farmers a devoted following. It's also true that whoever you speak to regarding Farmers in the early years, whether managers or workers, they all emphasize how the company represented a large family. Everyone employed by Laidlaw felt they were building something that would ultimately be to the benefit of the whole country. For example, to mark the centenary celebrations, 58 Farmers' stores around the country announced the neighborhood charities they would raise funds for; everything from guide dog services to volunteer fire brigades will benefit.</p>
+                    <p><strong>D</strong> Farmers has always had a heart, according to former board chairman Rawdon Busfield. "One day I was in the Hobson Street store and a woman came in with two small children-they didn't have a lot of money, you could tell. That week we had a special on, a big bar of chocolate for a shilling... But the boy only had a penny. I took the penny and gave him the chocolate." However, not everything has stayed the same. Farmers was once home to genteel tea rooms, children's playgrounds, and an annual sale to celebrate the birthday of Hector the Parrot-who came to embody the store in the eyes of many shoppers and who died, aged 131, in the 1970s. You could buy houses from Farmers, and its saddle factory supplied the armed forces. In fact, although the company has grown considerably over the years, today it sells a narrower assortment of products than in the past.</p>
+                    <p><strong>E</strong> Walk through a Farmers store today and you'll see big changes. Its most recent branch in the suburb of Albany is filled with bright lights and big brands. The branch sells cosmetics from 16 different international companies and buys from approximately 500 suppliers, of which about 30 percent are locally owned. "Eight or ten years ago," says current chief executive Rod McDermott, "lots of brands wouldn't partner with us. We weren't in trouble as such, but we could have been doing much better because we were focused too much on price and not on fashion. The reorientation of the last decade has seen a great improvement."</p>
+                    <p><strong>F</strong> Farmers almost didn't pull through one economic crisis. In the mid-1980s, business was booming and the company had stores throughout the country. Then, with sales topping $375 million, it was taken over by Chase Corporation. Lincoln Laidlaw, the son of the company's founder, remembers the dark days following the stock market crash of 1987 and the collapse of the Chase Corporation. "The business was being divided up," he says, "and I believe that the original culture of the store was dispelled and it hasn't been recovered. That's a shame, but the business is still strong." For a few turbulent years the stores were controlled first by a consortium of Australian banks, and later a local corporation. In 2003, it went back into "family" ownership with the purchase by the James Pascoe Group owned by an established New Zealand retail family. Brand power has made Farmers profitable again, according to McDermott. "And now we're becoming the brand we used to be... It's like the rebirth of an icon."</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-18</div>
+                    <p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>. Which paragraph contains the following information? Choose the correct letter, A-F, in boxes 14-18.</p>
+                    <table>
+                        <tr>
+                            <th style="width:52%;">Statement</th>
+                            <th style="text-align:center;">A</th>
+                            <th style="text-align:center;">B</th>
+                            <th style="text-align:center;">C</th>
+                            <th style="text-align:center;">D</th>
+                            <th style="text-align:center;">E</th>
+                            <th style="text-align:center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 A mention of the company being sold.</td>
+                            <td><input type="radio" name="q14" value="A"></td><td><input type="radio" name="q14" value="B"></td><td><input type="radio" name="q14" value="C"></td><td><input type="radio" name="q14" value="D"></td><td><input type="radio" name="q14" value="E"></td><td><input type="radio" name="q14" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 A reference to how the range of goods for sale has become more limited.</td>
+                            <td><input type="radio" name="q15" value="A"></td><td><input type="radio" name="q15" value="B"></td><td><input type="radio" name="q15" value="C"></td><td><input type="radio" name="q15" value="D"></td><td><input type="radio" name="q15" value="E"></td><td><input type="radio" name="q15" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 An example of an innovative offer made by the company's founder.</td>
+                            <td><input type="radio" name="q16" value="A"></td><td><input type="radio" name="q16" value="B"></td><td><input type="radio" name="q16" value="C"></td><td><input type="radio" name="q16" value="D"></td><td><input type="radio" name="q16" value="E"></td><td><input type="radio" name="q16" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 A description of a romantic event on the shop's roof.</td>
+                            <td><input type="radio" name="q17" value="A"></td><td><input type="radio" name="q17" value="B"></td><td><input type="radio" name="q17" value="C"></td><td><input type="radio" name="q17" value="D"></td><td><input type="radio" name="q17" value="E"></td><td><input type="radio" name="q17" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="18"></span>18 A description of the latest store in the chain.</td>
+                            <td><input type="radio" name="q18" value="A"></td><td><input type="radio" name="q18" value="B"></td><td><input type="radio" name="q18" value="C"></td><td><input type="radio" name="q18" value="D"></td><td><input type="radio" name="q18" value="E"></td><td><input type="radio" name="q18" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 19-22</div>
+                    <p>Complete the sentences below. Write <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p>Farmers was set up as a/an <span class="question-anchor" data-question-anchor="19"></span><input type="text" name="q19" placeholder="19" class="input-field inline-input"> business before it became a chain.</p>
+                    <p>Robert Laidlaw setup <span class="question-anchor" data-question-anchor="20"></span><input type="text" name="q20" placeholder="20" class="input-field inline-input"> overseas so he could sell up-to-date fashions.</p>
+                    <p>According to employees, Farmers was like a/an <span class="question-anchor" data-question-anchor="21"></span><input type="text" name="q21" placeholder="21" class="input-field inline-input">.</p>
+                    <p>Farmers held a/an <span class="question-anchor" data-question-anchor="22"></span><input type="text" name="q22" placeholder="22" class="input-field inline-input"> once a year in honour of the company's famous pet.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Look at the following people (Questions 23-26) and the list of ideas below. Match each person with the correct idea, <strong>A-F</strong>. Choose the correct letter, A-F, in boxes 23-26.</p>
+                    <p><strong>List of Ideas</strong></p>
+                    <p>A The character of the company has changed for the worse.</p>
+                    <p>B The store is selling more local products than in the past.</p>
+                    <p>C The company believes in offering lower prices than their competitors.</p>
+                    <p>D The staff has always believed in generosity.</p>
+                    <p>E The store is an integral part of the local way of life.</p>
+                    <p>F The store needed to change its approach to business.</p>
+                    <table>
+                        <tr>
+                            <th style="width:42%;">Person</th>
+                            <th style="text-align:center;">A</th>
+                            <th style="text-align:center;">B</th>
+                            <th style="text-align:center;">C</th>
+                            <th style="text-align:center;">D</th>
+                            <th style="text-align:center;">E</th>
+                            <th style="text-align:center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="23"></span>23 Ian Hunter</td>
+                            <td><input type="radio" name="q23" value="A"></td><td><input type="radio" name="q23" value="B"></td><td><input type="radio" name="q23" value="C"></td><td><input type="radio" name="q23" value="D"></td><td><input type="radio" name="q23" value="E"></td><td><input type="radio" name="q23" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="24"></span>24 Rawdon Busfield</td>
+                            <td><input type="radio" name="q24" value="A"></td><td><input type="radio" name="q24" value="B"></td><td><input type="radio" name="q24" value="C"></td><td><input type="radio" name="q24" value="D"></td><td><input type="radio" name="q24" value="E"></td><td><input type="radio" name="q24" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="25"></span>25 Rod McDermott</td>
+                            <td><input type="radio" name="q25" value="A"></td><td><input type="radio" name="q25" value="B"></td><td><input type="radio" name="q25" value="C"></td><td><input type="radio" name="q25" value="D"></td><td><input type="radio" name="q25" value="E"></td><td><input type="radio" name="q25" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="26"></span>26 Lincoln Laidlaw</td>
+                            <td><input type="radio" name="q26" value="A"></td><td><input type="radio" name="q26" value="B"></td><td><input type="radio" name="q26" value="C"></td><td><input type="radio" name="q26" value="D"></td><td><input type="radio" name="q26" value="E"></td><td><input type="radio" name="q26" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>LIFE ON MARS?</h3>
+                    <p><strong>A</strong> When scientists began observing Mars with their first primitive telescopes, they assumed from the start that the planet was peopled. The 18th-century astronomer William Herschel, noting the seasons and atmosphere of Mars, declared that "its inhabitants enjoy a situation similar to our own". A century later, astronomers asserted that they could detect canals running across the Martian landscape. These canals, argued US scientist Percival Lowell, had been built by technologically advanced Martians to transport water from the poles to the equator of their drying world. "Martian folk are possessed of inventions of which we have not dreamed," he argued.</p>
+                    <p><strong>B</strong> The vision of an advanced culture trapped on a drying world was taken up by the British writer H.G. Wells in 1898 in his masterpiece The War of the Worlds, in which Earth is subjected to a pitiless invasion from a race of hideous Martians armed with poison gas and heat rays. Martians became synonymous with grotesque, threatening aliens, at least as far as the public was concerned. Scientists were more restrained, but still supported the idea that the planet might support relatively complex life forms.</p>
+                    <p><strong>C</strong> Then, in the late 1960s, rocket science changed our image of Mars forever. The US Mariner probes swept past Mars and sent back pictures, not of a world covered in vegetation, as many scientists still expected, but of vistas of cratered, arid deserts. Finally, in 1975, two huge US probes settled on the Martian surface and began a series of experiments aimed at pinpointing, once and for all, the existence of air-breathing organisms. None were found, for the Viking probes landed in areas as dead as the Sahara Desert. All that was sent back were images of a bleak, boulder-strewn terrain. Mars was declared officially dead - for a while.</p>
+                    <p><strong>D</strong> Since that time, two critical pieces of evidence have been found on Earth which support the idea that Mars has life. The first is known as ALH84001, a meteorite that was blasted into space when a large body struck Mars 15 million years ago and which spiralled across the solar system to crash into the Antarctic. Analysis carried out by NASA scientist Imre Friedmann showed that the meteorite contained elements identical to those found on Mars by the Viking probes, and revealed chains of crystals similar to those created by earthbound bacteria. Friedmann believes that these could only have been created by living organisms. Others, however, argue that the crystals could have been laid down by simple chemical processes. A second area of support for the idea that living organisms could survive Mars's harshness has been provided by the study of extremophiles, bacteria that have been found in increasingly hostile landscapes on Earth - acid lakes, for example, and volcanoes.</p>
+                    <p><strong>E</strong> In the past few years, astronomers have become convinced that the Martian surface, although hostile and arid today, was once lush and welcoming. Images sent back by recent probes such as the Mars Global Surveyor have revealed dried-up riverbeds and old estuaries. Rivers poured into ancient seas, it appears, and rain swept the sodden terrain. Then catastrophe struck. Mars lost its magnetic field several billion years ago, explains British astronomer Paul Murdin. "Earth retained one, and it protects our atmosphere. Without that protection, Mars's gases and water boiled off." That is why they are so different today.</p>
+                    <p><strong>F</strong> The discovery of signs of water on Mars has changed everything. Some researchers believe that water from underground reservoirs still gushes through Martian valleys as occasional flash floods bubble to the surface. In the 1990s, the Mars Odyssey probe began to map the chemical make-up of the Mars soil, and discovered that much of the ground in the southern hemisphere of Mars is mixed with large quantities of ice. And where there is ice, there is likely to be liquid water, probably underneath. "There are huge underground reservoirs on Mars," says Marcello Coradini, head of planetary exploration for the European Space Agency. "I am now convinced of that."</p>
+                    <p><strong>G</strong> Current projects are hoping to clarify the question of the presence of water once and for all. These are aimed at conducting experiments to detect the presence of a substance called carbon 13 in soil and rock samples on Mars; this would be, according to some researchers, an unequivocal indicator of the presence of living organisms, past or present.</p>
+                    <p><strong>H</strong> But would the presence of a few Martian organisms alter our world view in any significant way? Professor Juan Perez Mercader of Madrid's Centre for Astrobiology in Spain believes that it would. "For a start, we will be able to find out if Martian organisms have DNA, the golden molecule that controls the replication of earthly creatures." If there is no DNA, that would show that Martian biology is quite unlike Earth's, and that on two planets, side by side in the same solar system, life evolved independently. If DNA is located, it would mean that life on Mars and on Earth may spring from the same source. "If organisms can pop up that easily, our chances of finding intelligent versions elsewhere in the universe will look extremely good," Perez Mercader states. The discovery of any evidence of living organisms on Mars would also mean renewed purpose for manned space flight projects.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Reading Passage 3 has eight paragraphs, <strong>A-H</strong>. Which paragraph contains the following information? Choose the correct letter, A-H, in boxes 27-32.</p>
+                    <table>
+                        <tr>
+                            <th style="width:52%;">Statement</th>
+                            <th style="text-align:center;">A</th>
+                            <th style="text-align:center;">B</th>
+                            <th style="text-align:center;">C</th>
+                            <th style="text-align:center;">D</th>
+                            <th style="text-align:center;">E</th>
+                            <th style="text-align:center;">F</th>
+                            <th style="text-align:center;">G</th>
+                            <th style="text-align:center;">H</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="27"></span>27 Evidence that a rock found on Earth originated on Mars.</td>
+                            <td><input type="radio" name="q27" value="A"></td><td><input type="radio" name="q27" value="B"></td><td><input type="radio" name="q27" value="C"></td><td><input type="radio" name="q27" value="D"></td><td><input type="radio" name="q27" value="E"></td><td><input type="radio" name="q27" value="F"></td><td><input type="radio" name="q27" value="G"></td><td><input type="radio" name="q27" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="28"></span>28 A plan to analyse material on Mars.</td>
+                            <td><input type="radio" name="q28" value="A"></td><td><input type="radio" name="q28" value="B"></td><td><input type="radio" name="q28" value="C"></td><td><input type="radio" name="q28" value="D"></td><td><input type="radio" name="q28" value="E"></td><td><input type="radio" name="q28" value="F"></td><td><input type="radio" name="q28" value="G"></td><td><input type="radio" name="q28" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="29"></span>29 The reason Mars is no longer similar to Earth.</td>
+                            <td><input type="radio" name="q29" value="A"></td><td><input type="radio" name="q29" value="B"></td><td><input type="radio" name="q29" value="C"></td><td><input type="radio" name="q29" value="D"></td><td><input type="radio" name="q29" value="E"></td><td><input type="radio" name="q29" value="F"></td><td><input type="radio" name="q29" value="G"></td><td><input type="radio" name="q29" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="30"></span>30 An observation suggesting that there is currently water on Mars.</td>
+                            <td><input type="radio" name="q30" value="A"></td><td><input type="radio" name="q30" value="B"></td><td><input type="radio" name="q30" value="C"></td><td><input type="radio" name="q30" value="D"></td><td><input type="radio" name="q30" value="E"></td><td><input type="radio" name="q30" value="F"></td><td><input type="radio" name="q30" value="G"></td><td><input type="radio" name="q30" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="31"></span>31 A claim that construction had taken place on Mars.</td>
+                            <td><input type="radio" name="q31" value="A"></td><td><input type="radio" name="q31" value="B"></td><td><input type="radio" name="q31" value="C"></td><td><input type="radio" name="q31" value="D"></td><td><input type="radio" name="q31" value="E"></td><td><input type="radio" name="q31" value="F"></td><td><input type="radio" name="q31" value="G"></td><td><input type="radio" name="q31" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="32"></span>32 A possibility that humans and Martians could share the same origins.</td>
+                            <td><input type="radio" name="q32" value="A"></td><td><input type="radio" name="q32" value="B"></td><td><input type="radio" name="q32" value="C"></td><td><input type="radio" name="q32" value="D"></td><td><input type="radio" name="q32" value="E"></td><td><input type="radio" name="q32" value="F"></td><td><input type="radio" name="q32" value="G"></td><td><input type="radio" name="q32" value="H"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-36</div>
+                    <p>Choose the correct answer.</p>
+                    <div class="question" data-question="33">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="33"></span>33 The 18th-century astronomer William Herschel believed that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="A"> A the Martians were physically similar to humans.</label>
+                            <label><input type="radio" name="q33" value="B"> B the Martian environment resembled that of Earth.</label>
+                            <label><input type="radio" name="q33" value="C"> C members of the Martian race were extremely primitive.</label>
+                            <label><input type="radio" name="q33" value="D"> D the climatic conditions on Mars were very dry.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="34"></span>34 At the end of the 19th century, the public's ideas about Martians changed because of</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="A"> A scientific discussion.</label>
+                            <label><input type="radio" name="q34" value="B"> B media reports.</label>
+                            <label><input type="radio" name="q34" value="C"> C a work of literature.</label>
+                            <label><input type="radio" name="q34" value="D"> D a magazine illustration.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="35"></span>35 What does the writer say happened in the 1960s?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="A"> A The appearance of some regions of Mars changed.</label>
+                            <label><input type="radio" name="q35" value="B"> B Evidence of organisms was found on Mars.</label>
+                            <label><input type="radio" name="q35" value="C"> C The Martian atmosphere was tested scientifically.</label>
+                            <label><input type="radio" name="q35" value="D"> D Earlier beliefs about Mars were disproven.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="36"></span>36 The study of extremophiles suggests that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="A"> A organisms can survive on Mars.</label>
+                            <label><input type="radio" name="q36" value="B"> B organisms on Earth are like those found on Mars.</label>
+                            <label><input type="radio" name="q36" value="C"> C Martian conditions resemble those in Earth's volcanoes.</label>
+                            <label><input type="radio" name="q36" value="D"> D Martian crystals can survive acid conditions.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, <strong>NO</strong> if the statement contradicts the writer, or <strong>NOT GIVEN</strong> if it is impossible to say.</p>
+                    <div class="question" data-question="37">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="37"></span>37 Lowell believed that Martian technology was more developed than human technology.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="YES"> YES</label>
+                            <label><input type="radio" name="q37" value="NO"> NO</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="38"></span>38 Information gained from Viking probes remains unchallenged.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="YES"> YES</label>
+                            <label><input type="radio" name="q38" value="NO"> NO</label>
+                            <label><input type="radio" name="q38" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="39"></span>39 There is evidence that there has been significant climate change on Mars.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="YES"> YES</label>
+                            <label><input type="radio" name="q39" value="NO"> NO</label>
+                            <label><input type="radio" name="q39" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="40"></span>40 Spanish scientists plan to launch space probes if DNA is found on Mars.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="YES"> YES</label>
+                            <label><input type="radio" name="q40" value="NO"> NO</label>
+                            <label><input type="radio" name="q40" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_30',
+            label: 'Reading Full 30',
+            correctAnswers: {
+            q1: "beetle",
+            q2: "roots",
+            q3: "expensive",
+            q4: "gardeners",
+            q5: "moth",
+            q6: "Hawaii",
+            q7: "failure",
+            q8: "FALSE",
+            q9: "NOT GIVEN",
+            q10: "TRUE",
+            q11: "NOT GIVEN",
+            q12: "FALSE",
+            q13: "TRUE",
+            q14: "F",
+            q15: "D",
+            q16: "B",
+            q17: "A",
+            q18: "E",
+            q19: "mail order",
+            q20: "buying offices",
+            q21: "large family",
+            q22: "sale",
+            q23: "E",
+            q24: "D",
+            q25: "F",
+            q26: "A",
+            q27: "D",
+            q28: "G",
+            q29: "E",
+            q30: "F",
+            q31: "A",
+            q32: "H",
+            q33: "B",
+            q34: "C",
+            q35: "D",
+            q36: "A",
+            q37: "YES",
+            q38: "NO",
+            q39: "YES",
+            q40: "NOT GIVEN"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-30.js?v=20260731-reading-clear-30-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-30-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+
+

@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-bfed198d.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 2.4.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">PART 2</h1>
+            </div>
+	                <p class="part-instructions" id="partInstructions">Listen to the conversation and answer Questions 11-20.</p>
+            </div>
+            <!-- Questions Section -->
+                <div class="questions-section">
+                    <h2 class="questions-title" id="questionsTitle">Questions 11-20</h2>
+	                <p class="questions-description" id="questionsDescription">Label the map and answer the multiple-choice questions.</p>
+
+	                    <!-- Part 2 Content -->
+	                    <div id="part1Content">
+	                        <div class="section-instructions">
+	                            <p class="section-heading">SECTION 2</p>
+	                            <p class="section-subheading"><strong>Railway Station</strong></p>
+	                        </div>
+	
+	                        <div class="multiple-choice-card" aria-label="Questions 11-20">
+	                            <h3 class="scenario-title selectable-text">Railway Station</h3>
+	                            <div class="question-group">
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Questions 11-15</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Label the map below. Choose the correct letter, A-I, for Questions 11-15.</p>
+	                                <img src="https://i.ibb.co/TqBRyPKz/image.png" alt="Railway Station Map" style="max-width: 100%; margin-bottom: 20px;">
+	
+	                                <div class="table-wrapper" style="margin-bottom: 22px;">
+	                                    <table class="fill-table map-label-table" aria-label="Questions 11 to 15 map labels">
+	                                        <thead>
+	                                            <tr>
+	                                                <th>Place</th>
+	                                                <th>A</th>
+	                                                <th>B</th>
+	                                                <th>C</th>
+	                                                <th>D</th>
+	                                                <th>E</th>
+	                                                <th>F</th>
+	                                                <th>G</th>
+	                                                <th>H</th>
+	                                                <th>I</th>
+	                                            </tr>
+	                                        </thead>
+	                                        <tbody>
+	                                            <tr id="q11" tabindex="-1">
+	                                                <td class="label selectable-text">11. Bike racks</td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="A" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">A</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="B" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">B</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="C" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">C</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="D" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">D</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="E" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">E</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="F" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">F</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="G" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">G</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="H" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">H</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q11" value="I" class="choice-input" onchange="saveAnswer(11, this.value)"><span class="selectable-text">I</span></label></td>
+	                                            </tr>
+	                                            <tr id="q12" tabindex="-1">
+	                                                <td class="label selectable-text">12. Luggage lockers</td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="A" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">A</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="B" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">B</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="C" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">C</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="D" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">D</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="E" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">E</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="F" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">F</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="G" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">G</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="H" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">H</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q12" value="I" class="choice-input" onchange="saveAnswer(12, this.value)"><span class="selectable-text">I</span></label></td>
+	                                            </tr>
+	                                            <tr id="q13" tabindex="-1">
+	                                                <td class="label selectable-text">13. Chemist's</td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="A" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">A</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="B" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">B</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="C" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">C</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="D" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">D</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="E" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">E</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="F" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">F</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="G" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">G</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="H" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">H</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q13" value="I" class="choice-input" onchange="saveAnswer(13, this.value)"><span class="selectable-text">I</span></label></td>
+	                                            </tr>
+	                                            <tr id="q14" tabindex="-1">
+	                                                <td class="label selectable-text">14. Toilet</td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="A" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">A</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="B" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">B</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="C" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">C</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="D" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">D</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="E" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">E</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="F" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">F</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="G" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">G</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="H" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">H</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q14" value="I" class="choice-input" onchange="saveAnswer(14, this.value)"><span class="selectable-text">I</span></label></td>
+	                                            </tr>
+	                                            <tr id="q15" tabindex="-1">
+	                                                <td class="label selectable-text">15. News agency</td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="A" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">A</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="B" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">B</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="C" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">C</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="D" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">D</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="E" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">E</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="F" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">F</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="G" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">G</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="H" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">H</span></label></td>
+	                                                <td><label class="choice-item map-choice"><input type="radio" name="q15" value="I" class="choice-input" onchange="saveAnswer(15, this.value)"><span class="selectable-text">I</span></label></td>
+	                                            </tr>
+	                                        </tbody>
+	                                    </table>
+	                                </div>
+	
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 16px;">Questions 16-20</h4>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Choose the correct letter, A, B, or C.</p>
+	
+	                                <div id="q16" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">16. Where could the passengers see the exhibition?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q16" value="A" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">A. in the town library</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q16" value="B" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">B. in Fitchton college</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q16" value="C" class="choice-input" onchange="saveAnswer(16, this.value)"><span class="selectable-text">C. in the station</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q17" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">17. What is the best gift for passengers to buy and bring home?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q17" value="A" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">A. local food</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q17" value="B" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">B. clothing</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q17" value="C" class="choice-input" onchange="saveAnswer(17, this.value)"><span class="selectable-text">C. jewelry</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q18" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">18. Where can passengers buy souvenir postcards?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q18" value="A" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">A. in the museum</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q18" value="B" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">B. in the shop</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q18" value="C" class="choice-input" onchange="saveAnswer(18, this.value)"><span class="selectable-text">C. in the college</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q19" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">19. What will the old cinema be converted to?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q19" value="A" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">A. a housing area</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q19" value="B" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">B. a new theatre</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q19" value="C" class="choice-input" onchange="saveAnswer(19, this.value)"><span class="selectable-text">C. a shop</span></label>
+	                                    </div>
+	                                </div>
+	
+	                                <div id="q20" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 4px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">20. Who is the statue in the train station modeled after?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="radio" name="q20" value="A" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">A. a poet</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q20" value="B" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">B. an engineer</span></label>
+	                                        <label class="choice-item"><input type="radio" name="q20" value="C" class="choice-input" onchange="saveAnswer(20, this.value)"><span class="selectable-text">C. a politician</span></label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation">
+            <div class="parts-navigation">
+                <div class="part-nav-item">
+	                    <button type="button" class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 2</button>
+	                    <div class="question-numbers" id="part1Questions">
+	                        <button type="button" class="question-number" onclick="focusQuestion(11)">11</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(12)">12</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(13)">13</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(14)">14</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(15)">15</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(16)">16</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(17)">17</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(18)">18</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(19)">19</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(20)">20</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+        <div class="score-summary">
+            <div class="score-item">
+                <div class="score-number" id="totalScore">0/10</div>
+                <div class="score-label">Total Score</div>
+            </div>
+            <div class="score-item">
+                <div class="score-number" id="part2Score">0/10</div>
+                <div class="score-label">Part 2</div>
+            </div>
+        </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-49a9b3a4.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section2-4.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>
+
+
+
+
+
+

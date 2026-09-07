@@ -1,0 +1,615 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+/* https://t.me/IELTSwithJurabek */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f9fafb;
+            line-height: 1.5;
+        }
+
+        .loading-screen {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9fafb;
+        }
+
+        .loading-content {
+            text-align: center;
+        }
+
+        .spinner {
+            width: 64px;
+            height: 64px;
+            border: 4px solid #d1d5db;
+            border-top: 4px solid #111827;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 32px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .loading-subtitle {
+            color: #6b7280;
+        }
+
+        .start-screen {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9fafb;
+        }
+
+        .start-content {
+            text-align: center;
+        }
+
+        .start-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 24px;
+        }
+
+        .start-subtitle {
+            color: #6b7280;
+            margin-bottom: 24px;
+        }
+
+        .start-button {
+            padding: 12px 32px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .start-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .test-interface {
+            min-height: 100vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 80px;
+        }
+
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .ielts-logo {
+            color: #dc2626;
+            font-weight: bold;
+            font-size: 1.125rem;
+        }
+
+        .test-id {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .support-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .support-link:hover {
+            color: #0844eb;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            color: #6b7280;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 16px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .audio-controller-bar {
+            position: sticky;
+            top: 0;
+            z-index: 190;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 24px;
+            border-bottom: 1px solid #dbe4f0;
+            background: linear-gradient(180deg, rgba(248, 251, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+        }
+
+        .audio-controller-copy {
+            flex: 0 0 auto;
+            min-width: 140px;
+        }
+
+        .audio-controller-title {
+            color: #0f172a;
+            font-size: 0.95rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .audio-controller-note {
+            margin-top: 2px;
+            color: #64748b;
+            font-size: 0.82rem;
+            line-height: 1.35;
+        }
+
+        .audio-controller-player {
+            flex: 1 1 auto;
+            width: 100%;
+            min-width: 0;
+        }
+
+        .part-header {
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .part-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .part-instructions {
+            color: #374151;
+        }
+
+        .questions-section {
+            margin-bottom: 24px;
+        }
+
+        .questions-title {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .questions-description {
+            color: #374151;
+            margin-bottom: 16px;
+        }
+
+        .scenario-title {
+            font-weight: 500;
+            color: #111827;
+            margin-bottom: 24px;
+        }
+
+        .question-group {
+            margin-bottom: 24px;
+        }
+
+        .question-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .question-input {
+            width: 120px;
+            height: 32px;
+            text-align: center;
+            border: 2px solid #3b82f6;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            outline: none;
+            padding: 4px;
+        }
+
+        .question-input:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .question-input.correct {
+            border-color: #10b981;
+            background-color: #d1fae5;
+        }
+
+        .question-input.incorrect {
+            border-color: #ef4444;
+            background-color: #fee2e2;
+        }
+
+        .question-input.partial {
+            border-color: #f59e0b;
+            background-color: #fef3c7;
+        }
+
+        .multiple-choice {
+            margin-left: 20px;
+        }
+
+        .choice-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .choice-input {
+            margin-right: 8px;
+        }
+
+        .choice-item.correct {
+            background-color: #d1fae5;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .choice-item.incorrect {
+            background-color: #fee2e2;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .matching-section {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .matching-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .matching-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .matching-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+
+        .cities-list {
+            background-color: #f8fafc;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .features-list {
+            background-color: #f8fafc;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .city-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .submit-section {
+            text-align: center;
+            padding: 24px;
+            border-top: 1px solid #e5e7eb;
+            background-color: #f9fafb;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .submit-button {
+            padding: 12px 48px;
+            background-color: #059669;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .submit-button:hover {
+            background-color: #047857;
+        }
+
+        .submit-button:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .results-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .results-content {
+            background-color: white;
+            padding: 32px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .results-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .score-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .score-item {
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #f3f4f6;
+        }
+
+        .score-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #059669;
+        }
+
+        .score-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+
+        .close-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6b7280;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 16px;
+        }
+
+        .close-button:hover {
+            background-color: #4b5563;
+        }
+
+        .bottom-navigation {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border-top: 0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+            box-shadow: none;
+        }
+
+        .parts-navigation {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .part-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .part-button {
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .part-button.active {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .part-button:not(.active) {
+            color: #6b7280;
+            background-color: transparent;
+        }
+
+        .part-button:not(.active):hover {
+            color: #111827;
+        }
+
+        .question-numbers {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+
+        .question-number {
+            width: 24px;
+            height: 24px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: #e5e7eb;
+            color: #6b7280;
+        }
+
+        .question-number:hover {
+            background-color: #d1d5db;
+        }
+
+        .nav-arrow {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .nav-arrow:hover:not(:disabled) {
+            background-color: #374151;
+        }
+
+        .nav-arrow:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .selectable-text {
+            user-select: text;
+            cursor: text;
+        }
+
+        /* Highlight functionality styles */
+        .highlight {
+            background-color: #ffff00;
+            cursor: pointer;
+        }
+
+        #highlight-btn,
+        #remove-highlight-btn {
+            position: absolute;
+            z-index: 9999;
+            display: none;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: 1px solid #888;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #highlight-btn {
+            background: #fffbe7;
+        }
+
+        #remove-highlight-btn {
+            background: #ffeaea;
+            color: #b00;
+            border-color: #b00;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 12px 16px;
+            }
+
+            .parts-navigation {
+                gap: 12px;
+            }
+
+            .question-numbers {
+                max-width: 200px;
+            }
+
+            .bottom-navigation {
+                padding: 8px 12px;
+            }
+
+            .matching-layout {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    

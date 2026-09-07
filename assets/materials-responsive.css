@@ -1,0 +1,262 @@
+/*
+  Shared responsive polish for Reading and Listening material menus.
+  The original layout keeps three cards on many laptop-sized viewports, which
+  can squeeze card headings into unreadable word fragments. These overrides
+  preserve the wide-monitor look while giving 13-16 inch screens more room.
+*/
+
+@media (max-width: 1800px) and (min-width: 1025px) {
+  body[data-track-section="reading"] .shell,
+  body[data-track-section="listening"] .shell {
+    padding-left: clamp(14px, 2vw, 30px);
+    padding-right: clamp(14px, 2vw, 30px);
+  }
+
+  body[data-track-section="reading"] .top-left,
+  body[data-track-section="listening"] .top-left {
+    gap: clamp(28px, 5vw, 86px);
+  }
+
+  body[data-track-section="reading"] .menu-list,
+  body[data-track-section="listening"] .menu-list {
+    gap: clamp(10px, 1.2vw, 16px);
+  }
+
+  body[data-track-section="reading"] .menu-link,
+  body[data-track-section="listening"] .menu-link {
+    font-size: clamp(1rem, 0.7vw + 0.45rem, 1.16rem);
+  }
+
+  body[data-track-section="reading"] .login-quick,
+  body[data-track-section="listening"] .login-quick {
+    min-width: 150px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  body[data-track-section="reading"] .hero,
+  body[data-track-section="listening"] .hero {
+    margin: 18px 8px 22px;
+    padding: clamp(22px, 2vw, 28px);
+    border-radius: 18px;
+  }
+
+  body[data-track-section="reading"] .hero h1,
+  body[data-track-section="listening"] .hero h1 {
+    font-size: clamp(1.72rem, 2.2vw, 2.5rem);
+  }
+
+  body[data-track-section="reading"] .hero-symbol,
+  body[data-track-section="listening"] .hero-symbol {
+    right: 24px;
+    width: clamp(120px, 15vw, 210px);
+    height: clamp(120px, 15vw, 210px);
+  }
+
+  body[data-track-section="reading"] .between-bar,
+  body[data-track-section="listening"] .between-bar {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  body[data-track-section="reading"] .tests-stack,
+  body[data-track-section="listening"] .tests-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  body[data-track-section="reading"] .section-links,
+  body[data-track-section="listening"] .section-links {
+    padding: clamp(16px, 1.5vw, 20px);
+    border-radius: 14px;
+  }
+
+  body[data-track-section="reading"] .link-row,
+  body[data-track-section="listening"] .link-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(104px, 7vw, 122px);
+    gap: 8px;
+  }
+
+  body[data-track-section="reading"] .big-link,
+  body[data-track-section="listening"] .big-link {
+    min-height: 52px;
+    height: auto;
+    padding: 8px 14px;
+    gap: 10px;
+    font-size: clamp(1.08rem, 0.55vw + 0.75rem, 1.24rem);
+    line-height: 1.12;
+  }
+
+  body[data-track-section="reading"] .big-link > span:first-child,
+  body[data-track-section="listening"] .big-link > span:first-child {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  body[data-track-section="reading"] .test-status,
+  body[data-track-section="listening"] .test-status {
+    min-height: 28px;
+    padding: 4px 10px;
+    margin-right: 0;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+  }
+
+  body[data-track-section="reading"] .start-btn,
+  body[data-track-section="listening"] .start-btn {
+    min-width: 0;
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border-radius: 14px;
+    font-size: 0.96rem;
+  }
+
+  body[data-track-section="reading"] .test-overview,
+  body[data-track-section="listening"] .test-overview {
+    margin-top: 10px;
+  }
+
+  body[data-track-section="reading"] .test-overview-item,
+  body[data-track-section="listening"] .test-overview-item {
+    border-radius: 12px;
+    padding: 7px 10px;
+  }
+
+  body[data-track-section="reading"] .test-overview-text,
+  body[data-track-section="listening"] .test-overview-text {
+    font-size: 0.76rem;
+    line-height: 1.32;
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 1025px) {
+  body[data-track-section="reading"] .hero-symbol,
+  body[data-track-section="listening"] .hero-symbol {
+    opacity: 0.2;
+  }
+
+  body[data-track-section="reading"] .big-link,
+  body[data-track-section="listening"] .big-link {
+    font-size: 1.04rem;
+  }
+
+  body[data-track-section="reading"] .test-status,
+  body[data-track-section="listening"] .test-status {
+    font-size: 0.68rem;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 1025px) {
+  body[data-track-section="reading"] .tests-stack,
+  body[data-track-section="listening"] .tests-stack {
+    grid-template-columns: 1fr;
+    max-width: 860px;
+    width: 100%;
+    align-self: center;
+  }
+
+  body[data-track-section="reading"] .between-bar,
+  body[data-track-section="listening"] .between-bar {
+    max-width: 860px;
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  body[data-track-section="reading"] .tests-stack,
+  body[data-track-section="listening"] .tests-stack {
+    max-width: 760px;
+    width: 100%;
+    align-self: center;
+  }
+
+  body[data-track-section="reading"] .between-bar,
+  body[data-track-section="listening"] .between-bar {
+    max-width: 760px;
+    width: 100%;
+    align-self: center;
+  }
+
+  body[data-track-section="reading"] .link-row,
+  body[data-track-section="listening"] .link-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(110px, 22vw, 150px);
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  body[data-track-section="reading"] .big-link,
+  body[data-track-section="listening"] .big-link {
+    min-height: 52px;
+    height: auto;
+    padding: 8px 14px;
+    font-size: clamp(1.05rem, 2.4vw, 1.22rem);
+    line-height: 1.12;
+  }
+
+  body[data-track-section="reading"] .big-link > span:first-child,
+  body[data-track-section="listening"] .big-link > span:first-child {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  body[data-track-section="reading"] .test-status,
+  body[data-track-section="listening"] .test-status {
+    margin-right: 0;
+    padding: 4px 10px;
+    font-size: 0.72rem;
+  }
+
+  body[data-track-section="reading"] .start-btn,
+  body[data-track-section="listening"] .start-btn {
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    padding: 0 14px;
+    border-radius: 14px;
+    font-size: 0.98rem;
+  }
+
+  body[data-track-section="reading"] .test-search,
+  body[data-track-section="listening"] .test-search {
+    max-width: min(100%, 360px);
+  }
+}
+
+@media (max-width: 760px) {
+  body[data-track-section="reading"] .big-link > span:first-child,
+  body[data-track-section="listening"] .big-link > span:first-child {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  body[data-track-section="reading"] .test-search,
+  body[data-track-section="listening"] .test-search {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  body[data-track-section="reading"] .link-row,
+  body[data-track-section="listening"] .link-row {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-track-section="reading"] .start-btn,
+  body[data-track-section="listening"] .start-btn {
+    height: 48px;
+  }
+}

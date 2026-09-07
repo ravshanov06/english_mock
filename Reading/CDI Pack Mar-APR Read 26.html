@@ -1,0 +1,675 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 26 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-26-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Ambergris - what is it and where does it come from?</h3>
+                    <p>In the ancient world, the waxy grey substance we now refer to as ambergris was highly prized for its medicinal properties, and was widely used as a spice, which was believed to be an aphrodisiac when added to food or wine. Ambergris itself is pleasantly aromatic, especially when warmed, and it was also highly valued as a fixing agent in the making of perfume, since it enabled a scent to retain its fragrance for much longer than might otherwise have been possible. Most ambergris was found in the form of lumps floating on the surface of the sea, or washed up on the shores of tropical and temperate oceans. At one time, ambergris was worth its weight in gold, but there was much confusion about its origins.</p>
+                    <p>Ambergris was known to the Arabs as 'ambar' and was originally called amber in the west in the Middle Ages. This eventually led to further confusion in the popular mind between ambergris and true amber, the mineral known to mineralogists as succinite, which is actually fossilised tree resin, and generally yellow in colour. Both substances were rare and costly, and both were associated with the sea, largely because for Europeans the most common source of amber was the shores of the Baltic. In Chapter 92 of Moby Dick, the American writer Herman Melville pours scorn on those who believed the two substances to be the same: 'Though the word ambergris is but the French compound for grey amber, yet the two substances are quite distinct. For amber, though at times found on the sea-coast, is also dug up in some far inland soils, whereas ambergris is never found except upon the sea. Besides, amber is a hard, transparent, brittle, odourless substance, used for mouthpieces to pipes, for beads and ornaments; but ambergris is soft, waxy, and so highly fragrant that it is largely used in perfumery.'</p>
+                    <p>Moby Dick was published in 1851, by which time the mystery of the origins of ambergris had been resolved by the scientific community. In 1783, the Botanist Joseph Banks, who had accompanied Captain James Cook on his voyages of discovery in the Pacific, presented a paper to the Royal Society of London by the German physician Dr. Franz Xavier Schwediawer, in which it was conclusively proved that ambergris came from sperm whales. In this, he was confirming an observation made in the 13th century by the great Venetian traveller Marco Polo who, while on the island of Socotra in the Indian Ocean, had witnessed a sperm whale vomiting up ambergris. But whereas Marco Polo imagined that the whale had swallowed the lump in the depths of the sea, Schwediawer showed that the origin of the material was inside the whale itself.</p>
+                    <p>The sperm whale is the largest of the odontocetes, or toothed whales. Males can grow up to 20 metres in length. Melville described the sperm whale as 'the king of whales', and his novel Moby Dick is based on the pursuit of one such creature. Sperm whales are renowned for their ability to dive to great depths, possibly as far as 3,000 metres below the surface, and for remaining underwater for periods of two hours or more in pursuit of their favourite prey, the giant squid.</p>
+                    <p>It is from the problems the whales have in digesting the beaks of such creatures that ambergris has its origins. The beak is sharp and irritates the whale's lower intestine, which responds by producing a black, foul-smelling liquid. It is not clear to scientists whether this secretion should be considered a normal response by the whale's digestive system or a pathological one, but from time to time large quantities of the liquid are vomited up by the whale. Once outside the whale's body and exposed to air, the substance hardens, acquiring the waxy, greyish and pleasantly aromatic characteristics of ambergris. Often the beaks of squid are still found embedded in lumps of ambergris, some of which can weigh several hundred kilograms. Melville took some delight in contrasting the origins of ambergris with the high value placed upon it by refined society: 'Who would think, then, that such fine ladies and gentlemen should regale themselves with an essence found in the inglorious bowels of a sick whale!'</p>
+                    <p>Sperm whales were ruthlessly pursued by commercial whalers in the 19th and 20th centuries. In 1963-64 alone, almost 30,000 individuals were killed, and only the imposition of a ban on the hunting of sperm whales in 1984 saved the species from extinction. Ambergris was by far the most valuable product extracted during the processing of the whales' carcasses, and over 90 per cent of the annual worldwide total was acquired in this way, as a by-product of commercial whaling. However, even before the ban on hunting sperm whales was imposed, the 1972 Marine Mammal Protection Act had prohibited trade in ambergris. Just as petroleum and plastic products were replacing other natural products of whaling, so ambergris was supplanted in the making of perfume by other materials, some natural and some synthetic in origin. Nevertheless, it is possible that, as sperm whale populations recover to their former numbers in the wild, so the sight of lumps of ambergris washed ashore along the tide line will once again become a familiar one to beachcombers the world over.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>According to the information in Reading Passage 1, classify the following facts as referring to</p>
+                    <p><strong>A</strong> ambergris only &nbsp;&nbsp; <strong>B</strong> amber only &nbsp;&nbsp; <strong>C</strong> both ambergris and amber &nbsp;&nbsp; <strong>D</strong> neither ambergris nor amber</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;"><strong>A</strong></th>
+                            <th style="text-align: center;"><strong>B</strong></th>
+                            <th style="text-align: center;"><strong>C</strong></th>
+                            <th style="text-align: center;"><strong>D</strong></th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="1"></span>1 very expensive</td>
+                            <td><input type="radio" name="q1" value="A"></td>
+                            <td><input type="radio" name="q1" value="B"></td>
+                            <td><input type="radio" name="q1" value="C"></td>
+                            <td><input type="radio" name="q1" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="2"></span>2 a food flavouring</td>
+                            <td><input type="radio" name="q2" value="A"></td>
+                            <td><input type="radio" name="q2" value="B"></td>
+                            <td><input type="radio" name="q2" value="C"></td>
+                            <td><input type="radio" name="q2" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="3"></span>3 used as currency</td>
+                            <td><input type="radio" name="q3" value="A"></td>
+                            <td><input type="radio" name="q3" value="B"></td>
+                            <td><input type="radio" name="q3" value="C"></td>
+                            <td><input type="radio" name="q3" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="4"></span>4 sweet-smelling</td>
+                            <td><input type="radio" name="q4" value="A"></td>
+                            <td><input type="radio" name="q4" value="B"></td>
+                            <td><input type="radio" name="q4" value="C"></td>
+                            <td><input type="radio" name="q4" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="5"></span>5 referred to by Herman Melville</td>
+                            <td><input type="radio" name="q5" value="A"></td>
+                            <td><input type="radio" name="q5" value="B"></td>
+                            <td><input type="radio" name="q5" value="C"></td>
+                            <td><input type="radio" name="q5" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="6"></span>6 can be seen through</td>
+                            <td><input type="radio" name="q6" value="A"></td>
+                            <td><input type="radio" name="q6" value="B"></td>
+                            <td><input type="radio" name="q6" value="C"></td>
+                            <td><input type="radio" name="q6" value="D"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-9</div>
+                    <p>Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.</p>
+                    <p><strong>How ambergris is formed</strong></p>
+                    <p>Ambergris is formed in whales because of problems digesting the <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input" aria-label="Question 7"> of giant squid.</p>
+                    <p>Black liquid is produced and is <span class="question-anchor" data-question-anchor="8"></span><input type="text" name="q8" placeholder="8" class="input-field inline-input" aria-label="Question 8"> from time to time.</p>
+                    <p>The liquid <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input" aria-label="Question 9"> on contact with the air.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 10-13</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 10-13, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 In the 20th century, most of the world's ambergris came from processing dead whales.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 The value of ambergris has increased recently.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 Ambergris remains an important ingredient in perfume.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 New uses have recently been found for ambergris.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>Photography</h3>
+                    <p>Photography emerged as part of a cluster of technical inventions and innovations around the middle of the nineteenth century. Hailed as a great technological invention, it immediately became the subject of debates concerning its aesthetic status and social uses.</p>
+                    <p><strong>A</strong> Central to the nineteenth-century debate about the nature of photography as a new technology was the question as to how far it could be considered as art. It was celebrated for its putative ability to produce accurate images of what was in front of the camera's lens: images which were seen as being mechanically produced and thus free of the selective discriminations of the human eye and hand. On precisely the same grounds, the medium was often regarded as falling outside the realm of art as its assumed power of accurate, dispassionate recording appeared to leave no room for the artist's compositional creativity.</p>
+                    <p><strong>B</strong> Debates concerning the status of photography as art continued to take place in periodicals throughout the nineteenth century. The French poet Baudelaire linked 'the invasion of photography and the great industrial madness of today' and asserted that if photography is allowed to deputise for art in some of arts activities, it will not be long before it has supplanted or corrupted art altogether. In his view, photography's only function was to support intellectual enquiry.</p>
+                    <p><strong>C</strong> Baudelaire was not alone in this view. Absolute material accuracy was seen as the hallmark of photography, and the nineteenth-century desire to explore, record and catalogue human experience, both at home and overseas, encouraged people to emphasise photography as a method of naturalistic documentation, rather than any type of art form.</p>
+                    <p><strong>D</strong> Photographers responded to criticisms of this kind in two ways: either they accepted that photography was something different from art and sought to discover what the intrinsic properties of the medium were, or they pointed out that photography was more than a mechanical form of image-making, that it could be worked on and contrived so as to produce pictures which in some ways resembled paintings. 'Pictorial' photography from the 1850s onwards sought to overcome the problems of photography by careful arrangement of all the elements of the composition and by reducing the signifiers of technological production within the photograph. For example, they ensured that the image was somewhat blurred; they made pictures of allegorical subjects, including religious scenes, and those who worked with the gum bichromate process scratched their prints in an effort to imitate something of the appearance of a canvas.</p>
+                    <p><strong>E</strong> In the other camp were those photographers who celebrated the qualities of straight photography, with its emphasis on the direct documentary style typical of modern American photography, and did not want to treat the medium as a kind of monochrome painting. They were interested in photography's ability to provide apparently accurate records of the visual world and tried to give their images the formal status and finish of paintings while concentrating their attention on photography's intrinsic quality.</p>
+                    <p><strong>F</strong> Photography in Britain and France was initially heralded for its technical recording abilities. With few exceptions, the emphasis was on picture-taking rather than picture-making-to echo a distinction made by Margaret Harker. She suggests that the development of the art of photography in the late 1850s can be partly accounted for through the increasing involvement of people trained as artists. They brought with them a concern for form and composition and, in particular, the use of light. Photography came to encroach very directly on genres of painting such as portraiture, not only taking over some of the work of painters, but also extending their work. For instance, while few could afford the time and cost of sitting for a painted portrait, the studio photographer could offer a similar service more cheaply. As such, portraiture became more democratically available. This did not prevent a continuing hierarchy: the painted portrait was still commissioned by the wealthy and the aristocracy. But it did allow a greater number of people the status of seeing themselves pictured.</p>
+                    <p><strong>G</strong> Furthermore, photography provoked artists to re-examine the nature and potential of paint as a particular medium. Photography appeared to be more successful than painting in capturing likenesses. It had a sense of instantaneousness that painting lacked. It has been suggested that photography encouraged Impressionist painters to experiment with manners of painting which could also capture a sense of the moment, and the passage of light. It is a truism that photography released painting from its responsibility for literal depiction, allowing it to become more experimental. However, the developing relationship between the two was considerably more symbiotic.</p>
+                    <p><strong>H</strong> Another respect in which photography may be said to have extended art was in its role as the re-presenter of art objects. It was no longer necessary to travel to Florence to see paintings of the Medics, or to Egypt to contemplate classical architecture or artefacts; you could visit an exhibition and view reproductions.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-17</div>
+                    <p>Reading Passage 2 has eight paragraphs, <strong>A-H</strong>.</p>
+                    <p>Which paragraph contains the following information? Write the correct letter, <strong>A-H</strong>, in boxes 14-17.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                            <th style="text-align: center;">H</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 fears voiced about the potential threat posed to art by photography</td>
+                            <td><input type="radio" name="q14" value="A"></td>
+                            <td><input type="radio" name="q14" value="B"></td>
+                            <td><input type="radio" name="q14" value="C"></td>
+                            <td><input type="radio" name="q14" value="D"></td>
+                            <td><input type="radio" name="q14" value="E"></td>
+                            <td><input type="radio" name="q14" value="F"></td>
+                            <td><input type="radio" name="q14" value="G"></td>
+                            <td><input type="radio" name="q14" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 the skills of artists being used in photography</td>
+                            <td><input type="radio" name="q15" value="A"></td>
+                            <td><input type="radio" name="q15" value="B"></td>
+                            <td><input type="radio" name="q15" value="C"></td>
+                            <td><input type="radio" name="q15" value="D"></td>
+                            <td><input type="radio" name="q15" value="E"></td>
+                            <td><input type="radio" name="q15" value="F"></td>
+                            <td><input type="radio" name="q15" value="G"></td>
+                            <td><input type="radio" name="q15" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 the attempts of photographers to imitate art</td>
+                            <td><input type="radio" name="q16" value="A"></td>
+                            <td><input type="radio" name="q16" value="B"></td>
+                            <td><input type="radio" name="q16" value="C"></td>
+                            <td><input type="radio" name="q16" value="D"></td>
+                            <td><input type="radio" name="q16" value="E"></td>
+                            <td><input type="radio" name="q16" value="F"></td>
+                            <td><input type="radio" name="q16" value="G"></td>
+                            <td><input type="radio" name="q16" value="H"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 the influence of photography on artists and painting</td>
+                            <td><input type="radio" name="q17" value="A"></td>
+                            <td><input type="radio" name="q17" value="B"></td>
+                            <td><input type="radio" name="q17" value="C"></td>
+                            <td><input type="radio" name="q17" value="D"></td>
+                            <td><input type="radio" name="q17" value="E"></td>
+                            <td><input type="radio" name="q17" value="F"></td>
+                            <td><input type="radio" name="q17" value="G"></td>
+                            <td><input type="radio" name="q17" value="H"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 18-22</div>
+                    <p>Complete the summary of paragraphs D and E below. Choose ONE WORD ONLY from paragraph D or E for each answer.</p>
+                    <p><strong>Photographers' responses to criticism</strong></p>
+                    <p>In response to the suggestion that photography could not be considered an art form photographers acted in two ways. Some of them rejected this criticism, certain that they could create pictures similar to <span class="question-anchor" data-question-anchor="18"></span><input type="text" name="q18" placeholder="18" class="input-field inline-input" aria-label="Question 18">.</p>
+                    <p>They did this by carefully setting up the different parts of the <span class="question-anchor" data-question-anchor="19"></span><input type="text" name="q19" placeholder="19" class="input-field inline-input" aria-label="Question 19"> before taking the photograph.</p>
+                    <p>Other things they did included causing the picture to be rather <span class="question-anchor" data-question-anchor="20"></span><input type="text" name="q20" placeholder="20" class="input-field inline-input" aria-label="Question 20">, and some who wanted to try to make the print look like a canvas even <span class="question-anchor" data-question-anchor="21"></span><input type="text" name="q21" placeholder="21" class="input-field inline-input" aria-label="Question 21"> their photographs.</p>
+                    <p>Others were anxious that their work should not be looked upon as some sort of <span class="question-anchor" data-question-anchor="22"></span><input type="text" name="q22" placeholder="22" class="input-field inline-input" aria-label="Question 22"> painting and were much more concerned with the fact that the camera seemed to be able to produce a more accurate representation of what they could see around them.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 2?</p>
+                    <p>In boxes 23-26, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                    <div class="question" data-question="23">
+                        <div class="question-text">23 In the 1850s, trained artists were reluctant to take up photography.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q23" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q23" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q23" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="24">
+                        <div class="question-text">24 Many photographers felt the need to learn certain techniques from taking art courses.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q24" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q24" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q24" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="25">
+                        <div class="question-text">25 Photography brought the demand for portrait painting to an end.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q25" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q25" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q25" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="26">
+                        <div class="question-text">26 With the advent of photography, some painters no longer concerned themselves with accuracy.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q26" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q26" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q26" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Blind to Change</h3>
+                    <p>How much of the world around you do you really see?</p>
+                    <p>Picture the following and prepare to be amazed. You're walking across a college campus when a stranger asks you for directions. While you're talking to him, two men pass between you carrying a wooden door. You feel a moment's irritation, but you carry on describing the route. When you've finished, you're told you've just taken part in a psychology experiment. 'Did you notice anything after the two men passed with the door?' the stranger asks. 'No,' you reply uneasily. He explains that the man who initially approached you walked off behind the door leaving him in his place. The first man now rejoins you. Comparing them, you notice that they are of different height and build and are dressed very differently.</p>
+                    <p>Daniel Simons of Harvard University found that 50% of participants missed the substitution because of what is called 'change blindness'. When considered with a large number of recent experimental results, this phenomenon suggests we 'see' far less than we think we do. Rather than logging every detail of the visual scene, says Simons, we are actually highly selective. Our impression of seeing everything is just that. In fact, we extract a few details and rely on memory, or even our imagination, for the rest.</p>
+                    <p>Until recently, scientists believed that vision involved creating images within the brain. By forming detailed internal representations of our surroundings and comparing them over time, we could detect any alterations. However, in his book Consciousness Explained, philosopher Daniel Dennett argued that our brains only store a few key details about the world, which is why we can function effectively. According to Dennett, creating elaborate images in short-term memory would consume valuable cognitive resources. Instead, we record what has changed and assume everything else remains unchanged. As a result, we inevitably overlook some details. Experiments had demonstrated that we tend to ignore elements in our visual field that seem unimportant, such as a repeated word or line in a text. But even Dennett didn't fully realize just how little we actually 'see.'</p>
+                    <p>A year later, John Grimes from the University of Illinois drew attention by showing that people who were presented with computer-generated images of natural scenes failed to notice changes made while their eyes were, for example, scanning the scene or blinking. Dennett was pleased: 'In hindsight, I wish I had been bolder, as the effects are more pronounced than I originally claimed.'</p>
+                    <p>Subsequently, it was discovered that our eyes don't even need to be moving to be deceived. A typical laboratory experiment might display an image on a computer screen, like a couple dining on a terrace. The image would briefly disappear, replaced by a blank screen, then reappear with a significant change, such as a raised railing behind the couple. Many people search the screen for up to a minute before spotting the alteration, and some never see it.</p>
+                    <p>This is disconcerting. However, 'change blindness' is somewhat artificial because, in real-life scenarios, a visible motion usually signals a change. Yet, not always. As Simons points out, 'We all know the experience of missing a traffic signal change because we briefly looked away. 'Inattentional blindness' refers to not noticing a feature of a scene when you aren't paying attention to it.'</p>
+                    <p>Last year, Simons showed people a video of a basketball game and asked them to count the passes made by one of the teams. After 45 seconds, a man in a gorilla suit slowly walked behind the players. Forty percent didn't notice him. When the tape was replayed, and they were simply told to watch it, they easily saw the gorilla. Some even doubted it was the same video.</p>
+                    <p>Now, consider if the viewers had been driving a car, and the man in the gorilla suit had been a pedestrian. Some estimates suggest that nearly half of all fatal motor vehicle accidents in the US result from driver error, including attention lapses. It's more than just academic interest that has spurred research into these cognitive errors.</p>
+                    <p>These errors prompt critical questions: how can we reconcile such significant lapses with our subjective experience of continuously perceiving a rich visual environment? Last year, Stephen Kosslyn from Harvard University demonstrated that imagining a scene activates parts of the visual cortex similarly to actually seeing it. He argues that this supports the idea that we only absorb the information we consider important and mentally fill in the gaps where details are less crucial. 'The illusion that we see 'everything' is partly due to filling in gaps with memory,' he says. 'These memories can be shaped by beliefs and expectations.'</p>
+                    <p>Ronald Rensink from the University of British Columbia in Canada believes our perception of a detailed visual world comes from constructing internal representations. He suggests that the brain first creates a temporary layout of the visual scene, and then our attention enhances the resolution of the scene. 'What attention does,' he explains, 'is stabilize these representations so they form distinct objects. Once attention shifts, they revert to an unstable, unresolved state.'</p>
+                    <p>While Rensink or Kosslyn propose that internal images or memory play some role, others argue that we can perceive visual richness without storing any of that richness in our brains. Kevin O'Regan, an experimental psychologist, contends that our brains do not store a visual image of the world. Instead, we rely on the external visual environment as different parts of a scene become relevant.</p>
+                    <p>According to O'Regan, our sense of controlling what we see is also an illusion. 'We believe that when something flickers outside the window, we choose to look,' says Susan Blackmore from the University of the West of England, who supports O'Regan's view. 'In reality,' she explains, 'our change detection mechanisms automatically drag our attention to various stimuli.'</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-30</div>
+                    <p>Look at the following people (Questions 27-30) and the list of claims below. Match each person with the correct claim, A-G.</p>
+                    <p><strong>List of Claims</strong></p>
+                    <p>A People overlook changes that happen during eye movements. &nbsp;&nbsp; B At times, we fail to notice something because we choose to deceive ourselves. &nbsp;&nbsp; C Retaining every image and memory would hinder our ability to function effectively. &nbsp;&nbsp; D Sometimes, people overlook the significance of a crucial figure in a scene. &nbsp;&nbsp; E We misunderstand what we see because we rely on our imagination. &nbsp;&nbsp; F We don't have complete control over what captures our attention. &nbsp;&nbsp; G Imagining a scene and physically being there impact our visual processes in similar ways.</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="27"></span>27 Daniel Dennett</td>
+                            <td><input type="radio" name="q27" value="A"></td>
+                            <td><input type="radio" name="q27" value="B"></td>
+                            <td><input type="radio" name="q27" value="C"></td>
+                            <td><input type="radio" name="q27" value="D"></td>
+                            <td><input type="radio" name="q27" value="E"></td>
+                            <td><input type="radio" name="q27" value="F"></td>
+                            <td><input type="radio" name="q27" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="28"></span>28 John Grimes</td>
+                            <td><input type="radio" name="q28" value="A"></td>
+                            <td><input type="radio" name="q28" value="B"></td>
+                            <td><input type="radio" name="q28" value="C"></td>
+                            <td><input type="radio" name="q28" value="D"></td>
+                            <td><input type="radio" name="q28" value="E"></td>
+                            <td><input type="radio" name="q28" value="F"></td>
+                            <td><input type="radio" name="q28" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="29"></span>29 Stephen Kosslyn</td>
+                            <td><input type="radio" name="q29" value="A"></td>
+                            <td><input type="radio" name="q29" value="B"></td>
+                            <td><input type="radio" name="q29" value="C"></td>
+                            <td><input type="radio" name="q29" value="D"></td>
+                            <td><input type="radio" name="q29" value="E"></td>
+                            <td><input type="radio" name="q29" value="F"></td>
+                            <td><input type="radio" name="q29" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="30"></span>30 Kevin O'Regan</td>
+                            <td><input type="radio" name="q30" value="A"></td>
+                            <td><input type="radio" name="q30" value="B"></td>
+                            <td><input type="radio" name="q30" value="C"></td>
+                            <td><input type="radio" name="q30" value="D"></td>
+                            <td><input type="radio" name="q30" value="E"></td>
+                            <td><input type="radio" name="q30" value="F"></td>
+                            <td><input type="radio" name="q30" value="G"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 31-35</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 3?</p>
+                    <p>In boxes 31-35, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 One expert expressed regret for having underemphasized his argument in a publication.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q31" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 We overlook insignificant items that come into our view.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q32" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 Research into cognitive errors might potentially save lives.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q33" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 The aging process increases the need to fill in gaps in our visual perception.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q34" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 Our eyes are only at risk of being deceived when they are in motion.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q35" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 36-40</div>
+                    <p>Complete each sentence with the correct ending, <strong>A-G</strong>, below.</p>
+                    <p>Drag the correct ending into each box 36-40.</p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="A" data-answer="A" data-label="is challenging for us to accept.">A is challenging for us to accept.</div>
+                        <div class="drag-item" draggable="true" data-option="B" data-answer="B" data-label="is provided by memory.">B is provided by memory.</div>
+                        <div class="drag-item" draggable="true" data-option="C" data-answer="C" data-label="helps us see the overall picture more clearly.">C helps us see the overall picture more clearly.</div>
+                        <div class="drag-item" draggable="true" data-option="D" data-answer="D" data-label="has been especially fruitful in recent times.">D has been especially fruitful in recent times.</div>
+                        <div class="drag-item" draggable="true" data-option="E" data-answer="E" data-label="causes us to overlook other details.">E causes us to overlook other details.</div>
+                        <div class="drag-item" draggable="true" data-option="F" data-answer="F" data-label="is not backed by scientific evidence.">F is not backed by scientific evidence.</div>
+                        <div class="drag-item" draggable="true" data-option="G" data-answer="G" data-label="has sparked significant public debate.">G has sparked significant public debate.</div>
+                    </div>
+                    <p><span class="question-anchor" data-question-anchor="36"></span>36 Concentrating on a particular aspect of an activity or scene <span class="drop-zone" data-target="q36" data-placeholder="36">36</span><input type="text" name="q36" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="37"></span>37 The fact that we make visual errors <span class="drop-zone" data-target="q37" data-placeholder="37">37</span><input type="text" name="q37" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="38"></span>38 The part of the picture that we fail to see clearly <span class="drop-zone" data-target="q38" data-placeholder="38">38</span><input type="text" name="q38" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="39"></span>39 The idea that we see everything in our visual field <span class="drop-zone" data-target="q39" data-placeholder="39">39</span><input type="text" name="q39" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="40"></span>40 Research into the nature of human vision <span class="drop-zone" data-target="q40" data-placeholder="40">40</span><input type="text" name="q40" class="input-field" style="display:none;" aria-hidden="true"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_26',
+            label: 'Reading Full 26',
+            correctAnswers: {
+            q1: "C",
+            q2: "A",
+            q3: "D",
+            q4: "A",
+            q5: "C",
+            q6: "B",
+            q7: "BEAKS",
+            q8: "VOMITED UP",
+            q9: "HARDENS",
+            q10: "TRUE",
+            q11: "NOT GIVEN",
+            q12: "FALSE",
+            q13: "NOT GIVEN",
+            q14: "B",
+            q15: "F",
+            q16: "D",
+            q17: "G",
+            q18: "PAINTINGS",
+            q19: "COMPOSITION",
+            q20: "BLURRED",
+            q21: "SCRATCHED",
+            q22: "MONOCHROME",
+            q23: "FALSE",
+            q24: "NOT GIVEN",
+            q25: "FALSE",
+            q26: "TRUE",
+            q27: "C",
+            q28: "A",
+            q29: "G",
+            q30: "F",
+            q31: "TRUE",
+            q32: "TRUE",
+            q33: "TRUE",
+            q34: "NOT GIVEN",
+            q35: "FALSE",
+            q36: "E",
+            q37: "D",
+            q38: "B",
+            q39: "F",
+            q40: "C"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-26.js?v=20260731-reading-clear-26-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-26-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+
+

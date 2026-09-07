@@ -1,0 +1,651 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 21 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-b25b4923.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-21-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+                        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>The Father of English Geology</h3>
+                    <p>William Smith, 1769-1839, has been called the 'Father of English Geology'. His pioneering map of 1815, depicting the geology of England, Wales and part of Scotland, helped to shape the economic and scientific development of Britain, just as the country was experiencing the Industrial Revolution.</p>
+                    <p>William Smith was born in rural Oxfordshire in 1769. The son of the village blacksmith, Smith was the eldest of five children. After elementary education at the village school, where he developed a liking for geometry and drawing, he decided to teach himself the skills of surveying, possibly because there were an increasing number of openings for that profession. At the age of 18 he was employed by Edward Webb, a surveyor in a nearby town, and subsequently, in 1791, he set up in business on his own.</p>
+                    <p>As a boy, Smith had developed an interest in the exposures of rock and the fossils which were to be found locally. As an adult, his surveys of land that would be suitable for building canals, and for sources of building stone and coal in other parts of England, led to a great increase in his knowledge and awareness of various geological features.</p>
+                    <p>As he travelled, he found the strata that he was familiar with in the south of England were repeated in other areas, with some outcrops - the rocks emerging above ground - stretching right across the country. Coal miners were already aware of the occurrences of regular successions of workable coal seams. But on a larger scale, Smith began to recognise that sedimentary rocks could be identified by the fossils they contained, and that these rocks were always arranged in the same order. Smith's discovery that beds of rocks can be distinguished by the fossils found in them was a concept virtually unrecognised by geologists of that period.</p>
+                    <p>Working on this principle, Smith was able to draw up a table of successive strata which could be applied in any other locality - an early version of the geological column.</p>
+                    <p>By 1799, Smith was using both his skills as a surveyor and the knowledge gained from his observations in the field to draw up a geological map. This first map was circular in form, covered the area around the city of Bath, and was exhibited at the Bath Agricultural Society. At the same time, Smith continued to plan the publication of a treatise describing his discoveries, but financial support proved difficult to find. In 1801, Smith produced a small geological map of England and Wales which illustrated the outcrops of seven geological formations.</p>
+                    <p>Other maps were produced for exhibition at various meetings, but it was not until 1815 that, with input from the enterprising map publisher John Cary, Smith's first major map actually appeared. It was called 'A delineation of the Strata of England and Wales with part of Scotland; exhibiting the Collieries and Mines, the Marshes and Fen Lands originally overflowed by the Sea, and the varieties of soil according to the variations in the substrata, illustrated by the most descriptive names'.</p>
+                    <p>Based on Cary's new topographical map at the scale of five miles to the inch, Smith's map showed the outcrops of some twenty formations. Other publications on stratigraphy followed, including his major mapping publication 'Geological Atlas', comprising maps of 21 counties. Published between 1819 and 1824, these maps represent a first attempt at systematic sheet mapping of England and Wales.</p>
+                    <p>Despite the importance of his ideas and publications, Smith continued to find recognition elusive and it was not until 1831, when the Geological Society awarded him the first Wollaston Medal, that the importance of his achievements was finally acknowledged. In his citation, the geologist Adam Sedgwick called Smith the 'Founder of English Geology'.</p>
+                    <p>From time to time Smith's expertise continued to be drawn upon for major projects. In 1838 he was commissioned to accompany Henry De la Beche and Sir Charles Barry on a tour of the principal stone quarries to recommend the stone to be used in the rebuilding of the Houses of Parliament, which had been destroyed by fire in 1835. The practical nature of the commission provides a link between Smith's work and that of De la Beche and his newly founded Geological Survey.</p>
+                    <p>The main focus of Smith's work was to apply his observations and ideas to the everyday needs of the canal builders, quarry- and mine-owners, landowners and agriculturists who were underpinning the Industrial Revolution. His understanding of geology enabled him to predict where coal or different types of stone could be found, which was very useful for mining companies. He talked at meetings about geology and its valuable contribution to the national economy.</p>
+                    <p>The methods involved in map production have developed and the ways in which people access maps have altered radically since Smith's time. However, his conviction that geological mapping is of vital importance at many levels and in many areas of the nation's society, science, and industry is as true today as it was two centuries ago, when he conceived his original geological map. It is as vital for today's industries to be provided with accurate geological map data as it was in Smith's time.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>Do the following statements agree with the information given in the text? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 <span class="question-anchor" data-question-anchor="1"></span>At the time when Smith left school, there was a growing demand for surveyors.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 <span class="question-anchor" data-question-anchor="2"></span>When Smith was 18, he formed a partnership with another surveyor.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 <span class="question-anchor" data-question-anchor="3"></span>Smith's interest in rocks and fossils was encouraged by his school.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 <span class="question-anchor" data-question-anchor="4"></span>Smith noticed that the same types of rocks were visible in a number of places.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text">5 <span class="question-anchor" data-question-anchor="5"></span>Smith believed that the order of strata in the ground varied from locality to locality.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 <span class="question-anchor" data-question-anchor="6"></span>Smith's map of Bath was commissioned by the Bath Agricultural Society.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-13</div>
+                    <p>Complete the sentences below. Choose <strong>ONE WORD ONLY</strong> from the text for each answer.</p>
+                    <p>7 Around 1799, Smith struggled to raise money for a publication about his <input type="text" name="q7" placeholder="7" class="input-field inline-input"></p>
+                    <p>8 Unlike other maps, Smith's 1815 map was produced with help from a <input type="text" name="q8" placeholder="8" class="input-field inline-input"></p>
+                    <p>9 Smith's 'Geological Atlas' contained maps of a number of the <input type="text" name="q9" placeholder="9" class="input-field inline-input"></p>
+                    <p>10 Smith did not receive <input type="text" name="q10" placeholder="10" class="input-field inline-input"> for his work until 1831.</p>
+                    <p>11 In 1838 Smith advised on the most suitable <input type="text" name="q11" placeholder="11" class="input-field inline-input"> for rebuilding the Houses of Parliament.</p>
+                    <p>12 Smith made speeches about how the country's <input type="text" name="q12" placeholder="12" class="input-field inline-input"> benefited from geology.</p>
+                    <p>13 Nowadays, geological maps still have the <input type="text" name="q13" placeholder="13" class="input-field inline-input"> that Smith believed they had.</p>
+                </div>
+            </div>
+<!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</strong></p>
+                    <h3>What's Happening to Our Food?</h3>
+                    <p><strong>A</strong> We now know a lot about what food does to the body and the importance of a healthy diet. But what if modern intensive farming methods have affected the mineral and vitamin content of what we eat? Donald Davis, at the University of Texas, has found notable declines in nutrients in crops including tomatoes, eggplants and squash. Davis blames agricultural practices that emphasise quantity over quality. High-yielding crops produce more food, more rapidly, but they can't make or absorb nutrients at the same pace, so the nutrition is diluted. 'It's like taking a glass of orange juice and adding water to it. If you do that, the concentration of nutrients that was in the original juice drops,' he says. But the idea that modern farming produces less nourishing crops remains controversial, since nutrient levels can vary widely according to the variety of plant, the year of harvest and the time of harvest.</p>
+                    <p><strong>B</strong> But intensive farming has also led to a huge increase in food supply, which has undoubtedly had a positive effect on our diet and health. 'Evidence suggests that some nutrients have fallen, particularly trace elements such as copper in vegetables,' says Paul Finglas, at the Institute of Food Research in Norwich. 'Foods are now bred for yield, and not necessarily nutritional composition. But I don't think that is a problem, because we eat a wider range of foods today than we did 10 years ago, let alone 40 years ago'. Eric Decker, professor of food science at the University of Massachusetts in Amherst, agrees. If nutrients are declining, the losses are insignificant, he says. 'Over the last century, lifespans have got longer, people are bigger and stronger, and a lot of that has to do with the food supply being better.' Even Davis agrees that any differences in nutrient levels are relatively small. 'Despite their declines, fruit and vegetables are still our richest source of many nutrients, and you can make up for it by eating more,' he says. 'But we know that many people don't get the recommended amounts of nutrients such as iron, magnesium, and calcium. They aren't overt deficiencies in the usual sense, but they increase susceptibility to lots of different problems.'</p>
+                    <p><strong>C</strong> In addition to changes in its production, food is being transported for ever-increasing distances. Fruit and vegetables in supermarkets might look shiny and fresh, but often they were picked several days earlier. Some nutrients, particularly vitamin C and folic acid, begin to deteriorate as soon as picking happens, but manufacturers can take action to minimise this. 'Lots of these reactions are driven by enzymes,' says Carol Wagstaff, from the University of Reading, UK, who points out that chilling is the best way of slowing down such reactions. That said, if you are choosing between organic fruit or vegetables from a distant country or locally grown, non-organic ones, always opt for home-grown, she says. 'From a nutritional standpoint, go for the shortest possible supply chain rather than the production method.'</p>
+                    <p>Many kinds of mass-produced fruit and veg - most famously tomatoes - are harvested unripe before being transported to supermarkets. Wagstaff agrees that this may cause some loss of flavour, compared with a tomato that you have grown at home, and left on the plant until it's absolutely ready to eat. 'But there's no way you could do that at a commercial level, because of the bruising and other types of damage that would occur if ripe fruits were transported through a typical supply chain,' she says. In addition, each method of shipping and storing foods has different effects on the compounds they contain. Vitamin C, for example, breaks down in the dark, whereas glucosinolates - found in vegetables like cabbage - deplete in the light.</p>
+                    <p><strong>D</strong> Surprisingly, frozen fruit and vegetables are often nutritionally better than fresh. 'Frozen peas are much more nutritious than those you buy ready to shell,' says Catherine Collins, principal dietician at St George's Hospital in London. What's more, frozen foods often have fewer additives. 'Freezing is a preservative,' she says. Similarly, processing has become a maligned word in the context of food, but there are some cases where it enhances a food's health benefits. For example, lycopene - a compound tomatoes are rich in, and which has been shown to protect against certain diseases - is much more readily absorbed by humans from tomato paste than fresh tomatoes. A recent trend is the sale of 'fresh-cut' fruit and vegetables - peeled potatoes, ready chopped carrots and bagged salads. One in five adults in the UK regularly buys fruit and vegetables in this form every week, according to market research firm Mintel. Surely this cutting and peeling speeds up the degradation of nutrients? 'There is a chance that ready prepared vegetables may have a lower content of some vitamins,' says Judy Buttriss, of the British Nutrition Foundation in London. 'But if their availability means that such vegetables are consumed in greater quantities, then the net effect is beneficial.'</p>
+                    <p><strong>E</strong> The bottom line is that although aspects of today's food production, processing and storage might make what we eat a bit less nutritious, they are also making foods more available - and this is far more important. 'The most important thing you can do is eat more fruits, vegetables and wholegrains, and cut down on highly refined, processed foods, vegetable oils and added sugars,' says Davis. He believes this will make a far greater difference to us than worrying about growing methods and transportation.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-18</div>
+                    <p>Reading Passage 2 has five sections, A-E. Which section contains the following information? Write the correct letter.</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>14 an admission that if one type of food is harvested too soon, its taste may be affected</td>
+                                <td><label><input type="radio" name="q14" value="A"></label></td>
+                                <td><label><input type="radio" name="q14" value="B"></label></td>
+                                <td><label><input type="radio" name="q14" value="C"></label></td>
+                                <td><label><input type="radio" name="q14" value="D"></label></td>
+                                <td><label><input type="radio" name="q14" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td>15 the view that there is not a great difference between the quantity of nutrients in our food now and in the past</td>
+                                <td><label><input type="radio" name="q15" value="A"></label></td>
+                                <td><label><input type="radio" name="q15" value="B"></label></td>
+                                <td><label><input type="radio" name="q15" value="C"></label></td>
+                                <td><label><input type="radio" name="q15" value="D"></label></td>
+                                <td><label><input type="radio" name="q15" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td>16 a comparison which illustrates why developments in agriculture may reduce the amounts of nutrients in foods</td>
+                                <td><label><input type="radio" name="q16" value="A"></label></td>
+                                <td><label><input type="radio" name="q16" value="B"></label></td>
+                                <td><label><input type="radio" name="q16" value="C"></label></td>
+                                <td><label><input type="radio" name="q16" value="D"></label></td>
+                                <td><label><input type="radio" name="q16" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td>17 a warning that customers could be deceived by the attractive appearance of a fruit or vegetable</td>
+                                <td><label><input type="radio" name="q17" value="A"></label></td>
+                                <td><label><input type="radio" name="q17" value="B"></label></td>
+                                <td><label><input type="radio" name="q17" value="C"></label></td>
+                                <td><label><input type="radio" name="q17" value="D"></label></td>
+                                <td><label><input type="radio" name="q17" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td>18 evidence of the popularity of a new development in food processing which aims to save customers trouble</td>
+                                <td><label><input type="radio" name="q18" value="A"></label></td>
+                                <td><label><input type="radio" name="q18" value="B"></label></td>
+                                <td><label><input type="radio" name="q18" value="C"></label></td>
+                                <td><label><input type="radio" name="q18" value="D"></label></td>
+                                <td><label><input type="radio" name="q18" value="E"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 19-22</div>
+                    <p>Match the statements with the correct person (A-F) by ticking the appropriate letter.</p>
+                    <div class="matching-key">
+                        <p><strong>A</strong> Donald Davis</p>
+                        <p><strong>B</strong> Paul Finglas</p>
+                        <p><strong>C</strong> Eric Decker</p>
+                        <p><strong>D</strong> Carol Wagstaff</p>
+                        <p><strong>E</strong> Catherine Collins</p>
+                        <p><strong>F</strong> Judy Buttriss</p>
+                    </div>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>F</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>19 People are more likely to become ill if they have low levels of some nutrients.</td>
+                                <td><label><input type="radio" name="q19" value="A"></label></td>
+                                <td><label><input type="radio" name="q19" value="B"></label></td>
+                                <td><label><input type="radio" name="q19" value="C"></label></td>
+                                <td><label><input type="radio" name="q19" value="D"></label></td>
+                                <td><label><input type="radio" name="q19" value="E"></label></td>
+                                <td><label><input type="radio" name="q19" value="F"></label></td>
+                            </tr>
+                            <tr>
+                                <td>20 Making healthy foods easy to cook may be more important than their vitamin content.</td>
+                                <td><label><input type="radio" name="q20" value="A"></label></td>
+                                <td><label><input type="radio" name="q20" value="B"></label></td>
+                                <td><label><input type="radio" name="q20" value="C"></label></td>
+                                <td><label><input type="radio" name="q20" value="D"></label></td>
+                                <td><label><input type="radio" name="q20" value="E"></label></td>
+                                <td><label><input type="radio" name="q20" value="F"></label></td>
+                            </tr>
+                            <tr>
+                                <td>21 An improved diet has made people nowadays live longer and be healthier than in the past.</td>
+                                <td><label><input type="radio" name="q21" value="A"></label></td>
+                                <td><label><input type="radio" name="q21" value="B"></label></td>
+                                <td><label><input type="radio" name="q21" value="C"></label></td>
+                                <td><label><input type="radio" name="q21" value="D"></label></td>
+                                <td><label><input type="radio" name="q21" value="E"></label></td>
+                                <td><label><input type="radio" name="q21" value="F"></label></td>
+                            </tr>
+                            <tr>
+                                <td>22 People's diets are more varied now than they were in the past.</td>
+                                <td><label><input type="radio" name="q22" value="A"></label></td>
+                                <td><label><input type="radio" name="q22" value="B"></label></td>
+                                <td><label><input type="radio" name="q22" value="C"></label></td>
+                                <td><label><input type="radio" name="q22" value="D"></label></td>
+                                <td><label><input type="radio" name="q22" value="E"></label></td>
+                                <td><label><input type="radio" name="q22" value="F"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the text for each answer.</p>
+                    <p>Food transportation</p>
+                    <p>In order to prevent loss of nutrients when transporting fruit and vegetables, chilling is used to slow down the effect that <input type="text" name="q23" placeholder="23" class="input-field inline-input"> have on them.</p>
+                    <p>Some foods, such as tomatoes, must be picked before they are ripe to avoid problems such as <input type="text" name="q24" placeholder="24" class="input-field inline-input"> during transportation.</p>
+                    <p>Other foods, such as cabbage, lose nutrients when kept in the <input type="text" name="q25" placeholder="25" class="input-field inline-input">.</p>
+                    <p>Vegetables such as <input type="text" name="q26" placeholder="26" class="input-field inline-input">, which are picked fresh and transported to the supermarket, may be less nutritious than those which are frozen.</p>
+                </div>
+            </div>
+<!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Looking for Inspiration</h3>
+                    <p>Helen Phillips asks what makes one person more creative than another.</p>
+                    <p>People have speculated about their own creativity for centuries - perhaps ever since we became able to think about thinking. Whatever creativity, it is thinking that results in new ideas and new ways of doing things. The only bit of the creative process we actually know about is the moment of insight, yet creative ideas and projects may incubate beyond our awareness for months. Not surprising, then, that creativity has long eluded scientific study.</p>
+                    <p>In the early 1970s, it was still seen as a type of intelligence. But when more subtle tests of IQ and creative skills were developed in the 1970s, particularly by the father of creativity testing, Paul Torrance, it became clear that the link was not so simple. Creative people are intelligent, in terms of IQ tests at least, but only averagely or just above. While it depends on the discipline, in general, having beyond a certain level IQ does not help boost creativity.</p>
+                    <p>Because of the difficulty of studying the actual process, most early attempts to study creativity concentrated on personality. According to creativity specialist Mark Runco of California State University, the creative personality tends to place a high value on aesthetic qualities and have broad interests, providing lots of resources to draw on and knowledge to recombine into novel solutions. 'Creatives' have an attraction to complexity and an ability to handle conflict. They are also highly self-motivated, perhaps even a little obsessive, when it comes to realising their ambitions.</p>
+                    <p>But there may be a price to pay for having a creative personality. For centuries, a link has been made between creativity and mental illness. Psychiatrist and author Kay Redfield Jamison of Johns Hopkins University, who herself has bipolar disorder, found that established artists are significantly more likely to have mood disorders. But she also suggests that a switch of mood state might be the key to triggering a creative event, rather than the negative mood itself.</p>
+                    <p>Jordan Peterson, a psychologist at the University of Toronto, has carried out work that suggests that the brains of creative people are more open to incoming stimuli than less creative types. Our senses are continuously feeding a mass of data into our brains, which have to block most of it to save us from being snowed under. Peterson calls this process latent inhibition and argues that people who have less of it, and who have a reasonably high IQ, can juggle more of the data, and so may be open to more ideas.</p>
+                    <p>But what of the creative act itself? One of the first studies of the creative brain at work was by Colin Martindale, a psychologist from the University of Maine. Back in 1978, he used a network of scalp electrodes to record the pattern of brain waves as people made up stories. Creativity, he showed, has two stages: inspiration and elaboration, each characterized at very different states of mind. While people were dreaming up their stories, he found their brains were surprisingly quiet. The dominant activity was alpha waves, which is the same sort of brain activity as in some stages of dreaming or rest. This could explain why sleep and relaxation can help people be creative.</p>
+                    <p>However, when these quiet-minded people were asked to work on their stories, the alpha wave activity dropped off and the brain became busier, revealing increased cortical arousal, and more organised thinking. Strikingly, it was the people who showed the biggest difference in brain activity between the two stages who produced the most creative storylines. Nothing in their background brain activity marked them as creative or uncreative. 'It's as if the less creative person can't move up a gear,' says Guy Claxton, a psychologist at the University of Bristol. 'Creativity requires different kinds of thinking. Very creative people move between these states intuitively.'</p>
+                    <p>Researchers are now trying to identify some of the specific anatomy of creativity. Brain studies of people with particular types of creativity show, perhaps not surprisingly, that active areas are determined by the specialist knowledge being used. Imagery, spatial awareness, language and so on - whatever the skill, it is localised to some extent to a particular brain part or parts. But it's not just these speciality areas that are active. Using information creatively needs coordination. 'Creative synthesis requires a new pattern, to put the brain in a state where many areas are simultaneously active,' says Claxton. When we concentrate in a less creative way, such as when reading the gas bill, there are fewer active centres and less synthesis.</p>
+                    <p>But to be truly creative needs more than just the right personality and the right brain areas and networks. It's about using them effectively. Skills, situations and our social setting can shape our creativity just as dramatically as the brain resources we are born with. The most creative people also use the different rhythms of the day, the weekends and the holidays to help alter focus and brain state. They may spend two hours at their desk, then go for a walk, because they know that pattern works for them.</p>
+                    <p>Another often forgotten aspect of creativity is social. Vera John-Steiner of the University of New Mexico says that to be really creative you need strong social networks and trusting relationships, not just active neural networks. One vital characteristic of a 'creative', she says, is that they have at least one other person in their life who doesn't think they are completely mad!</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Match the statements with the correct person, A-G. Write the letter in the table below.</p>
+                    <div class="matching-key">
+                        <p><strong>A</strong> Paul Torrance</p>
+                        <p><strong>B</strong> Mark Runco</p>
+                        <p><strong>C</strong> Kay Redfield Jamison</p>
+                        <p><strong>D</strong> Jordan Peterson</p>
+                        <p><strong>E</strong> Colin Martindale</p>
+                        <p><strong>F</strong> Guy Claxton</p>
+                        <p><strong>G</strong> Vera John-Steiner</p>
+                    </div>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>F</th>
+                                <th>G</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27 Creative people are receptive to the immense amounts of information that the brain has to deal with.</td>
+                                <td><label><input type="radio" name="q27" value="A"></label></td>
+                                <td><label><input type="radio" name="q27" value="B"></label></td>
+                                <td><label><input type="radio" name="q27" value="C"></label></td>
+                                <td><label><input type="radio" name="q27" value="D"></label></td>
+                                <td><label><input type="radio" name="q27" value="E"></label></td>
+                                <td><label><input type="radio" name="q27" value="F"></label></td>
+                                <td><label><input type="radio" name="q27" value="G"></label></td>
+                            </tr>
+                            <tr>
+                                <td>28 Creativity requires numerous parts of the brain to be active at the same time.</td>
+                                <td><label><input type="radio" name="q28" value="A"></label></td>
+                                <td><label><input type="radio" name="q28" value="B"></label></td>
+                                <td><label><input type="radio" name="q28" value="C"></label></td>
+                                <td><label><input type="radio" name="q28" value="D"></label></td>
+                                <td><label><input type="radio" name="q28" value="E"></label></td>
+                                <td><label><input type="radio" name="q28" value="F"></label></td>
+                                <td><label><input type="radio" name="q28" value="G"></label></td>
+                            </tr>
+                            <tr>
+                                <td>29 Creative people engage in, and are well informed about, a wide range of subjects.</td>
+                                <td><label><input type="radio" name="q29" value="A"></label></td>
+                                <td><label><input type="radio" name="q29" value="B"></label></td>
+                                <td><label><input type="radio" name="q29" value="C"></label></td>
+                                <td><label><input type="radio" name="q29" value="D"></label></td>
+                                <td><label><input type="radio" name="q29" value="E"></label></td>
+                                <td><label><input type="radio" name="q29" value="F"></label></td>
+                                <td><label><input type="radio" name="q29" value="G"></label></td>
+                            </tr>
+                            <tr>
+                                <td>30 Creative people may have unstable personalities.</td>
+                                <td><label><input type="radio" name="q30" value="A"></label></td>
+                                <td><label><input type="radio" name="q30" value="B"></label></td>
+                                <td><label><input type="radio" name="q30" value="C"></label></td>
+                                <td><label><input type="radio" name="q30" value="D"></label></td>
+                                <td><label><input type="radio" name="q30" value="E"></label></td>
+                                <td><label><input type="radio" name="q30" value="F"></label></td>
+                                <td><label><input type="radio" name="q30" value="G"></label></td>
+                            </tr>
+                            <tr>
+                                <td>31 Creative people are driven to achieve the goals they set themselves.</td>
+                                <td><label><input type="radio" name="q31" value="A"></label></td>
+                                <td><label><input type="radio" name="q31" value="B"></label></td>
+                                <td><label><input type="radio" name="q31" value="C"></label></td>
+                                <td><label><input type="radio" name="q31" value="D"></label></td>
+                                <td><label><input type="radio" name="q31" value="E"></label></td>
+                                <td><label><input type="radio" name="q31" value="F"></label></td>
+                                <td><label><input type="radio" name="q31" value="G"></label></td>
+                            </tr>
+                            <tr>
+                                <td>32 Creative people need support from others.</td>
+                                <td><label><input type="radio" name="q32" value="A"></label></td>
+                                <td><label><input type="radio" name="q32" value="B"></label></td>
+                                <td><label><input type="radio" name="q32" value="C"></label></td>
+                                <td><label><input type="radio" name="q32" value="D"></label></td>
+                                <td><label><input type="radio" name="q32" value="E"></label></td>
+                                <td><label><input type="radio" name="q32" value="F"></label></td>
+                                <td><label><input type="radio" name="q32" value="G"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-36</div>
+                    <p>Complete the summary below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p>Colin Martindale carried out research into the creative brain at work.</p>
+                    <p>For his study, volunteers had a series of <input type="text" name="q33" placeholder="33" class="input-field inline-input"> placed on their heads which were used to monitor brain activity while they made up stories. Martindale demonstrated that creativity consisted of <input type="text" name="q34" placeholder="34" class="input-field inline-input"> and <input type="text" name="q35" placeholder="35" class="input-field inline-input"> phases. In the first of these, the brain was mostly inactive except for <input type="text" name="q36" placeholder="36" class="input-field inline-input"> and this corresponds to what takes place during dreaming or relaxation. In the second phase, when the volunteers worked on their stories, however, their brains became a lot busier. Interestingly, the most creative stories were produced by those volunteers with the greatest difference in brain activity between the two phases.</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Do the following statements agree with the information given in the text? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 <span class="question-anchor" data-question-anchor="37"></span>People with very high IQs are more likely to be creative than those with average IQs.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q37" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text">38 <span class="question-anchor" data-question-anchor="38"></span>Society tends to value aesthetic skills highly.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q38" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q38" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text">39 <span class="question-anchor" data-question-anchor="39"></span>There can be disadvantages to having a creative personality.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q39" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q39" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text">40 <span class="question-anchor" data-question-anchor="40"></span>Language skills are more important than spatial awareness in any form of creativity.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q40" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q40" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_21',
+            label: 'Reading Full 21',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "FALSE",
+            q3: "NOT GIVEN",
+            q4: "TRUE",
+            q5: "FALSE",
+            q6: "NOT GIVEN",
+            q7: "DISCOVERIES",
+            q8: "PUBLISHER",
+            q9: "COUNTIES",
+            q10: "RECOGNITION",
+            q11: "STONE",
+            q12: "ECONOMY",
+            q13: "IMPORTANCE",
+            q14: "C",
+            q15: "B",
+            q16: "A",
+            q17: "C",
+            q18: "D",
+            q19: "A",
+            q20: "F",
+            q21: "C",
+            q22: "B",
+            q23: "ENZYMES",
+            q24: "BRUISING",
+            q25: "LIGHT",
+            q26: "PEAS",
+            q27: "D",
+            q28: "F",
+            q29: "B",
+            q30: "C",
+            q31: "B",
+            q32: "G",
+            q33: "SCALP ELECTRODES",
+            q34: "INSPIRATION",
+            q35: "ELABORATION",
+            q36: "ALPHA WAVES",
+            q37: "FALSE",
+            q38: "NOT GIVEN",
+            q39: "TRUE",
+            q40: "NOT GIVEN"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-21.js?v=20260731-reading-clear-21-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-21-v1"></script>
+</body>
+
+
+
+</html>
+
+
+

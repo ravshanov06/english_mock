@@ -1,0 +1,627 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 23 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-4dbc6c28.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-23-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- PASSAGE 1 -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 on pages 2 and 3.</strong></p>
+                    <h3>Radiocarbon dating</h3>
+                    <h4>A profile of the scientist Nancy Athfield</h4>
+                    <p>Nancy Athfield is a scientist specializing in radiocarbon dating (a scientific method that can accurately determine the age of organic materials). She has just returned from a research expedition deep in the forests of Cambodia's Cardamom Mountains, where she has been working to unravel the secrets of ancient human remains discovered on a number of cliff-side ledges. The unexplained remains, discovered by local people in large ceramic jars and hollowed-out logs, have increasingly drawn Athfield away from her regular employment at G.N.S. Science's Rafter Laboratory in New Zealand and into the world of research in the field.</p>
+                    <p>She first learned of the Cardamom remains in 2003, when a film-making company requested that she radiocarbon date bone samples for a documentary film being made in Cambodia. The film-makers had set out to investigate the idea that these human remains marked the final resting place of people belonging to the last royal household of Angkor, which once ruled much of the surrounding area. At its height in the thirteenth century, Angkor was home to a population 30 times larger than that of Paris at the time, but in 1431 it was over-run by an invading army and the city was permanently abandoned. However, many stories were told of surviving members of the royal family fleeing to seek refuge in the Cardamom Mountains.</p>
+                    <p>Athfield dated the original Cardamom bone samples to as late as 1620, dashing the possibility of Angkorian royalty. However, over the years since then, other ancient human remains have emerged at different sites around the country, leaving the ultimate fate of the royal household of Angkor still uncertain. Athfield intends to return soon to Cambodia in order to continue her research at a number of these new sites.</p>
+                    <p>Investigating the origins of an unknown people in Asia is a long way from her birthplace in New York, but Athfield's career path has been far from conventional. She finished her secondary education early, aged just sixteen, and did a variety of badly paid jobs and community courses before a friend suggested she sit the entrance exam for university. She did, and to her surprise she was accepted. While completing her undergraduate studies in physical geography she got a job at the Lamont-Doherty Earth Observatory. It was here that she met Wally Brocker, a climate scientist and one of the pioneers of radiocarbon dating.</p>
+                    <p>"From him I learned that the best place to be is where everything you know is shaken by a new piece of information. In other words, I learned to think like a scientist."</p>
+                    <p>When Athfield's then husband was offered a post at G.N.S. Science, she accompanied him to New Zealand and took a job as lab manager at Rafter Laboratory. "I realised it was a good time to get a PhD," she says. At the time there was a great deal of controversy over radiocarbon dating, which seemed to suggest that a rat species had arrived in New Zealand as early as 100 AD, nearly 700 years before the first visitors were thought to have reached those untouched islands. Her PhD was based on five years of research exploring this issue, because she wanted to look at how scientists ascertain the reliability of radiocarbon dating and this seemed to be the perfect subject. Athfield concluded that previous radiocarbon tests had been unreliable, and this was connected to the rat's diet, not due to faulty lab procedures as had once been thought.</p>
+                    <p>She then began embracing broader issues related to her skills, and started working as a fully qualified archaeologist in the UK in order to contribute to a 10-year research project fine-tuning Anglo-Saxon chronology. But it was the call from those film-makers in 2003 that truly ignited her passion for fieldwork, and the unanswered questions regarding the Cardamom remains.</p>
+                    <p>Athfield was keen to continue her work in Cambodia after the camera crews left, but she and her colleagues were hampered by that universal problem for researchers, a lack of funding. However, after several years of fruitless applications, she made a breakthrough when the Australian Research Council supported her and a team based at the University of Sydney so that she could return to the Cardamoms, as part of a larger project to create a Cambodia-wide radiocarbon database. The project has brought together geologists, biologists, ceramic specialists, ethnographers, and even a dendroclimatologist (who determines past climates from trees), but it has been no easy task because the country doesn't have an extensive geological map.</p>
+                    <p>Nonetheless, with Cambodia's Ministry of Culture having learned of freshly discovered jar burial sites in the Cardamom Mountains, Athfield is more enthusiastic about the project than ever.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 Nancy Athfield found ancient human remains in Cambodia.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 The human remains found in the Cardamom mountains were in good condition.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 Athfield has taken time off from her usual job to do research in Cambodia.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 The Cambodian government asked Athfield to radiocarbon date the Cardamom remains.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text">5 Film-makers were researching how Angkor was rebuilt after the 1431 invasion.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 Athfield initially doubted the stories of the royal family hiding in the Cardamom mountains.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="7">
+                        <div class="question-text">7 Athfield's research disproved the idea that the Cardamom remains were from the royal family.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q7" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q7" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-13</div>
+                    <p>Complete the flow-chart below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <div class="flow-chart">
+                        <p>Nancy Athfield's career</p>
+                        <p>In her mid-teens, Athfield did not expect to attend <input type="text" name="q8" placeholder="8" class="input-field inline-input">.</p>
+                        <p>Wally Brocker taught Athfield how to develop the mind of a scientist. Athfield's PhD investigated when a type of <input type="text" name="q9" placeholder="9" class="input-field inline-input"> arrived in New Zealand.</p>
+                        <p>Her PhD research found that the subject's diet accounted for previous inaccurate results. She worked as a professional <input type="text" name="q10" placeholder="10" class="input-field inline-input"> before going to Cambodia in 2003.</p>
+                        <p>Inadequate <input type="text" name="q11" placeholder="11" class="input-field inline-input"> prevented further research in Cambodia.</p>
+                        <p>Later, she helped to compile a <input type="text" name="q12" placeholder="12" class="input-field inline-input"> dating across Cambodia of radiocarbon.</p>
+                        <p>The lack of a detailed <input type="text" name="q13" placeholder="13" class="input-field inline-input"> of Cambodia's geology has made her team's research harder.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PASSAGE 2 -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 on pages 6 and 7.</strong></p>
+                    <h3>How sleep helps us learn</h3>
+                    <p>Researchers are uncovering the link between sleep and learning and how it changes throughout our lives.</p>
+                    <p><strong>A</strong> Most research into the relationship between memory and sleep has traditionally been conducted using young adults or animals. By the early 2000s, scientists had found that sleep helps young adults consolidate memory by reinforcing and filing away daytime experiences, but the older adults that Rebecca Spencer was studying at the US University of Massachusetts Amherst didn't seem to experience the same benefit. Spencer wondered if age altered the relationship between sleep and memory, and chose nearby preschool children as subjects. She found that the children who regularly had short sleeps during the day benefited the most from daytime rest, largely because their memories decayed the most without these naps. By staying awake, they have more interference from daytime experiences, Spencer explains.</p>
+                    <p><strong>B</strong> The studies on young adults carried out in the early 2000s suggested that the reduced sensory inputs during sleep allow the brain to replay daytime experiences during a period relatively free of distracting information. This may help to solidify connections and transfer daytime memories from the hippocampus into long-term storage in the cortex. But how sleep and memory interact at different periods of our lives remained an open question.</p>
+                    <p><strong>C</strong> In children younger than 18 months, learning is thought to occur in the cortex because the hippocampus isn't yet fully developed. As a result, researchers hypothesize that infants don't replay memories during sleep the way adults do. Instead, sleep merely seems to prevent infants from forgetting as much as they would if they were awake. The net effect is that sleep permits infants to retain more of the redundant details of a learning experience, says experimental psychologist Rebecca Gomez of the University of Arizona. By the time they are two years old, 'we think that children have the brain development that supports an active process of consolidation', she adds.</p>
+                    <p><strong>D</strong> From the age of two, adequate sleep during the hours of darkness becomes critical for learning. Toddlers who sleep less than 10 hours display lasting cognitive deficits, even if they catch up on sleep later in their development. The effects are particularly strong in children with developmental disorders, who often suffer from disturbed sleep. Jamie Edgin of the University of Arizona studied children with the genetic disorder Down syndrome, comparing those who were sleep-impaired with those who slept normally. She found that there were large differences in language knowledge and observed that the non-sleep-impaired children knew up to 190 more words, even after controlling for behavioural differences.</p>
+                    <p><strong>E</strong> Understanding the impact of sleep on memory could also help another at-risk group of learners at the other end of the age spectrum. Previous research has suggested that older adults don't remember recently acquired motor skills as well as young adults do. But neuroscientist Maria Korman and her colleagues at the University of Haifa in Israel recently demonstrated that taking a nap soon after learning can allow the elderly to retain procedural memories just as well as younger people. Korman hypothesises that by shortening the interval between learning and consolidation, the nap prevents intervening experiences from weakening the memory before it solidifies. Overnight sleep might be even better, if the motor skills - in this case a complex sequence of finger and thumb movements on the non-dominant hand - are taught late enough in the day.</p>
+                    <p><strong>F</strong> Optimising the timing of sleep and training in the elderly exploits something Korman sees as a positive side of growing old. 'As we age, our neural system becomes more aware of the relevance of the task,' Korman says. Unlike young adults, who solidify all the information they acquire throughout the day, older people consolidate those experiences that were tagged by the brain as very important.</p>
+                    <p><strong>G</strong> Tests on older adults' memories are generating new findings about the relationship between sleep and memory at other ages as well. After learning at a conference about a memory test for cognitive impairment and dementia in older adults, neuroscientist Jeanne Duffy of Brigham and Women's Hospital in Boston wondered if sleep could help strengthen the connection between names and faces. She and her colleagues found that young adults who slept overnight after learning a list of 20 names and faces showed a 12 percent increase in retention when tested 12 hours later, compared with subjects who didn't sleep between training and testing. The findings have 'an immediate real-world application', Duffy says, as they address a common memory concern among people of all ages.</p>
+                    <p><strong>H</strong> Developing a fuller picture of what happens to memories during sleep - and how best to modify sleep habits to aid the recall process - could benefit some of society's most sleep-deprived members of every age. 'We need to understand this role of sleep in memory because there is such potential for intervention,' Spencer says. 'Now that we have a well-founded concept of what sleep can do for memory, it's time to put it to the test.'</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-19</div>
+                    <p>Reading Passage 2 has eight paragraphs, A-H. Match each statement with the paragraph that mentions it and write the correct letter, A-H, in boxes 14-19 on your answer sheet.</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Question</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="14"></span>14 a difference between babies and adults with regard to a function of sleep</td>
+                                <td><label><input type="radio" name="q14" value="A"></label></td>
+                                <td><label><input type="radio" name="q14" value="B"></label></td>
+                                <td><label><input type="radio" name="q14" value="C"></label></td>
+                                <td><label><input type="radio" name="q14" value="D"></label></td>
+                                <td><label><input type="radio" name="q14" value="E"></label></td>
+                                <td><label><input type="radio" name="q14" value="F"></label></td>
+                                <td><label><input type="radio" name="q14" value="G"></label></td>
+                                <td><label><input type="radio" name="q14" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="15"></span>15 a reference to a developmental stage at which it is essential to have sufficient night-time sleep</td>
+                                <td><label><input type="radio" name="q15" value="A"></label></td>
+                                <td><label><input type="radio" name="q15" value="B"></label></td>
+                                <td><label><input type="radio" name="q15" value="C"></label></td>
+                                <td><label><input type="radio" name="q15" value="D"></label></td>
+                                <td><label><input type="radio" name="q15" value="E"></label></td>
+                                <td><label><input type="radio" name="q15" value="F"></label></td>
+                                <td><label><input type="radio" name="q15" value="G"></label></td>
+                                <td><label><input type="radio" name="q15" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="16"></span>16 the idea that the comparatively low levels of stimuli during sleep help us consolidate memories</td>
+                                <td><label><input type="radio" name="q16" value="A"></label></td>
+                                <td><label><input type="radio" name="q16" value="B"></label></td>
+                                <td><label><input type="radio" name="q16" value="C"></label></td>
+                                <td><label><input type="radio" name="q16" value="D"></label></td>
+                                <td><label><input type="radio" name="q16" value="E"></label></td>
+                                <td><label><input type="radio" name="q16" value="F"></label></td>
+                                <td><label><input type="radio" name="q16" value="G"></label></td>
+                                <td><label><input type="radio" name="q16" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="17"></span>17 the mention of the need to find out whether current theories are correct</td>
+                                <td><label><input type="radio" name="q17" value="A"></label></td>
+                                <td><label><input type="radio" name="q17" value="B"></label></td>
+                                <td><label><input type="radio" name="q17" value="C"></label></td>
+                                <td><label><input type="radio" name="q17" value="D"></label></td>
+                                <td><label><input type="radio" name="q17" value="E"></label></td>
+                                <td><label><input type="radio" name="q17" value="F"></label></td>
+                                <td><label><input type="radio" name="q17" value="G"></label></td>
+                                <td><label><input type="radio" name="q17" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="18"></span>18 research data which can be of direct help to people who are worried about memory loss</td>
+                                <td><label><input type="radio" name="q18" value="A"></label></td>
+                                <td><label><input type="radio" name="q18" value="B"></label></td>
+                                <td><label><input type="radio" name="q18" value="C"></label></td>
+                                <td><label><input type="radio" name="q18" value="D"></label></td>
+                                <td><label><input type="radio" name="q18" value="E"></label></td>
+                                <td><label><input type="radio" name="q18" value="F"></label></td>
+                                <td><label><input type="radio" name="q18" value="G"></label></td>
+                                <td><label><input type="radio" name="q18" value="H"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="19"></span>19 a reference to a strategy which could enable older people to remember certain things as well as younger people do</td>
+                                <td><label><input type="radio" name="q19" value="A"></label></td>
+                                <td><label><input type="radio" name="q19" value="B"></label></td>
+                                <td><label><input type="radio" name="q19" value="C"></label></td>
+                                <td><label><input type="radio" name="q19" value="D"></label></td>
+                                <td><label><input type="radio" name="q19" value="E"></label></td>
+                                <td><label><input type="radio" name="q19" value="F"></label></td>
+                                <td><label><input type="radio" name="q19" value="G"></label></td>
+                                <td><label><input type="radio" name="q19" value="H"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 20-23</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>Sleep and memory</p>
+                    <p>In the past, most studies looking into how sleep helps us consolidate memories have used either animals or young adults as their subjects. But Rebecca Spencer noticed that her own research subjects did not appear to get as much <input type="text" name="q20" placeholder="20" class="input-field inline-input"> from sleep as the subjects in other studies did.</p>
+                    <p>She wanted to know if a person's <input type="text" name="q21" placeholder="21" class="input-field inline-input"> made any difference to the process of memory consolidation, so she conducted an experiment on children at the <input type="text" name="q22" placeholder="22" class="input-field inline-input"> stage.</p>
+                    <p>She found that children who did not have a daytime sleep suffered a higher level of <input type="text" name="q23" placeholder="23" class="input-field inline-input"> from the day's events, and were less able to remember things later.</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Look at the following research areas and the list of researchers below. Match each statement with the correct researcher and write the appropriate letter, A-E, in boxes 24-26 on your answer sheet.</p>
+                    <table class="qa-table">
+                        <thead>
+                            <tr>
+                                <th>Statement</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="24"></span>24 the connection between lack of sleep and vocabulary acquisition</td>
+                                <td><label><input type="radio" name="q24" value="A"></label></td>
+                                <td><label><input type="radio" name="q24" value="B"></label></td>
+                                <td><label><input type="radio" name="q24" value="C"></label></td>
+                                <td><label><input type="radio" name="q24" value="D"></label></td>
+                                <td><label><input type="radio" name="q24" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="25"></span>25 the impact of sleep on how well people learn to perform physical actions</td>
+                                <td><label><input type="radio" name="q25" value="A"></label></td>
+                                <td><label><input type="radio" name="q25" value="B"></label></td>
+                                <td><label><input type="radio" name="q25" value="C"></label></td>
+                                <td><label><input type="radio" name="q25" value="D"></label></td>
+                                <td><label><input type="radio" name="q25" value="E"></label></td>
+                            </tr>
+                            <tr>
+                                <td><span class="question-anchor" data-question-anchor="26"></span>26 how the structure of very young brains may influence memory processes</td>
+                                <td><label><input type="radio" name="q26" value="A"></label></td>
+                                <td><label><input type="radio" name="q26" value="B"></label></td>
+                                <td><label><input type="radio" name="q26" value="C"></label></td>
+                                <td><label><input type="radio" name="q26" value="D"></label></td>
+                                <td><label><input type="radio" name="q26" value="E"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>List of Researchers: A Rebecca Spencer — B Rebecca Gomez — C Jamie Edgin — D Maria Korman — E Jeanne Duffy</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 on pages 10 and 11.</strong></p>
+                    <h3>Petrol power: an eco-revolution?</h3>
+                    <p>Laura Ingalls Wilder's semi-autobiographical novel The Long Winter describes how the inhabitants of a small town called De Smet in the American mid-west narrowly avoided starvation during the severe winter of 1880-1881. Over three metres of snow fell on the northern plains, immobilising the railways and cutting off the settlers from the rest of the world. Laura and her neighbours were only saved when her fiance and his friend trudged 30 kilometres through the snow to fetch food, risking their lives in the process. The story is a reminder of how lethal geographical isolation and crop failures could be before the advent of modern farming and transportation technologies. Not long ago, subsistence farmers in many countries had to cope with the 'lean season' - the period of greatest scarcity before new crops became available. In England, late spring was once referred to as the 'hungry gap'. The situation was made worse by the cost of moving heavy things over muddy dirt roads; three centuries ago, moving goods 50 kilometres on land between, say, Liverpool and Manchester was as expensive as shipping them across the north Atlantic.</p>
+                    <p>The development of coal-powered railways and steamships in the 19th century revolutionized the lives of farmers. Instead of having to grow everything they needed, they could now specialise in what they did best and rely on other producers for their remaining needs. The result was not only food and ever-cheaper prices, but the end of widespread famine and starvation, as the surplus from regions with good harvests could now be transported to those that had experienced mediocre ones. Since then, petroleum-derived fuels have largely displaced coal because of their higher energy density, cleaner combustion and greater ease of extraction, further improving road and rail transportation systems.</p>
+                    <p>While the convenience of modern methods of transportation is obvious, few people grasp their historical significance in terms of their beneficial impact on large cities and the health of residents. In 1898, delegates gathered in New York City for the world's first international urban-planning conference: The topic that dominated discussions was not infrastructure or housing, but horse manure. The problem was that as the populations of cities like New York and London grew, the number of horses there also grew, and in New York these produced nearly two million kilograms of manure each day. If this problem continued it was estimated that by 1950 every street in London would be buried three metres deep in horse manure. Unable to think of any solution, the delegates concluded that urban living was inherently unsustainable.</p>
+                    <p>Paradoxically, much of the urban manure problem was related to the growth of the railways. The ability to deliver perishable goods, such as meat and dairy products, from locations that benefited from better soil and climate, put many farms located near cities out of business. As these had relied on manure from city workhorses for fertiliser, the demand for this was greatly reduced.</p>
+                    <p>The impact of urban workhorses was felt both in the cities and in the countryside. In cities, apart from their overpowering stench, the manure piles were prime breeding grounds for house flies, perhaps three billion of which hatched each day in US cities in the early 20th century. With flies came outbreaks of typhoid, cholera and diphtheria. Workhorses sometimes panicked in heavy traffic and kicked or bit bystanders. The clatter of wagon wheels on cobblestone pavement could be deafening, and since a horse and wagon occupied more street space than a modern truck, they also created significant traffic congestion, while a horse that collapsed on the road created an obstruction that was difficult to remove. The countryside also suffered. To supply the workhorses with oats and hay, additional land had to be cleared of its natural animal life and vegetation, and sometimes water had to be diverted to irrigate it, with considerable negative effects on the whole area.</p>
+                    <p>So, while the trains, cars and trucks of the early 20th century were noisy and polluting by today's standards, they were regarded as a significant improvement on what had gone before. Before they were available, poor soils often meant that a large amount of land was required to sustain a household, and much environmental damage, primarily in the form of soil erosion, was caused by trying to farm these soils. It could be argued that modern transportation allowed the development of remote regions like the Canadian prairies and allowed more suitable crops to be grown in the poorer soils in Europe before being sold elsewhere.</p>
+                    <p>Over time, the concentration of food production in the world's best locations allowed some agricultural land to revert to a wild state. For instance, France benefited from an expansion of its forest area by one third between 1830 and 1960. This so-called 'forest transition' occurred in the context of a doubling of the French population and a dramatic increase in standards of living. Improvements in logistics also allowed the production and export of food from locations where water was abundant to regions where it was scarce, thus preventing the depletion of water resources there. It also made possible a drastic increase in the size of our cities. Contrary to what most people believe, the growth in cities is a positive development. In the words of economist Ed Glaser: 'Residing in a forest might seem to be a good way of showing one's love of nature, but living in a concrete jungle is actually far more ecologically friendly... If you love nature, stay away from it.' It could be argued that modern transportation technologies have been a major contributor to a wealthier, cleaner and more sustainable world.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+            <div class="question-group">
+                    <div class="question-group-title">Questions 27-30</div>
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 <span class="question-anchor" data-question-anchor="27"></span>Why were the inhabitants of De Smet in danger of starvation?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A The trains were unable to operate normally.</label>
+                            <label><input type="radio" name="q27" value="B"> B The harvest had been completely destroyed.</label>
+                            <label><input type="radio" name="q27" value="C"> C The roads to the town had not yet been built.</label>
+                            <label><input type="radio" name="q27" value="D"> D The farmers were reluctant to sell their produce.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 <span class="question-anchor" data-question-anchor="28"></span>What problem did subsistence farmers have in the past?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A They had no effective means of storing food.</label>
+                            <label><input type="radio" name="q28" value="B"> B Food was expensive because of high shipping costs.</label>
+                            <label><input type="radio" name="q28" value="C"> C Their access to food was limited at certain times.</label>
+                            <label><input type="radio" name="q28" value="D"> D Food could not be transported for long distances by road.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 <span class="question-anchor" data-question-anchor="29"></span>The writer says that the use of coal to power railways and steamships</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A led to a greater range of fresh vegetables being available in urban areas.</label>
+                            <label><input type="radio" name="q29" value="B"> B was less efficient than the use of petroleum-derived products.</label>
+                            <label><input type="radio" name="q29" value="C"> C allowed farmers to be more self-sufficient than they were previously.</label>
+                            <label><input type="radio" name="q29" value="D"> D was better for the environment than using petroleum-derived products.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 <span class="question-anchor" data-question-anchor="30"></span>The writer refers to an urban planning conference held in 1898 in order to</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A illustrate a problem that was later solved by modern technology.</label>
+                            <label><input type="radio" name="q30" value="B"> B give an example of poor decisions made about urban planning.</label>
+                            <label><input type="radio" name="q30" value="C"> C show that urban issues were misunderstood in the past.</label>
+                            <label><input type="radio" name="q30" value="D"> D indicate the disregard at the time for public health concerns.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 31-35</div>
+                    <p>Problems caused by urban workhorses</p>
+                    <p class="hint-text">Drag each letter from the list below into the correct gap to complete the summary.</p>
+                    <p class="summary-inline">In cities, the large amounts of horse manure led to <span class="question-anchor" data-question-anchor="31"></span><div class="drop-zone drop-zone-inline" data-target="q31" data-placeholder="Drop letter" data-group="p3-words" data-number="31"><span class="drop-number">31</span><span class="drop-value">Drop letter</span></div> in the streets and was also linked to the spread of <span class="question-anchor" data-question-anchor="32"></span><div class="drop-zone drop-zone-inline" data-target="q32" data-placeholder="Drop letter" data-group="p3-words" data-number="32"><span class="drop-number">32</span><span class="drop-value">Drop letter</span></div>; in certain situations, the horses might even cause <span class="question-anchor" data-question-anchor="33"></span><div class="drop-zone drop-zone-inline" data-target="q33" data-placeholder="Drop letter" data-group="p3-words" data-number="33"><span class="drop-number">33</span><span class="drop-value">Drop letter</span></div> to passers-by and there were also problems of noise and congestion caused by horse-drawn vehicles; in the countryside the <span class="question-anchor" data-question-anchor="34"></span><div class="drop-zone drop-zone-inline" data-target="q34" data-placeholder="Drop letter" data-group="p3-words" data-number="34"><span class="drop-number">34</span><span class="drop-value">Drop letter</span></div> was damaged because of the need to provide <span class="question-anchor" data-question-anchor="35"></span><div class="drop-zone drop-zone-inline" data-target="q35" data-placeholder="Drop letter" data-group="p3-words" data-number="35"><span class="drop-number">35</span><span class="drop-value">Drop letter</span></div> for urban workhorses.</p>
+                    <div class="heading-drop">
+                        <strong>Available letters</strong>
+                    </div>
+                    <div class="drag-options" data-group="p3-words">
+                        <div class="drag-item" data-option="A" data-answer="A" data-label="rich landowners" data-group="p3-words" title="rich landowners"><strong>A</strong><span class="drag-label">rich landowners</span></div>
+                        <div class="drag-item" data-option="B" data-answer="B" data-label="injuries" data-group="p3-words" title="injuries"><strong>B</strong><span class="drag-label">injuries</span></div>
+                        <div class="drag-item" data-option="C" data-answer="C" data-label="food" data-group="p3-words" title="food"><strong>C</strong><span class="drag-label">food</span></div>
+                        <div class="drag-item" data-option="D" data-answer="D" data-label="accidental falls" data-group="p3-words" title="accidental falls"><strong>D</strong><span class="drag-label">accidental falls</span></div>
+                        <div class="drag-item" data-option="E" data-answer="E" data-label="environment" data-group="p3-words" title="environment"><strong>E</strong><span class="drag-label">environment</span></div>
+                        <div class="drag-item" data-option="F" data-answer="F" data-label="dangerous area" data-group="p3-words" title="dangerous area"><strong>F</strong><span class="drag-label">dangerous area</span></div>
+                        <div class="drag-item" data-option="G" data-answer="G" data-label="use of irrigation" data-group="p3-words" title="use of irrigation"><strong>G</strong><span class="drag-label">use of irrigation</span></div>
+                        <div class="drag-item" data-option="H" data-answer="H" data-label="unpleasant smells" data-group="p3-words" title="unpleasant smells"><strong>H</strong><span class="drag-label">unpleasant smells</span></div>
+                        <div class="drag-item" data-option="I" data-answer="I" data-label="treatment" data-group="p3-words" title="treatment"><strong>I</strong><span class="drag-label">treatment</span></div>
+                        <div class="drag-item" data-option="J" data-answer="J" data-label="diseases" data-group="p3-words" title="diseases"><strong>J</strong><span class="drag-label">diseases</span></div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 36-40</div>
+                    <p>Do the following statements agree with the views of the writer in Reading Passage 3? Write <strong>YES</strong>, <strong>NO</strong> or <strong>NOT GIVEN</strong>.</p>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 Farmers whose land was poor failed to benefit from modern forms of transport.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="YES"> YES</label>
+                            <label><input type="radio" name="q36" value="NO"> NO</label>
+                            <label><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 Between 1830 and 1960, there were positive effects associated with changing patterns of agriculture in France.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="YES"> YES</label>
+                            <label><input type="radio" name="q37" value="NO"> NO</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text">38 A fairer distribution of the world's water resources is needed.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="YES"> YES</label>
+                            <label><input type="radio" name="q38" value="NO"> NO</label>
+                            <label><input type="radio" name="q38" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text">39 Living in the countryside does less harm to the environment than living in a city.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="YES"> YES</label>
+                            <label><input type="radio" name="q39" value="NO"> NO</label>
+                            <label><input type="radio" name="q39" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text">40 It is possible that modern developments in transportation have had an effect which is adverse.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="YES"> YES</label>
+                            <label><input type="radio" name="q40" value="NO"> NO</label>
+                            <label><input type="radio" name="q40" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_23',
+            label: 'Reading Full 23',
+            correctAnswers: {
+            q1: "FALSE",
+            q2: "NOT GIVEN",
+            q3: "TRUE",
+            q4: "FALSE",
+            q5: "FALSE",
+            q6: "NOT GIVEN",
+            q7: "TRUE",
+            q8: "UNIVERSITY",
+            q9: "RAT",
+            q10: "ARCHAEOLOGIST",
+            q11: "FUNDING",
+            q12: "DATABASE",
+            q13: "MAP",
+            q14: "C",
+            q15: "D",
+            q16: "B",
+            q17: "H",
+            q18: "G",
+            q19: "E",
+            q20: "BENEFIT",
+            q21: "AGE",
+            q22: "PRESCHOOL",
+            q23: "INTERFERENCE",
+            q24: "C",
+            q25: "D",
+            q26: "B",
+            q27: "A",
+            q28: "C",
+            q29: "B",
+            q30: "A",
+            q31: "H",
+            q32: "J",
+            q33: "B",
+            q34: "E",
+            q35: "C",
+            q36: "NO",
+            q37: "YES",
+            q38: "NOT GIVEN",
+            q39: "NO",
+            q40: "YES"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-23.js?v=20260731-reading-clear-23-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-23-v1"></script>
+</body>
+
+
+
+</html>
+
+
+

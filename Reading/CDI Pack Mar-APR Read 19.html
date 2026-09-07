@@ -1,0 +1,584 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 19 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-b25b4923.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-19-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+                        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1</strong></p>
+                    <h3>The media literacy of children: a review of research literature</h3>
+                    <p>This document provides a review of the academic literature relating to children's media literacy. It focuses primarily on television, radio, the internet and mobile telephony, and specifically addresses the various barriers to, and enablers of media literacy in the UK. The document begins by exploring the development of the three dimensions contained in Ofcom's definition of media literacy: 'the ability to access, understand and create communications in a variety of contexts'.</p>
+                    <p>In terms of access, the literature suggests that most children, even at quite a young age, already possess the competencies needed to gain access to media content: they are quite skilled at using the available technologies and are also able to use the associated software. As they become older, they become more aware of regulatory mechanisms, and take these into account in seeking to make their own decisions.</p>
+                    <p>The large majority of children show some awareness of risks relating to giving personal information, such as contact details, on the internet, although they are less aware of financial dangers such as those relating to credit card use or communication of banking details.</p>
+                    <p>In terms of understanding, most of the research literature relates to the development of children's understanding of television, rather than of other media such as the internet. This literature suggests that children's awareness of areas such as the difference between representation and reality, and the persuasive role of advertising, develops both as a function of their increasing knowledge of the world, and as a result of their broader cognitive development. Children also learn to cope with potentially unwanted or upsetting emotional responses, and to form critical judgments about areas such as television violence, by employing forms of media literacy.</p>
+                    <p>By contrast, when it comes to creativity, there has been less academic research relating to the 'older' media such as video and analogue radio than to the new media. Research here suggests that there is considerable potential for media to be used as a means of self-expression, not least by socially disadvantaged groups; that creative involvement in media production (particularly in the context of education) can make an important contribution to the development of critical understanding; and that new media such as online gaming and mobile telephony provide possibilities for new forms of interaction.</p>
+                    <p>Among the barriers to media literacy are several inter-related factors, of which social class and economic status are the most well-established. In the UK, these barriers limit children's access to the internet, although not to established media such as radio or television. Less is known about other potential barriers such as disability, or about the role of individual dispositions or motivations. It is important to recognise that such barriers may affect the quality of media use as well as the quantity - for example, in terms of the available functionality of the technology, the location or level of support for use.</p>
+                    <p>Potential enablers of media literacy include parents, teachers and other agencies such as broadcasters. Research suggests that parental mediation can play an important role in developing younger children's media literacy, for example in understanding the relationships between representation and reality. However, the role of parents depends upon broader beliefs about childrearing, and many parents do not play as great a role as they like to suggest. Meanwhile, education about the media has a long history, at least in secondary schools in the UK, although it remains a marginal aspect of the compulsory curriculum, and is rarely found in primary schools.</p>
+                    <p>There is also a growing body of evidence concerning the effectiveness of particular teaching strategies in developing media literacy.</p>
+                    <p>The review provides an indication of several important gaps in the literature. These include specific media, such as radio, mobile phones and online gaming, and particular population groups, such as younger children, those with disabilities, and ethnic minority groups. There is a particular need for research about children's ability to evaluate internet content, and about their awareness of new commercial strategies in the media. Of the three areas in Ofcom's definition, 'creativity' is by far the least well-researched. New technologies and media forms will also pose new challenges and demands in terms of media literacy, so it is important that research in this field is regularly updated.</p>
+                    <p>In terms of methodology, the review finds that a great deal of research in the field is based on self-reporting, and recommends that there should be more observational studies that explore how media literacy is used in everyday life. In relation to education, there is a need to develop new approaches to assessing the effectiveness of media education in influencing media use outside the classroom.</p>
+                    <p>Finally, the review reminds us that media literacy is multi-dimensional. The nature and extent of the media literacy that individuals develop depends very much on the purposes for which they use the media in the first place. Different social groups may also develop and require different forms of media literacy in line with their motivations and preferences in media use. As such, we need to beware of adopting an over-simplistic approach to assessing levels of media literacy among the population at large.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Complete the notes below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p>Media literacy involves:</p>
+                    <p><strong>a.</strong> having <span class="question-anchor" data-question-anchor="1"></span><input type="text" name="q1" placeholder="1" class="input-field inline-input"> to communications</p>
+                    <p>Research suggests that:</p>
+                    <ul>
+                        <li>most children are skilled at using technology and software to locate media content</li>
+                        <li>older children consider regulatory mechanisms when making their own decisions</li>
+                        <li>many children do not recognise the <span class="question-anchor" data-question-anchor="2"></span><input type="text" name="q2" placeholder="2" class="input-field inline-input"> risks related to internet use</li>
+                    </ul>
+                    <p><strong>b.</strong> understanding communications</p>
+                    <p>Most research has been done on children and <span class="question-anchor" data-question-anchor="3"></span><input type="text" name="q3" placeholder="3" class="input-field inline-input">, and not on alternative forms of communication.</p>
+                    <p>It suggests that:</p>
+                    <ul>
+                        <li>children's awareness grows with their knowledge of the world and their <span class="question-anchor" data-question-anchor="4"></span><input type="text" name="q4" placeholder="4" class="input-field inline-input"></li>
+                        <li>children can use media literacy to make <span class="question-anchor" data-question-anchor="5"></span><input type="text" name="q5" placeholder="5" class="input-field inline-input"> and to cope with negative responses</li>
+                    </ul>
+                    <p><strong>c.</strong> creating communications</p>
+                    <p>Most research has focused on the <span class="question-anchor" data-question-anchor="6"></span><input type="text" name="q6" placeholder="6" class="input-field inline-input">, indicating their use for:</p>
+                    <ul>
+                        <li>self-expression</li>
+                        <li>the development of understanding</li>
+                        <li>different types of <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input"></li>
+                    </ul>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-13</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1? In boxes 8-13 on your answer sheet write: <strong>TRUE</strong> if the statement agrees, <strong>FALSE</strong> if it contradicts, or <strong>NOT GIVEN</strong> if there is no information.</p>
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 <span class="question-anchor" data-question-anchor="8"></span>When studying barriers to media literacy, considerable research has been done on the effects of disability.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 <span class="question-anchor" data-question-anchor="9"></span>The amount of support given by parents may affect the quality of a child's media use.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 <span class="question-anchor" data-question-anchor="10"></span>Young children may be badly affected by use of specific media such as mobile phones.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 <span class="question-anchor" data-question-anchor="11"></span>More research literature is available on understanding the media than on creativity.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 <span class="question-anchor" data-question-anchor="12"></span>Too many observational studies have been conducted recently into media literacy.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 <span class="question-anchor" data-question-anchor="13"></span>The reason a person has for using the media will affect his or her media literacy.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>The role of error in the learning process</h3>
+                    <p>According to some educational theories, it is not a good thing ever to be wrong, and it is an important part of the teacher's function to keep his pupils from error, planning every step of the way so that they avoid pitfalls. There are no doubt certain types of learning situation where mistakes are better avoided. On the other hand, it is also quite clear that error can play a highly constructive role in the development of thinking, and it is now well established that the advent of error can be a sign of progress.</p>
+                    <p>Many examples can be given, but the following example is in some ways particularly interesting. Children were given a task which involved balancing a set of blocks across a narrow beam. Sometimes the blocks had their weight evenly spread along their length, so that the center of gravity and their geometric center coincided, but sometimes they were more heavily weighted at one end. When the weight of the block was not symmetrically distributed, the difference between the ends was sometimes obvious, because one was bigger than the other. However, sometimes the blocks were weighted at one end with metal which was hidden inside them, and in this case the difference was invisible.</p>
+                    <p>On this task, the youngest subjects were often successful in situations where older ones failed, and still older ones succeeded. What seemed to happen was that the very young children were guided almost entirely by the 'feel' of the blocks: they had no kind of theory. They took each block in turn and simply balanced it. But primitive theories soon appeared on the scene. The children began to try to operate systematically and according to rules. It should be noted that there was no intervention from teachers - the children evolved the rules spontaneously.</p>
+                    <p>Of course, it often happened that the children did not state the rules that they were using, though remarks like 'Things balance in the middle' were recorded by researchers. Even without such explicit formulations, however, the existence of rules can be inferred from observations of behavior, just as the operation of some grammatical rules is inferred from the speech of children, long before they can themselves give any account of what these rules are.</p>
+                    <p>This is the kind of thing that was observed to happen. The children at the intermediate stage would lift an asymmetrically weighted block and, apparently ignoring the 'feel', would place it down across the bar at the midpoint of its length. It would fall off. They would then try again, doing exactly the same thing - and of course, it would fall again. But sometimes the 'midpoint' rule would work, because for some blocks the weight was equally distributed. This partial success seemed to be enough to keep the theory alive for some time. It was as if the child had to consolidate his first theory with counterexamples. And then the modified theory would tend to grow up alongside the original one, instead of ousting it suddenly.</p>
+                    <p>It is not surprising if, when rules are first devised for dealing with a complex system, they should be inadequate and oversimplified, so that their application leads to error in certain cases. What is of interest is the manner in which the inadequate rules are replaced by better ones and the errors transcended.</p>
+                    <p>In the case we have been considering, the situation was such that the child could clearly see that his theory was wrong. Sometimes it is not so obvious - and being wrong without knowing it is clearly not of much value. So if we are going to try to put the occurrence of error to good use in education, we must ask how we can make children aware of their errors - how we can help to bring them to the critical realization that they are wrong.</p>
+                    <p>There is a very famous historical example of this being done by a great teacher. In his dialogue <em>Meno</em>, the Greek philosopher Plato describes how his teacher Socrates gave a slave boy a lesson in geometry. The boy came to the lesson with the belief that to double the area of a square, you have to double the length of its sides. However, this is mathematically incorrect.</p>
+                    <p>Socrates proceeded, by careful questioning, to lead the boy into self-contradiction. The boy then acknowledged that his original belief was wrong, and that he did not know how long the sides of the new square would have to be if the area was to be doubled. Socrates concluded that the boy was now in a stronger position than before, despite not knowing the answer to the original question, because he was aware of his error. Socrates went on to argue that as long as people think they know something, there is clearly no hope of change, for they are satisfied with their state. But they cannot be satisfied with being ignorant. They will want to get themselves out of this state.</p>
+                    <p>The former of these two assertions can scarcely be challenged. But what about the latter? Will they want to get themselves out of it? Or will they merely be discouraged and give up? What makes us want to learn?</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-17</div>
+                    <p>Do the following statements agree with the claims of the writer in Reading Passage 2? In boxes 14-17 on your answer sheet write: <strong>YES</strong> if the statement agrees, <strong>NO</strong> if it contradicts, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks.</p>
+                    <div class="question" data-question="14">
+                        <div class="question-text">14 <span class="question-anchor" data-question-anchor="14"></span>The teacher's most important function is to develop good learning habits.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q14" value="YES"> YES</label>
+                            <label><input type="radio" name="q14" value="NO"> NO</label>
+                            <label><input type="radio" name="q14" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="15">
+                        <div class="question-text">15 <span class="question-anchor" data-question-anchor="15"></span>Success on the wooden block task increased with the children's age.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q15" value="YES"> YES</label>
+                            <label><input type="radio" name="q15" value="NO"> NO</label>
+                            <label><input type="radio" name="q15" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="16">
+                        <div class="question-text">16 <span class="question-anchor" data-question-anchor="16"></span>The children were left to perform the wooden block task without any guidance from teachers.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q16" value="YES"> YES</label>
+                            <label><input type="radio" name="q16" value="NO"> NO</label>
+                            <label><input type="radio" name="q16" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="17">
+                        <div class="question-text">17 <span class="question-anchor" data-question-anchor="17"></span>The children frequently gave clear explanations of the rules they were using.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q17" value="YES"> YES</label>
+                            <label><input type="radio" name="q17" value="NO"> NO</label>
+                            <label><input type="radio" name="q17" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 18-23</div>
+                    <p>Complete the summary using the list of words A-K below. Write the correct letter, A-K, in boxes 18-23 on your answer sheet.</p>
+                    <p><strong>List of Words</strong></p>
+                    <div class="drag-options" data-group="summary" style="margin-top:10px;" aria-label="Answer bank for Questions 18-23">
+                        <div class="drag-item" draggable="true" data-option="summary-A" data-answer="A" data-label="invisible" data-group="summary">A invisible</div>
+                        <div class="drag-item" draggable="true" data-option="summary-B" data-answer="B" data-label="was" data-group="summary">B was</div>
+                        <div class="drag-item" draggable="true" data-option="summary-C" data-answer="C" data-label="others" data-group="summary">C others</div>
+                        <div class="drag-item" draggable="true" data-option="summary-D" data-answer="D" data-label="wood" data-group="summary">D wood</div>
+                        <div class="drag-item" draggable="true" data-option="summary-E" data-answer="E" data-label="individually" data-group="summary">E individually</div>
+                        <div class="drag-item" draggable="true" data-option="summary-F" data-answer="F" data-label="repeatedly" data-group="summary">F repeatedly</div>
+                        <div class="drag-item" draggable="true" data-option="summary-G" data-answer="G" data-label="symmetrical" data-group="summary">G symmetrical</div>
+                        <div class="drag-item" draggable="true" data-option="summary-H" data-answer="H" data-label="rules" data-group="summary">H rules</div>
+                        <div class="drag-item" draggable="true" data-option="summary-I" data-answer="I" data-label="weight" data-group="summary">I weight</div>
+                        <div class="drag-item" draggable="true" data-option="summary-J" data-answer="J" data-label="beam" data-group="summary">J beam</div>
+                        <div class="drag-item" draggable="true" data-option="summary-K" data-answer="K" data-label="metal" data-group="summary">K metal</div>
+                    </div>
+                    <p>Children were given a task involving blocks of wood. The blocks varied according to how their weight was distributed: the weight distribution was <span class="question-anchor" data-question-anchor="18"></span><span class="drop-zone" data-target="q18" data-placeholder="18" data-group="summary">18</span><input type="text" name="q18" class="input-field" style="display:none;" aria-hidden="true"> in some but not in others. This was because the others were either tapered or had had <span class="question-anchor" data-question-anchor="19"></span><span class="drop-zone" data-target="q19" data-placeholder="19" data-group="summary">19</span><input type="text" name="q19" class="input-field" style="display:none;" aria-hidden="true"> inserted in them. In the latter case, the differences between the blocks were <span class="question-anchor" data-question-anchor="20"></span><span class="drop-zone" data-target="q20" data-placeholder="20" data-group="summary">20</span><input type="text" name="q20" class="input-field" style="display:none;" aria-hidden="true">. The children were instructed to balance each block on a <span class="question-anchor" data-question-anchor="21"></span><span class="drop-zone" data-target="q21" data-placeholder="21" data-group="summary">21</span><input type="text" name="q21" class="input-field" style="display:none;" aria-hidden="true">. Some children, usually the youngest ones, did the task by dealing with each block <span class="question-anchor" data-question-anchor="22"></span><span class="drop-zone" data-target="q22" data-placeholder="22" data-group="summary">22</span><input type="text" name="q22" class="input-field" style="display:none;" aria-hidden="true">. In other cases, children quickly started to look for <span class="question-anchor" data-question-anchor="23"></span><span class="drop-zone" data-target="q23" data-placeholder="23" data-group="summary">23</span><input type="text" name="q23" class="input-field" style="display:none;" aria-hidden="true">. For example, they initially presumed that all the blocks balanced in the middle. They then had to revise their ideas.</p>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Complete the sentences below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>24 <span class="question-anchor" data-question-anchor="24"></span>The slave boy gave Socrates an incorrect answer to a <input type="text" name="q24" placeholder="24" class="input-field inline-input"> problem.</p>
+                    <p>25 <span class="question-anchor" data-question-anchor="25"></span>Socrates led the slave boy to recognise his error by <input type="text" name="q25" placeholder="25" class="input-field inline-input"> him.</p>
+                    <p>26 <span class="question-anchor" data-question-anchor="26"></span>According to Socrates, people dislike feeling <input type="text" name="q26" placeholder="26" class="input-field inline-input">.</p>
+                </div>
+            </div>
+<!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3</strong></p>
+                    <h3>Fierce, fabulous and fantastic</h3>
+                    <p>A new exhibition traces the history of animal painting in Europe from the anatomically inaccurate to the highly sentimental.</p>
+                    <p>The first picture you see in the exhibition <em>Fierce Friends: Artists and Animals 1750-1900</em> is of a giraffe - sort of. Painted in about 1785, the creature in it has the neck of a giraffe, but its back is too long, its haunches too developed, and its legs are out of proportion to its body. Like most Europeans in the 18th century, the anonymous French artist who painted it had never seen a real giraffe. He relied on eyewitness descriptions, and on the skin of a giraffe the scientist and adventurer Francois Levallard had recently brought back from South Africa.</p>
+                    <p>Exotic animals shipped back to Europe at this time usually died soon after arrival, even supposing they survived the voyage. Until about 1793, taxidermy consisted of stuffing the carcass with straw, so the results fell apart after a few years. This meant that ordinary men and women had very few opportunities to see exotic animals at first hand until the establishment of the first zoos - in Paris in 1793, in London in 1818. For an accurate depiction of a giraffe, Europeans had to wait until 1827 and the arrival of the first living specimen, when the Swiss artist Jacques-Laurent Agasse painted his lovely study of the Nubian giraffe sent to King George IV by the Ottoman Viceroy of Egypt.</p>
+                    <p>For most people in the 18th century, animals meant farm animals, carriage horses, and food for the table. But the Enlightenment was an age both of exploration and of discovery, as more and more species of animals, birds, fish and insects were identified and brought back from the South Seas, Africa and India. In 1740, almost 6,000 species of animals were known to science. One hundred years later, the number had risen to 24,000, including many that are familiar to most children today as a matter of course - ostrich, rhino, orangutan and buffalo.</p>
+                    <p>Kings and princes, to be sure, had their own menageries, and wealthy collectors added rare birds, fish and mammals (fish own side-by-side with two-headed calves and fake dragons) to their cabinets of curiosities. In this way, the forerunners of modern zoos and museums developed along parallel lines. On special occasions an entrepreneur might exhibit a wild beast to the paying public, as was the case when the Venetian artist Pietro Longhi painted bored masqueraders at carnival time gawping at a pathetic rhinoceros. Out of such displays came another invention of the 19th century, the circus. Wider knowledge of the animal kingdom came with the publication of George-Louis Leclerc Comte de Buffon's multi-volume <em>Histoire Naturelle</em> (1749-1788).</p>
+                    <p>Based on specimens studied in the royal menageries, this remarkable book is still treasured - not for its scientific accuracy, but for its glorious hand-coloured engravings. Far too expensive for most people to buy, it at least helped to make men and women aware of the beauty of certain animals, as we can see in a service of Sevres porcelain created in 1793, where the decorative motifs are taken from the birds drawn by de Buffon.</p>
+                    <p>Gradually, humans began to notice that dumb creatures have feelings. Man cannot afford to feel pity for an animal bred for food. When that wonderful artist Jean-Baptiste Oudry shows a display of dead game in the 1740s, he is simply painting a luxury - fresh meat - available only to the well-off. Peasants ate bread. His lavish paintings were considered suitable for the dining rooms of the nobility because no one then expressed the slightest ethical or moral hesitation about hunting and killing rabbit, deer and boar for the table, or about slaughtering such vermin as foxes and wolves.</p>
+                    <p>Domestic animals were a different story. When Oudry depicts a hound with her newborn puppies, the simple picture has revolutionary undertones. The pretty white bitch, noticing that two of her pups have fallen asleep and are not getting the nourishment they need, is full of maternal solicitude. At a time when French noblewomen still sent their babes out to wet-nurses, even an animal is shown to display true maternal feeling. And in 1824, the year Delacroix shows two horses killed in battle, there is a new element in man's attitude towards the wanton slaughter of beautiful creatures: compassion. Delacroix's little masterpiece pierces the heart, whereas the grotesque memorial to animals killed in war unveiled in London recently leaves the viewer cold. But the moral impulse behind the creation of both works is exactly the same.</p>
+                    <p>Once animals can be loved for their innocence or good nature, it becomes more difficult to treat them cruelly. Almost 15 years before Jean-Baptiste Greuze painted a picture of a young girl mourning her pet sparrow (in 1765), William Hogarth published his series of prints, <em>The Stages of Cruelty</em>, showing how the mistreatment of animals leads inexorably to the devaluing of all forms of life, including human. In this show, it is almost impossible to look at Emile Edouard Mouchy's horrifying depiction of the vivisection of a dog (1832) without wincing. Though such experiments represent a necessary evil, our very squeamishness represents another rung upward in the moral evolution of mankind.</p>
+                    <p>This process started in the early 19th century, when men began to see in the animal kingdom a mirror image of their own feelings. In his portrayal of a horse frightened by lightning, Gericault lets us see the animal's tensed body, foam-flecked mouth and brow furrowed in anxiety. In <em>The Jealous Lioness</em> of about 1885, the German artist Paul Meyerheim shows a caged lioness enraged at the attention her mate is paying to a beautiful lion tamer. Gradually, artists began to blur the distinctions between animal and human. When Edwin Landseer in <em>High Life and Low Life</em> contrasts a mongrel guard dog with a deer hound, the animals are surrogates for their absent masters, butcher and nobleman. All these artists emphasized the physical and emotional resemblances between animals and human beings.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <p>Choose the correct letter, A, B, C, or D.</p>
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 <span class="question-anchor" data-question-anchor="27"></span>The point the writer is making about the picture of a giraffe is that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A. the artist knew it was inaccurate.</label>
+                            <label><input type="radio" name="q27" value="B"> B. it might seem ridiculous today.</label>
+                            <label><input type="radio" name="q27" value="C"> C. its inaccuracies are understandable.</label>
+                            <label><input type="radio" name="q27" value="D"> D. it is not totally unlike a real giraffe.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 <span class="question-anchor" data-question-anchor="28"></span>In the second paragraph, the writer explains why</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A. there were no accurate paintings of giraffes in Europe until 1827.</label>
+                            <label><input type="radio" name="q28" value="B"> B. people in Europe were so keen to see exotic animals.</label>
+                            <label><input type="radio" name="q28" value="C"> C. people in Europe preferred paintings of animals to stuffed animals.</label>
+                            <label><input type="radio" name="q28" value="D"> D. the establishment of zoos had an effect on the painting of animals.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 <span class="question-anchor" data-question-anchor="29"></span>The writer's main topic in the third paragraph is</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A. which animal species became popular in Europe in the 18th century.</label>
+                            <label><input type="radio" name="q29" value="B"> B. why the identification of species became an important issue in the 18th century.</label>
+                            <label><input type="radio" name="q29" value="C"> C. the extent to which knowledge of animals increased in the 18th century.</label>
+                            <label><input type="radio" name="q29" value="D"> D. the way in which attitudes to animals changed in the 18th century.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 <span class="question-anchor" data-question-anchor="30"></span>Which of these is the writer doing in the fourth paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A. contrasting the development of zoos with that of museums.</label>
+                            <label><input type="radio" name="q30" value="B"> B. criticizing the commercial exploitation of creatures.</label>
+                            <label><input type="radio" name="q30" value="C"> C. describing a change in the portrayal of animals in paintings.</label>
+                            <label><input type="radio" name="q30" value="D"> D. explaining the origins of the use of creatures for public entertainment.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 <span class="question-anchor" data-question-anchor="31"></span>The writer mentions the porcelain created in 1793 as an example of:</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A. improvements in the artistic portrayal of creatures.</label>
+                            <label><input type="radio" name="q31" value="B"> B. the influence of Buffon's <em>Histoire Naturelle</em>.</label>
+                            <label><input type="radio" name="q31" value="C"> C. one of the disadvantages of de Buffon's <em>Histoire Naturelle</em>.</label>
+                            <label><input type="radio" name="q31" value="D"> D. the popularity of pictures of creatures with the wealthy.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-36</div>
+                    <p>Do the following statements agree with the claims of the writer in Reading Passage 3? In boxes 32-36 on your answer sheet write: <strong>YES</strong> if the statement agrees, <strong>NO</strong> if it contradicts, or <strong>NOT GIVEN</strong> if it is impossible to say.</p>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 <span class="question-anchor" data-question-anchor="32"></span>It is understandable that people feel no emotion towards certain animals.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="YES"> YES</label>
+                            <label><input type="radio" name="q32" value="NO"> NO</label>
+                            <label><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 <span class="question-anchor" data-question-anchor="33"></span>Some of Oudry's paintings are more impressive than others.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="YES"> YES</label>
+                            <label><input type="radio" name="q33" value="NO"> NO</label>
+                            <label><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 <span class="question-anchor" data-question-anchor="34"></span>Some people claim to love animals but treat them badly.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="YES"> YES</label>
+                            <label><input type="radio" name="q34" value="NO"> NO</label>
+                            <label><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 <span class="question-anchor" data-question-anchor="35"></span>Mouchy's painting shows something that should never happen.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="YES"> YES</label>
+                            <label><input type="radio" name="q35" value="NO"> NO</label>
+                            <label><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 <span class="question-anchor" data-question-anchor="36"></span>Early 19th century art reveals a change in people's attitudes towards animals.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="YES"> YES</label>
+                            <label><input type="radio" name="q36" value="NO"> NO</label>
+                            <label><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Complete each sentence with the correct ending, A-F below.</p>
+                    <p>37 <span class="question-anchor" data-question-anchor="37"></span>Delacroix's 1824 painting <span class="drop-zone" data-target="q37" data-placeholder="37" data-group="sentences"></span>.</p>
+                    <p>38 <span class="question-anchor" data-question-anchor="38"></span>Greuze's 1765 painting  <span class="drop-zone" data-target="q38" data-placeholder="38" data-group="sentences"></span>.</p>
+                    <p>39 <span class="question-anchor" data-question-anchor="39"></span>Hogarth's series of prints <span class="drop-zone" data-target="q39" data-placeholder="39" data-group="sentences"></span>.</p>
+                    <p>40 <span class="question-anchor" data-question-anchor="40"></span>Landseer's <em>High Life and Low Life</em>  <span class="drop-zone" data-target="q40" data-placeholder="40" data-group="sentences"></span>.</p>
+                   
+                    <div class="drag-options" data-group="sentences">
+                        <div class="drag-item" data-option="sentences-A" data-answer="A" data-label="makes a moral point about human behavior." data-group="sentences">A. makes a moral point about human behavior.</div>
+                        <div class="drag-item" data-option="sentences-B" data-answer="B" data-label="contrasts animal behavior with human behavior." data-group="sentences">B. contrasts animal behavior with human behavior.</div>
+                        <div class="drag-item" data-option="sentences-C" data-answer="C" data-label="shows a human's feeling for a creature." data-group="sentences">C. shows a human's feeling for a creature.</div>
+                        <div class="drag-item" data-option="sentences-D" data-answer="D" data-label="has an identical purpose to that of another work of art." data-group="sentences">D. has an identical purpose to that of another work of art.</div>
+                        <div class="drag-item" data-option="sentences-E" data-answer="E" data-label="depicts similarities between creatures and people." data-group="sentences">E. depicts similarities between creatures and people.</div>
+                        <div class="drag-item" data-option="sentences-F" data-answer="F" data-label="portrays the feelings creatures can have towards humans." data-group="sentences">F. portrays the feelings creatures can have towards humans.</div>
+                    </div>
+                    <input type="text" name="q37" style="display:none;">
+                    <input type="text" name="q38" style="display:none;">
+                    <input type="text" name="q39" style="display:none;">
+                    <input type="text" name="q40" style="display:none;">
+                </div>
+            </div>
+</div>        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_19',
+            label: 'Reading Full 19',
+            correctAnswers: {
+            q1: "ACCESS",
+            q2: "FINANCIAL",
+            q3: "TELEVISION",
+            q4: "COGNITIVE DEVELOPMENT",
+            q5: "CRITICAL JUDGMENTS",
+            q6: "NEW MEDIA",
+            q7: "INTERACTION",
+            q8: "FALSE",
+            q9: "TRUE",
+            q10: "NOT GIVEN",
+            q11: "TRUE",
+            q12: "FALSE",
+            q13: "TRUE",
+            q14: "NOT GIVEN",
+            q15: "NO",
+            q16: "YES",
+            q17: "NO",
+            q18: "G",
+            q19: "K",
+            q20: "A",
+            q21: "J",
+            q22: "E",
+            q23: "H",
+            q24: "GEOMETRY",
+            q25: "QUESTIONING",
+            q26: "IGNORANT",
+            q27: "C",
+            q28: "A",
+            q29: "C",
+            q30: "D",
+            q31: "B",
+            q32: "YES",
+            q33: "NOT GIVEN",
+            q34: "NOT GIVEN",
+            q35: "NO",
+            q36: "YES",
+            q37: "D",
+            q38: "C",
+            q39: "A",
+            q40: "E"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-19.js?v=20260731-reading-clear-19-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-19-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

@@ -1,0 +1,703 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 12 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-12-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>Traffic Jams</h3>
+                    <p>Nobody likes traffic jams, yet they have been one of the plagues of life since at least Roman times. Why is this so? The short explanation is that they take place whenever more people want to use a given transportation facility than it can handle. Yet there is clearly more to the story than the simple bottleneck. Why do so many traffic jams seem to come out of nowhere?</p>
+                    <p><strong>A</strong> Mathematicians, physicists and computer programmers have been trying to disentangle traffic jams for decades. Traffic-flow theory had its beginnings in the 1930s, the first computer simulations of traffic were designed in the 1950s, and theoretical breakthroughs have followed regularly in every decade since. In the 1980s and '90s, as computers became exponentially faster, new models of traffic flow employing analytical methods based on, for example, non-linear dynamics and statistical physics, were developed.</p>
+                    <p><strong>B</strong> Most traffic is tied to predetermined patterns: the rush hour, the weekend exodus, the holiday getaway. So, in rudimentary computer models of traffic flow, everyone leaves home at a predetermined time, everyone knows exactly what route to take and so forth. Many recent models, however, throw a bit of human capriciousness into the equation: their virtual people accelerate at different speeds from day to day, for instance, or they do not always change lanes in the same circumstances. Radically different traffic patterns can result.</p>
+                    <p><strong>C</strong> Traffic often appears chaotic: virtually imperceptible changes can give rise to large effects. Ironically, computer simulations suggest that traffic is most sensitive to disturbances when it is flowing most efficiently. Both an empty system and a gridlocked system are easy to predict, but a stream of cars hurtling at top speed along a highway is highly unpredictable, and it can become ensnarled simply as a result of the speed. Would you prefer a trip to the airport in a definite thirty minutes, or a faster route that usually takes twenty minutes except every tenth time, when it takes two hours?</p>
+                    <p><strong>D</strong> The laws governing spontaneous traffic jams are dismayingly fundamental: even grains of sand falling down a glass tube can form traffic jams, as investigators in Germany have shown. The mathematics of granular flow and of water flowing down a river is very similar to the mathematics of traffic flow. It is not yet clear, however, to what extent spontaneous jams play a role in everyday traffic. Computer simulations confirm that most jams are caused by tunnels, construction sites and other simple reasons.</p>
+                    <p><strong>E</strong> Once drivers are caught in a jam, they almost always exacerbate the problem. The road beyond the jam may be wide and clear, but the number of cars accelerating away from the jam every hour in every lane will usually be far less than the lane capacity. Recent research suggests the cause is quite straightforward: people are sloppy about getting their cars back up to speed. Even if drivers take an average of three seconds to get going - only a second more than the typical reaction time - only 1,200 will leave the jam after an hour while 1,800 will join it. The damage has been done.</p>
+                    <p><strong>F</strong> A familiar scenario: the freeway becomes like a parking lot, so transportation planners add a new lane, and traffic flows more freely. For a while everybody is happy: people get home faster. But then a few people realise they now have time to stop off at home, after work, before going shopping. Others recognise that they can live farther away from the city, on a larger plot, without increasing their commuting time. Soon the congestion builds up. This 'induced travel' may be the hardest element of transportation to model. Erratic as drivers may be, driving is heavily constrained by physics: a car occupies a fixed amount of space, and can accelerate and brake only so fast. The wish for travel, by contrast, can be entirely whimsical.</p>
+                    <p><strong>G</strong> Research has shown that cities could build their way out of congestion, but the results might not be places where many people would want to live. In any event, congestion is a poor measure of the efficiency of a transportation system. Are you better off in a congested city such as New York, where you can walk to five movie theatres in ten minutes, or in a relatively uncongested city such as Santa Fe, New Mexico, where you drive to five movie theatres in twenty minutes? Congested cities can be more convenient than uncongested cities. And perhaps in trying to solve the problem of congestion we are actually on a fool's mission.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Reading Passage 1 has seven paragraphs, <strong>A-G</strong>.</p>
+                    <p>Which paragraph contains the following information?</p>
+                    <p>Write the correct letter, <strong>A-G</strong>, in boxes 1-7.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 50%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="1"></span>1 A list of common peak traffic periods.</td>
+                            <td><input type="radio" name="q1" value="A"></td>
+                            <td><input type="radio" name="q1" value="B"></td>
+                            <td><input type="radio" name="q1" value="C"></td>
+                            <td><input type="radio" name="q1" value="D"></td>
+                            <td><input type="radio" name="q1" value="E"></td>
+                            <td><input type="radio" name="q1" value="F"></td>
+                            <td><input type="radio" name="q1" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="2"></span>2 A comparison between the movement of traffic and other types of movement that occur in the natural world.</td>
+                            <td><input type="radio" name="q2" value="A"></td>
+                            <td><input type="radio" name="q2" value="B"></td>
+                            <td><input type="radio" name="q2" value="C"></td>
+                            <td><input type="radio" name="q2" value="D"></td>
+                            <td><input type="radio" name="q2" value="E"></td>
+                            <td><input type="radio" name="q2" value="F"></td>
+                            <td><input type="radio" name="q2" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="3"></span>3 An advantage of places where there is a lot of traffic.</td>
+                            <td><input type="radio" name="q3" value="A"></td>
+                            <td><input type="radio" name="q3" value="B"></td>
+                            <td><input type="radio" name="q3" value="C"></td>
+                            <td><input type="radio" name="q3" value="D"></td>
+                            <td><input type="radio" name="q3" value="E"></td>
+                            <td><input type="radio" name="q3" value="F"></td>
+                            <td><input type="radio" name="q3" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="4"></span>4 A historical overview of methods used to understand how traffic moves.</td>
+                            <td><input type="radio" name="q4" value="A"></td>
+                            <td><input type="radio" name="q4" value="B"></td>
+                            <td><input type="radio" name="q4" value="C"></td>
+                            <td><input type="radio" name="q4" value="D"></td>
+                            <td><input type="radio" name="q4" value="E"></td>
+                            <td><input type="radio" name="q4" value="F"></td>
+                            <td><input type="radio" name="q4" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="5"></span>5 An example of a short-lived solution to a traffic problem.</td>
+                            <td><input type="radio" name="q5" value="A"></td>
+                            <td><input type="radio" name="q5" value="B"></td>
+                            <td><input type="radio" name="q5" value="C"></td>
+                            <td><input type="radio" name="q5" value="D"></td>
+                            <td><input type="radio" name="q5" value="E"></td>
+                            <td><input type="radio" name="q5" value="F"></td>
+                            <td><input type="radio" name="q5" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="6"></span>6 A reason why smooth-flowing traffic is more unstable than slow-moving traffic.</td>
+                            <td><input type="radio" name="q6" value="A"></td>
+                            <td><input type="radio" name="q6" value="B"></td>
+                            <td><input type="radio" name="q6" value="C"></td>
+                            <td><input type="radio" name="q6" value="D"></td>
+                            <td><input type="radio" name="q6" value="E"></td>
+                            <td><input type="radio" name="q6" value="F"></td>
+                            <td><input type="radio" name="q6" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="7"></span>7 A reason why traffic jams last longer than might be expected.</td>
+                            <td><input type="radio" name="q7" value="A"></td>
+                            <td><input type="radio" name="q7" value="B"></td>
+                            <td><input type="radio" name="q7" value="C"></td>
+                            <td><input type="radio" name="q7" value="D"></td>
+                            <td><input type="radio" name="q7" value="E"></td>
+                            <td><input type="radio" name="q7" value="F"></td>
+                            <td><input type="radio" name="q7" value="G"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-12</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 8-12, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 Computer models of traffic problems were first developed in the 1980s and '90s.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 Traffic has increased because people take more holidays than they used to.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 Small changes in driver behaviour can cause big changes in traffic flow.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 Traffic that is moving well is unlikely to have any problems.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 Most Americans would rather drive in New Mexico than New York.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Question 13</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 The main purpose of the writer of this article is to:</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="A"> A present opposing views on the analysis of traffic congestion.</label>
+                            <label><input type="radio" name="q13" value="B"> B analyse the reasons why traffic flow has increased.</label>
+                            <label><input type="radio" name="q13" value="C"> C encourage drivers to prevent traffic problems.</label>
+                            <label><input type="radio" name="q13" value="D"> D explain why traffic jams are unavoidable.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>The Myth of the Eight-hour Sleep</h3>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="14"></span><span class="drop-zone" data-target="q14" data-placeholder="14">14</span></strong> We often worry about lying awake in the middle of the night - but it could be good for you. Indications from both science and history suggest that the eight-hour sleep may not be a natural or inborn pattern for humans. In the early 1990s, psychiatrist Thomas Wehr conducted research which implies just that.
+                        <input type="text" name="q14" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>Wehr kept a group of people in a darkened room for 14 hours a day for a month. It took some time for their sleep to regulate, but by the fourth week the subjects had settled into a very distinct sleeping pattern. First, they slept for four hours, then woke for one or two hours before falling into a second four-hour sleep. Though sleep scientists were impressed by the implications of the study, the idea that we must sleep for eight consecutive hours persists amongst the general public.</p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="15"></span><span class="drop-zone" data-target="q15" data-placeholder="15">15</span></strong> In 2001, historian Roger Ekirch of Virginia Tech University in the US published a paper drawn from 16 years of research, revealing historical evidence that humans used to sleep in two distinct periods of time each night. Ekirch's research found more than 500 references to a segmented sleeping pattern - in diaries, court records, medical books and literature, from the ancient Greeks to tribes in Nigeria. Much like Wehr's findings, these references describe a first sleep which began not long following sunset. Then there was a waking period of one or two hours and after that a second sleep. During the waking period, people could be quite active. They sometimes got up and moved around the house, although most people stayed in bed, and perhaps read or wrote if they had enough money for candles. In many historic accounts, Ekirch found that people used the time that they were awake between periods of sleep to think about and attempt to analyse their dreams. In his book, Evening's Empire, historian Craig Koslofsky suggests an explanation for this divided sleep pattern in Europe. 'Associations with night before the 17th century were not good,' he writes. He goes on to explain that the streets of the cities and towns at night were often populated by thieves or worse. The streets at night consequently scared many people. Even the wealthy, who could afford to light their way, had better things to spend their nights on.
+                        <input type="text" name="q15" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="16"></span><span class="drop-zone" data-target="q16" data-placeholder="16">16</span></strong> Ekirch found that references to the first and second sleep started to disappear during the late 17th century. The pattern began to alter first among the upper classes in northern Europe and, over the course of the next 200 years, began changing amongst the rest of Western society. By the 1920s, the idea a first and second sleep had receded entirely from our social consciousness. Ekirch attributes the initial shift to improvements in street and home distincting. As the night became a time for all kinds of activity, the length of time people sleep declined. In 1667, Paris became the first city in the world to light its streets, using wax candles in glass lamps. It was followed by another French city, Lille, in the same year and by Amsterdam in Holland two years later, where a much more efficient oil-powered lamp was developed. London didn't light its streets until 1684, but by the end of the 17th century, more than 50 of Europe's major towns and cities were lit at night. Coffee houses emerged as a fashionable phenomenon and many were open virtually around the clock. Going out at night became commonplace, and spending hours lying in bed was considered a waste of time. 'People were becoming increasingly time-conscious and sensitive to efficiency, certainly before the 19th century,' says Ekirch. 'But the Industrial Revolution intensified that attitude considerably.' Strong evidence of this shifting attitude is contained in a medical journal from 1829 which urged parents to force their children out of the pattern of first and second sleep.
+                        <input type="text" name="q16" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="17"></span><span class="drop-zone" data-target="q17" data-placeholder="17">17</span></strong> Today, most people seem to have adapted quite well to the eight-hour sleep, but Ekirch believes many sleeping problems may have roots in the human body's natural preference for divided sleep, as well as in difficulties caused by extended exposure to artificial light in the modern world. This could be the cause of a condition called sleep maintenance insomnia, where people wake during the night and have trouble getting back to sleep. The condition first appears in literature at the end of the 19th century, at the same time as accounts of interrupted sleep disappear.
+                        <input type="text" name="q17" class="input-field" style="display:none;" aria-hidden="true"></p>
+
+                    <p><strong><span class="question-anchor" data-question-anchor="18"></span><span class="drop-zone" data-target="q18" data-placeholder="18">18</span></strong> Sleep psychologist, Gregg Jacobs, says that the idea that we must sleep for an extended period of time could be damaging if it makes people who wake up in the night anxious, as this anxiety can itself discourage sleep and is likely to affect waking life too. Jacobs suggests that the waking period between sleeps, when people simply rested and relaxed, could have played an important part in the human capacity to regulate stress naturally. Russell Foster, a professor of circadian (body clock) neuroscience at Oxford University in the UK, shares this point of view. 'Over 30% of the medical problems that doctors are faced with stem directly or indirectly from sleep. But sleep has been ignored in medical training, and there are very few centres where sleep is studied,' Foster says. He feels this needs to change.
+                        <input type="text" name="q18" class="input-field" style="display:none;" aria-hidden="true"></p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-18</div>
+                    <p>Reading Passage 2 has five sections, <strong>A-E</strong>.</p>
+                    <p>Choose the correct heading for each section from the list of headings below.</p>
+                    <p>Drag the correct heading into the paragraph labels in Reading Passage 2 (14-18).</p>
+
+                    <p><strong>List of Headings</strong></p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="i" data-label="Historical reasons why interrupted sleep became uncommon">i Historical reasons why interrupted sleep became uncommon</div>
+                        <div class="drag-item" draggable="true" data-option="ii" data-label="Brain structures involved in sleep patterns">ii Brain structures involved in sleep patterns</div>
+                        <div class="drag-item" draggable="true" data-option="iii" data-label="Potential health issues related to sleep">iii Potential health issues related to sleep</div>
+                        <div class="drag-item" draggable="true" data-option="iv" data-label="Famous cases in literature of sleep problems">iv Famous cases in literature of sleep problems</div>
+                        <div class="drag-item" draggable="true" data-option="v" data-label="An analysis of old documents to discover sleep patterns">v An analysis of old documents to discover sleep patterns</div>
+                        <div class="drag-item" draggable="true" data-option="vi" data-label="Biological and environmental factors preventing people from falling asleep again">vi Biological and environmental factors preventing people from falling asleep again</div>
+                        <div class="drag-item" draggable="true" data-option="vii" data-label="Scientific evidence that divided sleep is a natural phenomenon">vii Scientific evidence that divided sleep is a natural phenomenon</div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 19-23</div>
+                    <p>Look at the following statements (Questions 19-23) and the list of researchers below.</p>
+                    <p>Match each statement with the correct researcher, <strong>A-E</strong>.</p>
+                    <p><strong>NB</strong> You may use any letter more than once.</p>
+                    <p><strong>List of Researchers</strong></p>
+                    <p>A Thomas Wehr &nbsp;&nbsp; B Roger Ekirch &nbsp;&nbsp; C Craig Koslofsky &nbsp;&nbsp; D Gregg Jacobs &nbsp;&nbsp; E Russell Foster</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="19"></span>19 In certain historical periods, the threat of criminal danger led to segmented sleep.</td>
+                            <td><input type="radio" name="q19" value="A"></td>
+                            <td><input type="radio" name="q19" value="B"></td>
+                            <td><input type="radio" name="q19" value="C"></td>
+                            <td><input type="radio" name="q19" value="D"></td>
+                            <td><input type="radio" name="q19" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 Physicians should learn more about treating people with sleeping difficulties.</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 Historically, when people experienced interrupted sleep, they used the waking periods at night for different activities.</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                            <td><input type="radio" name="q21" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="22"></span>22 Technological changes in Europe made people more likely to sleep through the night.</td>
+                            <td><input type="radio" name="q22" value="A"></td>
+                            <td><input type="radio" name="q22" value="B"></td>
+                            <td><input type="radio" name="q22" value="C"></td>
+                            <td><input type="radio" name="q22" value="D"></td>
+                            <td><input type="radio" name="q22" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="23"></span>23 The belief that humans should have a long continuous sleep can be psychologically harmful.</td>
+                            <td><input type="radio" name="q23" value="A"></td>
+                            <td><input type="radio" name="q23" value="B"></td>
+                            <td><input type="radio" name="q23" value="C"></td>
+                            <td><input type="radio" name="q23" value="D"></td>
+                            <td><input type="radio" name="q23" value="E"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Complete the summary below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>Historical patterns of interrupted sleep</strong></p>
+                    <p>Historical evidence seems to show that humans had common sleep patterns which were quite unlike today's eight hours of unbroken sleep each night. People habitually went to bed early, soon after <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input">, slept for a while, then woke up for a few hours of activity or perhaps to consider, for example, the meaning of their <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input">.</p>
+                    <p>There was little else to do at home in the dark, since what little means of lighting they had, such as using candles, was costly. In 16th-century Europe, people tended to stay at home at night because they feared <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input"> on largely unlit city streets. Once urban street lighting improved, night life in cities became popular, and recreational spots like coffee houses came to be considered fashionable. Consequently, sleeping patterns also began to change.</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+                <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>200 Years of Australian Landscapes at the Royal Academy in London</h3>
+
+                    <p>This exhibition promises to chart the evolution of a nation through its art, but not everyone agrees with the reasons behind the choice of artwork.</p>
+                    <p>For the casual viewer, the exhibition of landscapes, Australia, selected by the Royal Academy of Art, will be a spectacular guide through Australian art history. Included in the exhibition are a range of artists and styles, dating from the earliest days of colonial art and progressing through expressionism and modernism to the greats of the 20th century, culminating with the current generation of Australian artists. It is hardly surprising, then, that this results in a flexible, wide-ranging notion of landscape.</p>
+                    <p>But this landmark exhibition gives rise to some questions, and perhaps problems, regarding Britain's relationship with its former colony. By choosing a style of painting at which British artists excel, the Academy could be seen as inviting criticism of the Australian interpretation by comparison. But it is the very theme of landscape that hints at a telling attitude towards Australian art from Britain. To consider it condescending is perhaps too strong, but for Joanna Mendelssohn, Australian critic and Associate Professor at the University of NSW's College of Fine Arts (COFA), there is a suggestion that British artistic values have directed this exhibition, rather than allowing Australia the freedom to demonstrate its maturity.</p>
+                    <p>What Mendelssohn found surprising about this exhibition was that the underlying rules for selection of works seemed to have been so conservative. Since the landscape is a very strong British artistic theme, it appeared to her that when the British looked to the art of a former colony, there was a tendency for them to think that those colonies would continue to be like the British themselves. In reviewing Australian art, the British insisted on looking at the genre of landscape painting.</p>
+                    <p>Because of colonial ties, it was inevitable during Australian art's formative years that it would reflect Britain's devotion to the beloved landscape before its own character and idiosyncrasies took shape. And while Mendelssohn's concern over the exhibition's conventional selection is valid, the Academy is nevertheless embracing the peculiarities of Australian art from the mid-19th century onward, albeit within the boundaries of landscape.</p>
+                    <p>Australia is curated by Kathleen Soriano, director of exhibitions at the Royal Academy. "Certainly the influence of English, French or German art is much more evident in the early periods, in the early 1800s to mid-1800s," she says. "What I wanted to show was how Australian art develops a real distinctiveness, associated with the landscape and the light."</p>
+                    <p>The fusion of "tradition" of the European kind with something more specifically Australian, and often personal, is crucial to the exhibition, and extends particularly to some of the more contemporary artists involved. Sydney-born video artist Shaun Gladwell is a good example of this. Gladwell's most famous piece, which is featured in the exhibition, is Storm Sequence (2000), a video of Gladwell skateboarding on the Bondi seafront as one of Sydney's signature brutal storms lingers offshore. It is his acknowledgment of landscape (or seascape) tradition, coloured by Gladwell's own individualism. "To exhibit my work in this show might make some sense because I was interested in Turner and the idea of atmosphere affecting vision, something I was really interested in around the time of Storm Sequence. I was thinking about this tradition of Romantic landscape, but I wanted to make it personal," says Gladwell. But he didn't want to just embark on borrowing imagery from elsewhere. He wanted to bring it to his experience and his world through skateboarding and beach culture.</p>
+                    <p>Visitors to the exhibition encounter Australian Aboriginal art first, the idea being that these works warrant a prominent position because they were "first". Over the last couple of decades, London has hosted many successful exhibitions of Aboriginal art in smaller spaces, but for Soriano, Australia represents an opportunity to place such art in a new context, with new relationships to the art of the settlers and white Australia. "One of the reasons landscape struck me as being the right theme was because Aboriginal art started in and on the landscape," she says. "[The exhibition] is a beautiful meshing of the two different kinds of art, that allowed me to bring them together comfortably and honestly with this theme. It was important for me to present Indigenous art to audiences, and I felt it was important that it was seen as part of Australian art history, rather than a separate exhibition on its own."</p>
+                    <p>Meanwhile, Australian critic Mendelssohn also points out that London is increasingly less important to today's generation of artists, and this somewhat weakens the ceremony surrounding the exhibition in London. "China is the most important art market in the world," she says. "If you've made it in Shanghai, you've made it. The world has changed. My students in Australia, who come from all over the world, really want to see Venice Biennale and Art Basel, but they're less interested in going to London. When I was growing up, London was the destination, and then when I was at university all the smart young things wanted to go to New York," she added. "Now they want to go everywhere. There's no such thing as the centre and the periphery like there used to be. It's much more complicated."</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p>
+                    <p>In boxes 27-31, write <strong>YES</strong> if the statement agrees with the claims of the writer, <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 As expected, the artworks chosen for the exhibition reflect a narrow interpretation of landscape.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="YES"> YES</label>
+                            <label><input type="radio" name="q27" value="NO"> NO</label>
+                            <label><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 The Academy rejected Australian suggestions for the subject of the exhibition.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="YES"> YES</label>
+                            <label><input type="radio" name="q28" value="NO"> NO</label>
+                            <label><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 The colonial relationship meant that early Australian landscape painting followed the traditions of English landscape painting.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="YES"> YES</label>
+                            <label><input type="radio" name="q29" value="NO"> NO</label>
+                            <label><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 The exhibition reflects the fact that Australian art developed its own particular qualities.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="YES"> YES</label>
+                            <label><input type="radio" name="q30" value="NO"> NO</label>
+                            <label><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 Contemporary Australian artists have generally rejected British landscape traditions.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="YES"> YES</label>
+                            <label><input type="radio" name="q31" value="NO"> NO</label>
+                            <label><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-36</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 What is the writer's main point in the second paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="A"> A Australian landscape painting derives from the British tradition.</label>
+                            <label><input type="radio" name="q32" value="B"> B Australian landscape painting is more highly regarded than British.</label>
+                            <label><input type="radio" name="q32" value="C"> C Britain is still imposing its principles on Australian art.</label>
+                            <label><input type="radio" name="q32" value="D"> D British art cannot be compared to Australian art.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 What does Joanna Mendelssohn find surprising?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="A"> A Modern Australian landscape painting has great variety.</label>
+                            <label><input type="radio" name="q33" value="B"> B The guidelines for the choice of work were very traditional.</label>
+                            <label><input type="radio" name="q33" value="C"> C Landscape painting remains a popular subject for British artists.</label>
+                            <label><input type="radio" name="q33" value="D"> D The British find the Australian landscape unsuitable as a subject.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 Shaun Gladwell's work is included in the exhibition because</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="A"> A it adopts a subjective approach to depicting the landscape.</label>
+                            <label><input type="radio" name="q34" value="B"> B skateboarding is an inspiration to many Australian artists.</label>
+                            <label><input type="radio" name="q34" value="C"> C storms are a significant feature in the Australian landscape.</label>
+                            <label><input type="radio" name="q34" value="D"> D Bondi is an iconic Australian location.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 What was the reason for Soriano including Aboriginal art in the exhibition?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="A"> A It is not well known in London art circles.</label>
+                            <label><input type="radio" name="q35" value="B"> B Aboriginal landscape painting influenced Australian settlers.</label>
+                            <label><input type="radio" name="q35" value="C"> C It is part of the Australian art tradition and not independent of it.</label>
+                            <label><input type="radio" name="q35" value="D"> D Modern Aboriginal painting deals with changes to the landscape.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 By referring to China, Mendelssohn is making the point that</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="A"> A having an exhibition in London is not as important as it used to be.</label>
+                            <label><input type="radio" name="q36" value="B"> B young artists in Britain are not interested in Australian art.</label>
+                            <label><input type="radio" name="q36" value="C"> C art from Shanghai is more important than Australian art.</label>
+                            <label><input type="radio" name="q36" value="D"> D New York is still a preferred destination for young artists.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Complete each sentence with the correct ending, <strong>A-F</strong>, below.</p>
+                    <p>Drag the correct letter into each box 37-40.</p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="q37A" data-answer="A" data-label="reflects the mood created by the natural environment">A reflects the mood created by the natural environment.</div>
+                        <div class="drag-item" draggable="true" data-option="q37B" data-answer="B" data-label="demonstrates that the dominant art form in Australia is landscape painting">B demonstrates that the dominant art form in Australia is landscape painting.</div>
+                        <div class="drag-item" draggable="true" data-option="q37C" data-answer="C" data-label="demonstrates an understanding of the historical importance of the land">C demonstrates an understanding of the historical importance of the land.</div>
+                        <div class="drag-item" draggable="true" data-option="q37D" data-answer="D" data-label="showcases a very small number of artists">D showcases a very small number of artists.</div>
+                        <div class="drag-item" draggable="true" data-option="q37E" data-answer="E" data-label="demonstrates a strong European flavour">E demonstrates a strong European flavour.</div>
+                        <div class="drag-item" draggable="true" data-option="q37F" data-answer="F" data-label="shows an acceptance of the unique qualities of Australian art">F shows an acceptance of the unique qualities of Australian art.</div>
+                    </div>
+                    <p><span class="question-anchor" data-question-anchor="37"></span>37 In spite of its conservatism, the Royal Academy exhibition
+                        <span class="drop-zone" data-target="q37" data-placeholder="37">37</span>
+                        <input type="text" name="q37" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="38"></span>38 Australian art of the early to mid-1800s
+                        <span class="drop-zone" data-target="q38" data-placeholder="38">38</span>
+                        <input type="text" name="q38" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="39"></span>39 The modern work by Gladwell chosen for the exhibition
+                        <span class="drop-zone" data-target="q39" data-placeholder="39">39</span>
+                        <input type="text" name="q39" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                    <p><span class="question-anchor" data-question-anchor="40"></span>40 Including Aboriginal art in the exhibition
+                        <span class="drop-zone" data-target="q40" data-placeholder="40">40</span>
+                        <input type="text" name="q40" class="input-field" style="display:none;" aria-hidden="true">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_12',
+            label: 'Reading Full 12',
+            correctAnswers: {
+            q1: "B",
+            q2: "D",
+            q3: "G",
+            q4: "A",
+            q5: "F",
+            q6: "C",
+            q7: "E",
+            q8: "FALSE",
+            q9: "NOT GIVEN",
+            q10: "TRUE",
+            q11: "FALSE",
+            q12: "NOT GIVEN",
+            q13: "D",
+            q14: "VII",
+            q15: "V",
+            q16: "I",
+            q17: "VI",
+            q18: "III",
+            q19: "C",
+            q20: "E",
+            q21: "B",
+            q22: "B",
+            q23: "D",
+            q24: "SUNSET",
+            q25: "DREAMS",
+            q26: "THIEVES",
+            q27: "NO",
+            q28: "NOT GIVEN",
+            q29: "YES",
+            q30: "YES",
+            q31: "NO",
+            q32: "C",
+            q33: "B",
+            q34: "A",
+            q35: "C",
+            q36: "A",
+            q37: "F",
+            q38: "E",
+            q39: "A",
+            q40: "C"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-12.js?v=20260731-reading-clear-12-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-12-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

@@ -1,0 +1,250 @@
+
+            /* Hide default browser audio controls */
+            #ieltsAudio {
+                display: none;
+            }
+            /* Minimal control button (you can delete this whole block if you want ZERO visible elements) */
+            .minimal-audio-control {
+                position: fixed;
+                top: 80px;
+                right: 20px;
+                z-index: 1000;
+            }
+            #playPauseBtn {
+                padding: 8px 16px;
+                background: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            #playPauseBtn:hover {
+                background: #0056b3;
+            }
+        
+        /* Contrast surface patch: keep question cards readable in alternate modes */
+        .contrast-white-black .questions-container,
+        .contrast-white-black .question,
+        .contrast-white-black .question-group,
+        .contrast-white-black .notes-picture,
+        .contrast-white-black .word-list,
+        .contrast-white-black .flow-chart,
+        .contrast-white-black .flow-chart-box,
+        .contrast-white-black .time-row,
+        .contrast-white-black .notes-board,
+        .contrast-white-black .notes-row,
+        .contrast-white-black .note-row,
+        .contrast-white-black .volcano-item,
+        .contrast-white-black .exam-sheet,
+        .contrast-white-black .place-card,
+        .contrast-white-black .achievement-card,
+        .contrast-white-black .form-field,
+        .contrast-white-black .form-card,
+        .contrast-white-black .form-grid,
+        .contrast-white-black .form-row,
+        .contrast-white-black .drag-options-shelf,
+        .contrast-white-black .responsibility-item,
+        .contrast-white-black .responsibility-list,
+        .contrast-white-black .multiple-choice-card,
+        .contrast-white-black .aar-paper,
+        .contrast-white-black .wccp-paper,
+        .contrast-white-black .bhbt-paper,
+        .contrast-white-black .radio-label,
+        .contrast-white-black .varroa-flow-layout .drop-column,
+        .contrast-white-black .varroa-flow-layout .options-column,
+        .contrast-white-black .features-list,
+        .contrast-white-black .cities-list,
+        .contrast-white-black .matching-section,
+        .contrast-white-black .section-card,
+        .contrast-white-black .table-panel,
+        .contrast-white-black .table-card,
+        .contrast-white-black .results-content,
+        .contrast-white-black .score-item {
+            background: #111827 !important;
+            color: #f7fafc !important;
+            border-color: #4a5568 !important;
+            box-shadow: none !important;
+        }
+
+        .contrast-yellow-black .questions-container,
+        .contrast-yellow-black .question,
+        .contrast-yellow-black .question-group,
+        .contrast-yellow-black .notes-picture,
+        .contrast-yellow-black .word-list,
+        .contrast-yellow-black .flow-chart,
+        .contrast-yellow-black .flow-chart-box,
+        .contrast-yellow-black .time-row,
+        .contrast-yellow-black .notes-board,
+        .contrast-yellow-black .notes-row,
+        .contrast-yellow-black .note-row,
+        .contrast-yellow-black .volcano-item,
+        .contrast-yellow-black .exam-sheet,
+        .contrast-yellow-black .place-card,
+        .contrast-yellow-black .achievement-card,
+        .contrast-yellow-black .form-field,
+        .contrast-yellow-black .form-card,
+        .contrast-yellow-black .form-grid,
+        .contrast-yellow-black .form-row,
+        .contrast-yellow-black .drag-options-shelf,
+        .contrast-yellow-black .responsibility-item,
+        .contrast-yellow-black .responsibility-list,
+        .contrast-yellow-black .multiple-choice-card,
+        .contrast-yellow-black .aar-paper,
+        .contrast-yellow-black .wccp-paper,
+        .contrast-yellow-black .bhbt-paper,
+        .contrast-yellow-black .radio-label,
+        .contrast-yellow-black .varroa-flow-layout .drop-column,
+        .contrast-yellow-black .varroa-flow-layout .options-column,
+        .contrast-yellow-black .features-list,
+        .contrast-yellow-black .cities-list,
+        .contrast-yellow-black .matching-section,
+        .contrast-yellow-black .section-card,
+        .contrast-yellow-black .table-panel,
+        .contrast-yellow-black .table-card,
+        .contrast-yellow-black .results-content,
+        .contrast-yellow-black .score-item {
+            background: #050505 !important;
+            color: #f6e05e !important;
+            border-color: #5f4b16 !important;
+            box-shadow: none !important;
+        }
+
+        .contrast-white-black .job-table th,
+        .contrast-white-black .job-table td,
+        .contrast-white-black .bicycling-table th,
+        .contrast-white-black .bicycling-table td,
+        .contrast-white-black .course-table th,
+        .contrast-white-black .course-table td,
+        .contrast-white-black .section-table th,
+        .contrast-white-black .section-table td,
+        .contrast-white-black .form-input,
+        .contrast-white-black .matching-input,
+        .contrast-white-black .drop-zone-w,
+        .contrast-white-black .drop-zone-small {
+            background: #0b1220 !important;
+            color: #f7fafc !important;
+            border-color: #4a5568 !important;
+        }
+
+        .contrast-yellow-black .job-table th,
+        .contrast-yellow-black .job-table td,
+        .contrast-yellow-black .bicycling-table th,
+        .contrast-yellow-black .bicycling-table td,
+        .contrast-yellow-black .course-table th,
+        .contrast-yellow-black .course-table td,
+        .contrast-yellow-black .section-table th,
+        .contrast-yellow-black .section-table td,
+        .contrast-yellow-black .form-input,
+        .contrast-yellow-black .matching-input,
+        .contrast-yellow-black .drop-zone-w,
+        .contrast-yellow-black .drop-zone-small {
+            background: #050505 !important;
+            color: #f6e05e !important;
+            border-color: #5f4b16 !important;
+        }
+
+        .contrast-white-black .question-text,
+        .contrast-white-black .question-group-title,
+        .contrast-white-black .notes-center-title,
+        .contrast-white-black .notes-heading,
+        .contrast-white-black .notes-title,
+        .contrast-white-black .notes-entry,
+        .contrast-white-black .place-title,
+        .contrast-white-black .section-heading,
+        .contrast-white-black .section-subheading,
+        .contrast-white-black .section-card-title,
+        .contrast-white-black .form-main-label,
+        .contrast-white-black .notes-label,
+        .contrast-white-black .row-label,
+        .contrast-white-black .row-value,
+        .contrast-white-black .table-title,
+        .contrast-white-black .card-note,
+        .contrast-white-black .fill-number {
+            color: #f7fafc !important;
+        }
+
+        .contrast-yellow-black .question-text,
+        .contrast-yellow-black .question-group-title,
+        .contrast-yellow-black .notes-center-title,
+        .contrast-yellow-black .notes-heading,
+        .contrast-yellow-black .notes-title,
+        .contrast-yellow-black .notes-entry,
+        .contrast-yellow-black .place-title,
+        .contrast-yellow-black .section-heading,
+        .contrast-yellow-black .section-subheading,
+        .contrast-yellow-black .section-card-title,
+        .contrast-yellow-black .form-main-label,
+        .contrast-yellow-black .notes-label,
+        .contrast-yellow-black .row-label,
+        .contrast-yellow-black .row-value,
+        .contrast-yellow-black .table-title,
+        .contrast-yellow-black .card-note,
+        .contrast-yellow-black .fill-number {
+            color: #f6e05e !important;
+        }
+        /* Contrast highlight patch: avoid yellow-on-yellow selected text */
+        .contrast-white-black .highlight {
+            background-color: #63b3ed !important;
+            color: #0b1723 !important;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.45) !important;
+        }
+
+        .contrast-yellow-black .highlight {
+            background-color: #38bdf8 !important;
+            color: #030712 !important;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.55) !important;
+        }
+
+        .contrast-white-black .highlight *,
+        .contrast-yellow-black .highlight * {
+            color: inherit !important;
+        }
+        /* Contrast shell patch: cover older standalone test shells */
+        .contrast-white-black .container,
+        .contrast-white-black .test-interface,
+        .contrast-white-black .main-content,
+        .contrast-white-black .passage-container,
+        .contrast-white-black .questions-section,
+        .contrast-white-black .part-header,
+        .contrast-white-black .header,
+        .contrast-white-black .submit-section,
+        .contrast-white-black .bottom-navigation,
+        .contrast-white-black .parts-navigation,
+        .contrast-white-black .modal-content {
+            background: #111827 !important;
+            color: #f7fafc !important;
+            border-color: #4a5568 !important;
+        }
+
+        .contrast-yellow-black .container,
+        .contrast-yellow-black .test-interface,
+        .contrast-yellow-black .main-content,
+        .contrast-yellow-black .passage-container,
+        .contrast-yellow-black .questions-section,
+        .contrast-yellow-black .part-header,
+        .contrast-yellow-black .header,
+        .contrast-yellow-black .submit-section,
+        .contrast-yellow-black .bottom-navigation,
+        .contrast-yellow-black .parts-navigation,
+        .contrast-yellow-black .modal-content {
+            background: #050505 !important;
+            color: #f6e05e !important;
+            border-color: #5f4b16 !important;
+        }
+
+        .contrast-white-black .drop-zone:not(.correct):not(.incorrect),
+        .contrast-white-black .drag-item,
+        .contrast-white-black .input-field {
+            background: #0b1220 !important;
+            color: #f7fafc !important;
+            border-color: #4a5568 !important;
+        }
+
+        .contrast-yellow-black .drop-zone:not(.correct):not(.incorrect),
+        .contrast-yellow-black .drag-item,
+        .contrast-yellow-black .input-field {
+            background: #050505 !important;
+            color: #f6e05e !important;
+            border-color: #5f4b16 !important;
+        }

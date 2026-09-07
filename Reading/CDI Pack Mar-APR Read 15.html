@@ -1,0 +1,641 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 15 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-15-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 on pages 2 and 3.</strong></p>
+                    <h3>Sydney Opera House</h3>
+                    <p>Sydney Opera House is an example of late modern architecture; it is admired internationally and treasured by the people of Australia.</p>
+                    <p>In 1956 the Premier of New South Wales, Australia, announced an international competition for the design of an opera house for Sydney. It attracted more than 200 entries from around the world and was won by Jorn Utzon, a relatively little-known architect from Denmark. The story goes that during the judging of the competition, one judge, American architect Eero Saarinen, arrived in Sydney after the other three judges had started assessing the entries. He looked through their rejected entries and stopped at the Utzon design, declaring it to be outstanding.</p>
+                    <p>It was Utzon's life and travels that had shaped his design for the Sydney Opera House. Though he had never visited the site, he used his maritime background to study naval charts of Sydney Harbour. His early exposure to shipbuilding provided the inspiration for the design of the roof of the Sydney Opera House, which is a series of curved 'shells' that look like the sails of a sailing ship billowing on the wind. From his travels to Mexico, he had the idea of placing his building on a wide horizontal platform.</p>
+                    <p>Construction of the platform began in 1959, and throughout the early 1960s Utzon amended his original designs in order to develop a way to build the large 'shells' that cover the two main halls. The construction of the roof brought together some of the world's best engineers and craftsmen, devising innovative techniques to create a major visual impact in accordance with Utzon's vision. The design was one of the first examples of the use of computer-aided design for complex shapes.</p>
+                    <p>Although Utzon had spectacular plans for the interior, he was unable to realise them. Cost overruns contributed to criticism of the project and, after a change of government, the Minister of Works began questioning Utzon's schedules and cost estimates. Payments to Utzon were stopped and he was forced to withdraw as chief architect in 1966. Following his resignation, there were protests through the streets led by prominent architect Harry Seidler and others, demanding Utzon be reinstated as architect. However, Utzon was not reinstated and left Australia in 1966. He never returned and new architects were appointed to complete the building in his absence. The original cost estimate for the Opera House was $7 million, with the completion date set at 26 January 1963. However, the Opera House was not formally completed until 1973, having cost $102 million.</p>
+                    <p>Since its opening in 1973, Sydney Opera House has earned a reputation as a world-class performing arts centre, and become a symbol of both Sydney and Australia. Situated at Bennelong Point on Sydney Harbour, it consists of a series of large precast 'shells' made of concrete, each composed of sections of a sphere of 75.2 metres radius, forming the roofs of the structure, set on a monumental platform. The building is 183 metres long and 120 metres wide at its widest point. It is supported on 588 concrete piers which are sunk approximately 25 metres below sea level.</p>
+                    <p>Although the roof structures are commonly referred to as 'shells', they are precast concrete panels supported by concrete ribs. The 'shells' are covered with 1,056,006 white and cream-coloured tiles manufactured in a factory in Sweden that generally produced stoneware tiles for the paper-mill industry. The design solution and construction of the shell structure took eight years to complete, and the development of the special ceramic tiles took over three years. Apart from the tiles covering the 'shells', the building's exterior is mostly clad with granite quarried in Australia.</p>
+                    <p>Contrary to its name, Sydney Opera House includes multiple performance venues. It is among the busiest performing arts centres in the world, holding over 1,500 performances each year. It hosts a large number of performing arts companies, including the four resident companies: Opera Australia, the Australian Ballet, the Sydney Theatre Company and the Sydney Symphony Orchestra.</p>
+                    <p>With its grand setting and cathedral-like atmosphere, the Concert Hall is Sydney Opera House's most prestigious performance space. The largest of all Sydney Opera House interior venues, it delivers outstanding acoustics thanks to its high ceiling and wood panelling. There is a sizeable outdoor forecourt from which people ascend to the main entrance. The steps, which lead up from the forecourt to the main performance venues, are nearly 100 metres wide.</p>
+                    <p>In 1999, Utzon was re-engaged to develop a set of design principles to act as a guide for future changes to the building. All of this design work he did from his base in Europe. These principles help to ensure that the building's architectural integrity is maintained. The first alteration to the exterior of the building was the addition of a new colonnade, which shades nine large glass openings into the previously solid exterior wall. This Utzon-led project, completed in 2006, enabled theatre patrons to see the harbour for the first time from the theatre foyers. The design also incorporates the first public lift and interior escalators to assist fewer mobile patrons.</p>
+                    <p>Since 2007, the cultural, heritage and architectural importance of Sydney Opera House has been protected by its inclusion on the World Heritage List.</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-7</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 1-7, write <strong>TRUE</strong> if the statement agrees with the information, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 <span class="question-anchor" data-question-anchor="1"></span>Utzon was famous for his work before he designed the Opera House.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 <span class="question-anchor" data-question-anchor="2"></span>Utzon's design was favoured by the four judges of the competition from the beginning.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 <span class="question-anchor" data-question-anchor="3"></span>Utzon's knowledge of boats gave him the idea for parts of the Opera House.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 <span class="question-anchor" data-question-anchor="4"></span>Utzon was impressed by the opera houses he had seen in Mexico.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text">5 <span class="question-anchor" data-question-anchor="5"></span>Utzon changed his designs in the 1960s after construction began.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 <span class="question-anchor" data-question-anchor="6"></span>Seidler defended Utzon's role as architect.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="7">
+                        <div class="question-text">7 <span class="question-anchor" data-question-anchor="7"></span>Utzon went back to Australia in 1973 for the opening of the Opera House.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q7" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q7" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 8-13</div>
+                    <p>Complete the notes below.</p>
+                    <p>Choose <strong>ONE WORD AND/OR A NUMBER</strong> from the passage for each answer.</p>
+
+                    <p><strong>Sydney Opera House</strong></p>
+                    <p><strong>Final cost</strong></p>
+                    <p>$ <span class="question-anchor" data-question-anchor="8"></span><input type="text" name="q8" placeholder="8" class="input-field inline-input"></p>
+
+                    <p><strong>Construction</strong></p>
+                    <p>a large platform acting as a base for the building</p>
+                    <p>concrete panels used to make 'shells', which are covered in tiles</p>
+                    <p>over a million tiles from <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input"></p>
+                    <p><span class="question-anchor" data-question-anchor="10"></span><input type="text" name="q10" placeholder="10" class="input-field inline-input"> from Australia covering the outside walls</p>
+
+                    <p><strong>Use</strong></p>
+                    <p>more than 1,500 performances annually</p>
+                    <p><span class="question-anchor" data-question-anchor="11"></span><input type="text" name="q11" placeholder="11" class="input-field inline-input"> performing arts companies have their home base at the Opera House</p>
+
+                    <p><strong>Outside</strong></p>
+                    <p>a large <span class="question-anchor" data-question-anchor="12"></span><input type="text" name="q12" placeholder="12" class="input-field inline-input"> at the foot of a wide staircase</p>
+
+                    <p><strong>Alterations</strong></p>
+                    <p>a colonnade was added in 2006</p>
+                    <p>openings made the <span class="question-anchor" data-question-anchor="13"></span><input type="text" name="q13" placeholder="13" class="input-field inline-input"> visible from foyers</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 on pages 7 and 8.</strong></p>
+                    <h3>The attraction of video games</h3>
+                    <p>The world's love of video games has much to do with people's desires and motives.</p>
+                    <p><strong><span class="question-anchor" data-question-anchor="14"></span><span class="drop-zone" data-target="q14" data-placeholder="14">14</span> A</strong> Video games, it is often claimed, are about wasting time. It is a misunderstanding that players and game makers have been trying to correct for many years. While movies and television are endlessly analysed in the media, games are often dismissed as irresponsible, unimportant byproducts of the broader digital revolution.
+                        <input type="text" name="q14" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>But a growing number of experts disagree. This is, after all, an entertainment medium that worldwide makes $50bn a year. Using ideas from psychology and sociology, theorists and designers suggest that our love of video games may actually have important things to tell us about our most basic desires and motivations.</p>
+                    <p>Game design has become big business and has led to the creation of a multitude of companies. 'The industry attitude toward training has changed radically,' says prominent game researcher Jesper Juul. 'I recall hearing professionals claim that game design was a strange and unteachable art, but now this attitude has mostly faded.' Designing video games is increasingly recognised as a valid field of university study throughout the world.</p>
+                    <p><strong><span class="question-anchor" data-question-anchor="15"></span><span class="drop-zone" data-target="q15" data-placeholder="15">15</span> B</strong> Central to an understanding of games is the theory that games are fun because they teach us in a way that our brains prefer, that is, through systems and puzzles. Raph Koster, designer of multiplayer fantasy games, points out that an effective learning environment is one in which failure is acceptable, even welcomed. Accordingly, Koster says that in games, the player enters into a situation where the rules of the real world don't apply - and typically being judged on success and failure is part of the real world. When gaming, people feel free to try things and to learn, and not worry about what might happen.
+                        <input type="text" name="q15" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>Consistently, Koster says, the best games are the ones that provide us with interesting tools such as weapons or magic, and allow us to experiment with them. For example, in one early game, players are given the ability to jump, and can practise this for as long as they like, but to get to the next stage they need to master this ability so they can leap over an enemy and onto a platform.</p>
+                    <p>'Games allow us to create these little systems where learning is controlled really brilliantly,' says Margaret Robertson, director at a London-based game design company. 'Something we don't talk about is that, actually, one of the strengths of games is the vague sense of disapproval that still surrounds them - they feel like something that's forbidden!' And that can, of course, be very exciting.</p>
+                    <p><strong><span class="question-anchor" data-question-anchor="16"></span><span class="drop-zone" data-target="q16" data-placeholder="16">16</span> C</strong> Another important element in the popularity of games is the player's ability to determine what happens. Games tap into our need to have direction; this is very obvious in games where we shape the lives of virtual humans, but it's becoming a vital element of action adventures too. 'Games are increasingly complex systems,' says Dan Pinchbeck, an experimental game designer. 'There's an emphasis on the pleasure of choosing and planning. We've moved quite dramatically away from the very first video games. These games mostly involved the player merely reacting to events. But games then became more about approaching a situation and making a plan depending on your preferred play style.'
+                        <input type="text" name="q16" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><strong><span class="question-anchor" data-question-anchor="17"></span><span class="drop-zone" data-target="q17" data-placeholder="17">17</span> D</strong> Many studios design their games around reward systems. 'A good game will have progression at the end of each level, but it will also provide surprise rewards halfway through,' says Ben Weedon, a games studio consultant. 'In a game, you're essentially pressing the same buttons and doing the same things over and over again, so you need those occasional surprises to stay motivated.'
+                        <input type="text" name="q17" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><strong><span class="question-anchor" data-question-anchor="18"></span><span class="drop-zone" data-target="q18" data-placeholder="18">18</span> E</strong> Games have constantly evolved over the years and continue to do so right up to the present. Now, incorporating a narrative structure into a game is becoming increasingly important. Many games have adopted Hollywood's three-act structure, which is designed to maintain our loyalty to a particular game.
+                        <input type="text" name="q18" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>As in many films, a short final act is often used to give a sense of acceleration towards a preferably startling climax. Opening levels of games are also short, because this flatters us into thinking we're making good progress, whereas the middle levels are more extensive.</p>
+                    <p><strong><span class="question-anchor" data-question-anchor="19"></span><span class="drop-zone" data-target="q19" data-placeholder="19">19</span> F</strong> Games even tap into our friendships. The rise of multiplayer gaming means that gaming increasingly involves social interaction. And other businesses are taking notice and using this as an element in advertising their brands. Then there's the new concept of 'gamification', in which websites and smartphone apps are being designed like games, with high scores and achievement points to keep customers entertained. Research estimates that businesses spent more than $100m worldwide on gamification projects last year, a figure predicted to rise to $1.6bn in the next four years.
+                        <input type="text" name="q19" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p>So, in fact, games aren't just an insignificant fad, as some people might suggest. They fulfil intrinsic human needs, whether we are conscious of it or not. The loop of learning, control and rewards is at the heart of something very important, and very attractive.</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-19</div>
+                    <p>Reading Passage 2 has six sections, <strong>A-F</strong>.</p>
+                    <p>Choose the correct heading for each section from the list of headings below.</p>
+                    <p>Write the correct number, <strong>i-vii</strong>, in boxes 14-19.</p>
+
+                    <p><strong>List of Headings</strong></p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="i" data-label="Being able to experiment without consequences">i Being able to experiment without consequences</div>
+                        <div class="drag-item" draggable="true" data-option="ii" data-label="Why stories are included in games">ii Why stories are included in games</div>
+                        <div class="drag-item" draggable="true" data-option="iii" data-label="The key role of the unexpected for game players">iii The key role of the unexpected for game players</div>
+                        <div class="drag-item" draggable="true" data-option="iv" data-label="Transferring features of games to other types of products">iv Transferring features of games to other types of products</div>
+                        <div class="drag-item" draggable="true" data-option="v" data-label="The age group that games most appeal to">v The age group that games most appeal to</div>
+                        <div class="drag-item" draggable="true" data-option="vi" data-label="The development of the video game design industry">vi The development of the video game design industry</div>
+                        <div class="drag-item" draggable="true" data-option="vii" data-label="Players' ability to control what occurs in games">vii Players' ability to control what occurs in games</div>
+                    </div>
+
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 20-23</div>
+                    <p>Look at the following statements (Questions 20-23) and the list of experts below.</p>
+                    <p>Match each statement with the correct expert, <strong>A-E</strong>.</p>
+                    <p><strong>NB</strong> You may use any letter more than once.</p>
+                    <p><strong>List of experts</strong></p>
+                    <p>A Jesper Juul &nbsp;&nbsp; B Raph Koster &nbsp;&nbsp; C Margaret Robertson &nbsp;&nbsp; D Dan Pinchbeck &nbsp;&nbsp; E Ben Weedon</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 Players' involvement in games often includes thinking ahead.</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 The inclusion of unanticipated elements keeps players interested.</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                            <td><input type="radio" name="q21" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="22"></span>22 It's now accepted that creating video games is a skill that can be learned.</td>
+                            <td><input type="radio" name="q22" value="A"></td>
+                            <td><input type="radio" name="q22" value="B"></td>
+                            <td><input type="radio" name="q22" value="C"></td>
+                            <td><input type="radio" name="q22" value="D"></td>
+                            <td><input type="radio" name="q22" value="E"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="23"></span>23 Early games were much simpler than more recent ones.</td>
+                            <td><input type="radio" name="q23" value="A"></td>
+                            <td><input type="radio" name="q23" value="B"></td>
+                            <td><input type="radio" name="q23" value="C"></td>
+                            <td><input type="radio" name="q23" value="D"></td>
+                            <td><input type="radio" name="q23" value="E"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Complete the sentences below.</p>
+                    <p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p>24 Koster believes that games remove people's fear of <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input"></p>
+                    <p>25 Robertson's view is that games feel exciting partly because of the <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input"> that is associated with them.</p>
+                    <p>26 Narrative games are often structured so that the first and last part are both <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input"></p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->            <!-- ===== PASSAGE 3 ===== -->
+                <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>The facility for verbal language</h3>
+                    <p>Apes may learn to communicate with humans, but what are the differences between this and true human speech?</p>
+                    <p><strong>A</strong> Animal language works through rather limited vocabularies of calls, postures and sometimes scents that appear to convey concrete meanings. Konrad Lorenz, the great ethologist, has paraphrased the most universal animal signal as: 'I am here; where are you?' Animals clearly remember the past and sometimes plot elaborately to manipulate the behavior of others in their social group. Monkeys have been observed to give an alarm call, indicating that a predator is near when it is not, in order to distract other monkeys from a favorite food source. However, non-human animals apparently cannot discuss the distant past, the remote future, or abstract or hypothetical ideas.</p>
+                    <p><strong>B</strong> True or full language must include two specific categories of words, according to linguist Derek Bickerton. First there are those words that refer to concrete objects, perceptible attributes, and real actions - what linguists call 'lexical items'. At least some animals use lexical items in their language. In addition, true or full language includes a number of words that are primarily relational, numerical, referential, temporal, directional, and so on - which linguists call 'grammatical items'. It is the grammatical items that allow us to generate sentences and to understand a single sentence without confusing our listeners; they eliminate ambiguities or, as linguists say, they 'disambiguate our utterances'.</p>
+                    <p><strong>C</strong> In contrast to full language users, individuals who have missed the opportunity to learn language normally, and indeed apes who have undergone considerable training, all use much simplified language. There is only one tense, the present tense. Moreover, grammatical items are rudimentary or often completely absent. This restricted or 'bare bones' language is what Bickerton calls proto-language. He believes it is the first means of verbal communication that we learn as children and is probably a fair approximation of the first means of verbal communication that we developed evolutionarily too. It is the form of language that we share with a few talented and trained apes. Bickerton suggests that proto-language is a robust if limited means of communication that survives even horrendous deprivation. It is the fallback rudimentary type of language also used by people fully adept in one language who are trying to express themselves in another; thus, proto-language lies at the root of pidgin language. Proto-language is the sort of language we can readily envision as developing by small increments into the exact and elaborate verbal communication that marks out human utterances today.</p>
+                    <p><strong>D</strong> Bickerton argues that proto-language and full language are two systems separated not only by their modes of expression but also by their genesis. In his view, proto-language and true language developed independently to serve different purposes, and they probably have different neurological bases. This is why proto-language does not become full language as the speaker matures or learns more. A trained ape, for example, does not suffer from arrested development of language; it is capable of fully developed proto-language but will never develop the other system that is full language. Under normal conditions, proto-language is supplemented and eventually supplanted by full language in humans.</p>
+                    <p><strong>E</strong> Why have apes failed to learn full language? It is not because they are physically ill-adapted for speech (which they are), nor is it because they cannot grasp the use of symbols. Experiments conducted by Allen and Beatrice Gardiner, working with a chimpanzee called Washoe, by Penny Patterson with the gorilla Koko, and by Sue Savage-Rumbaugh with the pygmy chimp named Kanzi have all demonstrated that apes have an impressive ability to learn symbols. Savage-Rumbaugh's work with Kanzi has effectively demolished the criticism that ape language was a product of wishful thinking on the researchers' part. Clearly, apes exposed to appropriate language opportunities learn to combine symbols into multi-word utterances and to participate in meaningful dialogues. The problem, according to Bickerton, is that apes do not have the elaborate representational system that humans possess and so they never progress from proto-language to full language. There is an absolute limit to the complexities of their utterances, a limit that is both grammatical and conceptual.</p>
+                    <p><strong>F</strong> Bickerton hypothesizes that proto-language developed as a communication system, based on the neurological template that we share with apes. However, he believes that the neurological basis for full language evolved as a complex system for taking in sensory information about the environment, processing it, storing it, and perhaps evaluating it as a basis for future actions. The basis for full language, argues Bickerton, was a sort of mapping function, a means of representing the world internally. While all creatures map their world to some extent, humans have developed a stunningly intricate representational system that far exceeds that of other organisms in complexity and subtlety. In order to make a highly detailed and accurate map, one that changes minute by minute as new information is added, we interpose a tremendous amount of mental processing between the experience and our mental representation of it. This permits us to think about circumstances or events that are not occurring and may never occur. Without a detailed mental symbol that represents yourself, you cannot think about yourself in any complex way. Apes seem to have only a rudimentary sense of self and a limited degree of consciousness, and they lack the elaborate representational system that would enable them to develop truly complex thoughts and full language.</p>
+                </div>            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Reading Passage 3 has six paragraphs, <strong>A-F</strong>.</p>
+                    <p>Which paragraph contains the following information?</p>
+                    <p>Write the correct letter, <strong>A-F</strong>, in boxes 27-32.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="27"></span>27 a discussion of some of the linguistic features of proto-language</td>
+                            <td><input type="radio" name="q27" value="A"></td>
+                            <td><input type="radio" name="q27" value="B"></td>
+                            <td><input type="radio" name="q27" value="C"></td>
+                            <td><input type="radio" name="q27" value="D"></td>
+                            <td><input type="radio" name="q27" value="E"></td>
+                            <td><input type="radio" name="q27" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="28"></span>28 a theory that two types of language differ in both form and origin</td>
+                            <td><input type="radio" name="q28" value="A"></td>
+                            <td><input type="radio" name="q28" value="B"></td>
+                            <td><input type="radio" name="q28" value="C"></td>
+                            <td><input type="radio" name="q28" value="D"></td>
+                            <td><input type="radio" name="q28" value="E"></td>
+                            <td><input type="radio" name="q28" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="29"></span>29 a reference to case studies that show that apes have an ability to learn connected words that make sense</td>
+                            <td><input type="radio" name="q29" value="A"></td>
+                            <td><input type="radio" name="q29" value="B"></td>
+                            <td><input type="radio" name="q29" value="C"></td>
+                            <td><input type="radio" name="q29" value="D"></td>
+                            <td><input type="radio" name="q29" value="E"></td>
+                            <td><input type="radio" name="q29" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="30"></span>30 an explanation of how language enables people to speculate</td>
+                            <td><input type="radio" name="q30" value="A"></td>
+                            <td><input type="radio" name="q30" value="B"></td>
+                            <td><input type="radio" name="q30" value="C"></td>
+                            <td><input type="radio" name="q30" value="D"></td>
+                            <td><input type="radio" name="q30" value="E"></td>
+                            <td><input type="radio" name="q30" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="31"></span>31 a description of the features of language that enable people to communicate clearly</td>
+                            <td><input type="radio" name="q31" value="A"></td>
+                            <td><input type="radio" name="q31" value="B"></td>
+                            <td><input type="radio" name="q31" value="C"></td>
+                            <td><input type="radio" name="q31" value="D"></td>
+                            <td><input type="radio" name="q31" value="E"></td>
+                            <td><input type="radio" name="q31" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="32"></span>32 an example of the ability of animals to plan and produce desired outcomes through their use of 'language'</td>
+                            <td><input type="radio" name="q32" value="A"></td>
+                            <td><input type="radio" name="q32" value="B"></td>
+                            <td><input type="radio" name="q32" value="C"></td>
+                            <td><input type="radio" name="q32" value="D"></td>
+                            <td><input type="radio" name="q32" value="E"></td>
+                            <td><input type="radio" name="q32" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-37</div>
+                    <p>Classify the following features as characteristic of:</p>
+                    <p>A proto-language</p>
+                    <p>B full language</p>
+                    <p>C both proto-language and full language</p>
+                    <p>D neither proto-language nor full language</p>
+                    <p>Write the correct letter, A, B, C or D, in boxes 33-37.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="33"></span>33 It contains a range of grammar-based words.</td>
+                            <td><input type="radio" name="q33" value="A"></td>
+                            <td><input type="radio" name="q33" value="B"></td>
+                            <td><input type="radio" name="q33" value="C"></td>
+                            <td><input type="radio" name="q33" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="34"></span>34 It can be learned by both humans and apes.</td>
+                            <td><input type="radio" name="q34" value="A"></td>
+                            <td><input type="radio" name="q34" value="B"></td>
+                            <td><input type="radio" name="q34" value="C"></td>
+                            <td><input type="radio" name="q34" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="35"></span>35 It can be easily taught to a wide range of different animal species.</td>
+                            <td><input type="radio" name="q35" value="A"></td>
+                            <td><input type="radio" name="q35" value="B"></td>
+                            <td><input type="radio" name="q35" value="C"></td>
+                            <td><input type="radio" name="q35" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="36"></span>36 It can be used to express abstract concepts.</td>
+                            <td><input type="radio" name="q36" value="A"></td>
+                            <td><input type="radio" name="q36" value="B"></td>
+                            <td><input type="radio" name="q36" value="C"></td>
+                            <td><input type="radio" name="q36" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="37"></span>37 It contains words that allow events and objects to be identified.</td>
+                            <td><input type="radio" name="q37" value="A"></td>
+                            <td><input type="radio" name="q37" value="B"></td>
+                            <td><input type="radio" name="q37" value="C"></td>
+                            <td><input type="radio" name="q37" value="D"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 38-40</div>
+                    <p>Complete the sentences below.</p>
+                    <p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                    <p>38 Monkeys have been seen to manipulate other monkeys by making a misleading <span class="question-anchor" data-question-anchor="38"></span><input type="text" name="q38" placeholder="38" class="input-field inline-input"></p>
+                    <p>39 Words used to describe such things as quantities, times and locations are often termed <span class="question-anchor" data-question-anchor="39"></span><input type="text" name="q39" placeholder="39" class="input-field inline-input"></p>
+                    <p>40 Proto-language is believed by Bickerton to be the initial form of language that develops in <span class="question-anchor" data-question-anchor="40"></span><input type="text" name="q40" placeholder="40" class="input-field inline-input"> when they learn to communicate.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_15',
+            label: 'Reading Full 15',
+            correctAnswers: {
+            q1: "FALSE",
+            q2: "FALSE",
+            q3: "TRUE",
+            q4: "NOT GIVEN",
+            q5: "TRUE",
+            q6: "TRUE",
+            q7: "FALSE",
+            q8: "102 million",
+            q9: "Sweden",
+            q10: "granite",
+            q11: "four",
+            q12: "forecourt",
+            q13: "harbour",
+            q14: "vi",
+            q15: "i",
+            q16: "vii",
+            q17: "iii",
+            q18: "ii",
+            q19: "iv",
+            q20: "D",
+            q21: "E",
+            q22: "A",
+            q23: "D",
+            q24: "failure",
+            q25: "disapproval",
+            q26: "short",
+            q27: "C",
+            q28: "D",
+            q29: "E",
+            q30: "F",
+            q31: "B",
+            q32: "A",
+            q33: "B",
+            q34: "A",
+            q35: "D",
+            q36: "B",
+            q37: "C",
+            q38: "alarm call",
+            q39: "grammatical items",
+            q40: "children"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-15.js?v=20260731-reading-clear-15-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-15-v1"></script>
+</body>
+
+
+
+</html>
+
+

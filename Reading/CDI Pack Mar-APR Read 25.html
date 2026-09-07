@@ -1,0 +1,662 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 25 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-1def1d0b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-25-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</strong></p>
+                    <h3>The mysteries of buried hoards</h3>
+                    <p>What exactly is a hoard? Broadly speaking, a hoard is a group of items kept together, perhaps gathered all at once or gradually over time. Even though a typical image of a hoard is a pot full of gold coins, it need not be a collection of metal objects. Hoards that have survived over the centuries are the ones which were either lost or deliberately thrown away. Many of those discovered have been split up, spent or melted down, leaving no traces behind.</p>
+                    <p>People have been finding hoards since the practice of burying them began. In the past, they were dug up by farmers while working the soil and clearing land, or were exposed by fallen trees or eroded riverbanks. Some of the places where hoards have been found seem to have held particular significance throughout the centuries. Bronze Age (around 3000 to 1200 BC) objects appear in later hoards, and the Romans in particular (Britain's rulers 43 to 410 AD) seem to have found ancient artefacts intriguing: they buried fossils and prehistoric weapons alongside their own items. In Britain's historic town centres today, the past is revealed when buildings are knocked down or rebuilt. In these urban areas, hoards are usually found by archaeologists excavating sites before they are redeveloped, whereas many recent discoveries in rural areas have been made by amateur metal-detector users.</p>
+                    <p>Each newly found hoard raises questions. Who did it belong to? Why was it not recovered? The actual contents of hoards have much to tell us when studied. The act of hiding a group of objects in a pot in the ground or behind a wall often keeps them in good condition, in contrast to single objects that have been accidentally dropped on the ground. These are often later damaged as fields are ploughed. Hoarded objects may be rare survivals: things that would normally be melted down for recycling or coins that would have been recalled by the authorities had they not been hidden.</p>
+                    <p>Archaeologists have come to realise, however, that the key to understanding a hoard is usually held not in the group of objects itself but in its context; that is, in the information held in the soil immediately around it, and evidence of human activity in the wider landscape. Where the precise locations of hoards have been investigated further, their stories are enriched with detail. Although metal items may be thrown up to the surface during farming activities, archaeological remains are often waiting to be discovered below ground.</p>
+                    <p>Why were hoards buried? Some smaller hoards were certainly accidental losses, or so-called 'purse hoards'. This may be the case for small groups of coins found together, sometimes still with the bags that had contained them. Larger hoards may have been emergency hoards hidden in times of conflict, when people who owned precious objects had to flee suddenly, or felt their homes were under threat.</p>
+                    <p>A combination of conflict and economic insecurity may explain why so many hoards were buried in late third-century Britain. Instability in the Roman empire led to rapid inflation and the official coinage decreased in silver content, to the point where the coins had little intrinsic value. When the coinage was eventually reformed, older coins may have been unacceptable for official payments, so coins were discarded, or hoards were not recovered.</p>
+                    <p>Concealing coins and valuable items would have been more common before ordinary people had access to banks. Savings would need to be kept secure and hidden, and many hoards clearly started off this way. The Beau Street hoard of over 17,500 coins found in Bath in 2007 is composed of eight lots of money that appear to have been sorted and then stored under the floor of a Roman building. The hoard could represent savings made by a wealthy individual or business, but the reason why the hoard was not recovered is uncertain. It is also important to remember that not all hoards found in the ground had been buried there: many hoards from Roman villas were hidden within walls that later collapsed.</p>
+                    <p>There are other reasons for the burial of hoards. A strong theme that runs through prehistory is the practice of 'deliberate deposition' - that is, putting something underground or under water, which was perhaps a way of releasing it to the gods. There are no records to allow us ever to know the exact significance of prehistoric rituals but some later offerings are accompanied by legible inscriptions. Such offerings may have been made on one occasion or built up over a long period of time.</p>
+                    <p>Seemingly unusual rites were often simply part of everyday life in the past. In Iron Age Britain (800 BC to the Roman invasion), for instance, chosen objects were carefully placed in pits and ditches in settlements as well as at shrines, possibly marking the beginning or end of use of a building, or defending significant boundaries. In some societies, a public destruction or donation of valuable items enhances the status of the person giving them away. These ceremonies may be carried out when there is a change of leader, to create social cohesion in a time of uncertainty or to mark significant events in the community - and some hoards may be the result of such ceremonies.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>Write the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>, in boxes 1-6.</p>
+                    <p><strong>A</strong> ambergris only &nbsp;&nbsp; <strong>B</strong> amber only &nbsp;&nbsp; <strong>C</strong> both ambergris and amber &nbsp;&nbsp; <strong>D</strong> neither ambergris nor amber</p>
+                    <table>
+                        <tr>
+                            <th style="width: 60%;">Statement</th>
+                            <th style="text-align: center;"><strong>A</strong></th>
+                            <th style="text-align: center;"><strong>B</strong></th>
+                            <th style="text-align: center;"><strong>C</strong></th>
+                            <th style="text-align: center;"><strong>D</strong></th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="1"></span>1 People typically think of a hoard as consisting of money.</td>
+                            <td><input type="radio" name="q1" value="A"></td>
+                            <td><input type="radio" name="q1" value="B"></td>
+                            <td><input type="radio" name="q1" value="C"></td>
+                            <td><input type="radio" name="q1" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="2"></span>2 The Romans took little interest in objects from earlier civilisations.</td>
+                            <td><input type="radio" name="q2" value="A"></td>
+                            <td><input type="radio" name="q2" value="B"></td>
+                            <td><input type="radio" name="q2" value="C"></td>
+                            <td><input type="radio" name="q2" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="3"></span>3 Nowadays, hoards in British towns and cities are generally discovered using metal detectors.</td>
+                            <td><input type="radio" name="q3" value="A"></td>
+                            <td><input type="radio" name="q3" value="B"></td>
+                            <td><input type="radio" name="q3" value="C"></td>
+                            <td><input type="radio" name="q3" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="4"></span>4 Items in hoards are often better preserved than single lost objects.</td>
+                            <td><input type="radio" name="q4" value="A"></td>
+                            <td><input type="radio" name="q4" value="B"></td>
+                            <td><input type="radio" name="q4" value="C"></td>
+                            <td><input type="radio" name="q4" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="5"></span>5 Archaeologists have realised that certain soil types cause less harm to buried objects.</td>
+                            <td><input type="radio" name="q5" value="A"></td>
+                            <td><input type="radio" name="q5" value="B"></td>
+                            <td><input type="radio" name="q5" value="C"></td>
+                            <td><input type="radio" name="q5" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="6"></span>6 The Beau Street hoard is the largest collection of coins discovered in the UK.</td>
+                            <td><input type="radio" name="q6" value="A"></td>
+                            <td><input type="radio" name="q6" value="B"></td>
+                            <td><input type="radio" name="q6" value="C"></td>
+                            <td><input type="radio" name="q6" value="D"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-13</div>
+                    <p>Complete the notes below. ONE WORD ONLY.</p>
+                    <p><strong>Why were hoards buried?</strong></p>
+                    <p>- accidental loss: in 'purse hoards', the <span class="question-anchor" data-question-anchor="7"></span><input type="text" name="q7" placeholder="7" class="input-field inline-input" aria-label="Question 7"> are often found alongside their contents</p>
+                    <p>- loss of value: coins in late third-century Britain had less and less <span class="question-anchor" data-question-anchor="8"></span><input type="text" name="q8" placeholder="8" class="input-field inline-input" aria-label="Question 8"> in them</p>
+                    <p>- greater security:</p>
+                    <p style="margin-left:22px;">- money found in Bath in 2007 may have been <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input" aria-label="Question 9"> before being hidden</p>
+                    <p style="margin-left:22px;">- hoards from Roman villas were often placed in <span class="question-anchor" data-question-anchor="10"></span><input type="text" name="q10" placeholder="10" class="input-field inline-input" aria-label="Question 10"></p>
+                    <p>- rituals:</p>
+                    <p style="margin-left:22px;">- 'deliberate deposition' in prehistory involved people placing objects in <span class="question-anchor" data-question-anchor="11"></span><input type="text" name="q11" placeholder="11" class="input-field inline-input" aria-label="Question 11"> or below the ground</p>
+                    <p style="margin-left:22px;">- offerings are sometimes found with <span class="question-anchor" data-question-anchor="12"></span><input type="text" name="q12" placeholder="12" class="input-field inline-input" aria-label="Question 12"></p>
+                    <p>- common rites:</p>
+                    <p style="margin-left:22px;">- in Iron Age Britain important <span class="question-anchor" data-question-anchor="13"></span><input type="text" name="q13" placeholder="13" class="input-field inline-input" aria-label="Question 13"> were protected by burying objects</p>
+                    <p style="margin-left:22px;">- ceremonies in which items were destroyed or donated sometimes indicated a new leader in a community.</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>Australia's camouflaged creatures</h3>
+                    <p>Many species of animal in Australia protect themselves by using camouflage - a way of 'hiding' by blending into the surroundings.</p>
+                    <p><strong>A</strong> Most species use camouflage to some extent. If they are convincing, they survive to pass their genes on to future generations. After generations of natural selection, animals can develop astonishingly complex camouflage techniques, manipulating shape, colour and movement. 'The principle of camouflage is to make it economically unviable for a predator to pursue a particular species of prey,' explains Professor Mark Elgar, of the University of Melbourne. 'Camouflage increases the search time and, as a consequence, the predator will simply target another species, either because it doesn't see the camouflaged individual or it just finds something more obvious to do.'</p>
+                    <p><strong>B</strong> The easiest way for an animal to disguise itself is to be invisible in its surroundings; to that end, stick and leaf insects have evolved complex camouflage to hide themselves from predators. Many have the texture of sticks or dry leaves, while others imitate living foliage, even the veins in a leaf. Some insects develop blemishes to match the spots caused by disease. A convincing appearance only works if its owner also acts the part, so during the day the creature using this type of camouflage keeps motionless, or sways like a dead leaf in the breeze. If disturbed, it falls to the ground and stays still. Entomologist Paul Zborowski, who has spent decades photographing inconspicuous creatures, rates the desert insects of Central Australia as the most convincingly disguised creatures he's seen. "It's an incredibly old habitat so the creatures have had a long time to adapt," Zborowski explains. Most of them behave like stones and don't move all day, feeding only at night.</p>
+                    <p><strong>C</strong> A tawny frogmouth sitting motionless on a stump also illustrates the importance of pairing a persuasive costume with behaviour. Professor Gisela Kaplan of the University of New England, in Australia, says the frogmouth's skill at camouflaging is learned behaviour. While adopting a pose may be a reflex of the bird, and can be observed in a hatchling's first week, the ability to choose a backdrop which matches its colouration does not develop for 4-6 months. When the chicks land they are usually highly conspicuous, and their parents try to signal to them to move to a safe location.</p>
+                    <p><strong>D</strong> Fixed camouflage is only good against a relatively unchanging environment, so some animals, such as the cuttlefish, have evolved an adaptable disguise. The cuttlefish can almost instantly change its colour, pattern and texture to match its surroundings, using specialised cells and muscles. On Queensland's reefs, scientists have been studying another ocean dweller that uses colour change, although not to blend into the surroundings. Dr Karen Cheney, from the University of Queensland, says the bluestiped fangblenny alters its colouration to mimic other species of fish, allowing it to travel with them and benefit from safety in numbers.</p>
+                    <p>Its most impressive impersonation is of the black-with-neon-blue striped cleaner wrasse which eats the parasites on larger fish. Not only does the fangblenny benefit from the reduced predation that comes with the wrasse's beneficial relationships with other fish, but the disguise also lets it get closer to prey. It darts out from the safety of the wrasse's cleaning station to nip at unsuspecting fish passing by but doesn't attack those coming to be cleaned.</p>
+                    <p><strong>E</strong> The most famous form of mimicry, however, is for defence, not attack. Batesian mimicry refers to animals that gain protection from predators by imitating a dangerous organism, often using conspicuous colours. The nineteenth-century naturalist Henry Bates first suggested this camouflage technique after noticing that several Amazonian butterfly species looked the same. The technique was later called after him.</p>
+                    <p>In Australian waters, the harmless harlequin snake eel sports the same black and white bandings as the highly toxic, yellow-lipped sea krait, ensuring no predator will attack. However, the success of Batesian mimicry depends on the ratio of mimics to originals. If a predator encounters too many that are edible, it will just assume none of the animals with those markings are dangerous, explains Martyn Robinson, an educational naturalist with the Australian Museum.</p>
+                    <p><strong>F</strong> An imitation of a more dangerous creature needn't be exact, just enough to make potential predators hesitate. The hawk moth caterpillar has markings resembling a snake's eyes on its abdomen. When confronted, the caterpillar pulls its head in and the 'eyes' flash open. Whether the potential predator thinks it has seen a snake, or is simply startled is unclear, but the outcome is that the caterpillar lives to see another day.</p>
+                    <p><strong>G</strong> In Queensland's tablelands, the chameleon gecko has another way of making predators hesitate. Its body is brown, but its tail is banded in black and white. Robinson explains that if attacked, the chameleon gecko will drop off its tail, which will wriggle around on the ground. Many lizards do this, but in the case of the chameleon gecko the tail bones actually rub against one another, so it squeaks. 'The predator is, of course, thoroughly absorbed by this black-and-white-striped, wriggling, squeaking thing on the ground, and the gecko can sneak away,' Robinson says. 'It's a one-time-only trick: the regrown tail is brown, the same as the gecko's body.' Such precise disguise and elaborate trickery illustrate the limitless possibilities of nature. But, as Robinson points out, only the most successful illusionists are here to tell the tale.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-18</div>
+                    <p>Reading Passage 2 has seven sections, <strong>A-G</strong>.</p>
+                    <p>Which section contains the following information?</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 a species that indicates to its young to move to a place where they are less visible</td>
+                            <td><input type="radio" name="q14" value="A"></td>
+                            <td><input type="radio" name="q14" value="B"></td>
+                            <td><input type="radio" name="q14" value="C"></td>
+                            <td><input type="radio" name="q14" value="D"></td>
+                            <td><input type="radio" name="q14" value="E"></td>
+                            <td><input type="radio" name="q14" value="F"></td>
+                            <td><input type="radio" name="q14" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 an instance where sound is used to help an animal escape</td>
+                            <td><input type="radio" name="q15" value="A"></td>
+                            <td><input type="radio" name="q15" value="B"></td>
+                            <td><input type="radio" name="q15" value="C"></td>
+                            <td><input type="radio" name="q15" value="D"></td>
+                            <td><input type="radio" name="q15" value="E"></td>
+                            <td><input type="radio" name="q15" value="F"></td>
+                            <td><input type="radio" name="q15" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 a creature that can use camouflage to match a range of different backgrounds</td>
+                            <td><input type="radio" name="q16" value="A"></td>
+                            <td><input type="radio" name="q16" value="B"></td>
+                            <td><input type="radio" name="q16" value="C"></td>
+                            <td><input type="radio" name="q16" value="D"></td>
+                            <td><input type="radio" name="q16" value="E"></td>
+                            <td><input type="radio" name="q16" value="F"></td>
+                            <td><input type="radio" name="q16" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 a claim that the majority of animals disguise themselves in some way</td>
+                            <td><input type="radio" name="q17" value="A"></td>
+                            <td><input type="radio" name="q17" value="B"></td>
+                            <td><input type="radio" name="q17" value="C"></td>
+                            <td><input type="radio" name="q17" value="D"></td>
+                            <td><input type="radio" name="q17" value="E"></td>
+                            <td><input type="radio" name="q17" value="F"></td>
+                            <td><input type="radio" name="q17" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="18"></span>18 examples of animals that use camouflage to look like plants</td>
+                            <td><input type="radio" name="q18" value="A"></td>
+                            <td><input type="radio" name="q18" value="B"></td>
+                            <td><input type="radio" name="q18" value="C"></td>
+                            <td><input type="radio" name="q18" value="D"></td>
+                            <td><input type="radio" name="q18" value="E"></td>
+                            <td><input type="radio" name="q18" value="F"></td>
+                            <td><input type="radio" name="q18" value="G"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 19-23</div>
+                    <p>Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, <strong>A-F</strong>.</p>
+                    <p><strong>List of people</strong></p>
+                    <p>A Professor Mark Elgar &nbsp;&nbsp; B Paul Zborowski &nbsp;&nbsp; C Professor Gisela Kaplan &nbsp;&nbsp; D Dr Karen Cheney &nbsp;&nbsp; E Henry Bates &nbsp;&nbsp; F Martyn Robinson</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="19"></span>19 one species has a camouflage tactic that is not present from birth</td>
+                            <td><input type="radio" name="q19" value="A"></td>
+                            <td><input type="radio" name="q19" value="B"></td>
+                            <td><input type="radio" name="q19" value="C"></td>
+                            <td><input type="radio" name="q19" value="D"></td>
+                            <td><input type="radio" name="q19" value="E"></td>
+                            <td><input type="radio" name="q19" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 Species that live in an ancient environment have become very effective at camouflaging themselves.</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                            <td><input type="radio" name="q20" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 Part of an animal is left behind to distract predators.</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                            <td><input type="radio" name="q21" value="E"></td>
+                            <td><input type="radio" name="q21" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="22"></span>22 If it takes too long to find one kind of prey, animals will look for an alternative source of food.</td>
+                            <td><input type="radio" name="q22" value="A"></td>
+                            <td><input type="radio" name="q22" value="B"></td>
+                            <td><input type="radio" name="q22" value="C"></td>
+                            <td><input type="radio" name="q22" value="D"></td>
+                            <td><input type="radio" name="q22" value="E"></td>
+                            <td><input type="radio" name="q22" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="23"></span>23 Camouflage can involve copying a threatening type of animals.</td>
+                            <td><input type="radio" name="q23" value="A"></td>
+                            <td><input type="radio" name="q23" value="B"></td>
+                            <td><input type="radio" name="q23" value="C"></td>
+                            <td><input type="radio" name="q23" value="D"></td>
+                            <td><input type="radio" name="q23" value="E"></td>
+                            <td><input type="radio" name="q23" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 24-26</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>The bluestriped fangblenny</strong></p>
+                    <p>Dr Karen Cheney studies the bluestriped fangblenny on <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field inline-input" aria-label="Question 24"> off Queensland's coast.</p>
+                    <p>She found that the fangblenny was able to make itself resemble other fish by adjusting its colouration. The fangblenny impersonates the striped cleaner wrasse, a fish that is welcomed by other species as it gets rid of their <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field inline-input" aria-label="Question 25">.</p>
+                    <p>The fangblenny can approach its <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field inline-input" aria-label="Question 26"> without drawing the attention of predators or disturbing the work of the striped cleaner wrasse.</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</strong></p>
+                    <h3>Why Good Food Tastes Good</h3>
+                    <p>As a professional food developer, Barbara Stuckey has to understand the how and why of taste in order to create new palate-pleasing food products. Her book, Taste What You're Missing, is the latest release in a recent spate of books on the multisensory perception of flavor. This new volume, though, is certainly targeted at a somewhat different audience from the others. It is part memoir, detailing the author's many years working in a major North American company focused on developing novel food and beverage products, and part self-help book, offering advice on how we could all improve our ability to taste.</p>
+                    <p>The author lays out her position at the start of the book when she states that she longed to read a straightforward book written for a lay person that could teach how to taste food without first having to teach the science. Consistent with this objective, complex terms that might prove difficult for a lay audience to understand, such as orthonasal and retronasal olfaction, are cleverly simplified as 'nose-smelling' and 'mouth-smelling', respectively. Stuckey also strenuously objects to the label 'supertaster'. This is the term used to describe those individuals (approximately one quarter to one third of the population) who exhibit an increased sensitivity to certain tastes (especially bitter tastes) and textures of food.</p>
+                    <p>The thorough research Stuckey conducted for this book also deserves commendation. The text includes numerous quotes from the interviews that she conducted with many of the best-known international figures from the world of flavor research. But Stuckey also does a great job of extending beyond what most academics are normally willing to say in print, but which may well turn out, ultimately, to be true. For example, she puts forward the provocative suggestion that there may be as many as 25 different basic tastes. While most researchers who are happy with the notion of a basic taste would agree with the inclusion of sweet, sour, salty, bitter, and nowadays probably also umami as basic tastes, it is interesting to realize that there are many other substances for which receptor sensitivity on the tongue has now been demonstrated.</p>
+                    <p>Stuckey includes a number of case studies in her book, including some fascinating material on the preparation, and consumption, of food and drink by those who have lost one of their senses, such as vision or hearing. Also, when she realized that there was a lack of relevant research regarding the question whether those who are deaf suffer from reduced flavor perception, she collected relevant data herself.</p>
+                    <p><em>umami</em>: a taste sensation that is meaty or savoury</p>
+                    <p>Stuckey's book is strongest in the numerous industry examples she provides from her work with a large food product development company in North America. Many of the cases she describes seem to hinge on trying to find the right balance of the basic tastes, and the right 'mouth-feel' for a particular food or beverage product. Indeed, one of the major themes that came out throughout the book was the importance of food consistency, and the temporal dynamics of changes in mouth-feel as we eat and drink. However, it is certainly an area of food science that is tricky to work on in an academic research setting. It is just much easier to change the color or aroma of a foodstuff, for example. However, on numerous occasions we see just how important the tactile attributes of various foods and beverages are to their success amongst consumers.</p>
+                    <p>In Taste What You're Missing, one certainly gets a real sense of the kinds of problems that she and her colleagues are faced with on a daily basis in a commercial setting. Many of the cases that are described in the book involve the use of one taste to mask, or unmask, another; for example, adding salt to a grapefruit or tonic water can, paradoxically, make it taste sweeter. However, where I thought that Stuckey was on weaker ground was when it came to the neuroscience of tasting. For example, in the brief section on 'The expert eater brain' she confidently asserts that, 'Not only do tasting experts use more areas of the brain, they can enjoy the process of tasting better than novices.' While the second part of the claim may be true, the former statement fails to do justice to the complexity of much of the widely acknowledged published data available.</p>
+                    <p>There were a number of other claims in the book that, intuitively at least, seem hard to swallow. For example, Stuckey contends that the human ear is so sensitive that people can tell the difference between hot and cold coffee simply by listening to the two being poured. Although not performed under strict laboratory conditions, Stuckey tested this on more than 500 people and 99% of them found it easy to distinguish between hot and cold water poured from the same tea kettle, from the same height, into the same teacup.</p>
+                    <p>What is striking about the quotes on the cover of Stuckey's book praising the contents is that they all come from people working in the food industry; that is, from chefs and those placed in cookery schools. Ultimately, I suspect this volume will have a much more enthusiastic reception there, and, as per the subtitle to her book, amongst 'passionate eaters' everywhere, than necessarily among those academics who conduct research on flavor perception and may be more critical.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>. Write the correct letter in boxes 27-32.</p>
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 What comparison does the writer make between Stuckey's book and other books on the same topic?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A They are not designed to appeal to the same people.</label>
+                            <label><input type="radio" name="q27" value="B"> B They both include details from inside the food industry.</label>
+                            <label><input type="radio" name="q27" value="C"> C They do not share the same conclusions regarding taste.</label>
+                            <label><input type="radio" name="q27" value="D"> D They both acknowledge work done by other expert researchers.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 Stuckey's main motivation for writing the book was to</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A expose the inside workings of the food industry.</label>
+                            <label><input type="radio" name="q28" value="B"> B explain what taste involves without too much theory.</label>
+                            <label><input type="radio" name="q28" value="C"> C show how taste preferences have changed.</label>
+                            <label><input type="radio" name="q28" value="D"> D demonstrate the importance of 'supertasters' in flavour research.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 What is the writer's opinion of Stuckey's treatment of the topic?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A It should be viewed as the authoritative text in the field of taste.</label>
+                            <label><input type="radio" name="q29" value="B"> B It focuses too much on Stuckey's personal experiences.</label>
+                            <label><input type="radio" name="q29" value="C"> C It fails to balance scientific explanation with practical application.</label>
+                            <label><input type="radio" name="q29" value="D"> D It makes the scientific language of taste accessible.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 In the third paragraph, what comment is made about Stuckey?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A She is unafraid of publishing her claims.</label>
+                            <label><input type="radio" name="q30" value="B"> B Her views are unoriginal.</label>
+                            <label><input type="radio" name="q30" value="C"> C Her research would be improved if she worked with others.</label>
+                            <label><input type="radio" name="q30" value="D"> D Her findings are based on her narrow professional experience.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 What did Stuckey learn from her experience working for a North American food company?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A Food temperature is more important than taste.</label>
+                            <label><input type="radio" name="q31" value="B"> B Taste and texture are important in product development.</label>
+                            <label><input type="radio" name="q31" value="C"> C Food appearance has a greater impact on consumers than taste.</label>
+                            <label><input type="radio" name="q31" value="D"> D Taste overrides the senses of sight and hearing.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="32">
+                        <div class="question-text">32 In the final paragraph, the writer says that Stuckey's book is unlikely to be well received by</div>
+                        <div class="options">
+                            <label><input type="radio" name="q32" value="A"> A chefs working in restaurants.</label>
+                            <label><input type="radio" name="q32" value="B"> B people who enjoy food.</label>
+                            <label><input type="radio" name="q32" value="C"> C scientists and academics.</label>
+                            <label><input type="radio" name="q32" value="D"> D teachers working in cookery schools.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-36</div>
+                    <p>In boxes 33-36, write <strong>YES</strong> if the statement agrees with the claims of the writer, <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 As part of her research, Stuckey consulted a wide range of experts.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="YES"> YES</label>
+                            <label><input type="radio" name="q33" value="NO"> NO</label>
+                            <label><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 Stuckey failed to incorporate her relevant experience working for a food company.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="YES"> YES</label>
+                            <label><input type="radio" name="q34" value="NO"> NO</label>
+                            <label><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 'Mouth-feel' is an area of food science that is difficult to assess and study.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="YES"> YES</label>
+                            <label><input type="radio" name="q35" value="NO"> NO</label>
+                            <label><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 It is unfortunate that profitability determines the taste of most commercially produced foods.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="YES"> YES</label>
+                            <label><input type="radio" name="q36" value="NO"> NO</label>
+                            <label><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Complete each sentence with the correct ending, <strong>A-F</strong>, below. Drag the correct ending into each box 37-40.</p>
+                    <div class="drag-options">
+                        <div class="drag-item" draggable="true" data-option="A" data-answer="A" data-label="can create an unexpected taste.">A can create an unexpected taste.</div>
+                        <div class="drag-item" draggable="true" data-option="B" data-answer="B" data-label="has recently been rejected by food manufacturers.">B has recently been rejected by food manufacturers.</div>
+                        <div class="drag-item" draggable="true" data-option="C" data-answer="C" data-label="was partly based on findings from Stuckey's own investigations.">C was partly based on findings from Stuckey's own investigations.</div>
+                        <div class="drag-item" draggable="true" data-option="D" data-answer="D" data-label="has limited impact on the profitability of a product.">D has limited impact on the profitability of a product.</div>
+                        <div class="drag-item" draggable="true" data-option="E" data-answer="E" data-label="is less difficult than changing its texture.">E is less difficult than changing its texture.</div>
+                        <div class="drag-item" draggable="true" data-option="F" data-answer="F" data-label="is a simplification of most research findings.">F is a simplification of most research findings.</div>
+                    </div>
+                    <p><span class="question-anchor" data-question-anchor="37"></span>37 Stuckey's account of the relationship between taste and sensory loss <span class="drop-zone" data-target="q37" data-placeholder="37">37</span><input type="text" name="q37" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="38"></span>38 Altering the appearance of a food item <span class="drop-zone" data-target="q38" data-placeholder="38">38</span><input type="text" name="q38" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="39"></span>39 The effect of combining certain ingredients in a product <span class="drop-zone" data-target="q39" data-placeholder="39">39</span><input type="text" name="q39" class="input-field" style="display:none;" aria-hidden="true"></p>
+                    <p><span class="question-anchor" data-question-anchor="40"></span>40 Claiming that tasting experts use more of their brains <span class="drop-zone" data-target="q40" data-placeholder="40">40</span><input type="text" name="q40" class="input-field" style="display:none;" aria-hidden="true"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_25',
+            label: 'Reading Full 25',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "FALSE",
+            q3: "FALSE",
+            q4: "TRUE",
+            q5: "NOT GIVEN",
+            q6: "NOT GIVEN",
+            q7: "BAGS",
+            q8: "SILVER",
+            q9: "SORTED",
+            q10: "WALLS",
+            q11: "WATER",
+            q12: "INSCRIPTIONS",
+            q13: "BOUNDARIES",
+            q14: "C",
+            q15: "G",
+            q16: "D",
+            q17: "A",
+            q18: "B",
+            q19: "C",
+            q20: "B",
+            q21: "F",
+            q22: "A",
+            q23: "E",
+            q24: "REEFS",
+            q25: "PARASITES",
+            q26: "PREY",
+            q27: "A",
+            q28: "B",
+            q29: "D",
+            q30: "A",
+            q31: "B",
+            q32: "C",
+            q33: "YES",
+            q34: "NO",
+            q35: "YES",
+            q36: "NOT GIVEN",
+            q37: "C",
+            q38: "E",
+            q39: "A",
+            q40: "F"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-25.js?v=20260731-reading-clear-25-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-25-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

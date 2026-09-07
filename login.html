@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to IELTS CDI Materials.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ieltsmaterials.uz/login">
+  <link rel="icon" type="image/png" href="/assets/brand-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Login | IELTS CDI Materials">
+  <meta property="og:description" content="Sign in to IELTS CDI Materials.">
+  <meta property="og:url" content="https://ieltsmaterials.uz/login">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Login | IELTS CDI Materials","url":"https://ieltsmaterials.uz/login","description":"Sign in to IELTS CDI Materials."}</script>
+  <title>Login | IELTS CDI Materials</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//ieltsmaterials.uz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"></noscript>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255, 173, 173, 0.34) 0%, transparent 31%),
+        radial-gradient(circle at 88% 10%, rgba(255, 210, 194, 0.3) 0%, transparent 31%),
+        linear-gradient(180deg, #fffafa 0%, #fff2f2 54%, #ffefef 100%);
+      color: #2f2323;
+      overflow-x: hidden;
+      background-attachment: fixed;
+      scroll-padding-top: 112px;
+    }
+    .shell {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 112px clamp(16px, 3.5vw, 48px) 0;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .topbar { --menu-accent: #cf3f3f; --menu-panel-bg: #fff5f6; --menu-panel-border: #e4aaaa; --menu-panel-text: #3a2627; --menu-drawer-bg: #ffeef0; --menu-drawer-text: #3a2426; --menu-drawer-subtext: #5a3a3d; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 12px; border: 1px solid #e4aaaa; border-bottom: 2px solid #cf3f3f; background: linear-gradient(135deg, #fff6f6 0%, #ffecec 52%, #fff2f2 100%); position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1200; }
+    .top-left { display: flex; align-items: center; gap: 112px; min-width: 0; flex: 1; }
+    .brand { display: flex; align-items: center; gap: 6px; text-decoration: none; }
+    .brand img { width: 74px; height: 46px; display: block; object-fit: contain; }
+    .brand-text { font-family: "Space Grotesk", sans-serif; font-size: 1.16rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; color: #b02f2f; text-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 2px 8px rgba(108, 35, 35, 0.2); white-space: nowrap; }
+    nav { display: flex; align-items: center; }
+    .menu-list { list-style: none; display: flex; align-items: center; gap: 16px; }
+    .menu-item { position: relative; }
+    .menu-link { text-decoration: none; color: #232c34; font-size: .68rem; font-weight: 700; display: inline-block; padding: 4px 0; }
+    .menu-link::after { content: " \25BE"; font-size: .54rem; color: #49535c; }
+    .submenu { list-style: none; position: absolute; top: 100%; left: 0; min-width: 250px; background: linear-gradient(180deg, #fff7f7 0%, #ffeaea 100%); border-top: 2px solid #cf3f3f; box-shadow: 0 14px 24px rgba(96, 35, 35, .16); display: none; z-index: 50; }
+    .submenu a { display: block; padding: 14px 16px; text-decoration: none; font-weight: 700; color: #1d2630; font-size: .92rem; }
+    .submenu a:hover { background: linear-gradient(180deg, #ffeeee 0%, #ffdede 100%); }
+    .menu-item:hover .submenu, .menu-item:focus-within .submenu { display: block; }
+    .top-actions { display: flex; align-items: center; gap: 8px; }
+    .divider { width: 1px; height: 20px; background: #a75b5b; opacity: .65; }
+    .search-btn, .menu-btn { border: 0; background: transparent; padding: 2px 4px; display: inline-flex; align-items: center; justify-content: center; }
+    .menu-btn { border: 1px solid #c77a7a; border-radius: 2px; padding: 6px; }
+    .icon { width: 16px; height: 16px; stroke: #2d353c; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    .login-wrap {
+      width: min(520px, 100%);
+      margin: auto;
+      background: linear-gradient(160deg, rgba(255,255,255,0.95), rgba(255,240,240,0.88));
+      border: 1px solid #e8b7b7;
+      border-radius: 16px;
+      box-shadow: 0 20px 34px rgba(112, 46, 46, 0.14);
+      padding: clamp(20px, 3vw, 34px);
+    }
+    .login-wrap h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      color: #9a2d2d;
+      margin-bottom: 8px;
+    }
+    .login-wrap p {
+      color: #5f4747;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .field { margin-bottom: 14px; }
+    .field label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #412e2e;
+      font-size: 0.95rem;
+    }
+    .field input {
+      width: 100%;
+      border: 1px solid #d9a9a9;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      color: #2f2323;
+      background: #fff;
+      outline: none;
+    }
+    .field input:focus {
+      border-color: #cf3f3f;
+      box-shadow: 0 0 0 3px rgba(207,63,63,0.14);
+    }
+    .password-wrap {
+      position: relative;
+    }
+    .password-wrap input {
+      padding-right: 50px;
+    }
+    .password-toggle {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      color: #8c6060;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 180ms ease, color 180ms ease;
+    }
+    .password-toggle:hover {
+      background: #fff1f1;
+      color: #b02f2f;
+    }
+    .password-toggle:focus-visible {
+      outline: 2px solid rgba(207, 63, 63, 0.35);
+      outline-offset: 2px;
+    }
+    .password-toggle svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .password-toggle .icon-eye-off {
+      display: none;
+    }
+    .password-toggle.is-visible .icon-eye {
+      display: none;
+    }
+    .password-toggle.is-visible .icon-eye-off {
+      display: block;
+    }
+    .field[hidden] { display: none; }
+    .login-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      margin: 8px 0 18px;
+      font-size: 0.92rem;
+    }
+    .login-row a { color: #9f2d2d; text-decoration: none; font-weight: 700; }
+    .login-row a:hover { text-decoration: underline; }
+    .btn-login {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #cf3f3f 0%, #a92828 100%);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 12px 16px;
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(140, 32, 32, 0.28);
+    }
+    .btn-login:hover { filter: brightness(1.03); }
+    .auth-actions {
+      display: block;
+      margin-top: 10px;
+    }
+    .btn-register {
+      border: 0;
+      background: transparent;
+      color: #9f2d2d;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .btn-register:hover { color: #7f2222; }
+    .auth-note {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #5f4747;
+      min-height: 1.2em;
+    }
+    body.login-blocked-lock {
+      overflow: hidden;
+    }
+    body.login-blocked-lock > *:not(.login-blocked-overlay) {
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .login-blocked-overlay {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(35, 14, 14, 0.58);
+      backdrop-filter: blur(5px);
+      z-index: 3000;
+    }
+    .login-blocked-overlay.is-visible {
+      display: flex;
+    }
+    .login-blocked-card {
+      width: min(540px, 100%);
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff2f2 100%);
+      border: 1px solid #efc3c3;
+      box-shadow: 0 30px 80px rgba(113, 33, 33, 0.26);
+      text-align: center;
+    }
+    .login-blocked-card h2 {
+      margin-bottom: 12px;
+      color: #8e2b2b;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+    }
+    .login-blocked-card p {
+      margin: 0;
+      color: #654949;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    .password-hint {
+      margin-top: 8px;
+      display: grid;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid rgba(231, 201, 201, 0.7);
+      border-radius: 10px;
+      background: rgba(255, 250, 250, 0.78);
+    }
+    .password-hint[hidden] {
+      display: none;
+    }
+    .password-strength {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+    }
+    .password-strength-bar {
+      height: 5px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #efe3e3 0%, #e3d3d3 100%);
+      border: 1px solid rgba(153, 111, 111, 0.12);
+      transform-origin: center;
+      transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .password-strength-bar.is-on {
+      transform: translateY(-0.5px) scaleY(1.04);
+      border-color: transparent;
+      box-shadow: 0 3px 8px rgba(120, 53, 53, 0.12);
+    }
+    .password-strength-bar.tone-red {
+      background: linear-gradient(90deg, #c62828 0%, #ef5350 100%);
+    }
+    .password-strength-bar.tone-amber {
+      background: linear-gradient(90deg, #d98208 0%, #f2b94b 100%);
+    }
+    .password-strength-bar.tone-green {
+      background: linear-gradient(90deg, #0d8a52 0%, #2ec97f 100%);
+    }
+    .password-strength-label {
+      color: #705757;
+      font-size: 0.76rem;
+      font-weight: 700;
+      line-height: 1.3;
+      transition: color 180ms ease;
+    }
+    .password-strength-label.tone-red {
+      color: #b13434;
+    }
+    .password-strength-label.tone-amber {
+      color: #a45d00;
+    }
+    .password-strength-label.tone-green {
+      color: #157446;
+    }
+    .auth-mode-note {
+      margin: 0 0 14px;
+      color: #7a5b5b;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .auth-secondary {
+      margin-top: 12px;
+      text-align: center;
+      color: #7a5b5b;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+    .auth-secondary[hidden] {
+      display: none;
+    }
+    .auth-secondary-text {
+      margin-right: 6px;
+    }
+    .auth-divider {
+      display: none;
+      align-items: center;
+      gap: 14px;
+      margin: 22px 0 14px;
+      color: #8d7a7a;
+      font-size: 0.84rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .auth-divider.is-visible {
+      display: flex;
+    }
+    .auth-divider::before,
+    .auth-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #e4d4d4;
+    }
+    .google-wrap {
+      display: none;
+      justify-content: center;
+    }
+    .google-wrap.is-visible {
+      display: flex;
+    }
+    .google-button-host {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .google-fallback {
+      display: none;
+      width: 100%;
+      border: 1px solid #d8c7c7;
+      border-radius: 12px;
+      background: #fff;
+      color: #413535;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 12px 14px;
+      cursor: pointer;
+    }
+    .google-fallback.is-visible {
+      display: block;
+    }
+
+    .site-footer {
+      margin: auto calc(-1 * clamp(16px, 3.5vw, 48px)) 0;
+      padding: 22px 20px;
+      border-top: 1px solid #334764;
+      background: linear-gradient(180deg, #1d2b42 0%, #1a2639 100%);
+      color: #97a8bd;
+      text-align: center;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 760px) {
+      .shell { padding-top: 104px; }
+      .top-left { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .brand img { width: 88px; height: auto; }
+      .brand-text { font-size: 0.98rem; }
+      .menu-list { gap: 12px; }
+      .menu-link::after { content: ""; }
+      .submenu { position: static; display: none; box-shadow: none; border: 1px solid #c5d3dc; margin-top: 6px; }
+      .login-wrap { border-radius: 12px; }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/header-enhance.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="top-left">
+        <a class="brand" href="/"><img src="assets/brand-logo.png" alt="IELTS CDI"><span class="brand-text">IELTS Materials</span></a>
+        <nav>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="/">Home</a>
+              <ul class="submenu"><li><a href="/">Homepage</a></li></ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/listening">Listening</a>
+              <ul class="submenu">
+                <li><a href="/listening#all">All</a></li>
+                <li><a href="/listening#section1">Section 1</a></li>
+                <li><a href="/listening#section2">Section 2</a></li>
+                <li><a href="/listening#section3">Section 3</a></li>
+                <li><a href="/listening#section4">Section 4</a></li>
+                <li><a href="/listening#full">Full Listening</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/reading">Reading</a>
+              <ul class="submenu">
+                <li><a href="/reading#all">All</a></li>
+                <li><a href="/reading#passage1">Passage 1</a></li>
+                <li><a href="/reading#passage2">Passage 2</a></li>
+                <li><a href="/reading#passage3">Passage 3</a></li>
+                <li><a href="/reading#full">Full Reading</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/speaking">Speaking</a>
+              <ul class="submenu">
+                <li><a href="/speaking">Part 1 Topics</a></li>
+                <li><a href="/speaking">Part 2 Cue Cards</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/writing">Writing</a>
+              <ul class="submenu">
+                <li><a href="/writing">Task 1 Reports</a></li>
+                <li><a href="/writing">Task 2 Essays</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/books">Books</a>
+              <ul class="submenu">
+                <li><a href="/books">IELTS Book List</a></li>
+                <li><a href="/books">Vocabulary Books</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/login">Login</a>
+              <ul class="submenu">
+                <li><a href="/login">Sign In</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top-actions" aria-label="Header actions">
+        <a class="login-quick" href="/login">Login</a>
+      </div>
+    </header>
+
+    <section class="login-wrap">
+      <h1 id="authTitle">Sign In</h1>
+      <p id="authSubtitle">Enter your Gmail and password to continue.</p>
+      <!-- No method/action: the form is JS-driven (the submit handler in this
+           page POSTs JSON to /api/login). If JS is unavailable, submitting
+           reloads the login page rather than dumping a raw JSON response. -->
+      <form id="authForm" novalidate>
+        <p class="auth-mode-note" id="authModeNote"></p>
+        <div class="field">
+          <label for="email">Gmail</label>
+          <input id="email" name="email" type="email" placeholder="your@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input id="password" name="password" type="password" placeholder="At least 8 characters" minlength="8" autocomplete="current-password" required aria-describedby="passwordHint">
+            <button class="password-toggle" id="passwordToggle" type="button" aria-label="Show password" aria-pressed="false">
+              <svg class="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6s10 6 10 6s-3.5 6-10 6S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <svg class="icon-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18"></path><path d="M10.6 10.6A3 3 0 0 0 12 15a3 3 0 0 0 2.4-4.4"></path><path d="M9.9 5.2A11.3 11.3 0 0 1 12 5c6.5 0 10 7 10 7a17.2 17.2 0 0 1-4 4.8"></path><path d="M6.2 6.2A16.5 16.5 0 0 0 2 12s3.5 7 10 7a10.7 10.7 0 0 0 5.1-1.2"></path></svg>
+            </button>
+          </div>
+        </div>
+        <div class="field" id="confirmField" hidden>
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="password-wrap">
+            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repeat your password" minlength="8" autocomplete="new-password">
+            <button class="password-toggle" id="confirmPasswordToggle" type="button" aria-label="Show confirm password" aria-pressed="false">
+              <svg class="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6s10 6 10 6s-3.5 6-10 6S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <svg class="icon-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18"></path><path d="M10.6 10.6A3 3 0 0 0 12 15a3 3 0 0 0 2.4-4.4"></path><path d="M9.9 5.2A11.3 11.3 0 0 1 12 5c6.5 0 10 7 10 7a17.2 17.2 0 0 1-4 4.8"></path><path d="M6.2 6.2A16.5 16.5 0 0 0 2 12s3.5 7 10 7a10.7 10.7 0 0 0 5.1-1.2"></path></svg>
+            </button>
+          </div>
+          <div class="password-hint" id="passwordHint" hidden>
+            <div class="password-strength" aria-hidden="true">
+              <span class="password-strength-bar" data-strength-bar="1"></span>
+              <span class="password-strength-bar" data-strength-bar="2"></span>
+              <span class="password-strength-bar" data-strength-bar="3"></span>
+              <span class="password-strength-bar" data-strength-bar="4"></span>
+              <span class="password-strength-bar" data-strength-bar="5"></span>
+            </div>
+            <div class="password-strength-label" id="passwordStrengthLabel">Use a stronger password.</div>
+          </div>
+        </div>
+        <div class="field" id="resetCodeField" hidden>
+          <label for="resetCode" id="resetCodeLabel">Reset Code</label>
+          <input id="resetCode" name="resetCode" type="text" inputmode="numeric" maxlength="6" placeholder="Enter the 6-digit code from email" autocomplete="one-time-code">
+        </div>
+        <div class="login-row">
+          <a href="#" id="forgotPasswordLink">Forgot password?</a>
+        </div>
+        <div class="auth-actions">
+          <button class="btn-login" id="signInBtn" type="submit">Sign In</button>
+        </div>
+        <p class="auth-secondary" id="authSecondary">
+          <span class="auth-secondary-text" id="authSecondaryText">Don't have an account?</span>
+          <button class="btn-register" id="registerBtn" type="button">Create one</button>
+        </p>
+        <div class="auth-divider" id="googleDivider">Or continue with</div>
+        <div class="google-wrap" id="googleWrap">
+          <div class="google-button-host" id="googleButton"></div>
+          <button class="google-fallback" id="googleFallbackBtn" type="button">Continue with Google</button>
+        </div>
+        <p class="auth-note" id="authNote" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer class="site-footer">© 2026 IELTS CDI Materials. All rights reserved.</footer>
+  </main>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="assets/header-enhance.js?v=20260522-safari-stable" defer></script>
+  <script src="assets/progress-tracker.js?v=20260727-premium-exit"></script>
+  <div class="login-blocked-overlay" id="loginBlockedOverlay" aria-hidden="true">
+    <div class="login-blocked-card" role="dialog" aria-modal="true" aria-labelledby="loginBlockedTitle">
+      <h2 id="loginBlockedTitle">Access Blocked</h2>
+      <p id="loginBlockedMessage">You are banned because this premium account was opened from a fourth device.</p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var AUTH_STORAGE_KEY = 'ielts_user_email';
+      var API_BASE = window.__API_BASE__ || '';
+      var googleClientId = '';
+      var googleInitialized = false;
+      var form = document.getElementById('authForm');
+      var authTitle = document.getElementById('authTitle');
+      var authSubtitle = document.getElementById('authSubtitle');
+      var emailInput = document.getElementById('email');
+      var passwordInput = document.getElementById('password');
+      var passwordToggle = document.getElementById('passwordToggle');
+      var confirmField = document.getElementById('confirmField');
+      var confirmPasswordInput = document.getElementById('confirmPassword');
+      var confirmPasswordToggle = document.getElementById('confirmPasswordToggle');
+      var passwordHint = document.getElementById('passwordHint');
+      var passwordStrengthLabel = document.getElementById('passwordStrengthLabel');
+      var resetCodeField = document.getElementById('resetCodeField');
+      var resetCodeLabel = document.getElementById('resetCodeLabel');
+      var resetCodeInput = document.getElementById('resetCode');
+      var signInBtn = document.getElementById('signInBtn');
+      var registerBtn = document.getElementById('registerBtn');
+      var authSecondary = document.getElementById('authSecondary');
+      var authSecondaryText = document.getElementById('authSecondaryText');
+      var googleDivider = document.getElementById('googleDivider');
+      var googleWrap = document.getElementById('googleWrap');
+      var googleButton = document.getElementById('googleButton');
+      var googleFallbackBtn = document.getElementById('googleFallbackBtn');
+      var forgotPasswordLink = document.getElementById('forgotPasswordLink');
+      var authModeNote = document.getElementById('authModeNote');
+      var note = document.getElementById('authNote');
+      var passwordStrengthBars = Array.prototype.slice.call(document.querySelectorAll('[data-strength-bar]'));
+      if (!form || !authTitle || !authSubtitle || !emailInput || !passwordInput || !passwordToggle || !confirmField || !confirmPasswordInput || !confirmPasswordToggle || !passwordHint || !passwordStrengthLabel || !passwordStrengthBars.length || !resetCodeField || !resetCodeLabel || !resetCodeInput || !signInBtn || !registerBtn || !authSecondary || !authSecondaryText || !googleDivider || !googleWrap || !googleButton || !googleFallbackBtn || !forgotPasswordLink || !authModeNote || !note) return;
+      var isRegisterMode = false;
+      var isResetMode = false;
+      var nextTarget = '';
+      try {
+        var nextValue = new URLSearchParams(window.location.search).get('next') || '';
+        var decodedNextValue = '';
+        if (nextValue) {
+          try {
+            decodedNextValue = decodeURIComponent(nextValue);
+          } catch (decodeError) {
+            decodedNextValue = nextValue;
+          }
+        }
+        if (decodedNextValue && /^[A-Za-z0-9][A-Za-z0-9%\-._\/ ]*(?:\?.*)?(?:#.*)?$/.test(decodedNextValue) && decodedNextValue.indexOf('//') === -1) {
+          nextTarget = decodedNextValue;
+        }
+      } catch (e) {}
+
+      function setNote(text, isError) {
+        note.textContent = text;
+        note.style.color = isError ? '#b02f2f' : '#2c6e3f';
+      }
+
+      function isBlockedDeviceMessage(message) {
+        var text = String(message || '').toLowerCase();
+        return text.indexOf('fourth device') !== -1 || text.indexOf('you are banned because this premium account was opened') !== -1;
+      }
+
+      function isInvalidCredentialsMessage(message) {
+        return String(message || '').trim().toLowerCase() === 'invalid email or password';
+      }
+
+      function showBlockedOverlay(message) {
+        var overlay = document.getElementById('loginBlockedOverlay');
+        var messageNode = document.getElementById('loginBlockedMessage');
+        if (messageNode) {
+          messageNode.textContent = message || 'You are banned because this premium account was opened from a fourth device.';
+        }
+        if (overlay) {
+          overlay.classList.add('is-visible');
+          overlay.setAttribute('aria-hidden', 'false');
+        }
+        document.body.classList.add('login-blocked-lock');
+      }
+
+      function setGoogleVisible(visible) {
+        googleDivider.classList.toggle('is-visible', visible);
+        googleWrap.classList.toggle('is-visible', visible);
+      }
+
+      function updateGoogleVisibility() {
+        setGoogleVisible(Boolean(googleClientId) && !isRegisterMode && !isResetMode);
+      }
+
+      function getPayload() {
+        return {
+          email: emailInput.value.trim(),
+          password: passwordInput.value,
+          confirmPassword: confirmPasswordInput.value,
+          code: resetCodeInput.value.trim()
+        };
+      }
+
+      function getPasswordStrengthError(password) {
+        if (password.length < 8) {
+          return 'Password must be at least 8 characters.';
+        }
+        return '';
+      }
+
+      function getPasswordStrengthState(password) {
+        if (password.length === 0) {
+          return { count: 0, tone: 'red', label: '' };
+        }
+        if (password.length < 8) {
+          return { count: 2, tone: 'red', label: 'Too short.' };
+        }
+        return { count: 5, tone: 'green', label: 'Good to go.' };
+      }
+
+      function refreshPasswordStrength() {
+        var state = getPasswordStrengthState(passwordInput.value);
+        passwordStrengthBars.forEach(function (bar, index) {
+          var active = index < state.count;
+          bar.classList.toggle('is-on', active);
+          bar.classList.toggle('tone-red', active && state.tone === 'red');
+          bar.classList.toggle('tone-amber', active && state.tone === 'amber');
+          bar.classList.toggle('tone-green', active && state.tone === 'green');
+        });
+        passwordStrengthLabel.textContent = state.label;
+        passwordStrengthLabel.classList.toggle('tone-red', state.count > 0 && state.tone === 'red');
+        passwordStrengthLabel.classList.toggle('tone-amber', state.count > 0 && state.tone === 'amber');
+        passwordStrengthLabel.classList.toggle('tone-green', state.count > 0 && state.tone === 'green');
+      }
+
+      function updateAuthHeader(title, subtitle) {
+        authTitle.textContent = title || '';
+        authSubtitle.textContent = subtitle || '';
+      }
+
+      function bindPasswordToggle(input, toggle, showLabel, hideLabel) {
+        toggle.addEventListener('click', function () {
+          var visible = input.type === 'text';
+          input.type = visible ? 'password' : 'text';
+          toggle.classList.toggle('is-visible', !visible);
+          toggle.setAttribute('aria-pressed', String(!visible));
+          toggle.setAttribute('aria-label', !visible ? hideLabel : showLabel);
+        });
+      }
+
+      function setRegisterMode(on) {
+        isRegisterMode = on;
+        isResetMode = false;
+        confirmField.hidden = !on;
+        confirmPasswordInput.required = on;
+        passwordHint.hidden = !on;
+        refreshPasswordStrength();
+        resetCodeField.hidden = true;
+        resetCodeInput.required = false;
+        signInBtn.textContent = on ? 'Create Account' : 'Sign In';
+        signInBtn.hidden = false;
+        updateAuthHeader(
+          on ? 'Create Account' : 'Sign In',
+          on ? 'Create your account with your Gmail and password.' : 'Enter your Gmail and password to continue.'
+        );
+        authSecondary.hidden = false;
+        authSecondaryText.textContent = on ? 'Already have an account?' : "Don't have an account?";
+        registerBtn.textContent = on ? 'Sign in' : 'Create one';
+        forgotPasswordLink.hidden = on;
+        authModeNote.textContent = '';
+        updateGoogleVisibility();
+      }
+
+      function setResetMode(on) {
+        isResetMode = on;
+        isRegisterMode = false;
+        confirmField.hidden = !on;
+        confirmPasswordInput.required = on;
+        passwordHint.hidden = false;
+        refreshPasswordStrength();
+        resetCodeField.hidden = !on;
+        resetCodeLabel.textContent = 'Reset Code';
+        resetCodeInput.placeholder = 'Enter the 6-digit code from email';
+        resetCodeInput.required = on;
+        signInBtn.hidden = false;
+        signInBtn.textContent = on ? 'Reset Password' : 'Sign In';
+        updateAuthHeader(
+          on ? 'Reset Password' : 'Sign In',
+          on ? 'Enter your Gmail and set a new password.' : 'Enter your Gmail and password to continue.'
+        );
+        authSecondary.hidden = on ? true : false;
+        authSecondaryText.textContent = "Don't have an account?";
+        registerBtn.textContent = 'Create one';
+        forgotPasswordLink.hidden = false;
+        authModeNote.textContent = on
+          ? 'Enter your email, request a code, then enter the code from your email and set a new password.'
+          : '';
+        updateGoogleVisibility();
+      }
+
+      function setBusy(isBusy) {
+        signInBtn.disabled = isBusy;
+        registerBtn.disabled = isBusy;
+        googleFallbackBtn.disabled = isBusy;
+        signInBtn.style.opacity = isBusy ? '0.7' : '1';
+        registerBtn.style.opacity = isBusy ? '0.7' : '1';
+        googleFallbackBtn.style.opacity = isBusy ? '0.7' : '1';
+      }
+
+      function setSignedIn(email) {
+        try {
+          localStorage.setItem(AUTH_STORAGE_KEY, String(email || '').trim().toLowerCase());
+        } catch (e) {}
+        var quick = document.querySelector('.topbar .login-quick');
+        if (quick) {
+          quick.textContent = 'Account';
+          quick.title = String(email || '').trim();
+        }
+        try {
+          window.dispatchEvent(new CustomEvent('ielts:auth-changed', { detail: { email: email || '' } }));
+        } catch (e) {}
+      }
+
+      function getDeviceKey() {
+        try {
+          var existing = localStorage.getItem('ielts_device_key');
+          if (existing) {
+            document.cookie = 'ielts_device_key=' + encodeURIComponent(String(existing)) + '; Path=/; Max-Age=31536000; SameSite=Lax';
+            return String(existing);
+          }
+          var created;
+          if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+            created = 'dev_' + crypto.randomUUID().replace(/-/g, '');
+          } else if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+            var buf = new Uint8Array(16);
+            crypto.getRandomValues(buf);
+            created = 'dev_' + Array.from(buf).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+          } else {
+            created = 'dev_' + Date.now().toString(36) + Math.random().toString(36).slice(2);
+          }
+          localStorage.setItem('ielts_device_key', created);
+          document.cookie = 'ielts_device_key=' + encodeURIComponent(created) + '; Path=/; Max-Age=31536000; SameSite=Lax';
+          return created;
+        } catch (e) {
+          return '';
+        }
+      }
+
+      function isNetworkFailureMessage(message) {
+        var text = String(message || '').trim().toLowerCase();
+        return text === 'load failed' || text.indexOf('failed to fetch') !== -1 || text.indexOf('networkerror') !== -1;
+      }
+
+      function getNetworkFailureMessage() {
+        return 'Unable to reach the server right now. Please try again.';
+      }
+
+      function delay(ms) {
+        return new Promise(function (resolve) {
+          window.setTimeout(resolve, ms);
+        });
+      }
+
+      async function fetchWithRetry(endpoint, options) {
+        var attempts = 0;
+        var lastError = null;
+        while (attempts < 2) {
+          attempts += 1;
+          try {
+            return await fetch(endpoint, options);
+          } catch (err) {
+            lastError = err;
+            if (!isNetworkFailureMessage(err && err.message) || attempts >= 2) {
+              throw err;
+            }
+            await delay(450);
+          }
+        }
+        throw lastError || new Error(getNetworkFailureMessage());
+      }
+
+      async function postJSON(path, body) {
+        var endpoint = API_BASE ? (API_BASE.replace(/\/$/, '') + path) : path;
+        var headers = { 'Content-Type': 'application/json' };
+        var deviceKey = getDeviceKey();
+        if (deviceKey) headers['X-Device-Key'] = deviceKey;
+        var res;
+        try {
+          res = await fetchWithRetry(endpoint, {
+            method: 'POST',
+            headers: headers,
+            credentials: 'same-origin',
+            cache: 'no-store',
+            body: JSON.stringify(body)
+          });
+        } catch (err) {
+          if (isNetworkFailureMessage(err && err.message)) {
+            throw new Error(getNetworkFailureMessage());
+          }
+          throw err;
+        }
+        var raw = '';
+        try { raw = await res.text(); } catch (e) {}
+        var data = {};
+        if (raw) {
+          try { data = JSON.parse(raw); } catch (e) {}
+        }
+        if (!res.ok) {
+          if (res.status === 404 && !data.error) {
+            throw new Error('API endpoint not found. Deploy backend routes: /api/login and /api/register.');
+          }
+          var error = new Error(data.error || ('Request failed (HTTP ' + res.status + ')'));
+          error.status = res.status;
+          error.data = data;
+          throw error;
+        }
+        return data;
+      }
+
+      async function doLogin(payload) {
+        setNote('', false);
+        if (!payload.email || !payload.password) {
+          setNote('Enter both email and password.', true);
+          return;
+        }
+        setBusy(true);
+        try {
+          await postJSON('/api/login', { email: payload.email, password: payload.password });
+          setSignedIn(payload.email);
+          if (window.IELTSProgress) {
+            try {
+              await window.IELTSProgress.initSync();
+              if (typeof window.IELTSProgress.trackLogin === 'function') {
+                window.IELTSProgress.trackLogin();
+              }
+            } catch (e) {}
+          }
+          setTimeout(function () { window.location.href = nextTarget || 'account.html'; }, 500);
+        } catch (err) {
+          var message = String(err.message || '');
+          if (isNetworkFailureMessage(message)) {
+            setNote(getNetworkFailureMessage(), true);
+          } else if (isBlockedDeviceMessage(message)) {
+            showBlockedOverlay(message);
+          } else if ((err.data && err.data.registered === false) || err.status === 404) {
+            confirmPasswordInput.value = '';
+            setRegisterMode(true);
+            setNote('This email is not registered yet. Confirm your password to create an account.', true);
+            window.setTimeout(function () {
+              confirmPasswordInput.focus();
+            }, 0);
+          } else if (isInvalidCredentialsMessage(message)) {
+            setRegisterMode(false);
+            setNote('This email is already registered. Please check your password or reset it.', true);
+          } else {
+            setNote(message || 'Login failed.', true);
+          }
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      async function doRegister(payload) {
+        setNote('', false);
+        if (!payload.email || !payload.password) {
+          setNote('Enter both email and password.', true);
+          return;
+        }
+        var passwordError = getPasswordStrengthError(payload.password);
+        if (passwordError) {
+          setNote(passwordError, true);
+          return;
+        }
+        if (payload.password !== payload.confirmPassword) {
+          setNote('Passwords do not match.', true);
+          return;
+        }
+        setBusy(true);
+        try {
+          await postJSON('/api/register', { email: payload.email, password: payload.password });
+          confirmPasswordInput.value = '';
+          passwordInput.value = '';
+          setRegisterMode(false);
+          setNote('', false);
+        } catch (err) {
+          if (isNetworkFailureMessage(err && err.message)) {
+            setNote(getNetworkFailureMessage(), true);
+          } else {
+            setNote(err.message || 'Registration failed.', true);
+          }
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      async function requestResetCode(payload) {
+        setNote('', false);
+        if (!payload.email) {
+          setNote('Enter your email first.', true);
+          return;
+        }
+        setBusy(true);
+        try {
+          await postJSON('/api/forgot-password', { email: payload.email });
+          setResetMode(true);
+          setNote('If the email exists, a 6-digit reset code has been sent.', false);
+        } catch (err) {
+          setNote(err.message || 'Unable to send reset code.', true);
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      async function doResetPassword(payload) {
+        setNote('', false);
+        if (!payload.email) {
+          setNote('Enter your email first.', true);
+          return;
+        }
+        if (!payload.code) {
+          setNote('Enter the reset code from your email.', true);
+          return;
+        }
+        var passwordError = getPasswordStrengthError(payload.password);
+        if (passwordError) {
+          setNote(passwordError, true);
+          return;
+        }
+        if (payload.password !== payload.confirmPassword) {
+          setNote('Passwords do not match.', true);
+          return;
+        }
+        setBusy(true);
+        try {
+          await postJSON('/api/reset-password', {
+            email: payload.email,
+            code: payload.code,
+            password: payload.password
+          });
+          passwordInput.value = '';
+          confirmPasswordInput.value = '';
+          resetCodeInput.value = '';
+          setResetMode(false);
+          setNote('', false);
+        } catch (err) {
+          setNote(err.message || 'Password reset failed.', true);
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      async function doGoogleLogin(credential) {
+        if (!credential) {
+          setNote('Google sign-in did not return a credential.', true);
+          return;
+        }
+        setNote('', false);
+        setBusy(true);
+        try {
+          var data = await postJSON('/api/google-login', { credential: credential });
+          setSignedIn(data.email || '');
+          if (window.IELTSProgress) {
+            try {
+              await window.IELTSProgress.initSync();
+              if (typeof window.IELTSProgress.trackLogin === 'function') {
+                window.IELTSProgress.trackLogin();
+              }
+            } catch (e) {}
+          }
+          setTimeout(function () { window.location.href = nextTarget || 'account.html'; }, 500);
+        } catch (err) {
+          var message = String(err.message || 'Google sign-in failed.');
+          if (isBlockedDeviceMessage(message)) {
+            showBlockedOverlay(message);
+          } else {
+            setNote(message, true);
+          }
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      function maybeInitGoogle() {
+        if (googleInitialized || !googleClientId || !window.google || !window.google.accounts || !window.google.accounts.id) {
+          return;
+        }
+        googleInitialized = true;
+        google.accounts.id.initialize({
+          client_id: googleClientId,
+          callback: function (response) {
+            doGoogleLogin(response && response.credential ? response.credential : '');
+          }
+        });
+        google.accounts.id.renderButton(googleButton, {
+          theme: 'outline',
+          size: 'large',
+          text: 'continue_with',
+          shape: 'rectangular',
+          width: Math.min(Math.max(googleButton.offsetWidth || 320, 260), 380)
+        });
+        googleFallbackBtn.classList.remove('is-visible');
+      }
+
+      async function loadAuthConfig() {
+        try {
+          var endpoint = API_BASE ? (API_BASE.replace(/\/$/, '') + '/api/auth-config') : '/api/auth-config';
+          var res = await fetch(endpoint, { method: 'GET' });
+          var data = await res.json();
+          if (data && data.googleEnabled && data.googleClientId) {
+            googleClientId = String(data.googleClientId);
+            updateGoogleVisibility();
+            maybeInitGoogle();
+            setTimeout(maybeInitGoogle, 250);
+          } else {
+            setGoogleVisible(false);
+          }
+        } catch (e) {
+          setGoogleVisible(false);
+        }
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var payload = getPayload();
+        if (isResetMode) {
+          await doResetPassword(payload);
+          return;
+        }
+        if (isRegisterMode) {
+          await doRegister(payload);
+          return;
+        }
+        await doLogin(payload);
+      });
+
+      registerBtn.addEventListener('click', async function () {
+        if (!isRegisterMode) {
+          confirmPasswordInput.value = '';
+          setRegisterMode(true);
+          setNote('', false);
+          return;
+        }
+        confirmPasswordInput.value = '';
+        setRegisterMode(false);
+        setNote('', false);
+      });
+
+      forgotPasswordLink.addEventListener('click', async function (e) {
+        e.preventDefault();
+        if (isResetMode) {
+          setResetMode(false);
+          setNote('', false);
+          return;
+        }
+        await requestResetCode(getPayload());
+      });
+
+      googleFallbackBtn.addEventListener('click', function () {
+        if (window.google && window.google.accounts && window.google.accounts.id) {
+          google.accounts.id.prompt();
+          return;
+        }
+        setNote('Google sign-in is still loading. Please try again.', true);
+      });
+
+      bindPasswordToggle(passwordInput, passwordToggle, 'Show password', 'Hide password');
+      bindPasswordToggle(confirmPasswordInput, confirmPasswordToggle, 'Show confirm password', 'Hide confirm password');
+      passwordInput.addEventListener('input', refreshPasswordStrength);
+      refreshPasswordStrength();
+      setRegisterMode(false);
+      loadAuthConfig();
+      window.addEventListener('load', maybeInitGoogle);
+    })();
+  </script>
+</body>
+</html>

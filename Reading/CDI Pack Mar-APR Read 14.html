@@ -1,0 +1,685 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 14 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-5a093929.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-14-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1.</strong></p>
+                    <h3>Steam across the water</h3>
+                    <p><em>A look at the early history of boats powered by steam</em></p>
+                    <p>During the 1600s, very early in the development of steam engines, inventive spirits like the Frenchman Denis Papin dreamed of - and experimented with - boats driven by steam, rather than by the wind or human effort, but many decades passed before those visions became reality.</p>
+                    <p>Englishman Jonathan Hulls took out patents on a steamboat in 1736, but it was to be driven by a Newcomen engine, which was heavy and therefore inefficient, and would never be a success. In 1763, William Henry, an American. put a Watt steam engine in a boat, but it sank. Nearly 20 years later, in the 1780s, a steam-powered paddle-wheeler managed to last fifteen minutes against the current on the River Saone in France, but lacked the endurance for longer trips. Developments elsewhere included a boat driven by a steam-powered water-jet and able to do six kilometres per hour. However, all these steamboats were either too slow or too expensive to run. For example, American John Fitch successfully trialled his first steamboat in 1787, but although he tried a number of designs and solved many technical challenges - one of his boats could even travel at 13 km/h - he could never convince sceptics that steamboats would pay.</p>
+                    <p>The 19th century came before real success could be claimed. In Scotland in 1802, Lord Dundas launched the steamboat Charlotte Dundas, which was driven by a paddle wheel and had an improved engine designed by William Symington. Barges, some weighing as much as 70 tonnes. were towed by this steamboat 30 kilometres along the Forth and Clyde Canal to Glasgow, Scotland's second city. Soon after, success came to American Robert Fulton, whose countrymen called him 'the father of the steamboat'. Inspired by news of the Charlotte Dundas, Fulton ran steamboat trials on the River Seine, in an attempt to attract French support for his submarine Nautilus. He later imported a Boulton-Watt steam engine and built a boat to use it in. In 1807, the Clermont began a scheduled passenger steamboat service between New York and Albany, 250 kilometres up the Hudson River, taking 30 hours for the trip. Within few years, steamers were running on the St Lawrence River in Canada and would soon appear on other rivers and lakes, including the Mississippi River, a most famous venue for the paddle-wheelers.</p>
+                    <p>Back in Scotland, Fulton's ideas inspired Henry Bell, who launched his Comet in 1812 on the Clyde between Glasgow and Greenock. Inside a decade, dozens of steamboats were to be seen on the rivers, lochs and canals of Scotland, carrying cargo and occasionally passengers. The age of steamboats had come.</p>
+                    <p>Once steamboats were carrying passengers and industrial goods along the inland waterways and sheltered coastlines of Europe, North America and elsewhere, the challenge became to send steamboats onto the open ocean, such as across the Atlantic Ocean, between Europe and the US. Travelling under steam power alone would require engines to use less coal so the ship could stay at sea for several weeks. In order to provide a reliable service, it was also necessary to replace paddle wheels as a source of power with something less affected by the rolling of the ship.</p>
+                    <p>Without waiting for such breakthroughs, crossings under a combination of steam and sail got underway in 1819 with the American ship Savannah. A regular service took another two decades and introduced the famous name of Cunard. Securing the British government contract for the mail service across the Atlantic, Samuel Cunard established a shipping line in 1840, soon carrying passengers as well, and offering guaranteed sailing dates. Cunard's first ships used a sail-steam combination, but the era of the passenger liner, using steam alone, was getting close.</p>
+                    <p>When it came to building the ships, the versatile British engineer Isambard Kingdom Brunel set the pace. Brunel, brilliant and daring, had already built the Great Western Railway. He created ever bigger ships - faster, more luxurious and comfortable for passengers. The Great Western, launched in 1838, was 70 metres long and crossed from Bristol to New York in just fifteen days. The largest paddle steamer ever built was Brunel's Great Eastern. Ultimately too expensive to run as a passenger ship, it was leased to lay the first submarine telegraph cable from Europe to America. His 1853 Great Britain, nearly 100 metres long and luxuriously appointed, was the first ocean-going steamship made of iron, and the first to use the underwater screw propeller for powering movement in place of paddle wheels. The idea of the screw had been around since the experiments of the American John Stevens in 1803, but only in 1838 did a large steamer use one, the riverboat Archimedes built by Francis Pettit Smith. Later ships had twin screws for reliability.</p>
+                    <p>In many modern ships, steam turbines have replaced engines with pistons, with fuel oil instead of coal to fire the boilers. Diesel engines keep others moving. The largest ships afloat now would dwarf Brunel's Great Eastern (launched in 1860); the Atlantic can be crossed in only four days. But in whatever form, the ever-evolving descendants of the original visions of Denis Papin and Robert Fulton continue to travel the seas in vast numbers.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-6</div>
+                    <p>Complete the table below.</p>
+                    <p>Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 20%;">Date</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr>
+                            <td>1600s</td>
+                            <td>Early inventors like Papin started to develop boats that relied on steam instead of manpower or wind.</td>
+                        </tr>
+                        <tr>
+                            <td>1730s</td>
+                            <td><span class="question-anchor" data-question-anchor="1"></span>The engine of Jonathan Hulls' steamboat was <input type="text" name="q1" placeholder="1" class="input-field"> due to its weight.</td>
+                        </tr>
+                        <tr>
+                            <td>1780s</td>
+                            <td><span class="question-anchor" data-question-anchor="2"></span>A French paddle steamer did not have the <input type="text" name="q2" placeholder="2" class="input-field"> to keep going for more than a quarter of an hour.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="question-anchor" data-question-anchor="3"></span>John Fitch overcame a number of <input type="text" name="q3" placeholder="3" class="input-field"> problems with his steamboat designs.</td>
+                        </tr>
+                        <tr>
+                            <td>Early 1800s</td>
+                            <td>The Charlotte Dundas pulled barges to Glasgow.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="question-anchor" data-question-anchor="4"></span>In France, Fulton used a steamboat to try to raise interest in a <input type="text" name="q4" placeholder="4" class="input-field"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="question-anchor" data-question-anchor="5"></span>Passengers in the US began to be carried regularly by a steamboat called the <input type="text" name="q5" placeholder="5" class="input-field"></td>
+                        </tr>
+                        <tr>
+                            <td>1812 onwards</td>
+                            <td><span class="question-anchor" data-question-anchor="6"></span>In Scotland, steamboats transported some passengers, but mostly <input type="text" name="q6" placeholder="6" class="input-field"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 7-13</div>
+                    <p>Choose <strong>TRUE</strong> if the statement agrees with the information given in the text, <strong>FALSE</strong> if the statement contradicts the information, or <strong>NOT GIVEN</strong> if there is no information on this.</p>
+
+                    <div class="question" data-question="7">
+                        <div class="question-text">7 For steamboats to cross the Atlantic Ocean, engines which used fuel economically were needed.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q7" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q7" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 Using paddle wheels guaranteed reliability on ocean crossings.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="9">
+                        <div class="question-text">9 The Savannah was much faster than a regular paddle steamer.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q9" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q9" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="10">
+                        <div class="question-text">10 Brunel preferred designing railways to steamships.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q10" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="11">
+                        <div class="question-text">11 The Great Britain had more than one innovative feature.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q11" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="12">
+                        <div class="question-text">12 The design of the riverboat Archimedes was widely admired.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q12" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="13">
+                        <div class="question-text">13 Modern ships that cross the Atlantic use the same energy source as the early steamships.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q13" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q13" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2.</strong></p>
+                    <h3>IQ Scores</h3>
+                    <p><em>How they are changing and what the changes mean</em></p>
+
+                    <p><strong>A</strong></p>
+                    <p>Studies from numerous countries suggest that IQ scores have been rising fast since at least the 1950s - enough to mean that someone with an IQ classed as average at that time could be labelled as having low Intelligence today. However, psychologists disagree about what the upward trend in scores really means. Some researchers argue that people are not getting more intelligent overall, but just getting better at a particular sort of problem solving. Others say they have found echoes of rising IQ scores in 'real world' measures of intelligence. To confuse things still more, there are hints that the trend may be about to grind to a halt.</p>
+
+                    <p><strong>B</strong></p>
+                    <p>James Flynn, a professor of political science, first showed that IQ scores were rising in the mid-1980s, and became famous after others dubbed the pattern he had observed the 'Flynn effect. In a landmark paper he made detailed comparisons across fourteen countries of trends in the results of tests that measure reasoning power.</p>
+
+                    <p>Overall, these showed a real growth in scores of up to 25 points in a generation. To find out more, Flynn went on to look at scores for each type of reasoning that IQ tests set out to measure, such as verbal, numerical and visuo-spatial. This last test category usually includes 'Raven's matrices' - sequential patterns with one piece missing. The candidate has to choose, from a set of alternatives, which shape to put in the empty space. When Flynn took a closer look at the scores, the pattern was clear. The strongest gains in almost every case were on Raven's matrices and similar tests, while verbal and arithmetical scores showed more modest rises. Since presenting his original paper, Flynn has looked at data from further countries and found the same upward trend, with the same skills responsible for most of the increase.</p>
+
+                    <p><strong>C</strong></p>
+                    <p>Flynn feels that his eponymous effect is meaningful, but does not interpret it as evidence that people are becoming cleverer. Our grandparents were not retarded and we are not geniuses, he says. More likely we have simply developed the skills and habits of mind that make us better at solving abstract problems, and - just as importantly - we take such problems seriously. Flynn believes that demands of visuo-spatial abilities have grown because of TV, computers and cars, and also that in societies where intelligence has become something people focus on excessively abstract problem-solving skills develop faster than other skills.</p>
+
+                    <p><strong>D</strong></p>
+                    <p>Others have different views about what might account for the increase in IQ scores. John Rust of the University of London suggests that it is not just an increase in visuo-spatial activities that is pushing up IQ scores. He believes that there are several factors, including the fact that, in more complex societies, people have to think harder to find solutions to problems they face. He also points out that if just one mind grasps a new concept, such as Einstein and the theory of relativity, it may then be easier for society in general to think in a more complex way. Others, such as experimental psychologist Robert Howard, argue that overall Intelligence really has risen, helped by better nutrition, smaller families, wider access to education and other environmental changes.</p>
+
+                    <p><strong>E</strong></p>
+                    <p>Howard's latest research has sent him on a different line of enquiry. Controversially, he now believes that the rise in IQ scores might have peaked in industrialised countries. To support this view, he cites data from Denmark. The Danish military still summons virtually all young men before a draft board to identify who is suitable to do military service. Since 1957, all 17-year-olds there have taken exactly the same qualifying IQ tests - including ones similar to Raven's matrices. Candidates must also be able to answer verbal questions such as 'Sun is to day as Moon is to ?', and number-series questions such as '2, 3, 5, 8, ?'. Results in these tests have been carefully analysed by Thomas Teasdale, a neuropsychologist. He found that during the 1960s and '70s, scores showed gains on a scale similar to those of other countries, but by the 1990s the rate of Improvement had slowed right down to about one IQ point over the decade. Furthermore, the scores were improving only on the visuo-spatial questions; verbal and numerical performance was flattening out. Most intriguingly, however, scores from 1999 onwards show an overall downturn. One explanation might be that there is some absolute ceiling to people's abilities to perform these tasks, no matter how much the prevailing culture encourages them. However, as Teasdale points out, if such a ceiling had been reached, the test results should show scores pushing against it rather than actually falling.</p>
+
+                    <p><strong>F</strong></p>
+                    <p>Flynn is keeping a close eye on the findings, but is not jumping to conclusions until data from other countries is available. However, he does wonder whether the conditions leading to dramatic improvements in mental ability disappear as societies become more prosperous. He points out that in human history, prosperity often led to decadence, and argues that the case of ancient Rome can be viewed as an illustration of this.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 2 -->
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-18</div>
+                    <p>Look at the following statements (Questions 14-18) and the list of people.</p>
+                    <p>Match each statement with the correct person, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+                    <p><strong>List of people</strong></p>
+                    <p><strong> NB you may use each person more than once</strong></p>
+                    <p>A. James Flynn &nbsp; &nbsp; B. John Rust &nbsp; &nbsp; C. Robert Howard &nbsp; &nbsp; D. Thomas Teasdale</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="14"></span>14 Modern technology has influenced some aspects of human intelligence.</td>
+                            <td><input type="radio" name="q14" value="A"></td>
+                            <td><input type="radio" name="q14" value="B"></td>
+                            <td><input type="radio" name="q14" value="C"></td>
+                            <td><input type="radio" name="q14" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="15"></span>15 IQ scores may not have attained their natural limit.</td>
+                            <td><input type="radio" name="q15" value="A"></td>
+                            <td><input type="radio" name="q15" value="B"></td>
+                            <td><input type="radio" name="q15" value="C"></td>
+                            <td><input type="radio" name="q15" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="16"></span>16 Improved diet has a positive effect on mental powers.</td>
+                            <td><input type="radio" name="q16" value="A"></td>
+                            <td><input type="radio" name="q16" value="B"></td>
+                            <td><input type="radio" name="q16" value="C"></td>
+                            <td><input type="radio" name="q16" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="17"></span>17 Exceptional individuals can have an impact on collective intelligence.</td>
+                            <td><input type="radio" name="q17" value="A"></td>
+                            <td><input type="radio" name="q17" value="B"></td>
+                            <td><input type="radio" name="q17" value="C"></td>
+                            <td><input type="radio" name="q17" value="D"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="18"></span>18 As societies become more sophisticated the need for problem-solving skills increases.</td>
+                            <td><input type="radio" name="q18" value="A"></td>
+                            <td><input type="radio" name="q18" value="B"></td>
+                            <td><input type="radio" name="q18" value="C"></td>
+                            <td><input type="radio" name="q18" value="D"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 19-22</div>
+                    <p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p>
+                    <p>Which paragraph contains the following information?</p>
+                    <p>Choose the correct letter, <strong>A-F</strong>, in boxes 19-22.</p>
+                    <table>
+                        <tr>
+                            <th style="width: 45%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="19"></span>19 an account of a selection procedure involving a particular group of people</td>
+                            <td><input type="radio" name="q19" value="A"></td>
+                            <td><input type="radio" name="q19" value="B"></td>
+                            <td><input type="radio" name="q19" value="C"></td>
+                            <td><input type="radio" name="q19" value="D"></td>
+                            <td><input type="radio" name="q19" value="E"></td>
+                            <td><input type="radio" name="q19" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 a description of one component of a visuo-spatial test</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                            <td><input type="radio" name="q20" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 an overview of the different interpretations of IQ score trends</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                            <td><input type="radio" name="q21" value="E"></td>
+                            <td><input type="radio" name="q21" value="F"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="22"></span>22 an example of the negative effect affluence may have on IQ trends</td>
+                            <td><input type="radio" name="q22" value="A"></td>
+                            <td><input type="radio" name="q22" value="B"></td>
+                            <td><input type="radio" name="q22" value="C"></td>
+                            <td><input type="radio" name="q22" value="D"></td>
+                            <td><input type="radio" name="q22" value="E"></td>
+                            <td><input type="radio" name="q22" value="F"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 23-26</div>
+                    <p>Complete the summary below.</p>
+                    <p>Write <strong>NO MORE THAN TWO WORDS AND/OR A NUMBER</strong> from the passage for each answer.</p>
+
+                    <p><strong>James Flynn</strong></p>
+                    <p><span class="question-anchor" data-question-anchor="23"></span>During the <input type="text" name="q23" placeholder="23" class="input-field" style="width: 140px;">, James Flynn conducted research showing that IQ scores were increasing. Flynn then analysed specific kinds of reasoning ability separately. He found that tests called <span class="question-anchor" data-question-anchor="24"></span><input type="text" name="q24" placeholder="24" class="input-field" style="width: 140px;">, which measured visuo-spatial skills, accounted for the biggest score increases, whereas scores in numerical and <span class="question-anchor" data-question-anchor="25"></span><input type="text" name="q25" placeholder="25" class="input-field" style="width: 140px;"> components rose less steeply. Results from research in other <span class="question-anchor" data-question-anchor="26"></span><input type="text" name="q26" placeholder="26" class="input-field" style="width: 140px;">, which Flynn has examined more recently, are consistent with his earlier findings.</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+                <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3.</strong></p>
+                    <h3>Practical Learning in the Classroom</h3>
+                    <p><em>A teacher describes a case study involving middle school students and traditional earthen architecture</em></p>
+
+                    <p><strong>A</strong> The way we think about architecture in schools has come along way. Once, studying architecture in the art class meant learning to appreciate great buildings art-history style, through slide presentations. In recent years, though, the American Institute of Architects has fostered the idea that the process of architectural design, not just the appreciation of architecture, is a beneficial aspect of the art curriculum (Sadler, 1989).</p>
+
+                    <p><strong>B</strong> The value of architectural design is that it is the concrete training ground for a broadly applicable creative process. Architectural training can help people design structures to meet needs. It can help farmers design crop rotations to meet needs. Furthermore, it provides hands-on experiences that reinforce learning in various other subjects, from math to social studies.</p>
+
+                    <p><strong>C</strong> In the ongoing dialogue about architecture in the middle school art curriculum, many believe students should actually build the structures they design in their courses. Although the technology and expertise required of modern architecture can prohibit students from actually realizing their designs, traditional architectural materials and methods remain quite accessible to the art classroom. Traditional architectural materials, such as earth, clay and straw, are cheap, easy to work with and readily available. Further, when students participate in the construction or preservation of a traditional earthen structure in their local community, they engage in a form of experiential learning and they are motivated to invest in the project. This is evident in a case study of an adobe* conservation project with middle school students in the town of Zuni, New Mexico, in the Southwestern United States.</p>
+
+                    <p><strong>D</strong> Traditional architecture reaches back to preindustrial America, when local resources and cultures produced structures in styles unique to each region. In New Mexico, examples of hand-built earthen structures still abound. The region has seen some decline in traditional architecture as industrialization has brought new building codes and materials; however, the traditional, non-industrial home, either preserved from earlier generations or newly built, remains in use. Traditional building materials and the land that supplies them are so accessible that handcrafting a house still remains feasible.</p>
+
+                    <p><strong>E</strong> Thus, with no technical expertise and little cost, middle school students can participate in the construction or preservation of a traditional earthen structure. During the project, a student will get to know the materials, understand the chemistry, solve problems, work with classmates, and exercise muscles. The student can apply knowledge of design principles and the creative process while participating in a cooperative effort. But most significantly, this type of project-based activity motivates students to invest intellectually and emotionally in the outcome.</p>
+
+                    <p><strong>F</strong> The town of Zuni, where I taught art, was surrounded by adobe construction, new and old. Behind our main high school building there was a one-room adobe structure which was once used for teaching. Now it served as a place where old furniture could be kept. I sent my class home with the oral history assignment to ask their family, friends and neighbors questions to find out about that building. From their research we compiled a sketchy history: it began as a kindergarten classroom; it later became an art classroom; now it was full of broken desks.</p>
+
+                    <p><strong>G</strong> The building's design kept it relatively warm in the winter, even without heating, due to its broad south face, and it stayed cool in the summer due to its spacious, ventilated attic and massive earthen walls. Because of this, my students agreed it was worth preserving and were enthusiastic about helping. Preservationist Shalie Gasper arrived in the fall to help with an assessment of the building's needs. She recommended replacing the stucco** that encased the original adobe walls with a traditional mud plaster. She showed us where to find local supplies of sand and clay soil for the plaster mix. We began work on the stucco removal in late fall. The next spring the students were ready to replaster. To teach the traditional skills, Gasper and other local specialists joined us. They gave my class three full mornings of intensive workshops on history and preservation as well as mud-plastering technique, and the building got a new coat of traditional mud plaster.</p>
+
+                    <p><strong>H</strong> Small design-and-build projects such as this can be seen through to the finish when working with earth in the art curriculum. A simple landscape feature such as a wall, entryway, or arch can draw students into important aspects of design that involve the structure's interaction with people, the surrounding landscape, and natural elements. The same project may provide an opportunity to focus on the chemistry of soil or the structural dynamics of construction. Design goals might guide students to involve traditional forms, consider formal aspects, or integrate math skills of measuring and estimating.</p>
+
+                    <p><strong>I</strong> During our traditional architecture unit, the students realized that something old and almost forgotten is valuable and worth preserving. Many others in the community and around the country share this renewal of interest in traditional earthen technologies. It is the connection to a cultural heritage that interests some; the quality of living within massive, natural walls that attracts others; or for others, the sustainability of the process and the minimal energy spent in construction. The value of adobe in general is becoming more and more known, but little has been said about its value in the art curriculum until now. This experiment in adobe conservation with middle school students convinced me that traditional architecture deserves a place in the regular curriculum.</p>
+
+                    <p><small>*adobe: a mixture of mud and straw that is made into bricks and used for building</small></p>
+                    <p><small>**stucco: fine plaster used for coating wall surfaces</small></p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 3 -->
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-31</div>
+                    <p>Choose the correct answer.</p>
+
+                    <div class="question" data-question="27">
+                        <div class="question-text">27 What education initiative does the American Institute of Architects currently promote?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q27" value="A"> A multimedia presentation of information in classrooms</label>
+                            <label><input type="radio" name="q27" value="B"> B the study of monumental buildings throughout history</label>
+                            <label><input type="radio" name="q27" value="C"> C the practice of designing architectural structures</label>
+                            <label><input type="radio" name="q27" value="D"> D processes to add more art classes in schools</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="28">
+                        <div class="question-text">28 In the third paragraph, what problem with teaching architecture on art courses does the writer note?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q28" value="A"> A Technology-based courses are unavailable.</label>
+                            <label><input type="radio" name="q28" value="B"> B Students cannot always construct their designs.</label>
+                            <label><input type="radio" name="q28" value="C"> C The curriculum is too traditional.</label>
+                            <label><input type="radio" name="q28" value="D"> D Students lack motivation.</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="29">
+                        <div class="question-text">29 What is the greatest benefit for students that the writer sees in a traditional architecture project?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q29" value="A"> A personal connection to the end result</label>
+                            <label><input type="radio" name="q29" value="B"> B participation in a cooperative project</label>
+                            <label><input type="radio" name="q29" value="C"> C building of problem-solving skills</label>
+                            <label><input type="radio" name="q29" value="D"> D conservation of a traditional building</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="30">
+                        <div class="question-text">30 What is the purpose of the eighth paragraph?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q30" value="A"> A to explain why it is important that projects be small</label>
+                            <label><input type="radio" name="q30" value="B"> B to outline the multiple skills involved in one project</label>
+                            <label><input type="radio" name="q30" value="C"> C to discuss strategies for connecting content areas</label>
+                            <label><input type="radio" name="q30" value="D"> D to propose suggestions for traditional earth projects</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="31">
+                        <div class="question-text">31 What does the writer say about traditional building and the general population?</div>
+                        <div class="options">
+                            <label><input type="radio" name="q31" value="A"> A Earthen architecture is becoming a profitable business.</label>
+                            <label><input type="radio" name="q31" value="B"> B Earthen architecture is less feasible in some areas of the country.</label>
+                            <label><input type="radio" name="q31" value="C"> C Interest in earthen architecture varies from region to region.</label>
+                            <label><input type="radio" name="q31" value="D"> D People are attracted to earthen architecture for different reasons.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 32-36</div>
+                    <p>Complete the summary using the list of words, <strong>A-H</strong>, below.</p>
+                    <div class="drag-options" style="margin-top:10px;" aria-label="Answer bank for Questions 32-36">
+                        <div class="drag-item" draggable="true" data-option="za-a" data-answer="A" data-label="experts">A experts</div>
+                        <div class="drag-item" draggable="true" data-option="za-b" data-answer="B" data-label="location">B location</div>
+                        <div class="drag-item" draggable="true" data-option="za-c" data-answer="C" data-label="design">C design</div>
+                        <div class="drag-item" draggable="true" data-option="za-d" data-answer="D" data-label="storage">D storage</div>
+                        <div class="drag-item" draggable="true" data-option="za-e" data-answer="E" data-label="students">E students</div>
+                        <div class="drag-item" draggable="true" data-option="za-f" data-answer="F" data-label="resources">F resources</div>
+                        <div class="drag-item" draggable="true" data-option="za-g" data-answer="G" data-label="training">G training</div>
+                        <div class="drag-item" draggable="true" data-option="za-h" data-answer="H" data-label="businesses">H businesses</div>
+                    </div>
+                    <p><strong>The Zuni earthen architecture project</strong></p>
+                    <p>The students in Zuni chose to renovate an old building which was being used for <span class="question-anchor" data-question-anchor="32"></span><span class="drop-zone" data-target="q32" data-placeholder="32">32</span><input type="text" name="q32" class="input-field" style="display:none;" aria-hidden="true">. They came to an agreement that the building was worthy of rehabilitation based on its functional <span class="question-anchor" data-question-anchor="33"></span><span class="drop-zone" data-target="q33" data-placeholder="33">33</span><input type="text" name="q33" class="input-field" style="display:none;" aria-hidden="true">. At the beginning of the project, students were given the task to discover the history of the building through interviews with local residents. Through the course of the project, they learned where to locate <span class="question-anchor" data-question-anchor="34"></span><span class="drop-zone" data-target="q34" data-placeholder="34">34</span><input type="text" name="q34" class="input-field" style="display:none;" aria-hidden="true"> for the project. They also worked closely with a number of <span class="question-anchor" data-question-anchor="35"></span><span class="drop-zone" data-target="q35" data-placeholder="35">35</span><input type="text" name="q35" class="input-field" style="display:none;" aria-hidden="true"> on each step of the project. During the project, students were also given <span class="question-anchor" data-question-anchor="36"></span><span class="drop-zone" data-target="q36" data-placeholder="36">36</span><input type="text" name="q36" class="input-field" style="display:none;" aria-hidden="true"> to build useful skills.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+
+                    <div class="question" data-question="37">
+                        <div class="question-text">37 The price of materials is one drawback to using traditional architecture.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q37" value="YES"> YES</label>
+                            <label><input type="radio" name="q37" value="NO"> NO</label>
+                            <label><input type="radio" name="q37" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="38">
+                        <div class="question-text">38 Earthen structures can easily be built in all regions of the U.S.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q38" value="YES"> YES</label>
+                            <label><input type="radio" name="q38" value="NO"> NO</label>
+                            <label><input type="radio" name="q38" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="39">
+                        <div class="question-text">39 Working with a traditional earthen structure can have physical benefits.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q39" value="YES"> YES</label>
+                            <label><input type="radio" name="q39" value="NO"> NO</label>
+                            <label><input type="radio" name="q39" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="40">
+                        <div class="question-text">40 A traditional architecture curriculum is best suited to middle school level students.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q40" value="YES"> YES</label>
+                            <label><input type="radio" name="q40" value="NO"> NO</label>
+                            <label><input type="radio" name="q40" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_14',
+            label: 'Reading Full 14',
+            correctAnswers: {
+            q1: "INEFFICIENT",
+            q2: "ENDURANCE",
+            q3: "TECHNICAL",
+            q4: "SUBMARINE",
+            q5: "CLERMONT",
+            q6: "CARGO",
+            q7: "TRUE",
+            q8: "FALSE",
+            q9: "NOT GIVEN",
+            q10: "NOT GIVEN",
+            q11: "TRUE",
+            q12: "NOT GIVEN",
+            q13: "FALSE",
+            q14: "A",
+            q15: "D",
+            q16: "C",
+            q17: "B",
+            q18: "B",
+            q19: "E",
+            q20: "B",
+            q21: "A",
+            q22: "F",
+            q23: "MID-1980S",
+            q24: "RAVEN'S MATRICES",
+            q25: "VERBAL",
+            q26: "COUNTRIES",
+            q27: "C",
+            q28: "B",
+            q29: "A",
+            q30: "B",
+            q31: "D",
+            q32: "D",
+            q33: "C",
+            q34: "F",
+            q35: "A",
+            q36: "G",
+            q37: "NO",
+            q38: "NOT GIVEN",
+            q39: "YES",
+            q40: "NOT GIVEN"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-14.js?v=20260731-reading-clear-14-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-14-v1"></script>
+</body>
+
+
+
+</html>
+
+
+
+

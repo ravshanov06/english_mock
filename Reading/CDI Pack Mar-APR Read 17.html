@@ -1,0 +1,605 @@
+
+
+
+<!--made by IELTSwithJurabek-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek--><!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Full 17 | IELTS Reading Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/reading-full-test-3cc44e7b.css">
+    <link rel="stylesheet" href="../assets/reading-answer-explanations.css?v=20260731-reading-clear-17-v1">
+</head>
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+<!--made by IELTSwithJurabek-->
+
+<!--made by IELTSwithJurabek-->
+
+
+<body>
+    <div class="watermark-layer" aria-hidden="true">IELTSwithJurabek</div>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <h1 class="start-title" style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:100px; height:100px; object-fit:contain; border-radius:4px;">
+                IELTSwithJurabek
+            </h1>
+            <p class="start-subtitle">Are you ready to begin your reading test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Test Container -->
+    <div class="container hidden" id="testContainer">
+        <!-- Header -->
+        <header>
+            <div class="brand" onclick="window.open('https://t.me/IELTSwithJurabek','_blank')" style="cursor:pointer;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo">
+                <span class="passage-info">IELTSwithJurabek</span>
+            </div>
+            <span id="headerPassageTitle" style="display:none;"></span>
+            <a href="../reading.html" class="header-menu-link" id="submittedMenuLink" style="display:none;">Back to Menu</a>
+
+            <!-- Timer centered -->
+            <div class="timer" id="globalTimer" style="margin-left:auto; margin-right:auto;">
+                <i class="fas fa-clock"></i>
+                <span>60:00</span>
+            </div>
+
+            <!-- Promo + controls -->
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="Logo" style="width:24px; height:24px; object-fit:contain; margin-right:6px;">
+                <div class="logo-area" onclick="window.open('https://t.me/IELTSwithJurabek', '_blank')">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>IELTSwithJurabek</span>
+                </div>
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Floating Highlight Buttons -->
+        <button id="highlight-btn" type="button">Highlight</button>
+        <button id="remove-highlight-btn" type="button">Remove Highlight</button>
+        <div id="selection-menu" class="selection-menu" style="display:none;"></div>
+
+                        <div class="main-content">
+            <!-- ===== PASSAGE 1 ===== -->
+            <div class="passage-container" id="p1_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 1</h2>
+                <div class="passage-content" id="passage1">
+                    <p><strong>Answer Questions 1-13, which are based on Reading Passage 1</strong></p>
+                    <h3>The Seven Voyages of Admiral Zheng He</h3>
+                    <p>Admiral Zheng He, who was born around 1371 and died in 1433, was perhaps the most famous Chinese explorer of all time. Between 1405 and 1433, he was sent by the Ming dynasty emperor, Yongle, on a series of seven missions to increase trade and open diplomatic relations with other nations. Yongle was keen to extend Chinese influence after a period of relative isolation from the rest of the world.</p>
+                    <p>In 1403, Yongle decided to begin the construction of a massive fleet of ships, including 62 'treasure ships', which were the largest vessels in the world at that time. They may have been up to 55 metres in length and 8.5 metres wide, although their exact dimensions are disputed by historians. Many were equipped with technological innovations such as magnetic compasses to aid navigation. The emperor put Zheng in command of the fleet.</p>
+                    <p>The ships were loaded with a wide range of luxury goods, notably objects made of gold and silver, as well as tea, porcelain and fine textiles. All these were intended to impress foreign rulers and persuade them to show their appreciation of the Ming dynasty's riches.</p>
+                    <p>The first three voyages, which took place between 1405 and 1411, followed trade routes that were already well-established. On his first voyage, Zheng sailed his fleet of about 200 ships down the coast of Vietnam, stopped at Sumatra and the island of Java, and then visited the Malay Archipelago before crossing the Indian Ocean. Wherever he landed, Zheng's most important task was to lead a delegation to the local ruler, to whom he presented letters from the Chinese emperor making it clear that China had only peaceful intentions. As well as presenting gifts, Zheng would invite the ruler to send an ambassador to the court of the Chinese emperor, or even suggest the ruler should visit China himself. Many took up the offer, though occasionally Zheng's fleet was met with a hostile reaction. In Sri Lanka, for example, the king even sent men to rob his ships. Sometimes Zheng was able to achieve other objectives apart from trade and diplomacy. For example, on his way home after his first expedition, Zheng pursued and captured a notorious pirate who had caused trouble in parts of Southeast Asia. This enhanced the reputation of the admiral and helped confirm China's status as a major regional power.</p>
+                    <p>Zheng He's fourth voyage, between 1413 and 1415, proved to be the most important yet. Zheng visited India again, then crossed the Arabian Sea to the island of Hormuz in the Persian Gulf, where no Chinese ship had ever landed before. His fleet then pushed on further, visiting Aden and travelling along the Red Sea to Jeddah, in what is now Saudi Arabia. There is surviving documentary evidence to indicate that 19 foreign rulers sent gifts and diplomatic missions to the emperor as a result of this fourth voyage. Zheng liked to bring back exotic creatures such as lions, zebras and rhinos, as these greatly impressed everyone.</p>
+                    <p>At the imperial court, a giraffe presented to him during the fourth voyage attracted great interest back home, mainly because it closely resembled a mythical being regarded by the Chinese as a symbol of good fortune.</p>
+                    <p>On the fifth and sixth voyages, between 1417 and 1422, Zheng went even further, calling at several major ports on the coast of Africa. From here Zheng brought back spices that were unfamiliar to the Chinese. When Zheng returned from his sixth voyage in 1422, he found that the emperor Yongle had suspended all further voyages. This was partly due to concerns about the cost. The new emperor who succeeded Yongle in 1424 believed that the priority should be to spend money on strengthening China's defences against the increased threat of invasion. However, Zheng was sent on one last voyage in 1431, though the fleet did not venture any further than India. Historians believe that Zheng died during this trip, probably in 1433.</p>
+                    <p>Unfortunately, the official imperial records of his voyages were destroyed and so there remains some uncertainty over many of the details, but it is undoubtedly true that Zheng's voyages expanded China's political influence in neighbouring regions of Asia. His travels did not bring immediate success in terms of expanding trade with Asia and beyond, but the exotic goods and the knowledge he brought back home created a greater curiosity about foreign customs. The Chinese also gained an understanding of just how prosperous several neighbouring countries were, and the extent of their wealth. This greatly increased emigration by the Chinese to Southeast Asia. In the long term, those who settled abroad contributed to China's greater involvement in the global economy.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+
+            <!-- Questions for Passage 1 -->
+            <div class="questions-container" id="p1_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 1-13</h2>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 1-8</div>
+                    <p>Do the following statements agree with the information given in Reading Passage 1?</p>
+                    <p>In boxes 1-8, write <strong>TRUE</strong> if the statement agrees, <strong>FALSE</strong> if it contradicts, or <strong>NOT GIVEN</strong> if there is no information.</p>
+                    <div class="question" data-question="1">
+                        <div class="question-text">1 <span class="question-anchor" data-question-anchor="1"></span>The aim of Zheng's voyages was to develop new commercial and political contacts with other countries.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q1" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="2">
+                        <div class="question-text">2 <span class="question-anchor" data-question-anchor="2"></span>Historians agree on the size of the treasure ships used in Zheng's voyages.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q2" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="3">
+                        <div class="question-text">3 <span class="question-anchor" data-question-anchor="3"></span>The goods on Zheng's ships were of higher quality than anything produced in the countries which he visited.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q3" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="4">
+                        <div class="question-text">4 <span class="question-anchor" data-question-anchor="4"></span>Zheng's priority when he arrived in each country was to deliver a message from the Chinese emperor.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q4" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="5">
+                        <div class="question-text">5 <span class="question-anchor" data-question-anchor="5"></span>Zheng gave his ships extra protection after an attempt was made to steal goods from them in Sri Lanka.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q5" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="6">
+                        <div class="question-text">6 <span class="question-anchor" data-question-anchor="6"></span>Zheng's fleet was the first one from China to reach Hormuz.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q6" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q6" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="7">
+                        <div class="question-text">7 <span class="question-anchor" data-question-anchor="7"></span>Zheng had to ask for the emperor's permission to continue the voyage along the Red Sea to Jeddah.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q7" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q7" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="8">
+                        <div class="question-text">8 <span class="question-anchor" data-question-anchor="8"></span>Zheng generally avoided bringing animals back to China.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="TRUE"> TRUE</label>
+                            <label><input type="radio" name="q8" value="FALSE"> FALSE</label>
+                            <label><input type="radio" name="q8" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="question-group-title">Questions 9-13</div>
+                    <p>Complete the notes below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                    <p><strong>Zheng He's voyages</strong></p>
+                    <p>1417 to 1433</p>
+                    <p>- on fifth and sixth voyages</p>
+                    <p>- Zheng went as far as Africa</p>
+                    <p>- new <span class="question-anchor" data-question-anchor="9"></span><input type="text" name="q9" placeholder="9" class="input-field inline-input"></p>
+                    <p>- after 1422:</p>
+                    <p>- Emperor Yongle cancelled trips because of their <span class="question-anchor" data-question-anchor="10"></span><input type="text" name="q10" placeholder="10" class="input-field inline-input"></p>
+                    <p>- final voyage:</p>
+                    <p>- Zheng didn't sail beyond <span class="question-anchor" data-question-anchor="11"></span><input type="text" name="q11" placeholder="11" class="input-field inline-input"></p>
+                    <p><strong>the impact of the voyages</strong></p>
+                    <p>- initial failure to increase <span class="question-anchor" data-question-anchor="12"></span><input type="text" name="q12" placeholder="12" class="input-field inline-input"></p>
+                    <p>- Chinese interest in knowing more about the customs of other countries</p>
+                    <p>- realisation that some of the nations that Zheng visited had great <span class="question-anchor" data-question-anchor="13"></span><input type="text" name="q13" placeholder="13" class="input-field inline-input"></p>
+                    <p>- more emigration from China</p>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 2 ===== -->
+            <div class="passage-container hidden" id="p2_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 2</h2>
+                <div class="passage-content" id="passage2">
+                    <p><strong>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 on pages 7 and 8.</strong></p>
+                    <h3>A great leap forward</h3>
+                    <p>If research proves that New Zealand's Maud Island frogs can coexist with mice, their future will be a lot brighter, say those who are trying to save the rare species from extinction.</p>
+                    <p><strong>A</strong> New Zealand's native frogs are among the most primitive on the planet - virtually unchanged since the late Jurassic period, 140-160 million years ago. Back then, New Zealand was part of the seabed and all the continents as we know them today were joined together as one land mass. However, New Zealand came to the surface just in time to provide a lifeboat for the prehistoric frogs to avoid the fate of the relatives they left behind. In other words, New Zealand's native frogs did not disappear due to environmental conditions they could not survive. New Zealand's primal forest floor was once crawling with them and tens of thousands of their bones, from at least seven different species, have been found all over the country.</p>
+                    <p><strong>B</strong> Today, in the moonless dark of a forest night, Kerri Lukis, a post-graduate researcher from Victoria University, shines her torch into the undergrowth and quickly reaches towards a mouldy brown leaf. When she opens her hand, I see that this 'leaf' - perhaps 40 millimetres long - has tiny, almost birdlike feet, a pair of onyx-black eyes and appears to have been sprinkled with glitter. These are not the kind of frogs that most New Zealanders have seen in their gardens. The glossy lime-green frogs that can be heard croaking to one another from farm ponds and rivers are in fact Australian imports; New Zealand native frogs are a very different creature. To begin with, people will certainly not hear one. They are silent, and consequently, in the evolutionary process, they have lost their eardrums as well, therefore making it easier for researchers like Lukis to trap them. Another behaviour that is unusual for frogs is that the Maud Island species avoid water, so their tiny feet have no webs between their toes, which would normally make swimming and movement in the water more effective.</p>
+                    <p><strong>C</strong> Since a tadpole cannot move or survive on dry land, this stage is absent in Maud Island frogs and they go straight from gelatinous eggs (incubated by the males) to 'froglets', which spend their first few weeks of life as passengers on the back of a male. Before the first humans arrived, the frogs' enemies were predators that hunted by sight - native birds such as weka, morepork and perhaps pukeko - so they developed a simple but effective defence: they kept very still. Unfortunately, freezing proved a pitifully inadequate defence against the keen-nosed pests that humans brought here. Rats, mice, and other four-legged enemies such as stoats and weasels all but wiped out the frogs.</p>
+                    <p><strong>D</strong> Maud Island frogs or pakeka, one of just four surviving species of native New Zealand frog, once lived throughout New Zealand, but for the past 150 years have been confined to predator-free Maud Island, 900 metres from the rocky coast of the Marlborough Sounds. In 1997, however, the Department of Conservation moved 300 to Motuara Island, then another 100 to Long Island in 2005. Early this year the frogs were finally returned to the mainland, when 30 were brought back to the Karori Wildlife Sanctuary, just a short ride from the central business district in the capital city of Wellington.</p>
+                    <p><strong>E</strong> The sanctuary is protected by a high-tech fence designed to keep rare native species in and hordes of introduced predators out - and mostly it does. But nobody counted on the dexterity - or determination - of baby mice, which, it turns out, can squeeze through a six-millimetre gap. Kerri Lukis is turning that setback into a golden opportunity: 'It's given us a chance to look at how mice impact on native frogs. There's very little known about their effects on New Zealand wildlife,' she says, but Karori Sanctuary - one of just a few protected places in the country where mice are the only introduced predators - provides the perfect study area.</p>
+                    <p><strong>F</strong> A goal of frog conservation is to establish new populations as insurance against catastrophe: predators finally managing the swim to Maud Island, or fire raging through their forest stronghold. If Lukis can prove that the frogs can cope with mice, it would make more islands available to wildlife managers looking for extra homes for them. Lukis aims to answer some long-pondered questions: Do mice impact frogs directly through predation? If so, do they attack the adults, the juveniles or the eggs? Are males more vulnerable because they sit on the eggs? And if the males are unable to search freely for food, does their condition become weakened so that they won't breed?</p>
+                    <p><strong>G</strong> Back in the forest, Lukis weighs and measures the tiny frog, notes with satisfaction that it might be carrying eggs, then takes a photo of the animal's flank and jaw. Her shot reveals patterns and colouration unique to each frog, so that she can identify them without resorting to invasive alternatives like toe-clipping. Then it's gently returned to its special mouse-proof enclosure. There are enough tiny insects crawling about in the leaf litter to sustain 30 captive frogs, but sanctuary staff supplement the frogs' diet with live moths. In early October, another 30 frogs were brought here from Maud Island and placed in a separate enclosure where they were tested for the lethal chytrid fungus, first found in New Zealand in two introduced Australian species, the green frog and the bell frog, in 1999. Once the scientists are sure they are free from disease and are not a danger to other frogs, the Maud Island frogs will be introduced to those already resident at Karori, then subdivided into two groups with roughly equal gender ratios. One group will go on living an isolated life in the enclosure; the other, left to see how they survive the intrusion of the sanctuary's mice. This will hopefully give Lukis the answers she needs.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+            <div class="questions-container hidden" id="p2_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 14-26</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 14-19</div>
+                    <p>Complete the summary below. Choose <strong>ONE WORD AND/OR A NUMBER</strong> from the passage for each answer.</p>
+                    <p><strong>A description of Maud Island frogs</strong></p>
+                    <p>The natural habitat of the Maud Island frog is the forest, where its brown colouring allows it to hide amongst the fallen leaves. The Maud Island frog, roughly <span class="question-anchor" data-question-anchor="14"></span><input type="text" name="q14" placeholder="14" class="input-field inline-input"> in length, is unique in its physical appearance and development. Most other frogs are known for the <span class="question-anchor" data-question-anchor="15"></span><input type="text" name="q15" placeholder="15" class="input-field inline-input"> noise they make as a means of communication, but the Maud Island frog is actually silent. For this reason, they no longer possess <span class="question-anchor" data-question-anchor="16"></span><input type="text" name="q16" placeholder="16" class="input-field inline-input">. As they are forest-dwellers, there is no need for them to have <span class="question-anchor" data-question-anchor="17"></span><input type="text" name="q17" placeholder="17" class="input-field inline-input"> on their feet. Furthermore, the fact that they live away from water makes it necessary for this frog to transform immediately from an egg to a froglet, missing out the usual <span class="question-anchor" data-question-anchor="18"></span><input type="text" name="q18" placeholder="18" class="input-field inline-input"> stage in between. The froglets are carried by the <span class="question-anchor" data-question-anchor="19"></span><input type="text" name="q19" placeholder="19" class="input-field inline-input"> of the species.</p>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 20-24</div>
+                    <p>Reading Passage 2 has seven paragraphs, <strong>A-G</strong>. Which paragraph contains the following information?</p>
+                    <table>
+                        <tr>
+                            <th style="width: 55%;">Statement</th>
+                            <th style="text-align: center;">A</th>
+                            <th style="text-align: center;">B</th>
+                            <th style="text-align: center;">C</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">E</th>
+                            <th style="text-align: center;">F</th>
+                            <th style="text-align: center;">G</th>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="20"></span>20 methods scientists use to distinguish individual frogs within a species</td>
+                            <td><input type="radio" name="q20" value="A"></td>
+                            <td><input type="radio" name="q20" value="B"></td>
+                            <td><input type="radio" name="q20" value="C"></td>
+                            <td><input type="radio" name="q20" value="D"></td>
+                            <td><input type="radio" name="q20" value="E"></td>
+                            <td><input type="radio" name="q20" value="F"></td>
+                            <td><input type="radio" name="q20" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="21"></span>21 the stages involved in the relocation of Maud Island frogs to new areas for conservation reasons</td>
+                            <td><input type="radio" name="q21" value="A"></td>
+                            <td><input type="radio" name="q21" value="B"></td>
+                            <td><input type="radio" name="q21" value="C"></td>
+                            <td><input type="radio" name="q21" value="D"></td>
+                            <td><input type="radio" name="q21" value="E"></td>
+                            <td><input type="radio" name="q21" value="F"></td>
+                            <td><input type="radio" name="q21" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="22"></span>22 an explanation of how some ancient frogs managed to escape extinction</td>
+                            <td><input type="radio" name="q22" value="A"></td>
+                            <td><input type="radio" name="q22" value="B"></td>
+                            <td><input type="radio" name="q22" value="C"></td>
+                            <td><input type="radio" name="q22" value="D"></td>
+                            <td><input type="radio" name="q22" value="E"></td>
+                            <td><input type="radio" name="q22" value="F"></td>
+                            <td><input type="radio" name="q22" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="23"></span>23 a comparison between different species of frogs</td>
+                            <td><input type="radio" name="q23" value="A"></td>
+                            <td><input type="radio" name="q23" value="B"></td>
+                            <td><input type="radio" name="q23" value="C"></td>
+                            <td><input type="radio" name="q23" value="D"></td>
+                            <td><input type="radio" name="q23" value="E"></td>
+                            <td><input type="radio" name="q23" value="F"></td>
+                            <td><input type="radio" name="q23" value="G"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="question-anchor" data-question-anchor="24"></span>24 the range of information that research into the effects of mice on frog populations may uncover</td>
+                            <td><input type="radio" name="q24" value="A"></td>
+                            <td><input type="radio" name="q24" value="B"></td>
+                            <td><input type="radio" name="q24" value="C"></td>
+                            <td><input type="radio" name="q24" value="D"></td>
+                            <td><input type="radio" name="q24" value="E"></td>
+                            <td><input type="radio" name="q24" value="F"></td>
+                            <td><input type="radio" name="q24" value="G"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 25-26</div>
+                    <p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>
+                    <p>The list below outlines some of the possible threats to the survival of native New Zealand frogs. Select two threats that are mentioned in the passage.</p>
+                    <div class="question" data-question="25">
+                        <div class="question-text"><span class="question-anchor" data-question-anchor="25"></span><span class="question-anchor" data-question-anchor="26"></span>25-26 Select TWO options</div>
+                        <div class="options">
+                            <label><input type="checkbox" name="q25_26" value="A"> wild animals</label>
+                            <label><input type="checkbox" name="q25_26" value="B"> the unusual climate</label>
+                            <label><input type="checkbox" name="q25_26" value="C"> domestic animals kept by people</label>
+                            <label><input type="checkbox" name="q25_26" value="D"> disease</label>
+                            <label><input type="checkbox" name="q25_26" value="E"> non-native species of birds</label>
+                        </div>
+                        <input type="text" name="q25" class="input-field" style="display:none;" aria-hidden="true">
+                        <input type="text" name="q26" class="input-field" style="display:none;" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PASSAGE 3 ===== -->
+            <div class="passage-container hidden" id="p3_passagePanel" role="region" aria-label="Reading Passage">
+                <h2 class="section-title">READING PASSAGE 3</h2>
+                <div class="passage-content" id="passage3">
+                    <p><strong>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3</strong></p>
+                    <h3>Science and filmmaking</h3>
+                    <p>Academics are now working more with filmmakers who are impressed by the results of their research in computer generated imagery (CGI).</p>
+                    <p>Every year the film academy in the USA celebrates the outstanding achievements of the year in a ceremony known as the Oscars. An increasingly important component of the ceremony is the presentation of the Scientific and Technical awards. In 2004 a notable event took place: the academic world met the cinematographic world when researchers from Stanford University in the USA were awarded an Oscar. These researchers, led by Steve Marschner, were from the field of Computer Graphics at Stanford. They were part of a growing cohort of computer scientists that has become fundamental to moviemaking.</p>
+                    <p>Films have shown that it is possible to use CGI to make actors look younger, older, weaker or stronger than they actually are in a surprisingly realistic manner. At least, it is possible if the altered actors are not filmed too closely. This is because the difficulty of recreating the textures of both skin and fabric means that the effect is less convincing when seen close up. The work of Marschner and his colleagues has greatly improved the accurate and realistic modeling of both skin and fabric. They recognized that one of the difficulties of creating lifelike characters in the computer world is that in CGI the characters' skin is opaque (two-dimensional) whereas real skin is in fact translucent (three-dimensional), that is to say it is semi-transparent.</p>
+                    <p>Marschner and his colleagues received the Oscar for their work in successfully producing a CGI model that simulates translucency; this is when light penetrates skin and then scatters below the skin's surface before re-emerging. This is called subsurface scattering, and the mathematics for the model goes back many decades to the time when it was used in astrophysics. Because human skin is naturally translucent, it was necessary to be able to create this artificially in order to simulate the soft appearance of real skin. Previous CGI models, which assumed that skin was entirely opaque, resulted in characters with a plastic appearance. The scientists' new model of CGI was so important in bringing digital characters to life that, within two years of their original research paper, all the major special-effects studios had incorporated it into their digital rendering systems.</p>
+                    <p>However, despite their award, the scientists, with admirable tenacity, continued their search for perfection, as they still did not feel that they had yet satisfactorily recreated the subtle ways light is reflected. To do this, they began to look in detail at the way skins and fabrics reflect light differently according to their make-up: the exact arrangement of fibers in fabric and the network of fibers in skin. Marschner and his team tried to do this by using computerized tomography - which is most familiar as a medical technique for examining people's internal organs. Like classical radiology it uses X-rays, but because the image is constructed inside a computer using exposures taken from many different positions, rather than a single exposure on photographic film, it can capture fine details that are invisible in classical radiography.</p>
+                    <p>Unfortunately, the scientists understood that at this point in time they could not use computer tomography on skin, because a very high intensity X-ray is needed to show the kind of detail they wanted and this would be very dangerous for human skin. They have, however, had some success with fabric. Using this new method of imaging, they are able to accurately record the three-dimensional structure of all the fibers in a number of small pieces of fabric. These same pieces of fabric, through the use of CGI, can then be patched together to form an entire garment inside a computer, in the same way that a small group of actors can be made to look like hundreds of people gathered together. A garment created through CGI is therefore made up of pieces of fabric whose internal structure has been pre-recorded. This means that the way light is reflected by the garment can be calculated far more realistically than if the scientists just made a computer model of what they thought the interior of the fabric looked like. Cinematography will benefit from this because, although it may take some years to be able to use computerized tomographic imaging of skin, for the moment the movement of a virtual cloak or the lifting of a computerized hat should look far more realistic.</p>
+                    <p>In the meantime, according to Marschner's colleague Kavita Bala, the technology might have an application in online retailing. At the moment people buying clothes over the internet have only a standard photograph to help them choose their purchases. It is hoped that if online shoppers can view items which have been presented through the use of computerized tomography graphics, they will have a much better understanding of what the material the item is made of is really like.</p>
+                    <p>Marschner is now working on the way light is scattered from individual hairs. He says, 'I feel lucky to be working in this niche. I'm a visual person and to be able to spend my time scrutinizing the world around me, trying to understand why it looks the way it does, is very rewarding'.</p>
+                </div>
+            </div>
+            <div class="resizer"></div>
+            <div class="questions-container hidden" id="p3_questionsPanel" role="region" aria-label="Questions">
+                <h2 class="section-title">Questions 27-40</h2>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 27-32</div>
+                    <p>Choose the correct letter, <strong>A-D</strong>.</p>
+                    <div class="question" data-question="27"><div class="question-text"><span class="question-anchor" data-question-anchor="27"></span>27 What is the writer's main point in the first paragraph?</div><div class="options">
+                        <label><input type="radio" name="q27" value="A"> A Computer scientists are rarely represented at the Oscars.</label>
+                        <label><input type="radio" name="q27" value="B"> B Film-industry awards hold little interest for computer scientists.</label>
+                        <label><input type="radio" name="q27" value="C"> C The USA rewards film actors more than computer scientists.</label>
+                        <label><input type="radio" name="q27" value="D"> D Computer scientists are becoming a vital part of the film industry.</label>
+                    </div></div>
+                    <div class="question" data-question="28"><div class="question-text"><span class="question-anchor" data-question-anchor="28"></span>28 When describing the way computer-generated imagery changes actors' appearance, what does the writer suggest?</div><div class="options">
+                        <label><input type="radio" name="q28" value="A"> A CGI looks best from a distance.</label>
+                        <label><input type="radio" name="q28" value="B"> B CGI interferes with actors' facial expressions.</label>
+                        <label><input type="radio" name="q28" value="C"> C Audiences expect too much of CGI.</label>
+                        <label><input type="radio" name="q28" value="D"> D The scientists had hoped for more convincing results.</label>
+                    </div></div>
+                    <div class="question" data-question="29"><div class="question-text"><span class="question-anchor" data-question-anchor="29"></span>29 What does the writer suggest about the scientists' attitude to their work in the fourth paragraph?</div><div class="options">
+                        <label><input type="radio" name="q29" value="A"> A They were motivated to get as near to reality as possible.</label>
+                        <label><input type="radio" name="q29" value="B"> B They were interested in gaining recognition for their work.</label>
+                        <label><input type="radio" name="q29" value="C"> C They thought it could have medical applications.</label>
+                        <label><input type="radio" name="q29" value="D"> D They hoped to receive further funding for their research.</label>
+                    </div></div>
+                    <div class="question" data-question="30"><div class="question-text"><span class="question-anchor" data-question-anchor="30"></span>30 What are we told about computerised tomography?</div><div class="options">
+                        <label><input type="radio" name="q30" value="A"> A It has only recently been used by doctors.</label>
+                        <label><input type="radio" name="q30" value="B"> B It is similar to X-rays in the way it works.</label>
+                        <label><input type="radio" name="q30" value="C"> C Filmmakers have used it for many years for special lighting effects.</label>
+                        <label><input type="radio" name="q30" value="D"> D It can be administered using traditional radiography machines.</label>
+                    </div></div>
+                    <div class="question" data-question="31"><div class="question-text"><span class="question-anchor" data-question-anchor="31"></span>31 Which of these advantages does the writer attribute to the current use of computerised tomography?</div><div class="options">
+                        <label><input type="radio" name="q31" value="A"> A It is most effective when used to create images of skin.</label>
+                        <label><input type="radio" name="q31" value="B"> B It can make a few people seem like a crowd.</label>
+                        <label><input type="radio" name="q31" value="C"> C It allows clothes designers to create new designs.</label>
+                        <label><input type="radio" name="q31" value="D"> D It is practical because of the time it takes.</label>
+                    </div></div>
+                    <div class="question" data-question="32"><div class="question-text"><span class="question-anchor" data-question-anchor="32"></span>32 The writer mentions Kavita Bala in order to</div><div class="options">
+                        <label><input type="radio" name="q32" value="A"> A comment on the success of CGI in commercial contexts.</label>
+                        <label><input type="radio" name="q32" value="B"> B highlight the link between CGI and photography.</label>
+                        <label><input type="radio" name="q32" value="C"> C show that Marschner's team are uncertain about the future of CGI.</label>
+                        <label><input type="radio" name="q32" value="D"> D demonstrate a use for CGI outside the film industry.</label>
+                    </div></div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 33-36</div>
+                    <p>Do the following statements agree with the views of the writer in Reading Passage 3?</p>
+                    <p>Write <strong>YES</strong> if the statement agrees, <strong>NO</strong> if it contradicts, or <strong>NOT GIVEN</strong> if it is impossible to say.</p>
+                    <div class="question" data-question="33">
+                        <div class="question-text">33 <span class="question-anchor" data-question-anchor="33"></span>It used to be unusual for university researchers to receive a cinematography award.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q33" value="YES"> YES</label>
+                            <label><input type="radio" name="q33" value="NO"> NO</label>
+                            <label><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="34">
+                        <div class="question-text">34 <span class="question-anchor" data-question-anchor="34"></span>CGI is popular among ageing actors.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q34" value="YES"> YES</label>
+                            <label><input type="radio" name="q34" value="NO"> NO</label>
+                            <label><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="35">
+                        <div class="question-text">35 <span class="question-anchor" data-question-anchor="35"></span>The scientists' success in generating images of complete CGI garments has won them many awards.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q35" value="YES"> YES</label>
+                            <label><input type="radio" name="q35" value="NO"> NO</label>
+                            <label><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                    <div class="question" data-question="36">
+                        <div class="question-text">36 <span class="question-anchor" data-question-anchor="36"></span>It will be a long time before computerised tomographic imaging of fabric is used by filmmakers.</div>
+                        <div class="options">
+                            <label><input type="radio" name="q36" value="YES"> YES</label>
+                            <label><input type="radio" name="q36" value="NO"> NO</label>
+                            <label><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-group-title">Questions 37-40</div>
+                    <p>Complete the summary below using ONE letter from the list of words.</p>
+                    <p><strong>List of words</strong></p>
+                    <p>A. light &nbsp;&nbsp;&nbsp; B. transparency &nbsp;&nbsp;&nbsp; C. age &nbsp;&nbsp;&nbsp; D. use</p>
+                    <p>E. astrophysics &nbsp;&nbsp;&nbsp; F. mathematics &nbsp;&nbsp;&nbsp; G. improvement &nbsp;&nbsp;&nbsp; H. colour &nbsp;&nbsp;&nbsp; I. translucency</p>
+                    <div class="drag-options">
+                        <div class="drag-item" data-option="A" data-answer="A" data-label="light">A. light</div>
+                        <div class="drag-item" data-option="B" data-answer="B" data-label="transparency">B. transparency</div>
+                        <div class="drag-item" data-option="C" data-answer="C" data-label="age">C. age</div>
+                        <div class="drag-item" data-option="D" data-answer="D" data-label="use">D. use</div>
+                        <div class="drag-item" data-option="E" data-answer="E" data-label="astrophysics">E. astrophysics</div>
+                        <div class="drag-item" data-option="F" data-answer="F" data-label="mathematics">F. mathematics</div>
+                        <div class="drag-item" data-option="G" data-answer="G" data-label="improvement">G. improvement</div>
+                        <div class="drag-item" data-option="H" data-answer="H" data-label="colour">H. colour</div>
+                        <div class="drag-item" data-option="I" data-answer="I" data-label="translucency">I. translucency</div>
+                    </div>
+                    <p>For many years, CGI characters did not appear entirely lifelike as their skin appeared plastic. Marschner and his colleagues were the first to apply an understanding of how <span class="drop-zone" data-target="q37" data-placeholder="37">37</span> interacts with human skin. Their CGI models is based on a novel application of principles of <span class="drop-zone" data-target="q38" data-placeholder="38">38</span>, which had previously been applied in another scientific research. The importance of CGI to the film industry has led to the <span class="drop-zone" data-target="q39" data-placeholder="39">39</span> of Marschner's model by special effects studios. Marschner's model has led to the <span class="drop-zone" data-target="q40" data-placeholder="40">40</span> of cinematography.</p>
+                    <input type="text" name="q37" style="display:none;" aria-hidden="true">
+                    <input type="text" name="q38" style="display:none;" aria-hidden="true">
+                    <input type="text" name="q39" style="display:none;" aria-hidden="true">
+                    <input type="text" name="q40" style="display:none;" aria-hidden="true">
+                </div>
+            </div>
+        </div>        <!-- Bottom Progress/Navigation --><!-- Bottom Progress/Navigation -->
+        <div class="progress-container">
+            <div class="progress-nav">
+                <div class="progress-items" style="gap:10px; flex-wrap:wrap;">
+                    <div id="bottomPartTabs" style="display:flex; gap:14px; justify-content:center; width:100%; align-items:center; flex-wrap:wrap;"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                    <button class="btn btn-secondary" id="next-btn">Next</button>
+                    
+                    <button class="btn btn-submit" id="submit-all-btn">Submit All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <div class="score-display" id="score-display">0/0</div>
+            <div class="score-breakdown" id="score-breakdown"> </div>
+            <div class="modal-buttons">
+                <a class="btn btn-secondary" href="../reading.html">Back to Menu</a>
+                <button  class="btn btn-secondary" id="close-modal">Close Results</button>
+                <button class="btn btn-primary" id="review-answers">Review Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Modal -->
+    <div class="modal options-modal" id="options-modal">
+        <div class="modal-content" id="options-content">
+            <div class="options-header">
+                <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden; margin-right:8px;">&#8249;</button>
+                <div class="options-title" id="options-title">Options</div>
+                <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+            </div>
+
+            <div id="options-home">
+                <div class="options-list">
+                    <div class="option-row" data-target="contrast">
+                        <span class="option-label">Contrast <span class="option-sub" id="contrast-current">Black on white</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="option-row" data-target="textsize">
+                        <span class="option-label">Text size <span class="option-sub" id="textsize-current">Medium</span></span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-contrast="normal"><span>Black on white</span><span class="checkmark"></span></button>
+                    <button data-contrast="whiteblack"><span>White on black</span><span class="checkmark"></span></button>
+                    <button data-contrast="yellowblack"><span>Yellow on black</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+
+            <div id="textsize-menu" style="display:none;">
+                <div class="options-list submenu">
+                    <button data-textsize="small"><span>Small</span><span class="checkmark"></span></button>
+                    <button data-textsize="medium"><span>Medium</span><span class="checkmark"></span></button>
+                    <button data-textsize="large"><span>Large</span><span class="checkmark"></span></button>
+                    <button data-textsize="xlarge"><span>Extra large</span><span class="checkmark"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Panel -->
+    <!-- Notes removed -->
+    <script src="../assets/progress-tracker.js?v=20260802-reading-clipboard-v4"></script>
+    <script src="../assets/reading-full-test-engine.js?v=20260724-attempt-highlights"></script>
+    <script>
+        window.IELTSReadingFullTest.init({
+            testStorageId: 'reading_test_17',
+            label: 'Reading Full 17',
+            correctAnswers: {
+            q1: "TRUE",
+            q2: "FALSE",
+            q3: "NOT GIVEN",
+            q4: "TRUE",
+            q5: "NOT GIVEN",
+            q6: "TRUE",
+            q7: "NOT GIVEN",
+            q8: "FALSE",
+            q9: "spices",
+            q10: "cost",
+            q11: "India",
+            q12: "trade",
+            q13: "wealth",
+            q14: "40 millimetres",
+            q15: "croaking",
+            q16: "eardrums",
+            q17: "webs",
+            q18: "tadpole",
+            q19: "males",
+            q20: "G",
+            q21: "D",
+            q22: "A",
+            q23: "B",
+            q24: "F",
+            q25: "A",
+            q26: "D",
+            q27: "D",
+            q28: "A",
+            q29: "A",
+            q30: "B",
+            q31: "B",
+            q32: "D",
+            q33: "YES",
+            q34: "NOT GIVEN",
+            q35: "NO",
+            q36: "NO",
+            q37: "A",
+            q38: "F",
+            q39: "D",
+            q40: "G"
+        }
+        });
+    </script>
+    <script src="../assets/reading-review-mode.js?v=20260724-default-text-review"></script>
+    <script src="../assets/highlight-persistence.js?v=20260724-attempt-highlights"></script>
+    <script src="../assets/reading-answer-explanations-17.js?v=20260731-reading-clear-17-v1"></script>
+    <script src="../assets/reading-answer-explanations.js?v=20260731-reading-clear-17-v1"></script>
+</body>
+
+
+
+</html>
+
+
+

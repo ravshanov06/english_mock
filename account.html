@@ -1,0 +1,4134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your IELTS CDI account and review your learning progress.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ieltsmaterials.uz/account">
+  <title>Account | IELTS CDI Materials</title>
+  <script>
+    document.addEventListener('keydown', function (event) {
+      var key = String(event.key || '').toLowerCase();
+      var code = Number(event.keyCode || event.which || 0);
+      var ctrlOrMeta = !!(event.ctrlKey || event.metaKey);
+      var shift = !!event.shiftKey;
+      if (
+        key === 'f12' ||
+        code === 123 ||
+        (ctrlOrMeta && shift && (key === 'i' || key === 'j' || key === 'c' || code === 73 || code === 74 || code === 67)) ||
+        (ctrlOrMeta && (key === 'u' || code === 85))
+      ) {
+        event.preventDefault();
+        if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+        event.stopPropagation();
+        return false;
+      }
+    }, true);
+  </script>
+  <link rel="icon" type="image/png" href="/assets/brand-logo.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/icon-modified.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Account | IELTS CDI Materials">
+  <meta property="og:description" content="Manage your IELTS CDI account and review your learning progress.">
+  <meta property="og:url" content="https://ieltsmaterials.uz/account">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//ieltsmaterials.uz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/header-enhance.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --page-bg:
+        radial-gradient(circle at 12% 10%, rgba(255, 173, 173, 0.34) 0%, transparent 31%),
+        radial-gradient(circle at 88% 10%, rgba(255, 210, 194, 0.3) 0%, transparent 31%),
+        radial-gradient(circle at 54% 100%, rgba(255, 179, 179, 0.24), transparent 42%),
+        linear-gradient(180deg, #fffafa 0%, #fff2f2 54%, #ffefef 100%),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.32) 0 1px, rgba(110,64,64,0.028) 1px 2px, transparent 2px 5px);
+      --panel: rgba(255, 255, 255, 0.9);
+      --panel-strong: #ffffff;
+      --panel-border: #efc2c2;
+      --panel-shadow: 0 24px 60px rgba(141, 61, 61, 0.12);
+      --accent: #8e2b2b;
+      --accent-soft: #cf3f3f;
+      --gold: #f24848;
+      --text: #2f2323;
+      --muted: #6f5656;
+      --input-border: #ecd6d6;
+      --input-bg: #fffbfb;
+    }
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background: var(--page-bg);
+      color: var(--text);
+      min-height: 100vh;
+      background-attachment: fixed;
+      scroll-padding-top: 112px;
+    }
+    .shell {
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 112px 24px 40px;
+    }
+    .topbar {
+      --menu-accent: #cf3f3f;
+      --menu-panel-bg: #fff5f6;
+      --menu-panel-border: #e4aaaa;
+      --menu-panel-text: #3a2627;
+      --menu-drawer-bg: #ffeef0;
+      --menu-drawer-text: #3a2426;
+      --menu-drawer-subtext: #5a3a3d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 12px;
+      border: 1px solid #e4aaaa;
+      border-bottom: 2px solid #cf3f3f;
+      background: linear-gradient(135deg, #fff6f6 0%, #ffecec 52%, #fff2f2 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1200;
+    }
+    .top-left { display: flex; align-items: center; gap: clamp(28px, 5vw, 112px); min-width: 0; flex: 1; }
+    .brand { display: flex; align-items: center; gap: 6px; text-decoration: none; }
+    .brand img { width: 74px; height: 46px; display: block; object-fit: contain; }
+    .brand-text {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.16rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1;
+      color: #b02f2f;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 2px 8px rgba(108, 35, 35, 0.2);
+      white-space: nowrap;
+    }
+    nav { display: flex; align-items: center; }
+    .menu-list { list-style: none; display: flex; align-items: center; gap: 16px; }
+    .menu-item { position: relative; }
+    .topbar .menu-link { text-decoration: none; color: #232c34; font-size: 1.25rem !important; font-weight: 700 !important; display: inline-block; padding: 4px 0; }
+    .topbar .menu-link::after { content: " \25BE"; font-size: 1rem !important; color: #49535c; }
+    .submenu { list-style: none; position: absolute; top: 100%; left: 0; min-width: 250px; background: linear-gradient(180deg, #fff7f7 0%, #ffeaea 100%); border-top: 2px solid #cf3f3f; box-shadow: 0 14px 24px rgba(96, 35, 35, .16); display: none; z-index: 50; }
+    .submenu a { display: block; padding: 14px 16px; text-decoration: none; font-weight: 700; color: #1d2630; font-size: .92rem; }
+    .submenu a:hover { background: linear-gradient(180deg, #ffeeee 0%, #ffdede 100%); }
+    .menu-item:hover .submenu, .menu-item:focus-within .submenu { display: block; }
+    .top-actions { display: flex; align-items: center; gap: 8px; }
+
+    .account-layout {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .sidebar,
+    .content-panel,
+    .media-panel,
+    .stats-panel {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 28px;
+      box-shadow: var(--panel-shadow);
+      backdrop-filter: blur(14px);
+    }
+    .sidebar {
+      padding: 18px;
+      position: sticky;
+      top: 98px;
+      min-height: calc(100vh - 138px);
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-profile {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      padding: 8px 4px 20px;
+      border-bottom: 1px solid #efdfdf;
+      margin-bottom: 16px;
+    }
+    .avatar-chip,
+    .avatar-preview {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #d3d3d3 0%, #c1c1c1 100%);
+      display: grid;
+      place-items: center;
+    }
+    .avatar-chip {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+    }
+    .avatar-preview {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 22px;
+      border: 1px solid #ead6d6;
+    }
+    .avatar-chip::before,
+    .avatar-preview::before {
+      content: "";
+      width: 34%;
+      height: 34%;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      position: absolute;
+      top: 18%;
+    }
+    .avatar-chip::after,
+    .avatar-preview::after {
+      content: "";
+      width: 56%;
+      height: 42%;
+      border-radius: 999px 999px 20px 20px;
+      background: rgba(255, 255, 255, 0.9);
+      position: absolute;
+      bottom: 7%;
+    }
+    .avatar-chip.has-image::before,
+    .avatar-chip.has-image::after,
+    .avatar-preview.has-image::before,
+    .avatar-preview.has-image::after {
+      display: none;
+    }
+    .avatar-chip img,
+    .avatar-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+    .avatar-chip.has-image img,
+    .avatar-preview.has-image img {
+      display: block;
+    }
+    .profile-name {
+      font-size: 1.02rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .profile-email {
+      margin-top: 4px;
+      color: #7a6a84;
+      word-break: break-word;
+    }
+    .side-nav {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+    .nav-link,
+    .logout-btn {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      font: inherit;
+      color: var(--text);
+      text-decoration: none;
+      padding: 13px 16px;
+      border-radius: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+    }
+    .nav-link:hover,
+    .logout-btn:hover {
+      background: linear-gradient(180deg, #fff2f2 0%, #ffe7e7 100%);
+      transform: translateX(2px);
+    }
+    .nav-link.active {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(142, 43, 43, 0.24);
+    }
+    .nav-icon {
+      width: 36px;
+      height: 36px;
+      flex: 0 0 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid #ead2d2;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff2f2 100%);
+      color: #7d2f2f;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+    .nav-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .nav-link:hover .nav-icon,
+    .logout-btn:hover .nav-icon {
+      border-color: #dfb0b0;
+      background: linear-gradient(180deg, #fff6f6 0%, #ffe8e8 100%);
+      transform: translateY(-1px);
+    }
+    .nav-link.active .nav-icon {
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+    .sidebar-footer {
+      padding-top: 18px;
+      margin-top: auto;
+      border-top: 1px solid #efdfdf;
+    }
+    .logout-btn {
+      border: 1px solid #efdddd;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff4f4 100%);
+      border-radius: 18px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .page-head {
+      margin: 8px 0 28px;
+    }
+    .page-head h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(2.3rem, 4vw, 4rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      color: #1f1818;
+      margin-bottom: 10px;
+    }
+    .page-head p {
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 1rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) 300px;
+      gap: 24px;
+      align-items: start;
+    }
+    .content-panel {
+      padding: 22px;
+    }
+    .profile-form {
+      display: grid;
+      gap: 16px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 20px;
+    }
+    .field.span-2 {
+      grid-column: span 2;
+    }
+    .field label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 800;
+      color: #332626;
+    }
+    .required {
+      color: #e44a35;
+      margin-left: 2px;
+    }
+    .input,
+    .select {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--input-border);
+      background: var(--input-bg);
+      min-height: 58px;
+      padding: 0 16px;
+      font: inherit;
+      color: var(--text);
+      outline: none;
+      transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    }
+    .input:focus,
+    .select:focus {
+      border-color: #d97777;
+      box-shadow: 0 0 0 4px rgba(217, 119, 119, 0.14);
+      transform: translateY(-1px);
+    }
+    .input[readonly] {
+      color: #948282;
+      background: #fff6f6;
+    }
+    .gender-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-top: 6px;
+    }
+    .gender-option {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      color: #2f2e31;
+      cursor: pointer;
+    }
+    .gender-option input {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--accent);
+    }
+    .save-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .save-btn {
+      border: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #f24848 0%, #cf2f2f 60%, #a61f1f 100%);
+      color: #fff;
+      padding: 16px 22px;
+      min-width: 210px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 12px 26px rgba(166, 31, 31, 0.28);
+      transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+    }
+    .save-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+      box-shadow: 0 16px 30px rgba(166, 31, 31, 0.34);
+    }
+    .save-status {
+      color: var(--muted);
+      font-size: 0.94rem;
+      min-height: 1.4em;
+    }
+    .media-panel {
+      padding: 24px;
+      text-align: center;
+    }
+    .media-copy {
+      margin: 18px 0 20px;
+      color: #7a6868;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    .upload-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed #d68a8a;
+      color: var(--accent);
+      background: linear-gradient(180deg, #fff8f8 0%, #fff0f0 100%);
+      border-radius: 999px;
+      min-height: 58px;
+      padding: 0 22px;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+    }
+    .upload-input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .stats-panel {
+      margin-top: 24px;
+      padding: 24px;
+    }
+    .stats-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+    .stats-top h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.8rem;
+      color: #2a1d1d;
+    }
+    .clear-btn {
+      border: 1px solid #e3b0b0;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      color: #a03030;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .stat-card {
+      border: 1px solid #efdddd;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff3f3 100%);
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+    }
+    .stat-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .stat-card strong {
+      display: block;
+      font-size: 1.04rem;
+      margin-bottom: 0;
+    }
+    .stat-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f24848 0%, #cf2f2f 60%, #a61f1f 100%);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .stat-meta {
+      display: grid;
+      gap: 10px;
+    }
+    .stat-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f2e5e5;
+    }
+    .stat-row:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .stat-label {
+      color: #7d6868;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    .stat-value {
+      color: #352828;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: right;
+      line-height: 1.4;
+    }
+    .stat-card span,
+    .empty-state,
+    .activity-list li,
+    .book-list li {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+    .history-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+      gap: 20px;
+    }
+    .sub-card {
+      border: 1px solid #efdddd;
+      border-radius: 18px;
+      padding: 18px;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff8f8 100%);
+    }
+    .sub-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.02rem;
+    }
+    .book-list,
+    .activity-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .result-list {
+      list-style: none;
+      display: grid;
+      gap: 18px;
+    }
+    .result-item {
+      border: 1px solid #efdddd;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #fffefe 0%, #fff6f6 100%);
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+    }
+    .result-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .result-title {
+      display: grid;
+      gap: 8px;
+    }
+    .result-title strong {
+      display: block;
+      font-size: 1.65rem;
+      line-height: 1.05;
+    }
+    .result-subtitle {
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.5;
+    }
+    .result-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .result-summary-card {
+      border: 1px solid #f1e0e0;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffaf9 0%, #fff2f2 100%);
+      padding: 14px 16px;
+      display: grid;
+      gap: 6px;
+    }
+    .result-summary-label {
+      color: #806868;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+    .result-summary-value {
+      color: #2f2323;
+      font-size: 1.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .result-summary-note {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+    .attempt-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+    .attempt-item {
+      border: 1px solid #efdfdf;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff9f9 100%);
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .attempt-actions {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .attempt-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid #e3b0b0;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+    .attempt-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .attempt-label {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #2f2323;
+    }
+    .attempt-score {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f24848 0%, #cf2f2f 60%, #a61f1f 100%);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .attempt-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 14px;
+    }
+    .attempt-meta-row {
+      display: grid;
+      gap: 4px;
+    }
+    .attempt-meta-label {
+      color: #806868;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .attempt-meta-value {
+      color: #3b2d2d;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+    .login-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+    .login-item {
+      border: 1px solid #efdddd;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffdfd 0%, #fff7f7 100%);
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+    }
+    .login-item-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .login-item-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #2f2323;
+    }
+    .login-item-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      border: 1px solid #efcfcf;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .login-item-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px 14px;
+    }
+    .login-meta-row {
+      display: grid;
+      gap: 4px;
+    }
+    .login-meta-label {
+      color: #806868;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .login-meta-value {
+      color: #3b2d2d;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+    .result-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid #e3b0b0;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 800;
+      justify-self: start;
+    }
+    .section-anchor {
+      scroll-margin-top: 110px;
+    }
+    .right-panel {
+      min-width: 0;
+    }
+    .view-panel {
+      display: none;
+    }
+    .view-panel.active {
+      display: block;
+    }
+    .premium-summary,
+    .admin-shell,
+    .admin-list-card {
+      border: 1px solid #efdddd;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #fffefe 0%, #fff5f5 100%);
+      box-shadow: 0 18px 38px rgba(141, 61, 61, 0.08);
+    }
+    .premium-summary {
+      padding: 20px 22px;
+      margin-bottom: 22px;
+      display: grid;
+      gap: 12px;
+    }
+    .premium-summary-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .premium-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .premium-pill.is-approved {
+      background: linear-gradient(135deg, #2d9d61, #22784a);
+      color: #fff;
+    }
+    .premium-pill.is-blocked {
+      background: linear-gradient(135deg, #f6dede, #f0caca);
+      color: #8e2b2b;
+      border: 1px solid #e5b6b6;
+    }
+    .premium-meta {
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+    .admin-shell {
+      padding: 24px;
+      display: grid;
+      gap: 20px;
+    }
+    .admin-section-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 6px 0 18px;
+    }
+    .admin-section-btn {
+      border: 1px solid #e5b6b6;
+      background: #fff8f8;
+      color: #8e2b2b;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .admin-section-btn.is-active {
+      background: linear-gradient(135deg, #c63a3a 0%, #a72f2f 100%);
+      color: #fff;
+      border-color: #a72f2f;
+      box-shadow: 0 14px 28px rgba(167, 47, 47, 0.18);
+    }
+    .admin-subsection[hidden] {
+      display: none !important;
+    }
+    .admin-form-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) 220px;
+      gap: 16px;
+    }
+    .admin-export-grid {
+      grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+      align-items: start;
+    }
+    .admin-export-selection-field {
+      min-width: 0;
+    }
+    .admin-export-list {
+      display: grid;
+      gap: 8px;
+      max-height: 360px;
+      overflow: auto;
+      padding: 10px;
+      border: 1px solid var(--input-border);
+      border-radius: 14px;
+      background: var(--input-bg);
+    }
+    .admin-export-option {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      min-height: 48px;
+      padding: 10px 12px;
+      border: 1px solid #efdddd;
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .admin-export-option input {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: var(--accent);
+    }
+    .admin-export-title {
+      display: block;
+      color: #332626;
+      font-size: 0.94rem;
+      font-weight: 800;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .admin-export-path {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .admin-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .admin-note {
+      min-height: 1.4em;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+    .admin-search-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .admin-search-row .input {
+      max-width: 360px;
+    }
+    .admin-section-intro {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .admin-section-copy h4 {
+      margin: 0;
+      font-size: 1rem;
+      color: #5f4343;
+    }
+    .admin-section-copy p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+    .admin-list-meta {
+      color: #7c5b5b;
+      font-size: 0.86rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .admin-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 14px;
+    }
+    .admin-stat-box {
+      border: 1px solid #f0d6d6;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffefe 0%, #fff8f8 100%);
+      padding: 16px 18px;
+    }
+    .admin-stat-title {
+      color: #6f5656;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .admin-stat-value {
+      margin-top: 10px;
+      color: var(--ink);
+      font-size: 1.7rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .suggestions {
+      margin-top: 10px;
+      border: 1px solid #f0d6d6;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fffefe 0%, #fff7f7 100%);
+      padding: 10px;
+      display: none;
+      gap: 8px;
+    }
+    .suggestions.active {
+      display: grid;
+    }
+    .suggestion-chip {
+      border: 1px solid #e3b0b0;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #fff9f9 0%, #ffeeee 100%);
+      color: var(--accent);
+      min-height: 38px;
+      padding: 0 14px;
+      font: inherit;
+      font-weight: 700;
+      text-align: left;
+      cursor: pointer;
+    }
+    .email-bank-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .email-pill {
+      border: 1px solid #f0d6d6;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #fffefe 0%, #fff6f6 100%);
+      padding: 12px 14px;
+      color: #533f3f;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      cursor: pointer;
+      word-break: break-word;
+      text-align: left;
+      font-family: inherit;
+    }
+    .admin-empty {
+      border: 1px dashed #efc6c6;
+      border-radius: 18px;
+      padding: 22px;
+      color: var(--muted);
+      background: linear-gradient(180deg, #fffdfd 0%, #fff8f8 100%);
+    }
+    .admin-list-card {
+      padding: 20px 22px;
+      overflow: hidden;
+    }
+    .admin-table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    .admin-list-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 860px;
+    }
+    .admin-table th,
+    .admin-table td {
+      text-align: left;
+      padding: 14px 10px;
+      border-bottom: 1px solid #f1e1e1;
+      vertical-align: top;
+      font-size: 0.94rem;
+    }
+    .admin-table th {
+      color: #6f5656;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .admin-row-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .admin-table.admin-bans-table {
+      min-width: 1100px;
+      table-layout: fixed;
+    }
+    .admin-bans-table th,
+    .admin-bans-table td {
+      padding: 12px 10px;
+      vertical-align: top;
+      word-break: normal;
+    }
+    .admin-bans-table .ban-col-email   { width: 200px; }
+    .admin-bans-table .ban-col-device  { width: 170px; }
+    .admin-bans-table .ban-col-ip      { width: 130px; }
+    .admin-bans-table .ban-col-status  { width: 90px; }
+    .admin-bans-table .ban-col-reason  { width: auto; min-width: 220px; }
+    .admin-bans-table .ban-col-banned  { width: 130px; }
+    .admin-bans-table .ban-col-lifted  { width: 130px; }
+    .admin-bans-table .ban-col-action  { width: 110px; }
+    .admin-bans-table td.ban-col-device,
+    .admin-bans-table td.ban-col-ip,
+    .admin-bans-table td.ban-col-banned,
+    .admin-bans-table td.ban-col-lifted {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .admin-bans-table td.ban-col-device {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      color: #555;
+    }
+    .admin-bans-table td.ban-col-reason {
+      white-space: normal;
+      word-break: break-word;
+      line-height: 1.45;
+    }
+    .admin-bans-table td.ban-col-email {
+      word-break: break-word;
+      line-height: 1.4;
+    }
+    .admin-radio-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .admin-radio-option {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.92rem;
+      color: #3a2627;
+      white-space: nowrap;
+    }
+    .admin-bulk-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .admin-filter-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .admin-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid #f1e1e1;
+    }
+    .admin-pagination-info {
+      color: #7c5b5b;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .admin-pagination-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pagination-btn {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid #e3b0b0;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      color: #8e2b2b;
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      cursor: pointer;
+      padding: 0 12px;
+    }
+    .pagination-btn.is-active {
+      border-color: #b53030;
+      background: linear-gradient(135deg, #f24848, #b72b2b);
+      color: #fff;
+    }
+    .pagination-btn:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+    .mini-btn {
+      border: 1px solid #e3b0b0;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffeeee 100%);
+      color: #8e2b2b;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font: inherit;
+      font-size: 0.86rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .mini-btn.is-danger {
+      border-color: #e0a5a5;
+      color: #a01f1f;
+    }
+    .admin-gate {
+      display: none;
+    }
+    .admin-gate.is-visible {
+      display: block;
+    }
+    @media (max-width: 980px) {
+      .admin-form-grid {
+        grid-template-columns: 1fr;
+      }
+      .admin-stats,
+      .email-bank-grid {
+        grid-template-columns: 1fr;
+      }
+      .admin-pagination {
+        align-items: stretch;
+      }
+      .admin-pagination-actions {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .account-layout,
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+      }
+    }
+    @media (max-width: 760px) {
+      .shell { padding: 104px 16px 28px; }
+      .top-left { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .brand img { width: 88px; height: auto; }
+      .brand-text { font-size: 0.98rem; }
+      .menu-list { gap: 12px; }
+      .topbar .menu-link::after { content: ""; }
+      .submenu { position: static; display: none; box-shadow: none; border: 1px solid #c5d3dc; margin-top: 6px; }
+      .field-grid,
+      .stats-grid,
+      .history-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .stat-value {
+        text-align: left;
+      }
+      .result-head,
+      .attempt-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .result-summary,
+      .attempt-meta,
+      .login-item-meta {
+        grid-template-columns: 1fr;
+      }
+      .field.span-2 {
+        grid-column: span 1;
+      }
+      .save-row,
+      .stats-top {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .save-btn {
+        width: 100%;
+      }
+      .sidebar-profile {
+        grid-template-columns: 56px minmax(0, 1fr);
+      }
+      .avatar-chip {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
+</head>
+<body data-track-section="account">
+  <main class="shell">
+  <header class="topbar">
+    <div class="top-left">
+      <a class="brand" href="/"><img src="assets/brand-logo.png" onerror="this.onerror=null;this.src='icon-modified.png';" alt="IELTS CDI"><span class="brand-text">IELTS Materials</span></a>
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="/">Home</a>
+            <ul class="submenu">
+              <li><a href="/">Homepage</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/listening">Listening</a>
+            <ul class="submenu">
+              <li><a href="/listening#all">All</a></li>
+              <li><a href="/listening#section1">Section 1</a></li>
+              <li><a href="/listening#section2">Section 2</a></li>
+              <li><a href="/listening#section3">Section 3</a></li>
+              <li><a href="/listening#section4">Section 4</a></li>
+              <li><a href="/listening#full">Full Listening</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/reading">Reading</a>
+              <ul class="submenu">
+                <li><a href="/reading#all">All</a></li>
+                <li><a href="/reading#passage1">Passage 1</a></li>
+                <li><a href="/reading#passage2">Passage 2</a></li>
+                <li><a href="/reading#passage3">Passage 3</a></li>
+                <li><a href="/reading#full">Full Reading</a></li>
+              </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/speaking">Speaking</a>
+            <ul class="submenu">
+              <li><a href="/speaking">Part 1 Topics</a></li>
+              <li><a href="/speaking">Part 2 Cue Cards</a></li>
+              <li><a href="/speaking">Part 3 Answers</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/writing">Writing</a>
+            <ul class="submenu">
+              <li><a href="/writing">Task 1 Reports</a></li>
+              <li><a href="/writing">Task 2 Essays</a></li>
+              <li><a href="/writing">Band Feedback</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/mock">Mock</a>
+            <ul class="submenu">
+              <li><a href="/mock">Full Mock</a></li>
+              <li><a href="/mock-results">Mock Results</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/books">Books</a>
+            <ul class="submenu">
+              <li><a href="/books">IELTS Book List</a></li>
+              <li><a href="/books">Vocabulary Books</a></li>
+              <li><a href="/books">Writing Practice Books</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="top-actions" aria-label="Header actions">
+      <a class="login-quick" href="/login">Login</a>
+    </div>
+  </header>
+    <div class="account-layout">
+      <aside class="sidebar">
+        <div class="sidebar-profile">
+          <div class="avatar-chip" id="sidebarAvatar">
+            <img id="sidebarAvatarImg" alt="Profile picture">
+          </div>
+          <div>
+            <div class="profile-name" id="sidebarName">Student Profile</div>
+            <div class="profile-email" id="sidebarEmail"></div>
+          </div>
+        </div>
+
+        <ul class="side-nav">
+          <li><a class="nav-link" data-view-link="overview" href="#overview"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h7v6H4z"></path><path d="M13 5h7v10h-7z"></path><path d="M4 13h7v6H4z"></path><path d="M13 17h7v2h-7z"></path></svg></span><span>Overview</span></a></li>
+          <li><a class="nav-link active" data-view-link="account" href="#account"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8z"></path><path d="M5 20a7 7 0 0 1 14 0"></path></svg></span><span>Account</span></a></li>
+          <li><a class="nav-link" data-view-link="history" href="#history"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7h11"></path><path d="M8 12h11"></path><path d="M8 17h11"></path><path d="M5 7h.01"></path><path d="M5 12h.01"></path><path d="M5 17h.01"></path></svg></span><span>History</span></a></li>
+          <li><a class="nav-link" data-view-link="learning-progress" href="#progress"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V9"></path><path d="M12 19V5"></path><path d="M19 19v-7"></path><path d="M3 19h18"></path></svg></span><span>Learning progress</span></a></li>
+          <li><a class="nav-link" data-view-link="log-ins" href="#logins"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 8V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3"></path><path d="M10 12h10"></path><path d="m17 7l5 5l-5 5"></path></svg></span><span>Log ins</span></a></li>
+          <li class="admin-gate" id="adminNavItem"><a class="nav-link" data-view-link="admin" href="#admin"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.4-3 8.5-7 9c-4-0.5-7-4.6-7-9V7z"></path><path d="M9.5 12l1.7 1.7L14.8 10"></path></svg></span><span>Admin</span></a></li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <button class="logout-btn" id="logoutBtn" type="button"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 8V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3"></path><path d="M10 12h10"></path><path d="m17 7l5 5l-5 5"></path></svg></span><span>Log out</span></button>
+        </div>
+      </aside>
+
+      <section class="right-panel">
+        <div class="view-panel active" data-view-panel="account">
+        <div class="page-head section-anchor" id="account">
+          <h1>Account</h1>
+          <p>Update your profile details here. The account page keeps your form data and profile image saved for the currently signed-in email.</p>
+        </div>
+
+        <section class="premium-summary" id="premiumSummary">
+          <div class="premium-summary-top">
+            <div>
+              <h2>Premium Test Access</h2>
+              <p class="save-status">Only approved emails can open premium tests.</p>
+            </div>
+            <span class="premium-pill is-blocked" id="premiumStatusPill">Not approved</span>
+          </div>
+          <div class="premium-meta" id="premiumStatusMeta">Your account is waiting for admin approval.</div>
+        </section>
+
+        <div class="content-grid">
+          <section class="content-panel">
+            <form class="profile-form" id="profileForm">
+              <div class="field-grid">
+                <div class="field span-2">
+                  <label for="fullName">Full Name<span class="required">*</span></label>
+                  <input class="input" id="fullName" name="fullName" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                  <label for="username">Username<span class="required">*</span></label>
+                  <input class="input" id="username" name="username" type="text" autocomplete="username" required>
+                </div>
+
+                <div class="field">
+                  <label for="dob">Date Of Birth</label>
+                  <input class="input" id="dob" name="dob" type="date">
+                </div>
+
+                <div class="field">
+                  <label for="emailField">E-Mail</label>
+                  <input class="input" id="emailField" name="emailField" type="email" readonly>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number<span class="required">*</span></label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+
+                <div class="field span-2">
+                  <label>Sex</label>
+                  <div class="gender-row">
+                    <label class="gender-option"><input type="radio" name="gender" value="Male"><span>Male</span></label>
+                    <label class="gender-option"><input type="radio" name="gender" value="Female"><span>Female</span></label>
+                    <label class="gender-option"><input type="radio" name="gender" value="Other"><span>Other</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="save-row">
+                <button class="save-btn" type="submit">Save information -></button>
+                <div class="save-status" id="saveStatus"></div>
+              </div>
+            </form>
+          </section>
+
+          <aside class="media-panel">
+            <div class="avatar-preview" id="profileAvatar">
+              <img id="profileAvatarImg" alt="Profile preview">
+            </div>
+            <p class="media-copy">The image size must be under 1MB and the aspect ratio should stay close to 1:1.</p>
+            <label class="upload-label" for="avatarUpload">Upload profile picture</label>
+            <input class="upload-input" id="avatarUpload" type="file" accept="image/png,image/jpeg,image/webp">
+          </aside>
+        </div>
+        </div>
+
+        <div class="view-panel" data-view-panel="overview">
+        <div class="page-head section-anchor">
+          <h1>Overview</h1>
+          <p>See the main tracked summary for this account.</p>
+        </div>
+        <section class="stats-panel section-anchor" id="overview">
+          <div class="stats-top">
+            <div>
+              <h2>Overview</h2>
+              <p class="save-status">Your main IELTS summary stays visible under the profile area.</p>
+            </div>
+            <button class="clear-btn" id="clearBtn" type="button">Clear progress</button>
+          </div>
+
+          <div class="stats-grid" id="testsGrid"></div>
+
+          <div class="history-grid">
+            <section class="sub-card section-anchor" id="history">
+              <h3>Books Used</h3>
+              <ul class="book-list" id="booksList"></ul>
+            </section>
+          </div>
+        </section>
+        </div>
+
+        <div class="view-panel" data-view-panel="learning-progress">
+        <div class="page-head section-anchor">
+          <h1>Learning progress</h1>
+          <p>Review saved test results and submitted attempts.</p>
+        </div>
+
+        <section class="stats-panel section-anchor">
+          <div class="sub-card">
+            <h3>AI Personalized Recommendations</h3>
+            <p class="save-status">Automatic study tips based on your most recent Reading and Listening submissions.</p>
+            <div id="aiRecommendations"></div>
+          </div>
+          <div class="sub-card">
+            <h3>Learning progress results</h3>
+            <ul class="result-list" id="resultsList"></ul>
+          </div>
+        </section>
+        </div>
+
+        <div class="view-panel" data-view-panel="history">
+        <div class="page-head section-anchor">
+          <h1>History</h1>
+          <p>Check what has been completed and what has been used in this account.</p>
+        </div>
+        <section class="stats-panel section-anchor" id="historyView">
+          <div class="history-grid">
+            <section class="sub-card">
+              <h3>Books Used</h3>
+              <ul class="book-list" id="historyBooksList"></ul>
+            </section>
+            <section class="sub-card">
+              <h3>Recent Activity</h3>
+              <ul class="activity-list" id="historyActivityList"></ul>
+            </section>
+          </div>
+        </section>
+        </div>
+
+        <div class="view-panel" data-view-panel="log-ins">
+        <div class="page-head section-anchor" id="logins">
+          <h1>Log ins</h1>
+          <p>Every successful sign-in for this account is saved here across devices.</p>
+        </div>
+        <section class="stats-panel section-anchor" id="loginsView">
+          <div class="sub-card">
+            <h3>Saved log in history</h3>
+            <ul class="login-list" id="loginsList"></ul>
+          </div>
+        </section>
+        </div>
+
+        <div class="view-panel" data-view-panel="admin" id="adminViewPanel" hidden>
+        <div class="page-head section-anchor" id="admin">
+          <h1>Admin</h1>
+          <p>Admin-only workspace with clear sections for account approval, registered accounts, stats, material control, and blocked devices.</p>
+        </div>
+        <div class="admin-section-nav">
+          <button class="admin-section-btn is-active" type="button" data-admin-section-btn="approvals">Approvals</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="registered">Registered Accounts</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="stats">Stats</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="materials">Materials Control</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="exports">HTML Export</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="blocked">Blocked Devices</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="set-password">Set Password</button>
+          <button class="admin-section-btn" type="button" data-admin-section-btn="refresh-users">Refresh Users</button>
+        </div>
+        <section class="admin-shell admin-subsection" data-admin-section="approvals">
+          <div class="admin-section-intro">
+            <div class="admin-section-copy">
+              <h4>1. Approve Account</h4>
+              <p>Approve or block premium access for a selected account from here.</p>
+            </div>
+          </div>
+          <div class="field-grid admin-form-grid">
+            <div class="field">
+              <label for="adminTargetEmail">Student Email<span class="required">*</span></label>
+              <input class="input" id="adminTargetEmail" type="email" placeholder="student@gmail.com" autocomplete="email">
+              <div class="suggestions" id="adminEmailSuggestions"></div>
+            </div>
+            <div class="field">
+              <label for="adminAccessSelect">Premium Access</label>
+              <select class="select" id="adminAccessSelect">
+                <option value="approved">Approved</option>
+                <option value="blocked">Blocked</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminDurationMonths">Duration In Months</label>
+              <input class="input" id="adminDurationMonths" type="number" min="0" step="1" value="1" placeholder="1">
+            </div>
+            <div class="field">
+              <label for="adminDurationDays">Duration In Days</label>
+              <input class="input" id="adminDurationDays" type="number" min="0" step="1" value="0" placeholder="0">
+            </div>
+            <div class="field span-2">
+              <label for="adminNotes">Notes</label>
+              <input class="input" id="adminNotes" type="text" placeholder="Optional note for this decision">
+            </div>
+          </div>
+          <div class="admin-actions">
+            <button class="save-btn" id="adminSaveBtn" type="button">Save premium access</button>
+            <button class="clear-btn" id="adminResetBtn" type="button">Reset form</button>
+            <div class="admin-note" id="adminStatus"></div>
+          </div>
+        </section>
+        <section class="admin-list-card admin-subsection" data-admin-section="registered" hidden>
+          <div class="admin-list-head">
+            <div>
+              <h3>2. All Registered Accounts</h3>
+              <p class="save-status">This section shows absolutely all registered accounts in the database. Click any email to place it into the approval form.</p>
+            </div>
+          </div>
+          <div id="adminEmailBankWrap" class="admin-empty">Loading registered emails...</div>
+        </section>
+        <section class="admin-list-card admin-subsection" data-admin-section="stats" hidden>
+          <div class="admin-list-head">
+            <div>
+              <h3>3. Admin Stats</h3>
+              <p class="save-status">Quick totals for registered accounts, saved premium decisions, and users active in the last 24 hours.</p>
+            </div>
+          </div>
+          <div class="admin-stats">
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Approved Emails</div>
+              <div class="admin-stat-value" id="adminApprovedCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Blocked Emails</div>
+              <div class="admin-stat-value" id="adminBlockedCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Saved Decisions</div>
+              <div class="admin-stat-value" id="adminTotalCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Registered Emails</div>
+              <div class="admin-stat-value" id="adminRegisteredCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Active 24h</div>
+              <div class="admin-stat-value" id="adminDailyActiveCount">0</div>
+            </div>
+          </div>
+        </section>
+        <section class="admin-list-card admin-subsection" data-admin-section="approvals">
+          <div class="admin-list-head">
+            <div>
+              <h3>Approved Account Emails</h3>
+              <p class="save-status">This section shows approved premium accounts only.</p>
+            </div>
+            <div class="admin-search-row">
+              <input class="input" id="adminSearchInput" type="text" placeholder="Search email">
+              <button class="clear-btn" id="adminSearchBtn" type="button">Search</button>
+              <button class="clear-btn" id="adminClearSearchBtn" type="button">Clear Search</button>
+              <button class="clear-btn" id="adminRefreshBtn" type="button">Refresh list</button>
+            </div>
+          </div>
+          <div id="adminTableWrap"></div>
+        </section>
+        <section class="admin-list-card admin-subsection" data-admin-section="materials" hidden>
+          <div class="admin-list-head">
+            <div>
+              <h3>4. Materials Control</h3>
+              <p class="save-status">Control who can open each material: All Users, Premium Only, or Basic Only.</p>
+            </div>
+            <div class="admin-search-row">
+              <input class="input" id="adminMaterialSearchInput" type="text" placeholder="Search title or path">
+              <button class="clear-btn" id="adminMaterialSearchBtn" type="button">Search</button>
+              <button class="clear-btn" id="adminMaterialClearSearchBtn" type="button">Clear Search</button>
+            </div>
+          </div>
+          <div class="admin-stats">
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Premium Only</div>
+              <div class="admin-stat-value" id="adminPremiumMaterialCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Basic Only</div>
+              <div class="admin-stat-value" id="adminBasicMaterialCount">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Open To All</div>
+              <div class="admin-stat-value" id="adminAllMaterialCount">0</div>
+            </div>
+          </div>
+          <div id="adminMaterialsWrap" class="admin-empty">Loading materials...</div>
+        </section>
+        <section class="admin-shell admin-subsection" data-admin-section="exports" hidden>
+          <div class="admin-section-intro">
+            <div class="admin-section-copy">
+              <h4>5. Download Test HTML</h4>
+              <p>Choose one or more materials and download HTML openers that start those tests from the server without login or premium checks.</p>
+            </div>
+          </div>
+          <div class="field-grid admin-form-grid admin-export-grid">
+            <div class="field">
+              <label for="adminExportSearchInput">Find Test</label>
+              <input class="input" id="adminExportSearchInput" type="text" placeholder="Search title or path">
+            </div>
+            <div class="field admin-export-selection-field">
+              <label>Selected Tests<span class="required">*</span></label>
+              <div class="admin-export-list" id="adminExportMaterialList">
+                <div class="admin-empty">Loading materials...</div>
+              </div>
+            </div>
+          </div>
+          <div class="admin-actions">
+            <button class="clear-btn" id="adminExportSearchBtn" type="button">Search</button>
+            <button class="clear-btn" id="adminExportClearSearchBtn" type="button">Clear Search</button>
+            <button class="clear-btn" id="adminExportSelectAllBtn" type="button">Select All Shown</button>
+            <button class="clear-btn" id="adminExportClearSelectionBtn" type="button">Clear Selection</button>
+            <button class="save-btn" id="adminExportDownloadBtn" type="button">Download Selected HTML Files</button>
+            <div class="admin-note" id="adminExportStatus"></div>
+          </div>
+        </section>
+        <section class="admin-list-card admin-subsection" data-admin-section="blocked" hidden>
+          <div class="admin-list-head">
+            <div>
+              <h3>6. Blocked Devices</h3>
+              <p class="save-status">Devices blocked by the protection rules are listed here for admin review.</p>
+            </div>
+          </div>
+          <div id="adminBansWrap" class="admin-empty">Loading ban history...</div>
+        </section>
+        <section class="admin-shell admin-subsection" data-admin-section="set-password" hidden>
+          <div class="admin-section-intro">
+            <div class="admin-section-copy">
+              <h4>7. Set a New Password</h4>
+              <p>Stored passwords are hashed and cannot be recovered. Use this form to assign a brand-new password to a student who has forgotten theirs, then share the new password with them.</p>
+            </div>
+          </div>
+          <div class="field-grid admin-form-grid">
+            <div class="field">
+              <label for="adminPwdEmail">Student Email<span class="required">*</span></label>
+              <input class="input" id="adminPwdEmail" type="email" placeholder="student@gmail.com" autocomplete="off">
+              <div class="suggestions" id="adminPwdEmailSuggestions"></div>
+            </div>
+            <div class="field">
+              <label for="adminPwdNew">New Password<span class="required">*</span></label>
+              <input class="input" id="adminPwdNew" type="text" placeholder="At least 4 characters" autocomplete="off">
+            </div>
+          </div>
+          <div class="admin-actions">
+            <button class="save-btn" id="adminPwdSaveBtn" type="button">Update password</button>
+            <button class="clear-btn" id="adminPwdResetBtn" type="button">Reset form</button>
+            <div class="admin-note" id="adminPwdStatus"></div>
+          </div>
+        </section>
+        <section class="admin-shell admin-subsection" data-admin-section="refresh-users" hidden>
+          <div class="admin-section-intro">
+            <div class="admin-section-copy">
+              <h4>8. Refresh User Browsers</h4>
+              <p>Publish a new refresh generation after a deployment. Open account and library pages refresh within about 30 seconds. Closed browsers refresh automatically the next time the site is opened. Active tests wait until the user returns to a safe page so answers are not lost.</p>
+            </div>
+          </div>
+          <div class="admin-stats">
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Current Generation</div>
+              <div class="admin-stat-value" id="adminClientRefreshGeneration">0</div>
+            </div>
+            <div class="admin-stat-box">
+              <div class="admin-stat-title">Last Requested</div>
+              <div class="admin-stat-value" id="adminClientRefreshTime" style="font-size:1rem;">Never</div>
+            </div>
+          </div>
+          <div class="admin-actions">
+            <button class="save-btn" id="adminClientRefreshBtn" type="button">Refresh all user browsers</button>
+            <button class="clear-btn" id="adminClientRefreshStateBtn" type="button">Refresh status</button>
+            <div class="admin-note" id="adminClientRefreshStatus"></div>
+          </div>
+        </section>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/header-enhance.js?v=20260522-safari-stable" defer></script>
+  <script src="assets/progress-tracker.js?v=20260727-premium-exit"></script>
+  <script>
+    (function () {
+      var AUTH_STORAGE_KEY = 'ielts_user_email';
+      var PROFILE_PREFIX = 'ielts_profile_';
+      var API_BASE = window.__API_BASE__ || '';
+      var MAX_AVATAR_BYTES = 1024 * 1024;
+      var currentProfile = {};
+      var lastRemoteProfileJson = '';
+      var premiumStatusState = null;
+      var isAdminUser = false;
+      var activeAdminSection = 'approvals';
+      var activeAdminMaterialFilter = 'all';
+      var adminEmailMatches = [];
+      var adminDataCache = {
+        overview: null,
+        emailAccess: [],
+        emailBank: [],
+        materials: [],
+        exportMaterials: [],
+        bans: [],
+        clientRefresh: null
+      };
+      var adminSelectedMaterials = {};
+      var adminSelectedExportMaterials = {};
+      var adminSectionLoaded = {
+        approvals: false,
+        registered: false,
+        stats: false,
+        materials: false,
+        exports: false,
+        blocked: false,
+        'set-password': true,
+        'refresh-users': false
+      };
+      var accountRefreshPromise = null;
+      var lastAccountRefreshAt = 0;
+      var ACCOUNT_REFRESH_MIN_INTERVAL_MS = 45000;
+      var BLOCKED_DEVICE_MESSAGE = 'You are banned because this premium account was opened from a fourth device.';
+      var initialViewName = window.location.hash.replace(/^#/, '');
+      if (initialViewName === 'progress') initialViewName = 'learning-progress';
+
+      function profileKey(email) {
+        return PROFILE_PREFIX + (email || 'guest');
+      }
+
+      function loadLocalProfile(email) {
+        try {
+          var raw = localStorage.getItem(profileKey(email));
+          if (!raw) return null;
+          return JSON.parse(raw);
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function saveLocalProfile(email, profile) {
+        try {
+          localStorage.setItem(profileKey(email), JSON.stringify(profile));
+        } catch (e) {}
+      }
+
+      function apiUrl(path) {
+        return API_BASE ? (API_BASE.replace(/\/$/, '') + path) : path;
+      }
+
+      function getDeviceKey() {
+        if (window.IELTSProgress && typeof window.IELTSProgress.getDeviceKey === 'function') {
+          return window.IELTSProgress.getDeviceKey();
+        }
+        try {
+          var existing = localStorage.getItem('ielts_device_key');
+          if (existing) {
+            document.cookie = 'ielts_device_key=' + encodeURIComponent(String(existing)) + '; Path=/; Max-Age=31536000; SameSite=Lax';
+            return String(existing);
+          }
+          var created = 'dev_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+          localStorage.setItem('ielts_device_key', created);
+          document.cookie = 'ielts_device_key=' + encodeURIComponent(created) + '; Path=/; Max-Age=31536000; SameSite=Lax';
+          return created;
+        } catch (e) {
+          return '';
+        }
+      }
+
+      function requestHeaders(extra) {
+        var headers = Object.assign({}, extra || {});
+        var deviceKey = getDeviceKey();
+        if (deviceKey) headers['X-Device-Key'] = deviceKey;
+        return headers;
+      }
+
+      function isNetworkFailureMessage(message) {
+        var text = String(message || '').trim().toLowerCase();
+        return text === 'load failed' || text.indexOf('failed to fetch') !== -1 || text.indexOf('networkerror') !== -1;
+      }
+
+      async function saveRemoteAccountData(email, patch) {
+        var res;
+        var payload = Object.assign({ email: email }, patch || {});
+        if (!payload.progress && window.IELTSProgress && typeof window.IELTSProgress.loadData === 'function') {
+          payload.progress = window.IELTSProgress.loadData();
+        }
+        try {
+          res = await fetch(apiUrl('/api/account-data'), {
+            method: 'POST',
+            headers: requestHeaders({ 'Content-Type': 'application/json' }),
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          if (isNetworkFailureMessage(err && err.message)) {
+            throw new Error('Unable to reach the server right now. Please try again.');
+          }
+          throw err;
+        }
+        if (!res.ok) {
+          var raw = '';
+          var parsed = null;
+          try { raw = await res.text(); } catch (e) {}
+          if (raw) {
+            try { parsed = JSON.parse(raw); } catch (e) {}
+          }
+          throw new Error((parsed && parsed.error) || raw || ('Request failed (HTTP ' + res.status + ')'));
+        }
+      }
+
+      async function fetchJson(path) {
+        var res;
+        try {
+          res = await fetch(apiUrl(path), {
+            method: 'GET',
+            headers: requestHeaders({ 'Accept': 'application/json', 'Cache-Control': 'no-store' }),
+            cache: 'no-store'
+          });
+        } catch (err) {
+          if (isNetworkFailureMessage(err && err.message)) {
+            throw new Error('Unable to reach the server right now. Please try again.');
+          }
+          throw err;
+        }
+        var raw = '';
+        try { raw = await res.text(); } catch (e) {}
+        var data = {};
+        if (raw) {
+          try { data = JSON.parse(raw); } catch (e) {}
+        }
+        if (!res.ok && res.status === 404 && /^\/api\/admin\//.test(path)) {
+          throw new Error('Admin API route was not found on the server. Restart or redeploy the backend so the latest server.py is running.');
+        }
+        if (!res.ok) throw new Error(data.error || ('Request failed (HTTP ' + res.status + ')'));
+        return data;
+      }
+
+      async function postJson(path, body) {
+        var res;
+        try {
+          res = await fetch(apiUrl(path), {
+            method: 'POST',
+            headers: requestHeaders({ 'Content-Type': 'application/json' }),
+            body: JSON.stringify(body || {})
+          });
+        } catch (err) {
+          if (isNetworkFailureMessage(err && err.message)) {
+            throw new Error('Unable to reach the server right now. Please try again.');
+          }
+          throw err;
+        }
+        var raw = '';
+        try { raw = await res.text(); } catch (e) {}
+        var data = {};
+        if (raw) {
+          try { data = JSON.parse(raw); } catch (e) {}
+        }
+        if (!res.ok && res.status === 404 && /^\/api\/admin\//.test(path)) {
+          throw new Error('Admin API route was not found on the server. Restart or redeploy the backend so the latest server.py is running.');
+        }
+        if (!res.ok) throw new Error(data.error || ('Request failed (HTTP ' + res.status + ')'));
+        return data;
+      }
+
+      async function fetchPremiumStatus(email) {
+        return fetchJson('/api/premium-access?email=' + encodeURIComponent(email));
+      }
+
+      async function fetchAdminPremiumList(query) {
+        var suffix = query ? ('?q=' + encodeURIComponent(query)) : '';
+        return fetchJson('/api/admin/premium-access' + suffix);
+      }
+
+      async function fetchAdminOverview() {
+        return fetchJson('/api/admin/stats');
+      }
+
+      async function fetchAdminUserEmails(query) {
+        var suffix = query ? ('?q=' + encodeURIComponent(query)) : '';
+        return fetchJson('/api/admin/user-emails' + suffix);
+      }
+
+      async function fetchAdminDeviceBans() {
+        return fetchJson('/api/admin/device-bans');
+      }
+
+      async function fetchClientRefreshState() {
+        return fetchJson('/api/client-refresh');
+      }
+
+      async function requestClientRefresh() {
+        return postJson('/api/admin/client-refresh', {});
+      }
+
+      async function fetchAdminMaterials(query) {
+        var suffix = query ? ('?q=' + encodeURIComponent(query)) : '';
+        return fetchJson('/api/admin/materials' + suffix);
+      }
+
+      async function saveAdminPremiumAccess(targetEmail, hasAccess, notes, durationMonths, durationDays) {
+        return postJson('/api/admin/premium-access', {
+          target_email: targetEmail,
+          has_access: hasAccess,
+          notes: notes || '',
+          duration_months: durationMonths || 0,
+          duration_days: durationDays || 0
+        });
+      }
+
+      async function removeAdminPremiumAccess(targetEmail) {
+        return postJson('/api/admin/premium-access', {
+          target_email: targetEmail,
+          action: 'remove'
+        });
+      }
+
+      async function saveAdminMaterialAccess(item, audience) {
+        return postJson('/api/admin/materials', {
+          material_id: item.material_id || '',
+          section: item.section || '',
+          title: item.title || '',
+          href: item.href || '',
+          is_premium: audience === 'premium',
+          audience: audience || 'all'
+        });
+      }
+
+      async function createAdminExportHtml(item) {
+        return postJson('/api/admin/export-html', {
+          material_id: item.material_id || '',
+          title: item.title || '',
+          href: item.href || ''
+        });
+      }
+
+      async function saveAdminMaterialAccessList(items, audience) {
+        for (var i = 0; i < items.length; i += 1) {
+          await saveAdminMaterialAccess(items[i], audience);
+        }
+      }
+
+      async function saveAdminSelectedMaterialChoices(items) {
+        for (var i = 0; i < items.length; i += 1) {
+          var item = items[i];
+          if (!item || !item.material_id) continue;
+          var selectedRadio = document.querySelector('input[data-admin-material-radio][data-admin-material-id="' + item.material_id + '"]:checked');
+          var audience = selectedRadio ? (selectedRadio.value || 'all') : (item.audience || (item.is_premium ? 'premium' : 'all'));
+          await saveAdminMaterialAccess(item, audience);
+        }
+      }
+
+      async function saveAdminBulkMaterialChoice(items, audience) {
+        for (var i = 0; i < items.length; i += 1) {
+          if (!items[i]) continue;
+          await saveAdminMaterialAccess(items[i], audience);
+        }
+      }
+
+      async function liftAdminDeviceBan(banId) {
+        return postJson('/api/admin/device-bans', {
+          action: 'lift',
+          ban_id: banId
+        });
+      }
+
+      async function removeAdminDeviceBan(banId) {
+        return postJson('/api/admin/device-bans', {
+          action: 'remove',
+          ban_id: banId
+        });
+      }
+
+      function isProfileEmpty(profile) {
+        var p = profile || {};
+        return !p.fullName && !p.username && !p.dob && !p.phone && !p.gender && !p.avatar;
+      }
+
+      function profileTimestamp(profile) {
+        return String((profile && profile.updated_at) || '');
+      }
+
+      function mergeProfile(localProfile, remoteProfile, email) {
+        var local = localProfile || {};
+        var remote = remoteProfile || {};
+        var chosen = profileTimestamp(remote) > profileTimestamp(local) ? remote : local;
+        var fallback = chosen === remote ? local : remote;
+        return {
+          fullName: chosen.fullName || fallback.fullName || (email ? email.split('@')[0] : ''),
+          username: chosen.username || fallback.username || (email ? email.split('@')[0] : ''),
+          dob: chosen.dob || fallback.dob || '',
+          phone: chosen.phone || fallback.phone || '',
+          gender: chosen.gender || fallback.gender || '',
+          avatar: chosen.avatar || fallback.avatar || '',
+          updated_at: profileTimestamp(chosen) || profileTimestamp(fallback) || ''
+        };
+      }
+
+      function setStatus(text, isError) {
+        var node = document.getElementById('saveStatus');
+        node.textContent = text || '';
+        node.style.color = isError ? '#d4462f' : '';
+      }
+
+      function setAdminStatus(text, isError) {
+        var node = document.getElementById('adminStatus');
+        node.textContent = text || '';
+        node.style.color = isError ? '#d4462f' : '';
+      }
+
+      function setAdminExportStatus(text, isError) {
+        var node = document.getElementById('adminExportStatus');
+        if (!node) return;
+        node.textContent = text || '';
+        node.style.color = isError ? '#d4462f' : '';
+      }
+
+      function setAvatar(target, imageNode, dataUrl) {
+        if (!dataUrl) {
+          target.classList.remove('has-image');
+          imageNode.removeAttribute('src');
+          return;
+        }
+        target.classList.add('has-image');
+        imageNode.src = dataUrl;
+      }
+
+      function escapeHtml(value) {
+        return String(value == null ? '' : value)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function formatDateTime(value, fallback) {
+        if (!value) return fallback;
+        var date = new Date(value);
+        if (isNaN(date.getTime())) return fallback;
+        return date.toLocaleString();
+      }
+
+      function formatPremiumDuration(source) {
+        var months = Number(source && source.duration_months) || 0;
+        var days = Number(source && source.duration_days) || 0;
+        var parts = [];
+        if (months > 0) parts.push(months + ' month' + (months === 1 ? '' : 's'));
+        if (days > 0) parts.push(days + ' day' + (days === 1 ? '' : 's'));
+        return parts.length ? parts.join(' ') : '';
+      }
+
+      function isBlockedDeviceMessage(message) {
+        var text = String(message || '').toLowerCase();
+        return text.indexOf('fourth device') !== -1 || text.indexOf('you are banned because this premium account was opened') !== -1;
+      }
+
+      function applyBlockedPremiumStatus(message) {
+        premiumStatusState = {
+          loaded: true,
+          hasAccess: false,
+          isAdmin: false,
+          isBlockedDevice: true,
+          message: message || 'You are banned because this premium account was opened from a fourth device.'
+        };
+        var pill = document.getElementById('premiumStatusPill');
+        var meta = document.getElementById('premiumStatusMeta');
+        if (pill) {
+          pill.textContent = 'Blocked';
+          pill.className = 'premium-pill is-blocked';
+        }
+        if (meta) {
+          meta.textContent = premiumStatusState.message;
+        }
+      }
+
+      function applyPremiumCheckError(message) {
+        var text = String(message || '').trim();
+        var pill = document.getElementById('premiumStatusPill');
+        var meta = document.getElementById('premiumStatusMeta');
+        premiumStatusState = {
+          loaded: true,
+          hasAccess: false,
+          isAdmin: false,
+          checkError: text || 'Unable to check premium access.'
+        };
+        if (pill) {
+          pill.textContent = text === 'Login is required' || text === 'Signed-in account does not match this request'
+            ? 'Login required'
+            : 'Check failed';
+          pill.className = 'premium-pill is-blocked';
+        }
+        if (meta) {
+          meta.textContent = text === 'Login is required'
+            ? 'Please sign in again so this browser can check premium access for this email.'
+            : text === 'Signed-in account does not match this request'
+            ? 'The saved account email on this browser does not match the active login session. Log out, then sign in with the same email.'
+            : (text || 'Unable to check premium access right now.');
+        }
+      }
+
+      function applyPremiumStatus(status) {
+        premiumStatusState = status || null;
+        var sharedPremiumState = window.IELTSProgress && typeof window.IELTSProgress.getPremiumAccessState === 'function'
+          ? window.IELTSProgress.getPremiumAccessState()
+          : null;
+        var statusIsAdmin = !!(status && (status.is_admin || status.isAdmin));
+        var sharedIsAdmin = !!(sharedPremiumState && (sharedPremiumState.is_admin || sharedPremiumState.isAdmin));
+        isAdminUser = statusIsAdmin || sharedIsAdmin;
+        var pill = document.getElementById('premiumStatusPill');
+        var meta = document.getElementById('premiumStatusMeta');
+        var navItem = document.getElementById('adminNavItem');
+        var adminPanel = document.getElementById('adminViewPanel');
+        if (navItem) navItem.classList.toggle('is-visible', isAdminUser);
+        if (adminPanel) adminPanel.hidden = !isAdminUser;
+        if (isAdminUser && initialViewName === 'admin' && !isAdminViewActive()) {
+          activateView('admin');
+        } else if (isAdminUser) {
+          activateAdminSection(activeAdminSection);
+        }
+
+        if (!pill || !meta) return;
+
+        if (status && (status.has_access || status.is_admin || status.isAdmin || sharedIsAdmin)) {
+          pill.textContent = isAdminUser ? 'Admin access' : 'Approved';
+          pill.className = 'premium-pill is-approved';
+        meta.textContent = isAdminUser
+          ? 'This account is an admin account and can manage premium test access.'
+          : ('This email can open premium tests.' +
+              (formatPremiumDuration(status) ? ' Membership: ' + formatPremiumDuration(status) + '.' : '') +
+              (status.premium_until ? ' Valid until ' + formatDateTime(status.premium_until, 'Unknown date') + '.' : ''));
+        } else {
+          pill.textContent = 'Not approved';
+          pill.className = 'premium-pill is-blocked';
+          meta.textContent = status && status.is_expired
+            ? ('Your premium membership has expired.' + (status.premium_until ? ' Expired on ' + formatDateTime(status.premium_until, 'Unknown date') + '.' : ''))
+            : status && status.decided_at
+            ? ('Premium tests are blocked for this email. Last update: ' + formatDateTime(status.decided_at, 'Unknown date') + '.')
+            : 'Your account is waiting for admin approval.';
+        }
+      }
+
+      function hasCurrentPremiumAccess() {
+        return !!(premiumStatusState && (premiumStatusState.is_admin || premiumStatusState.has_access));
+      }
+
+      function activateAdminSection(sectionName) {
+        activeAdminSection = sectionName || 'approvals';
+        document.querySelectorAll('[data-admin-section]').forEach(function (node) {
+          node.hidden = node.getAttribute('data-admin-section') !== activeAdminSection;
+        });
+        document.querySelectorAll('[data-admin-section-btn]').forEach(function (button) {
+          button.classList.toggle('is-active', button.getAttribute('data-admin-section-btn') === activeAdminSection);
+        });
+        if (isAdminViewActive()) ensureAdminSectionLoaded(activeAdminSection);
+      }
+
+      function isAdminViewActive() {
+        var panel = document.querySelector('[data-view-panel="admin"]');
+        return !!(isAdminUser && panel && panel.classList.contains('active'));
+      }
+
+      function adminInputValue(id) {
+        var node = document.getElementById(id);
+        return node ? node.value.trim() : '';
+      }
+
+      function markAdminSectionStale(sectionName) {
+        if (sectionName) {
+          adminSectionLoaded[sectionName] = false;
+          return;
+        }
+        Object.keys(adminSectionLoaded).forEach(function (key) {
+          adminSectionLoaded[key] = false;
+        });
+      }
+
+      function requirePremiumFromAccount(event) {
+        if (hasCurrentPremiumAccess()) return false;
+        if (event) {
+          event.preventDefault();
+          if (typeof event.stopPropagation === 'function') event.stopPropagation();
+        }
+        activateView('account');
+        var summary = document.getElementById('premiumSummary');
+        if (summary && typeof summary.scrollIntoView === 'function') {
+          summary.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return true;
+      }
+
+      function resetAdminForm() {
+        document.getElementById('adminTargetEmail').value = '';
+        document.getElementById('adminAccessSelect').value = 'approved';
+        document.getElementById('adminDurationMonths').value = '1';
+        document.getElementById('adminDurationDays').value = '0';
+        document.getElementById('adminNotes').value = '';
+        renderAdminEmailSuggestions([]);
+        setAdminStatus('', false);
+      }
+
+      function updateAdminStats(items) {
+        var list = Array.isArray(items) ? items : [];
+        var overview = adminDataCache.overview || {};
+        var approved = typeof overview.approved_saved === 'number'
+          ? overview.approved_saved
+          : list.filter(function (item) { return item && item.has_access; }).length;
+        var totalSaved = typeof overview.saved_entries === 'number' ? overview.saved_entries : list.length;
+        var blocked = typeof overview.blocked_saved === 'number'
+          ? overview.blocked_saved
+          : Math.max(totalSaved - approved, 0);
+        var registered = typeof overview.registered_emails === 'number'
+          ? overview.registered_emails
+          : (adminDataCache.emailBank || []).length;
+        var dailyActive = typeof overview.daily_active_users === 'number' ? overview.daily_active_users : 0;
+        document.getElementById('adminApprovedCount').textContent = String(approved);
+        document.getElementById('adminBlockedCount').textContent = String(blocked);
+        document.getElementById('adminTotalCount').textContent = String(totalSaved);
+        document.getElementById('adminRegisteredCount').textContent = String(registered);
+        document.getElementById('adminDailyActiveCount').textContent = String(dailyActive);
+      }
+
+      function updateAdminMaterialStats(items) {
+        var list = Array.isArray(items) ? items : [];
+        var premium = list.filter(function (item) { return item && item.audience === 'premium'; }).length;
+        var basic = list.filter(function (item) { return item && item.audience === 'basic'; }).length;
+        var all = list.filter(function (item) { return !item || !item.audience || item.audience === 'all'; }).length;
+        document.getElementById('adminPremiumMaterialCount').textContent = String(premium);
+        document.getElementById('adminBasicMaterialCount').textContent = String(basic);
+        document.getElementById('adminAllMaterialCount').textContent = String(all);
+      }
+
+      function materialAudienceLabel(audience) {
+        if (audience === 'premium') return 'Premium only';
+        if (audience === 'basic') return 'Basic only';
+        return 'All users';
+      }
+
+      function getSelectedAdminMaterialItems() {
+        return (adminDataCache.materials || []).filter(function (item) {
+          return !!adminSelectedMaterials[item.material_id];
+        });
+      }
+
+      function matchesAdminMaterialFilter(item, filterKey) {
+        var href = String((item && item.href) || '').toLowerCase();
+        var title = String((item && item.title) || '').toLowerCase();
+        var section = String((item && item.section) || '').toLowerCase();
+        var isListeningSection = href.indexOf('listening/section 1/') !== -1 || href.indexOf('listening/section 2/') !== -1 || href.indexOf('listening/section 3/') !== -1 || href.indexOf('listening/section 4/') !== -1;
+        var isReadingPassage = href.indexOf('reading/passage 1') !== -1 || href.indexOf('reading/passage 2') !== -1 || href.indexOf('reading/passage 3') !== -1;
+        if (!filterKey || filterKey === 'all') return true;
+        if (filterKey === 'listening_full') {
+          return section === 'listening' && href.indexOf('listening/') === 0 && !isListeningSection;
+        }
+        if (filterKey === 'reading_full') {
+          return section === 'reading' && href.indexOf('reading/') === 0 && !isReadingPassage;
+        }
+        if (filterKey === 'writing_full') {
+          return section === 'writing' && href.indexOf('writing/') === 0;
+        }
+        if (filterKey === 'speaking') {
+          return section === 'speaking' || href === 'speaking.html';
+        }
+        if (filterKey === 'books') {
+          return section === 'books' || href === 'books.html';
+        }
+        if (filterKey === 'listening_section_1') return href.indexOf('listening/section 1/') !== -1;
+        if (filterKey === 'listening_section_2') return href.indexOf('listening/section 2/') !== -1;
+        if (filterKey === 'listening_section_3') return href.indexOf('listening/section 3/') !== -1;
+        if (filterKey === 'listening_section_4') return href.indexOf('listening/section 4/') !== -1;
+        if (filterKey === 'reading_passage_1') return section === 'reading' && href.indexOf('reading/passage 1') !== -1;
+        if (filterKey === 'reading_passage_2') return section === 'reading' && (href.indexOf('reading/passage 2') !== -1 || href.indexOf('reading/passage 2s/') !== -1);
+        if (filterKey === 'reading_passage_3') return section === 'reading' && href.indexOf('reading/passage 3') !== -1;
+        return true;
+      }
+
+      function getAdminFilteredMaterials() {
+        return (adminDataCache.materials || []).filter(function (item) {
+          return matchesAdminMaterialFilter(item, activeAdminMaterialFilter);
+        });
+      }
+
+      function getAdminExportMaterialKey(item, index) {
+        if (!item) return '';
+        return String(item.material_id || item.href || item.title || ('export-' + index));
+      }
+
+      function getSelectedAdminExportItems() {
+        return Object.keys(adminSelectedExportMaterials).map(function (key) {
+          return adminSelectedExportMaterials[key];
+        }).filter(Boolean);
+      }
+
+      function updateAdminExportSelectionStatus(message, isError) {
+        if (message) {
+          setAdminExportStatus(message, isError);
+          return;
+        }
+        var readyCount = Array.isArray(adminDataCache.exportMaterials) ? adminDataCache.exportMaterials.length : 0;
+        var selectedCount = getSelectedAdminExportItems().length;
+        setAdminExportStatus(readyCount + ' material(s) ready. ' + selectedCount + ' selected.', false);
+      }
+
+      function renderAdminExportOptions(items) {
+        var listWrap = document.getElementById('adminExportMaterialList');
+        if (!listWrap) return;
+        var list = Array.isArray(items) ? items : [];
+        if (!list.length) {
+          listWrap.innerHTML = '<div class="admin-empty">No tests found</div>';
+          setAdminExportStatus('No materials matched this search.', true);
+          return;
+        }
+        listWrap.innerHTML = list.map(function (item, index) {
+          var key = getAdminExportMaterialKey(item, index);
+          var title = item.title || item.material_id || 'Untitled';
+          var path = item.href || '';
+          var checked = adminSelectedExportMaterials[key] ? ' checked' : '';
+          return '' +
+            '<label class="admin-export-option">' +
+              '<input type="checkbox" data-admin-export-select data-admin-export-key="' + escapeHtml(key) + '"' + checked + '>' +
+              '<span>' +
+                '<span class="admin-export-title">' + escapeHtml(title) + '</span>' +
+                '<span class="admin-export-path">' + escapeHtml(path) + '</span>' +
+              '</span>' +
+            '</label>';
+        }).join('');
+        updateAdminExportSelectionStatus();
+      }
+
+      function downloadTextFile(filename, text, contentType) {
+        var blob = new Blob([text || ''], { type: contentType || 'text/html;charset=utf-8' });
+        downloadBlob(filename || 'ielts-test.html', blob);
+      }
+
+      function downloadBlob(filename, blob) {
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = filename || 'download';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(function () {
+          URL.revokeObjectURL(url);
+        }, 1000);
+      }
+
+      function makeCrcTable() {
+        var table = [];
+        for (var n = 0; n < 256; n += 1) {
+          var c = n;
+          for (var k = 0; k < 8; k += 1) {
+            c = (c & 1) ? (0xedb88320 ^ (c >>> 1)) : (c >>> 1);
+          }
+          table[n] = c >>> 0;
+        }
+        return table;
+      }
+
+      var zipCrcTable = null;
+
+      function crc32(bytes) {
+        var table = zipCrcTable || (zipCrcTable = makeCrcTable());
+        var crc = 0xffffffff;
+        for (var i = 0; i < bytes.length; i += 1) {
+          crc = table[(crc ^ bytes[i]) & 0xff] ^ (crc >>> 8);
+        }
+        return (crc ^ 0xffffffff) >>> 0;
+      }
+
+      function writeUint16(target, offset, value) {
+        target[offset] = value & 0xff;
+        target[offset + 1] = (value >>> 8) & 0xff;
+      }
+
+      function writeUint32(target, offset, value) {
+        target[offset] = value & 0xff;
+        target[offset + 1] = (value >>> 8) & 0xff;
+        target[offset + 2] = (value >>> 16) & 0xff;
+        target[offset + 3] = (value >>> 24) & 0xff;
+      }
+
+      function zipDateParts(date) {
+        var year = Math.max(1980, date.getFullYear());
+        return {
+          time: (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2),
+          date: ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate()
+        };
+      }
+
+      function buildZipBlob(files) {
+        var encoder = new TextEncoder();
+        var chunks = [];
+        var centralChunks = [];
+        var offset = 0;
+        var timestamp = zipDateParts(new Date());
+
+        files.forEach(function (file) {
+          var nameBytes = encoder.encode(file.name || 'ielts-test.html');
+          var contentBytes = encoder.encode(file.content || '');
+          var checksum = crc32(contentBytes);
+          var localHeader = new Uint8Array(30 + nameBytes.length);
+          writeUint32(localHeader, 0, 0x04034b50);
+          writeUint16(localHeader, 4, 20);
+          writeUint16(localHeader, 6, 0x0800);
+          writeUint16(localHeader, 8, 0);
+          writeUint16(localHeader, 10, timestamp.time);
+          writeUint16(localHeader, 12, timestamp.date);
+          writeUint32(localHeader, 14, checksum);
+          writeUint32(localHeader, 18, contentBytes.length);
+          writeUint32(localHeader, 22, contentBytes.length);
+          writeUint16(localHeader, 26, nameBytes.length);
+          writeUint16(localHeader, 28, 0);
+          localHeader.set(nameBytes, 30);
+          chunks.push(localHeader, contentBytes);
+
+          var centralHeader = new Uint8Array(46 + nameBytes.length);
+          writeUint32(centralHeader, 0, 0x02014b50);
+          writeUint16(centralHeader, 4, 20);
+          writeUint16(centralHeader, 6, 20);
+          writeUint16(centralHeader, 8, 0x0800);
+          writeUint16(centralHeader, 10, 0);
+          writeUint16(centralHeader, 12, timestamp.time);
+          writeUint16(centralHeader, 14, timestamp.date);
+          writeUint32(centralHeader, 16, checksum);
+          writeUint32(centralHeader, 20, contentBytes.length);
+          writeUint32(centralHeader, 24, contentBytes.length);
+          writeUint16(centralHeader, 28, nameBytes.length);
+          writeUint16(centralHeader, 30, 0);
+          writeUint16(centralHeader, 32, 0);
+          writeUint16(centralHeader, 34, 0);
+          writeUint16(centralHeader, 36, 0);
+          writeUint32(centralHeader, 38, 0);
+          writeUint32(centralHeader, 42, offset);
+          centralHeader.set(nameBytes, 46);
+          centralChunks.push(centralHeader);
+          offset += localHeader.length + contentBytes.length;
+        });
+
+        var centralSize = centralChunks.reduce(function (sum, chunk) {
+          return sum + chunk.length;
+        }, 0);
+        var endHeader = new Uint8Array(22);
+        writeUint32(endHeader, 0, 0x06054b50);
+        writeUint16(endHeader, 8, files.length);
+        writeUint16(endHeader, 10, files.length);
+        writeUint32(endHeader, 12, centralSize);
+        writeUint32(endHeader, 16, offset);
+        writeUint16(endHeader, 20, 0);
+
+        return new Blob(chunks.concat(centralChunks, [endHeader]), { type: 'application/zip' });
+      }
+
+      function uniqueZipFiles(files) {
+        var seen = {};
+        return files.map(function (file) {
+          var name = String((file && file.name) || 'ielts-test.html');
+          var dotIndex = name.lastIndexOf('.');
+          var base = dotIndex > 0 ? name.slice(0, dotIndex) : name;
+          var ext = dotIndex > 0 ? name.slice(dotIndex) : '';
+          var nextName = name;
+          var count = seen[name] || 0;
+          if (count) {
+            nextName = base + '-' + (count + 1) + ext;
+          }
+          seen[name] = count + 1;
+          seen[nextName] = seen[nextName] || 0;
+          return {
+            name: nextName,
+            content: (file && file.content) || ''
+          };
+        });
+      }
+
+      function areAllAdminMaterialsSelected() {
+        var items = getAdminFilteredMaterials();
+        if (!items.length) return false;
+        return items.every(function (item) {
+          return item && item.material_id && adminSelectedMaterials[item.material_id];
+        });
+      }
+
+      function renderAdminTable(items) {
+        var wrap = document.getElementById('adminTableWrap');
+        if (!wrap) return;
+        updateAdminStats(items || []);
+        var approvedItems = (items || []).filter(function (item) {
+          return item && item.has_access;
+        });
+        if (!approvedItems.length) {
+          wrap.innerHTML = '<div class="admin-empty">No approved account emails found yet.</div>';
+          return;
+        }
+
+        wrap.innerHTML =
+          '<div class="admin-section-intro">' +
+            '<div class="admin-section-copy">' +
+              '<h4>Approved Premium Accounts</h4>' +
+              '<p>Use Edit to place the email back into the approval form. Remove deletes the saved decision.</p>' +
+            '</div>' +
+            '<div class="admin-list-meta">' + approvedItems.length + ' account(s)</div>' +
+          '</div>' +
+          '<div class="admin-table-scroll"><table class="admin-table">' +
+            '<thead>' +
+              '<tr>' +
+                '<th>Email</th>' +
+                '<th>Status</th>' +
+                '<th>Duration</th>' +
+                '<th>Valid Until</th>' +
+                '<th>Updated</th>' +
+                '<th>Notes</th>' +
+                '<th>Actions</th>' +
+              '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+              approvedItems.map(function (item) {
+                return (
+                  '<tr>' +
+                    '<td>' + escapeHtml(item.email || '') + '<br><span class="save-status">By ' + escapeHtml(item.decided_by || 'admin') + '</span></td>' +
+                    '<td><span class="premium-pill ' + (item.has_access ? 'is-approved' : 'is-blocked') + '">' + (item.has_access ? 'Approved' : (item.is_expired ? 'Expired' : 'Blocked')) + '</span></td>' +
+                    '<td>' + escapeHtml(formatPremiumDuration(item) || '-') + '</td>' +
+                    '<td>' + escapeHtml(formatDateTime(item.premium_until, 'Not set')) + '</td>' +
+                    '<td>' + escapeHtml(formatDateTime(item.decided_at, 'Unknown date')) + '</td>' +
+                    '<td>' + escapeHtml(item.notes || '-') + '</td>' +
+                    '<td><div class="admin-row-actions">' +
+                      '<button class="mini-btn" type="button" data-admin-fill="' + escapeHtml(item.email || '') + '" data-admin-approved="' + (item.has_access || item.is_expired ? '1' : '0') + '" data-admin-months="' + escapeHtml(item.duration_months || 0) + '" data-admin-days="' + escapeHtml(item.duration_days || 0) + '" data-admin-notes="' + escapeHtml(item.notes || '') + '">Edit</button>' +
+                      '<button class="mini-btn is-danger" type="button" data-admin-remove="' + escapeHtml(item.email || '') + '">Remove</button>' +
+                    '</div></td>' +
+                  '</tr>'
+                );
+              }).join('') +
+            '</tbody>' +
+          '</table></div>';
+      }
+
+      function renderAdminMaterials(items) {
+        var wrap = document.getElementById('adminMaterialsWrap');
+        if (!wrap) return;
+        var filteredItems = (items || []).filter(function (item) {
+          return matchesAdminMaterialFilter(item, activeAdminMaterialFilter);
+        });
+        updateAdminMaterialStats(filteredItems || []);
+        if (!filteredItems || !filteredItems.length) {
+          wrap.className = 'admin-empty';
+          wrap.innerHTML = 'No materials matched this filter.';
+          return;
+        }
+
+        wrap.className = '';
+        wrap.innerHTML =
+          '<div class="admin-section-intro">' +
+            '<div class="admin-section-copy">' +
+              '<h4>Material Access Rules</h4>' +
+              '<p>Select individual materials or use Select All Materials, then apply one action across the full materials list on every page.</p>' +
+            '</div>' +
+            '<div class="admin-list-meta">' + filteredItems.length + ' material(s)</div>' +
+            '<div class="admin-filter-actions">' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'all' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="all">All Materials</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'listening_section_1' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="listening_section_1">Section 1</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'listening_section_2' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="listening_section_2">Section 2</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'listening_section_3' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="listening_section_3">Section 3</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'listening_section_4' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="listening_section_4">Section 4</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'listening_full' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="listening_full">Full Listening</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'reading_passage_1' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="reading_passage_1">Passage 1</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'reading_passage_2' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="reading_passage_2">Passage 2</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'reading_passage_3' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="reading_passage_3">Passage 3</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'reading_full' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="reading_full">Full Reading</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'writing_full' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="writing_full">Writing</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'speaking' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="speaking">Speaking</button>' +
+              '<button class="mini-btn' + (activeAdminMaterialFilter === 'books' ? ' is-danger' : '') + '" type="button" data-admin-material-filter="books">Books</button>' +
+            '</div>' +
+            '<div class="admin-bulk-actions">' +
+              '<label class="admin-radio-option"><input type="checkbox" data-admin-material-select-all' + (areAllAdminMaterialsSelected() ? ' checked' : '') + '> Select All Materials</label>' +
+              '<button class="mini-btn" type="button" data-admin-material-clear-selection="1">Clear Selection</button>' +
+              '<label class="admin-radio-option"><input type="radio" name="admin-bulk-material-choice" value="all"> All Users</label>' +
+              '<label class="admin-radio-option"><input type="radio" name="admin-bulk-material-choice" value="premium"> Premium Only</label>' +
+              '<label class="admin-radio-option"><input type="radio" name="admin-bulk-material-choice" value="basic"> Basic Only</label>' +
+              '<button class="mini-btn" type="button" data-admin-material-apply-selected="1">Apply Selected Changes</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="admin-table-scroll"><table class="admin-table">' +
+            '<thead>' +
+              '<tr>' +
+                '<th>Material</th>' +
+                '<th>Section</th>' +
+                '<th>Audience</th>' +
+                '<th>Path</th>' +
+                '<th>Updated</th>' +
+                '<th>Access Setting</th>' +
+                '<th>Select</th>' +
+              '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+              filteredItems.map(function (item) {
+                var audience = item.audience || (item.is_premium ? 'premium' : 'all');
+                var materialId = escapeHtml(item.material_id || '');
+                var materialTitle = escapeHtml(item.title || '');
+                var materialSection = escapeHtml(item.section || '');
+                var materialHref = escapeHtml(item.href || '');
+                var isSelected = !!adminSelectedMaterials[item.material_id];
+                return (
+                  '<tr>' +
+                    '<td>' + escapeHtml(item.title || item.material_id || '') + '</td>' +
+                    '<td>' + escapeHtml(item.section || '-') + '</td>' +
+                    '<td><span class="premium-pill ' + (audience === 'all' ? 'is-blocked' : 'is-approved') + '">' + escapeHtml(materialAudienceLabel(audience)) + '</span></td>' +
+                    '<td>' + escapeHtml(item.href || '-') + '</td>' +
+                    '<td>' + escapeHtml(formatDateTime(item.updated_at, 'Not changed')) + (item.updated_by ? '<br><span class="save-status">By ' + escapeHtml(item.updated_by) + '</span>' : '') + '</td>' +
+                    '<td><div class="admin-row-actions">' +
+                      '<div class="admin-radio-group">' +
+                        '<label class="admin-radio-option"><input type="radio" name="material-access-' + materialId + '" value="all"' + (audience === 'all' ? ' checked' : '') + ' data-admin-material-radio data-admin-material-id="' + materialId + '"> All Users</label>' +
+                        '<label class="admin-radio-option"><input type="radio" name="material-access-' + materialId + '" value="premium"' + (audience === 'premium' ? ' checked' : '') + ' data-admin-material-radio data-admin-material-id="' + materialId + '"> Premium Only</label>' +
+                        '<label class="admin-radio-option"><input type="radio" name="material-access-' + materialId + '" value="basic"' + (audience === 'basic' ? ' checked' : '') + ' data-admin-material-radio data-admin-material-id="' + materialId + '"> Basic Only</label>' +
+                      '</div>' +
+                    '</div></td>' +
+                    '<td><input type="checkbox" data-admin-material-select data-admin-material-id="' + materialId + '"' + (isSelected ? ' checked' : '') + '></td>' +
+                  '</tr>'
+                );
+              }).join('') +
+            '</tbody>' +
+          '</table></div>';
+      }
+
+      function renderAdminEmailSuggestions(items) {
+        adminEmailMatches = items || [];
+        var wrap = document.getElementById('adminEmailSuggestions');
+        if (!wrap) return;
+        if (!adminEmailMatches.length) {
+          wrap.classList.remove('active');
+          wrap.innerHTML = '';
+          return;
+        }
+        wrap.classList.add('active');
+        wrap.innerHTML = adminEmailMatches.map(function (email) {
+          return '<button class="suggestion-chip" type="button" data-admin-pick-email="' + escapeHtml(email) + '">' + escapeHtml(email) + '</button>';
+        }).join('');
+      }
+
+      function renderAdminEmailBank(items) {
+        var wrap = document.getElementById('adminEmailBankWrap');
+        if (!wrap) return;
+        if (!items || !items.length) {
+          wrap.className = 'admin-empty';
+          wrap.innerHTML = 'No registered emails found in the database.';
+          return;
+        }
+        var totalRegistered = adminDataCache.overview && typeof adminDataCache.overview.registered_emails === 'number'
+          ? adminDataCache.overview.registered_emails
+          : items.length;
+        var showingText = items.length >= totalRegistered
+          ? (items.length + ' account(s)')
+          : ('Showing ' + items.length + ' of ' + totalRegistered + ' account(s)');
+        wrap.className = 'email-bank-grid';
+        wrap.innerHTML =
+          '<div class="admin-section-intro" style="grid-column:1 / -1;">' +
+            '<div class="admin-section-copy">' +
+              '<h4>Registered User Emails</h4>' +
+              '<p>Click any email below to place it into the premium access form.</p>' +
+            '</div>' +
+            '<div class="admin-list-meta">' + showingText + '</div>' +
+          '</div>' +
+          items.map(function (email) {
+            return '<button class="email-pill" type="button" data-admin-pick-email="' + escapeHtml(email) + '">' + escapeHtml(email) + '</button>';
+          }).join('');
+      }
+
+      function renderAdminBans(items) {
+        var wrap = document.getElementById('adminBansWrap');
+        if (!wrap) return;
+        if (!items || !items.length) {
+          wrap.className = 'admin-empty';
+          wrap.innerHTML = 'No device bans recorded yet.';
+          return;
+        }
+
+        wrap.className = '';
+        wrap.innerHTML =
+          '<div class="admin-section-intro">' +
+            '<div class="admin-section-copy">' +
+              '<h4>Ban History</h4>' +
+              '<p>Review blocked devices and remove or lift entries from here.</p>' +
+            '</div>' +
+            '<div class="admin-list-meta">' + items.length + ' record(s)</div>' +
+          '</div>' +
+          '<div class="admin-table-scroll"><table class="admin-table admin-bans-table">' +
+            '<thead>' +
+              '<tr>' +
+                '<th class="ban-col-email">Email</th>' +
+                '<th class="ban-col-action">Action</th>' +
+                '<th class="ban-col-status">Status</th>' +
+                '<th class="ban-col-device">Device</th>' +
+                '<th class="ban-col-ip">IP</th>' +
+                '<th class="ban-col-reason">Reason</th>' +
+                '<th class="ban-col-banned">Banned At</th>' +
+                '<th class="ban-col-lifted">Lifted At</th>' +
+              '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+              items.map(function (item) {
+                var deviceKey = item.device_key || '';
+                var deviceShort = deviceKey.length > 18 ? (deviceKey.slice(0, 8) + '...' + deviceKey.slice(-6)) : deviceKey;
+                return (
+                  '<tr>' +
+                    '<td class="ban-col-email">' + escapeHtml(item.email || '') + '</td>' +
+                    '<td class="ban-col-action"><div class="admin-row-actions">' +
+                      (item.is_active ? '<button class="mini-btn" type="button" data-admin-lift-ban="' + escapeHtml(item.id) + '">Lift Ban</button>' : '') +
+                      '<button class="mini-btn is-danger" type="button" data-admin-remove-ban="' + escapeHtml(item.id) + '">Remove</button>' +
+                    '</div></td>' +
+                    '<td class="ban-col-status"><span class="premium-pill ' + (item.is_active ? 'is-blocked' : 'is-approved') + '">' + (item.is_active ? 'Blocked' : 'Lifted') + '</span></td>' +
+                    '<td class="ban-col-device" title="' + escapeHtml(deviceKey) + '">' + escapeHtml(deviceShort) + '</td>' +
+                    '<td class="ban-col-ip" title="' + escapeHtml(item.ip_address || '') + '">' + escapeHtml(item.ip_address || '') + '</td>' +
+                    '<td class="ban-col-reason">' + escapeHtml(item.reason || '-') + '</td>' +
+                    '<td class="ban-col-banned" title="' + escapeHtml(formatDateTime(item.banned_at, 'Unknown date')) + '">' + escapeHtml(formatDateTime(item.banned_at, 'Unknown date')) + '</td>' +
+                    '<td class="ban-col-lifted" title="' + escapeHtml(formatDateTime(item.lifted_at, 'Not lifted')) + '">' + escapeHtml(formatDateTime(item.lifted_at, 'Not lifted')) + '</td>' +
+                  '</tr>'
+                );
+              }).join('') +
+            '</tbody>' +
+          '</table></div>';
+      }
+
+      async function refreshPremiumUi(email) {
+        try {
+          var status = await fetchPremiumStatus(email);
+          applyPremiumStatus(status);
+          if (window.IELTSProgress && typeof window.IELTSProgress.initPremiumAccess === 'function') {
+            await window.IELTSProgress.initPremiumAccess(true);
+          }
+        } catch (e) {
+          if (isBlockedDeviceMessage(e && e.message)) {
+            applyBlockedPremiumStatus(e.message);
+          } else {
+            applyPremiumCheckError(e && e.message);
+          }
+        }
+      }
+
+      async function refreshAdminOverview() {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminOverview();
+          adminDataCache.overview = payload || null;
+        } catch (e) {
+          adminDataCache.overview = null;
+        }
+        updateAdminStats(adminDataCache.emailAccess || []);
+        if (adminDataCache.emailBank && adminDataCache.emailBank.length) {
+          renderAdminEmailBank(adminDataCache.emailBank);
+        }
+      }
+
+      async function refreshAdminList(query) {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminPremiumList(query || '');
+          adminDataCache.emailAccess = payload.items || [];
+          renderAdminTable(adminDataCache.emailAccess);
+        } catch (e) {
+          adminDataCache.emailAccess = [];
+          renderAdminTable([]);
+          setAdminStatus((e && e.message) ? e.message : 'Unable to load premium access list.', true);
+        }
+      }
+
+      async function refreshAdminMaterials(query) {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminMaterials(query || '');
+          adminDataCache.materials = payload.items || [];
+          renderAdminMaterials(adminDataCache.materials);
+        } catch (e) {
+          adminDataCache.materials = [];
+          renderAdminMaterials([]);
+          setAdminStatus((e && e.message) ? e.message : 'Unable to load materials.', true);
+        }
+      }
+
+      async function refreshAdminExportMaterials(query) {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminMaterials(query || '');
+          adminDataCache.exportMaterials = payload.items || [];
+          renderAdminExportOptions(adminDataCache.exportMaterials);
+        } catch (e) {
+          adminDataCache.exportMaterials = [];
+          renderAdminExportOptions([]);
+          setAdminExportStatus((e && e.message) ? e.message : 'Unable to load export materials.', true);
+        }
+      }
+
+      async function refreshAdminEmailBank(query) {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminUserEmails(query || '');
+          if (query) {
+            renderAdminEmailSuggestions(payload.items || []);
+          } else {
+            adminDataCache.emailBank = payload.items || [];
+            renderAdminEmailBank(adminDataCache.emailBank);
+            updateAdminStats(adminDataCache.emailAccess || []);
+          }
+        } catch (e) {
+          if (query) {
+            renderAdminEmailSuggestions([]);
+          } else {
+            adminDataCache.emailBank = [];
+            renderAdminEmailBank([]);
+            updateAdminStats(adminDataCache.emailAccess || []);
+          }
+        }
+      }
+
+      async function refreshAdminBans() {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchAdminDeviceBans();
+          adminDataCache.bans = payload.items || [];
+          renderAdminBans(adminDataCache.bans);
+        } catch (e) {
+          adminDataCache.bans = [];
+          renderAdminBans([]);
+        }
+      }
+
+      function setAdminClientRefreshStatus(text, isError) {
+        var node = document.getElementById('adminClientRefreshStatus');
+        if (!node) return;
+        node.textContent = text || '';
+        node.style.color = isError ? '#d4462f' : '';
+      }
+
+      function renderAdminClientRefreshState(state) {
+        var payload = state || {};
+        var generationNode = document.getElementById('adminClientRefreshGeneration');
+        var timeNode = document.getElementById('adminClientRefreshTime');
+        if (generationNode) generationNode.textContent = String(Number(payload.generation) || 0);
+        if (timeNode) timeNode.textContent = formatDateTime(payload.requested_at, 'Never');
+      }
+
+      async function refreshAdminClientRefreshState() {
+        if (!isAdminUser) return;
+        try {
+          var payload = await fetchClientRefreshState();
+          adminDataCache.clientRefresh = payload;
+          renderAdminClientRefreshState(payload);
+        } catch (e) {
+          setAdminClientRefreshStatus((e && e.message) ? e.message : 'Unable to load refresh status.', true);
+        }
+      }
+
+      async function refreshAdminSection(sectionName, force) {
+        if (!isAdminUser) return;
+        var section = sectionName || 'approvals';
+        if (!adminSectionLoaded.hasOwnProperty(section)) section = 'approvals';
+        if (force) adminSectionLoaded[section] = false;
+        if (adminSectionLoaded[section]) return;
+
+        if (section === 'approvals') {
+          await Promise.all([
+            refreshAdminOverview(),
+            refreshAdminList(adminInputValue('adminSearchInput'))
+          ]);
+        } else if (section === 'registered') {
+          await Promise.all([
+            refreshAdminOverview(),
+            refreshAdminEmailBank('')
+          ]);
+        } else if (section === 'stats') {
+          await refreshAdminOverview();
+        } else if (section === 'materials') {
+          await refreshAdminMaterials(adminInputValue('adminMaterialSearchInput'));
+        } else if (section === 'exports') {
+          await refreshAdminExportMaterials(adminInputValue('adminExportSearchInput'));
+        } else if (section === 'blocked') {
+          await refreshAdminBans();
+        } else if (section === 'refresh-users') {
+          await refreshAdminClientRefreshState();
+        }
+        adminSectionLoaded[section] = true;
+      }
+
+      function ensureAdminSectionLoaded(sectionName) {
+        if (!isAdminUser) return;
+        refreshAdminSection(sectionName || activeAdminSection, false).catch(function (e) {
+          setAdminStatus((e && e.message) ? e.message : 'Unable to load this admin section.', true);
+        });
+      }
+
+      function applyProfile(email, profile) {
+        var safeProfile = profile || {};
+        var name = safeProfile.fullName || 'Student Profile';
+        document.getElementById('fullName').value = safeProfile.fullName || '';
+        document.getElementById('username').value = safeProfile.username || (email ? email.split('@')[0] : '');
+        document.getElementById('dob').value = safeProfile.dob || '';
+        document.getElementById('emailField').value = email || '';
+        document.getElementById('phone').value = safeProfile.phone || '';
+
+        var genderNodes = document.querySelectorAll('input[name="gender"]');
+        genderNodes.forEach(function (node) {
+          node.checked = node.value === safeProfile.gender;
+        });
+
+        document.getElementById('sidebarName').textContent = name;
+        document.getElementById('sidebarEmail').textContent = email || '';
+        setAvatar(document.getElementById('sidebarAvatar'), document.getElementById('sidebarAvatarImg'), safeProfile.avatar || '');
+        setAvatar(document.getElementById('profileAvatar'), document.getElementById('profileAvatarImg'), safeProfile.avatar || '');
+      }
+
+      function collectProfile(email) {
+        var selectedGender = document.querySelector('input[name="gender"]:checked');
+        return {
+          fullName: document.getElementById('fullName').value.trim(),
+          username: document.getElementById('username').value.trim(),
+          dob: document.getElementById('dob').value,
+          phone: document.getElementById('phone').value.trim(),
+          gender: selectedGender ? selectedGender.value : '',
+          avatar: currentProfile.avatar || '',
+          updated_at: new Date().toISOString()
+        };
+      }
+
+      document.getElementById('profileForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        var email = window.IELTSProgress ? window.IELTSProgress.getEmail() : '';
+        var profile = collectProfile(email);
+        if (!profile.fullName || !profile.username || !profile.phone) {
+          setStatus('Fill in the required fields first.', true);
+          return;
+        }
+        currentProfile = profile;
+        saveLocalProfile(email, profile);
+        try {
+          await saveRemoteAccountData(email, { profile: profile });
+          lastRemoteProfileJson = JSON.stringify(profile || {});
+          applyProfile(email, profile);
+          setStatus('Account information saved to your account.', false);
+          refreshAccountFromServer(email);
+        } catch (e) {
+          setStatus((e && e.message) ? e.message : 'Saved only on this device. Server sync failed.', true);
+          return;
+        }
+      });
+
+      document.getElementById('avatarUpload').addEventListener('change', async function (event) {
+        var email = window.IELTSProgress ? window.IELTSProgress.getEmail() : '';
+        var file = event.target.files && event.target.files[0];
+        if (!file) return;
+        if (file.size > MAX_AVATAR_BYTES) {
+          setStatus('Choose an image smaller than 1MB.', true);
+          event.target.value = '';
+          return;
+        }
+
+        var reader = new FileReader();
+        reader.onload = async function (loadEvent) {
+          var profile = collectProfile(email);
+          profile.avatar = loadEvent.target.result;
+          profile.updated_at = new Date().toISOString();
+          currentProfile = profile;
+          saveLocalProfile(email, profile);
+          try {
+            await saveRemoteAccountData(email, { profile: profile });
+            lastRemoteProfileJson = JSON.stringify(profile || {});
+            applyProfile(email, profile);
+            setStatus('Profile picture updated in your account.', false);
+            refreshAccountFromServer(email);
+          } catch (e) {
+            setStatus((e && e.message) ? e.message : 'Picture saved only on this device. Server sync failed.', true);
+            return;
+          }
+        };
+        reader.onerror = function () {
+          setStatus('The selected image could not be loaded.', true);
+        };
+        reader.readAsDataURL(file);
+      });
+
+      document.getElementById('logoutBtn').addEventListener('click', function () {
+        postJson('/api/logout', {}).catch(function () {});
+        if (window.IELTSProgress && typeof window.IELTSProgress.clearLocalSessionData === 'function') {
+          window.IELTSProgress.clearLocalSessionData();
+        } else {
+          try {
+            localStorage.removeItem(AUTH_STORAGE_KEY);
+          } catch (e) {}
+        }
+        try {
+          window.dispatchEvent(new CustomEvent('ielts:auth-changed', { detail: { email: '' } }));
+        } catch (e) {}
+        window.location.href = '/login';
+      });
+
+      function renderAiRecommendations() {
+        var container = document.getElementById('aiRecommendations');
+        if (!container) return;
+        if (window.IELTSRecommendation && typeof window.IELTSRecommendation.renderAccountSection === 'function') {
+          window.IELTSRecommendation.renderAccountSection(container);
+        } else {
+          // The recommendation script is injected lazily by progress-tracker;
+          // retry shortly until it is loaded so the section populates on first
+          // visit too.
+          window.setTimeout(renderAiRecommendations, 200);
+        }
+      }
+      document.addEventListener('ielts:ai-recommendations-updated', renderAiRecommendations);
+
+      function renderProgress(data) {
+        var testsGrid = document.getElementById('testsGrid');
+        var booksList = document.getElementById('booksList');
+        var historyBooksList = document.getElementById('historyBooksList');
+        var historyActivityList = document.getElementById('historyActivityList');
+        var loginsList = document.getElementById('loginsList');
+        var resultsList = document.getElementById('resultsList');
+        renderAiRecommendations();
+        var testLinks = {
+          listening: 'Listening/Listening full 1.html',
+          reading: 'Reading/Reading full 1.html',
+          speaking: 'speaking.html',
+          writing: 'Writing/Writing full 1.html',
+          mock: 'mock-results'
+        };
+        var savedAttemptLinks = {
+          listening_full_1: 'Listening/Listening full 1.html',
+          listening_test_2: 'Listening/CDI Pack Mar-APR Lis 2.html',
+          listening_test_3: 'Listening/CDI Pack Mar-APR Lis 3.html',
+          listening_test_4: 'Listening/CDI Pack Mar-APR Lis 4.html',
+          listening_test_5: 'Listening/CDI Pack Mar-APR Lis 5.html',
+          listening_test_6: 'Listening/CDI Pack Mar-APR Lis 6.html',
+          listening_test_7: 'Listening/CDI PACK Mar-APR Lis 7.html',
+          listening_test_8: 'Listening/CDI Pack Mar-APR Lis 8.html',
+          listening_test_9: 'Listening/CDI Pack Mar-APR Lis 9.html',
+          listening_test_10: 'Listening/CDI Pack Mar-APR Lis 10.html',
+          listening_test_11: 'Listening/CDI Pack Mar-APR Lis 11.html',
+          listening_test_12: 'Listening/CDI Pack Mar-APR Lis 12.html',
+          listening_test_13: 'Listening/CDI Pack Mar-APR Lis 13.html',
+          listening_test_14: 'Listening/CDI Pack Mar-APR Lis 14.html',
+          listening_test_15: 'Listening/CDI Pack Mar-APR Lis 15.html',
+          listening_test_16: 'Listening/CDI Pack Mar-APR Lis 16.html',
+          listening_test_17: 'Listening/CDI Pack Mar-APR Lis 17.html',
+          listening_test_18: 'Listening/CDI Pack Mar-APR Lis 18.html',
+          listening_test_19: 'Listening/CDI Pack Mar-APR Lis 19.html',
+          listening_test_20: 'Listening/CDI Pack Mar-APR Lis 20.html',
+          listening_test_21: 'Listening/CDI Pack Mar-APR Lis 21.html',
+          listening_test_22: 'Listening/CDI Pack Mar-APR Lis 22.html',
+          listening_test_23: 'Listening/CDI Pack Mar-APR Lis 23.html',
+          listening_test_24: 'Listening/CDI Pack Mar-APR Lis 24.html',
+          listening_test_25: 'Listening/CDI Pack Mar-APR Lis 25.html',
+          listening_test_26: 'Listening/CDI Pack Mar-APR Lis 26.html',
+          listening_test_27: 'Listening/CDI Pack Mar-APR Lis 27.html',
+          listening_test_28: 'Listening/CDI Pack Mar-APR Lis 28.html',
+          listening_test_29: 'Listening/CDI Pack Mar-APR Lis 29.html',
+          listening_test_30: 'Listening/CDI Pack Mar-APR Lis 30.html',
+          listening_test_31: 'Listening/CDI Pack Mar-APR Lis 31.html',
+          reading_full_1: 'Reading/Reading full 1.html',
+          reading_test_2: 'Reading/CDI Pack Mar-APR Read 2.html',
+          reading_test_3: 'Reading/CDI Pack Mar-APR Read 3.html',
+          reading_test_4: 'Reading/CDI Pack Mar-APR Read 4.html',
+          reading_test_5: 'Reading/CDI Pack Mar-APR Read 5.html',
+          reading_test_6: 'Reading/CDI Pack Mar-APR Read 6.html',
+          reading_test_7: 'Reading/CDI Pack Mar-APR Read 7.html',
+          reading_test_8: 'Reading/CDI Pack Mar-APR Read 8.html',
+          reading_test_9: 'Reading/CDI Pack Mar-APR Read 9.html',
+          reading_test_10: 'Reading/CDI Pack Mar-APR Read 10.html',
+          reading_test_11: 'Reading/CDI Pack Mar-APR Read 11.html',
+          reading_test_12: 'Reading/CDI Pack Mar-APR Read 12.html',
+          reading_test_13: 'Reading/CDI Pack Mar-APR Read 13.html',
+          reading_test_14: 'Reading/CDI Pack Mar-APR Read 14.html',
+          reading_test_15: 'Reading/CDI Pack Mar-APR Read 15.html',
+          reading_test_16: 'Reading/CDI Pack Mar-APR Read 16.html',
+          reading_test_17: 'Reading/CDI Pack Mar-APR Read 17.html',
+          reading_test_18: 'Reading/CDI Pack Mar-APR Read 18.html',
+          reading_test_19: 'Reading/CDI Pack Mar-APR Read 19.html',
+          reading_test_20: 'Reading/CDI Pack Mar-APR Read 20.html',
+          reading_test_21: 'Reading/CDI Pack Mar-APR Read 21.html',
+          reading_test_22: 'Reading/CDI Pack Mar-APR Read 22.html',
+          reading_test_23: 'Reading/CDI Pack Mar-APR Read 23.html',
+          reading_test_24: 'Reading/CDI Pack Mar-APR Read 24.html',
+          reading_test_25: 'Reading/CDI Pack Mar-APR Read 25.html',
+          reading_test_26: 'Reading/CDI Pack Mar-APR Read 26.html',
+          reading_test_27: 'Reading/CDI Pack Mar-APR Read 27.html',
+          reading_test_28: 'Reading/CDI Pack Mar-APR Read 28.html',
+          reading_test_29: 'Reading/CDI Pack Mar-APR Read 29.html',
+          reading_test_30: 'Reading/CDI Pack Mar-APR Read 30.html',
+          reading_test_31: 'Reading/CDI Pack Mar-APR Read 31.html',
+          reading_test_32: 'Reading/CDI Pack Mar-APR Read 32.html',
+          reading_test_33: 'Reading/CDI Pack Mar-APR Read 33.html',
+          reading_test_34: 'Reading/CDI Pack Mar-APR Read 34.html',
+          reading_test_35: 'Reading/CDI Pack Mar-APR Read 35.html',
+          reading_test_36: 'Reading/CDI Pack Mar-APR Read 36.html',
+          reading_test_37: 'Reading/CDI Pack Mar-APR Read 37.html',
+          reading_test_38: 'Reading/CDI Pack Mar-APR Read 38.html',
+          reading_test_39: 'Reading/CDI Pack Mar-APR Read 39.html',
+          reading_test_40: 'Reading/CDI Pack Mar-APR Read 40.html',
+          reading_test_41: 'Reading/CDI Pack Mar-APR Read 41.html',
+          reading_test_42: 'Reading/CDI Pack Mar-APR Read 42.html',
+          reading_test_43: 'Reading/CDI Pack Mar-APR Read 43.html',
+          reading_test_44: 'Reading/CDI Pack Mar-APR Read 44.html',
+          reading_test_45: 'Reading/CDI Pack Mar-APR Read 45.html',
+          reading_test_46: 'Reading/CDI Pack Mar-APR Read 46.html',
+          reading_test_47: 'Reading/CDI Pack Mar-APR Read 47.html',
+          reading_test_48: 'Reading/CDI Pack Mar-APR Read 48.html',
+          reading_test_49: 'Reading/CDI Pack Mar-APR Read 49.html',
+          reading_test_50: 'Reading/CDI Pack Mar-APR Read 50.html',
+          reading_test_51: 'Reading/CDI Pack Mar-APR Read 51.html',
+          reading_test_52: 'Reading/CDI Pack Mar-APR Read 52.html',
+          reading_test_53: 'Reading/CDI Pack Mar-APR Read 53.html',
+          reading_test_54: 'Reading/CDI Pack Mar-APR Read 54.html',
+          reading_test_55: 'Reading/CDI Pack Mar-APR Read 55.html',
+          reading_test_56: 'Reading/CDI Pack Mar-APR Read 56.html',
+          reading_test_57: 'Reading/CDI Pack Mar-APR Read 57.html',
+          reading_test_58: 'Reading/CDI Pack Mar-APR Read 58.html',
+          reading_test_59: 'Reading/CDI Pack Mar-APR Read 59.html',
+          reading_test_60: 'Reading/CDI Pack Mar-APR Read 60.html',
+          reading_test_61: 'Reading/CDI Pack Mar-APR Read 61.html',
+          reading_test_62: 'Reading/CDI Pack Mar-APR Read 62.html',
+          reading_test_63: 'Reading/CDI Pack Mar-APR Read 63.html',
+          reading_test_64: 'Reading/CDI Pack Mar-APR Read 64.html',
+          reading_test_65: 'Reading/CDI Pack Mar-APR Read 65.html',
+          reading_test_66: 'Reading/CDI Pack Mar-APR Read 66.html',
+          reading_test_67: 'Reading/CDI Pack Mar-APR Read 67.html',
+          reading_test_68: 'Reading/CDI Pack Mar-APR Read 68.html',
+          reading_test_69: 'Reading/CDI Pack Mar-APR Read 69.html',
+          reading_test_70: 'Reading/CDI Pack Mar-APR Read 70.html',
+          reading_test_71: 'Reading/CDI Pack Mar-APR Read 71.html',
+          reading_test_72: 'Reading/CDI Pack Mar-APR Read 72.html',
+          reading_test_73: 'Reading/CDI Pack Mar-APR Read 73.html',
+          reading_test_74: 'Reading/CDI Pack Mar-APR Read 74.html',
+          reading_test_75: 'Reading/CDI Pack Mar-APR Read 75.html',
+          reading_test_76: 'Reading/CDI Pack Mar-APR Read 76.html',
+          reading_test_77: 'Reading/CDI Pack Mar-APR Read 77.html',
+          reading_test_78: 'Reading/CDI Pack Mar-APR Read 78.html',
+          reading_test_79: 'Reading/CDI Pack Mar-APR Read 79.html',
+          reading_test_80: 'Reading/CDI Pack Mar-APR Read 80.html',
+          reading_test_81: 'Reading/CDI Pack Mar-APR Read 81.html',
+          reading_test_82: 'Reading/CDI Pack Mar-APR Read 82.html',
+          reading_test_83: 'Reading/CDI Pack Mar-APR Read 83.html',
+          reading_test_84: 'Reading/CDI Pack Mar-APR Read 84.html',
+          reading_test_85: 'Reading/CDI Pack Mar-APR Read 85.html',
+          reading_test_86: 'Reading/CDI Pack Mar-APR Read 86.html',
+          reading_test_87: 'Reading/CDI Pack Mar-APR Read 87.html',
+          reading_test_88: 'Reading/CDI Pack Mar-APR Read 88.html',
+          reading_test_89: 'Reading/CDI Pack Mar-APR Read 89.html',
+          reading_test_90: 'Reading/CDI Pack Mar-APR Read 90.html',
+          reading_test_91: 'Reading/CDI Pack Mar-APR Read 91.html',
+          reading_test_92: 'Reading/CDI Pack Mar-APR Read 92.html',
+          reading_test_93: 'Reading/CDI Pack Mar-APR Read 93.html',
+          reading_test_94: 'Reading/CDI Pack Mar-APR Read 94.html',
+          reading_test_95: 'Reading/CDI Pack Mar-APR Read 95.html',
+          reading_test_96: 'Reading/CDI Pack Mar-APR Read 96.html',
+          reading_test_97: 'Reading/CDI Pack Mar-APR Read 97.html',
+          reading_test_98: 'Reading/CDI Pack Mar-APR Read 98.html',
+          reading_test_99: 'Reading/CDI Pack Mar-APR Read 99.html',
+          reading_test_100: 'Reading/CDI Pack Mar-APR Read 100.html',
+          reading_test_101: 'Reading/CDI Pack Mar-APR Read 101.html',
+          reading_test_102: 'Reading/CDI Pack Mar-APR Read 102.html',
+          reading_test_103: 'Reading/CDI Pack Mar-APR Read 103.html',
+          reading_test_104: 'Reading/CDI Pack Mar-APR Read 104.html',
+          reading_test_105: 'Reading/CDI Pack Mar-APR Read 105.html',
+          reading_test_106: 'Reading/CDI Pack Mar-APR Read 106.html',
+          reading_test_107: 'Reading/CDI Pack Mar-APR Read 107.html',
+          reading_test_108: 'Reading/CDI Pack Mar-APR Read 108.html',
+          reading_test_109: 'Reading/CDI Pack Mar-APR Read 109.html',
+          reading_test_110: 'Reading/CDI Pack Mar-APR Read 110.html',
+          reading_test_111: 'Reading/CDI Pack Mar-APR Read 111.html',
+          reading_test_112: 'Reading/CDI Pack Mar-APR Read 112.html',
+          reading_test_113: 'Reading/CDI Pack Mar-APR Read 113.html',
+          reading_test_114: 'Reading/CDI Pack Mar-APR Read 114.html',
+          reading_test_115: 'Reading/CDI Pack Mar-APR Read 115.html',
+          reading_test_116: 'Reading/CDI Pack Mar-APR Read 116.html',
+          reading_test_117: 'Reading/CDI Pack Mar-APR Read 117.html',
+          reading_test_118: 'Reading/CDI Pack Mar-APR Read 118.html',
+          writing_full_1: 'Writing/Writing full 1.html',
+          writing_full_2: 'Writing/Writing full 2.html',
+          writing_full_3: 'Writing/Writing full 3.html',
+          writing_full_4: 'Writing/Writing full 4.html',
+          writing_full_5: 'Writing/Writing full 5.html',
+          writing_full_6: 'Writing/Writing full 6.html',
+          writing_full_7: 'Writing/Writing full 7.html',
+          writing_full_8: 'Writing/Writing full 8.html',
+          writing_full_9: 'Writing/Writing full 9.html',
+          writing_full_10: 'Writing/Writing full 10.html',
+          writing_full_11: 'Writing/Writing full 11.html',
+          writing_full_12: 'Writing/Writing full 12.html',
+          writing_full_13: 'Writing/Writing full 13.html',
+          writing_full_14: 'Writing/Writing full 14.html',
+          writing_full_15: 'Writing/Writing full 15.html',
+          writing_full_16: 'Writing/Writing full 16.html',
+          writing_full_17: 'Writing/Writing full 17.html',
+          writing_full_18: 'Writing/Writing full 18.html',
+          writing_full_19: 'Writing/Writing full 19.html',
+          writing_full_20: 'Writing/Writing full 20.html',
+          writing_full_21: 'Writing/Writing full 21.html',
+          writing_full_22: 'Writing/Writing full 22.html'
+
+        };
+
+        function normalizeAttemptHref(rawHref) {
+          var href = String(rawHref || '').trim();
+          if (!href) return '';
+          try {
+            href = decodeURIComponent(href);
+          } catch (e) {}
+          href = href.replace(/\\/g, '/');
+          var publicIndex = href.toLowerCase().indexOf('/public_html/');
+          if (publicIndex !== -1) {
+            href = href.slice(publicIndex + '/public_html/'.length);
+          } else if (/^[a-z]:\//i.test(href)) {
+            var readingIndex = href.indexOf('/Reading/');
+            var listeningIndex = href.indexOf('/Listening/');
+            var accountIndex = href.indexOf('/account.html');
+            var startIndex = readingIndex !== -1 ? readingIndex + 1 : (listeningIndex !== -1 ? listeningIndex + 1 : -1);
+            if (startIndex !== -1) {
+              href = href.slice(startIndex);
+            } else if (accountIndex !== -1) {
+              href = href.slice(accountIndex + 1);
+            }
+          } else {
+            href = href.replace(/^\/+/, '');
+          }
+          return href;
+        }
+
+        function resolveAttemptHref(sectionName, attempt, fallbackHref) {
+          if (attempt && attempt.href) {
+            var normalizedHref = normalizeAttemptHref(attempt.href);
+            if (normalizedHref) return normalizedHref;
+          }
+          if (attempt && attempt.test_id) {
+            var id = String(attempt.test_id);
+            if (savedAttemptLinks[id]) return savedAttemptLinks[id];
+            var listeningSectionMatch = id.match(/^listening_listening_section_([1234])_section_([0-9]+(?:_[0-9]+)?)$/);
+            if (listeningSectionMatch) {
+              var sectionFolder = 'Listening/section ' + listeningSectionMatch[1] + '/';
+              var sectionFile = 'Section ' + listeningSectionMatch[1] + '.' + listeningSectionMatch[2].replace(/_/g, '.');
+              return sectionFolder + sectionFile + '.html';
+            }
+            var passageMatch = id.match(/^reading_reading_(passage_1s|passage_2s|passage_3s)_(passage_[123]_\d+)$/);
+            if (passageMatch) {
+              var folderMap = {
+                passage_1s: 'Reading/Passage 1s/',
+                passage_2s: 'Reading/PASSAGE 2s/',
+                passage_3s: 'Reading/Passage 3s/'
+              };
+              var fileBase = passageMatch[2].replace(/^passage_/, 'Passage ').replace(/_/g, '.');
+              return folderMap[passageMatch[1]] + fileBase + '.html';
+            }
+            var writingFullMatch = id.match(/^writing_full_(\d+)$/);
+            if (writingFullMatch) {
+              return 'Writing/Writing full ' + writingFullMatch[1] + '.html';
+            }
+          }
+          return normalizeAttemptHref(fallbackHref) || fallbackHref;
+        }
+
+        testsGrid.innerHTML = '';
+        booksList.innerHTML = '';
+        historyBooksList.innerHTML = '';
+        historyActivityList.innerHTML = '';
+        loginsList.innerHTML = '';
+        resultsList.innerHTML = '';
+
+        ['listening', 'reading', 'speaking', 'writing', 'mock'].forEach(function (name) {
+        var t = (data.tests && data.tests[name]) || { visits: 0, opens: 0, last_opened: '', latest_score: null, best_score: null, last_submitted: '', results: [] };
+        var latestTotal = (t.results && t.results[0] && t.results[0].total) || (name === 'mock' ? 100 : 40);
+        var isWritingSection = name === 'writing';
+        var isMockSection = name === 'mock';
+        var latestScoreLabel = isWritingSection ? 'Latest words' : (isMockSection ? 'Latest mock' : 'Latest score');
+        var bestScoreLabel = isWritingSection ? 'Best words' : (isMockSection ? 'Best mock' : 'Best score');
+        var emptyScoreText = isWritingSection ? 'No words yet' : (isMockSection ? 'No mock yet' : 'No score yet');
+        var emptyLatestText = isWritingSection ? 'No submitted writing yet' : (isMockSection ? 'No completed mock yet' : 'No submitted score yet');
+        var badgeText = t.latest_score == null ? emptyScoreText : (t.latest_score + '/' + latestTotal);
+        var latestScore = t.latest_score == null ? emptyLatestText : (t.latest_score + '/' + latestTotal);
+        var bestScore = t.best_score == null ? '-' : (t.best_score + '/' + latestTotal);
+        var lastStarted = t.last_opened ? new Date(t.last_opened).toLocaleString() : 'No test started yet';
+        var lastSubmitted = t.last_submitted ? new Date(t.last_submitted).toLocaleString() : 'No completed test submitted';
+        var el = document.createElement('div');
+        el.className = 'stat-card';
+        el.innerHTML =
+          '<div class="stat-card-head">' +
+            '<strong>' + name.charAt(0).toUpperCase() + name.slice(1) + '</strong>' +
+            '<span class="stat-badge">' + badgeText + '</span>' +
+          '</div>' +
+          '<div class="stat-meta">' +
+            '<div class="stat-row"><span class="stat-label">Visits</span><span class="stat-value">' + t.visits + '</span></div>' +
+            '<div class="stat-row"><span class="stat-label">Started tests</span><span class="stat-value">' + t.opens + '</span></div>' +
+            '<div class="stat-row"><span class="stat-label">Last start</span><span class="stat-value">' + lastStarted + '</span></div>' +
+            '<div class="stat-row"><span class="stat-label">' + latestScoreLabel + '</span><span class="stat-value">' + latestScore + '</span></div>' +
+            '<div class="stat-row"><span class="stat-label">' + bestScoreLabel + '</span><span class="stat-value">' + bestScore + '</span></div>' +
+            '<div class="stat-row"><span class="stat-label">Last submitted</span><span class="stat-value">' + lastSubmitted + '</span></div>' +
+          '</div>';
+        testsGrid.appendChild(el);
+        });
+
+        var used = (data.books && data.books.used) || {};
+        var usedKeys = Object.keys(used);
+        if (!usedKeys.length) {
+          booksList.innerHTML = '<li class="empty-state">No books tracked yet.</li>';
+          historyBooksList.innerHTML = '<li class="empty-state">No books tracked yet.</li>';
+        } else {
+          usedKeys.sort(function (a, b) { return used[b].count - used[a].count; }).forEach(function (k) {
+            var li = document.createElement('li');
+            li.textContent = used[k].label + ' - used ' + used[k].count + ' times';
+            booksList.appendChild(li);
+            historyBooksList.appendChild(li.cloneNode(true));
+          });
+        }
+
+        var activity = data.activity || [];
+        if (!activity.length) {
+          historyActivityList.innerHTML = '<li class="empty-state">No activity yet.</li>';
+        } else {
+          activity.slice(0, 20).forEach(function (a) {
+            var li = document.createElement('li');
+            li.textContent = a.text + ' (' + new Date(a.at).toLocaleString() + ')';
+            historyActivityList.appendChild(li.cloneNode(true));
+          });
+        }
+
+        var logins = Array.isArray(data.logins) ? data.logins : [];
+        if (!logins.length) {
+          loginsList.innerHTML = '<li class="empty-state">No saved log ins yet.</li>';
+        } else {
+          logins.forEach(function (entry, index) {
+            var li = document.createElement('li');
+            li.className = 'login-item';
+            li.innerHTML =
+              '<div class="login-item-head">' +
+                '<div class="login-item-title">Log in ' + (logins.length - index) + '</div>' +
+                '<div class="login-item-badge">' + escapeHtml(entry.device || 'Device') + '</div>' +
+              '</div>' +
+              '<div class="login-item-meta">' +
+                '<div class="login-meta-row">' +
+                  '<span class="login-meta-label">Date</span>' +
+                  '<span class="login-meta-value">' + escapeHtml(formatDateTime(entry.at, 'Unknown date')) + '</span>' +
+                '</div>' +
+                '<div class="login-meta-row">' +
+                  '<span class="login-meta-label">Browser</span>' +
+                  '<span class="login-meta-value">' + escapeHtml(entry.browser || 'Browser') + '</span>' +
+                '</div>' +
+                '<div class="login-meta-row">' +
+                  '<span class="login-meta-label">Email</span>' +
+                  '<span class="login-meta-value">' + escapeHtml(entry.email || '') + '</span>' +
+                '</div>' +
+              '</div>';
+            loginsList.appendChild(li);
+          });
+        }
+
+        function resultSectionLabel(name) {
+          if (name === 'listening') return 'Listening';
+          if (name === 'reading') return 'Reading';
+          if (name === 'writing') return 'Writing';
+          if (name === 'mock') return 'Full Mock';
+          return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+
+        function resultMetricText(name, score, total) {
+          if (name === 'mock') {
+            return escapeHtml(score) + ' overall score out of ' + escapeHtml(total);
+          }
+          if (name === 'writing') {
+            return escapeHtml(score) + ' tracked words out of ' + escapeHtml(total);
+          }
+          return escapeHtml(score) + ' correct answers out of ' + escapeHtml(total);
+        }
+
+        function resultMetricLabel(name) {
+          if (name === 'mock') return 'Mock result';
+          return name === 'writing' ? 'Writing progress' : 'Result';
+        }
+
+        function buildAttemptHref(baseHref, attemptId) {
+          var href = normalizeAttemptHref(baseHref);
+          if (!href) return '';
+          if (!attemptId) return href;
+          return href + (href.indexOf('?') === -1 ? '?' : '&') + 'attempt=' + encodeURIComponent(attemptId);
+        }
+
+        var resultSections = ['mock', 'listening', 'reading', 'speaking', 'writing'];
+        var submittedAttempts = [];
+        resultSections.forEach(function (name) {
+          var test = (data.tests && data.tests[name]) || {};
+          var results = Array.isArray(test.results) ? test.results : [];
+          results.forEach(function (attempt, index) {
+            submittedAttempts.push({
+              section: name,
+              sectionData: test,
+              attempt: attempt || {},
+              attemptNumber: results.length - index
+            });
+          });
+        });
+
+        submittedAttempts.sort(function (a, b) {
+          return String((b.attempt && b.attempt.submitted_at) || '').localeCompare(String((a.attempt && a.attempt.submitted_at) || ''));
+        });
+
+        if (!submittedAttempts.length) {
+          resultsList.innerHTML = '<li class="empty-state">No submitted test result yet.</li>';
+        } else {
+          submittedAttempts.forEach(function (item) {
+            var name = item.section;
+            var test = item.sectionData || {};
+            var attempt = item.attempt || {};
+            var href = resolveAttemptHref(name, attempt, testLinks[name]);
+            var li = document.createElement('li');
+            li.className = 'result-item';
+            var total = attempt.total || (name === 'writing' ? 400 : 40);
+            var submittedText = formatDateTime(attempt.submitted_at, 'No submission date');
+            var label = attempt.label || (name.charAt(0).toUpperCase() + name.slice(1) + ' Test');
+            var attemptHref = buildAttemptHref(href, attempt.attempt_id);
+            var attemptLinkText = name === 'mock' ? 'Open mock results' : (attempt.attempt_id ? 'Open saved attempt' : 'Open test');
+            var attemptActionMarkup = attemptHref
+              ? '<a class="result-link" href="' + escapeHtml(attemptHref) + '" data-premium-required="1">' + attemptLinkText + '</a>'
+              : '';
+
+            li.innerHTML =
+              '<div class="result-head">' +
+                '<div class="result-title">' +
+                  '<strong>' + escapeHtml(label) + '</strong>' +
+                  '<div class="result-subtitle">' + resultSectionLabel(name) + ' - submitted attempt saved to this account.</div>' +
+                '</div>' +
+                attemptActionMarkup +
+              '</div>' +
+              '<div class="result-summary">' +
+                '<div class="result-summary-card">' +
+                  '<span class="result-summary-label">' + resultMetricLabel(name) + '</span>' +
+                  '<span class="result-summary-value">' + escapeHtml(attempt.score) + '/' + escapeHtml(total) + '</span>' +
+                  '<span class="result-summary-note">' + resultMetricText(name, attempt.score, total) + '</span>' +
+                '</div>' +
+                '<div class="result-summary-card">' +
+                  '<span class="result-summary-label">Skill</span>' +
+                  '<span class="result-summary-value">' + resultSectionLabel(name) + '</span>' +
+                  '<span class="result-summary-note">Attempt ' + escapeHtml(item.attemptNumber) + ' saved for this section.</span>' +
+                '</div>' +
+                '<div class="result-summary-card">' +
+                  '<span class="result-summary-label">Submitted</span>' +
+                  '<span class="result-summary-value">Done</span>' +
+                  '<span class="result-summary-note">' + escapeHtml(submittedText) + '</span>' +
+                '</div>' +
+              '</div>';
+            resultsList.appendChild(li);
+          });
+        }
+      }
+
+      async function refreshAccountFromServer(email, options) {
+        options = options || {};
+        if (!window.IELTSProgress || typeof window.IELTSProgress.fetchAccountData !== 'function') return;
+        var now = Date.now();
+        if (!options.force && lastAccountRefreshAt && now - lastAccountRefreshAt < ACCOUNT_REFRESH_MIN_INTERVAL_MS) return;
+        if (accountRefreshPromise) return accountRefreshPromise;
+
+        accountRefreshPromise = (async function () {
+          try {
+            var remoteBundle = await window.IELTSProgress.fetchAccountData(email);
+            var remoteProfile = (remoteBundle && remoteBundle.profile) || {};
+            var remoteProfileJson = JSON.stringify(remoteProfile || {});
+
+            if (remoteProfileJson !== lastRemoteProfileJson) {
+              currentProfile = mergeProfile(currentProfile, remoteProfile, email);
+              saveLocalProfile(email, currentProfile);
+              applyProfile(email, currentProfile);
+              lastRemoteProfileJson = remoteProfileJson;
+            }
+
+            if (window.IELTSProgress && typeof window.IELTSProgress.initSync === 'function') {
+              await window.IELTSProgress.initSync();
+            }
+            await refreshPremiumUi(email);
+            if (isAdminViewActive()) {
+              await refreshAdminSection(activeAdminSection, true);
+            }
+            renderProgress(window.IELTSProgress.loadData());
+          } catch (e) {
+          } finally {
+            lastAccountRefreshAt = Date.now();
+            accountRefreshPromise = null;
+          }
+        })();
+
+        return accountRefreshPromise;
+      }
+
+      var email = window.IELTSProgress ? window.IELTSProgress.getEmail() : '';
+      if (!email) {
+        window.location.href = '/login';
+        return;
+      }
+
+      (function showRedirectedBlockedDeviceNotice() {
+        var isBlockedRedirect = false;
+        try {
+          isBlockedRedirect = new URLSearchParams(window.location.search || '').get('access') === 'blocked-device';
+        } catch (e) {}
+        if (!isBlockedRedirect) return;
+
+        // If the rejection happened inside the full-mock iframe, promote the
+        // account page to the top window so the notice is not trapped in the
+        // test frame.
+        try {
+          if (window.top && window.top !== window.self) {
+            window.top.location.replace('/account?access=blocked-device');
+            return;
+          }
+        } catch (e) {}
+
+        applyBlockedPremiumStatus(BLOCKED_DEVICE_MESSAGE);
+        if (window.IELTSProgress && typeof window.IELTSProgress.showBlockedAccess === 'function') {
+          window.IELTSProgress.showBlockedAccess(BLOCKED_DEVICE_MESSAGE);
+        }
+        try {
+          window.history.replaceState(window.history.state, document.title, '/account');
+        } catch (e) {}
+      })();
+
+      (async function initAccount() {
+        document.getElementById('emailField').value = email;
+        var remoteBundle = null;
+        try {
+          if (window.IELTSProgress && typeof window.IELTSProgress.initSync === 'function') {
+            await window.IELTSProgress.initSync();
+          }
+          if (window.IELTSProgress && typeof window.IELTSProgress.fetchAccountData === 'function') {
+            remoteBundle = await window.IELTSProgress.fetchAccountData(email);
+          }
+          await refreshPremiumUi(email);
+        } catch (e) {}
+
+        var localProfile = loadLocalProfile(email) || {};
+        var remoteProfile = (remoteBundle && remoteBundle.profile) || {};
+        currentProfile = mergeProfile(localProfile, remoteProfile, email);
+        saveLocalProfile(email, currentProfile);
+        try {
+          if (isProfileEmpty(remoteProfile) || JSON.stringify(currentProfile) !== JSON.stringify(remoteProfile)) {
+            await saveRemoteAccountData(email, { profile: currentProfile });
+          }
+        } catch (e) {}
+        applyProfile(email, currentProfile);
+        lastRemoteProfileJson = JSON.stringify(remoteProfile || currentProfile || {});
+        if (initialViewName && initialViewName !== 'admin') {
+          activateView(initialViewName);
+        } else if (initialViewName === 'admin' && isAdminUser) {
+          activateView('admin');
+        }
+        renderProgress(window.IELTSProgress.loadData());
+      })();
+
+      window.addEventListener('focus', function () {
+        refreshAccountFromServer(email);
+      });
+
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) refreshAccountFromServer(email);
+      });
+
+      setInterval(function () {
+        if (!document.hidden) refreshAccountFromServer(email);
+      }, 60000);
+
+      document.getElementById('clearBtn').addEventListener('click', function () {
+        var existingData = window.IELTSProgress.loadData();
+        var fresh = {
+          tests: {
+            listening: { visits: 0, opens: 0, last_opened: '', latest_score: null, best_score: null, last_submitted: '', results: [] },
+            reading: { visits: 0, opens: 0, last_opened: '', latest_score: null, best_score: null, last_submitted: '', results: [] },
+            speaking: { visits: 0, opens: 0, last_opened: '', latest_score: null, best_score: null, last_submitted: '', results: [] },
+            writing: { visits: 0, opens: 0, last_opened: '', latest_score: null, best_score: null, last_submitted: '', results: [] }
+          },
+          books: { visits: 0, total_used: 0, used: {} },
+          drafts: {},
+          logins: Array.isArray(existingData.logins) ? existingData.logins : [],
+          activity: []
+        };
+        window.IELTSProgress.saveData(fresh);
+        window.location.reload();
+      });
+
+      document.getElementById('adminSaveBtn').addEventListener('click', async function () {
+        if (!isAdminUser) {
+          setAdminStatus('Admin access is required.', true);
+          return;
+        }
+        var targetEmail = document.getElementById('adminTargetEmail').value.trim().toLowerCase();
+        var hasAccess = document.getElementById('adminAccessSelect').value === 'approved';
+        var durationMonths = parseInt(document.getElementById('adminDurationMonths').value, 10) || 0;
+        var durationDays = parseInt(document.getElementById('adminDurationDays').value, 10) || 0;
+        var notes = document.getElementById('adminNotes').value.trim();
+        if (!targetEmail || targetEmail.indexOf('@') === -1) {
+          setAdminStatus('Enter a valid student email first.', true);
+          return;
+        }
+        if (hasAccess && durationMonths <= 0 && durationDays <= 0) {
+          setAdminStatus('Enter how many months or days the membership should last.', true);
+          return;
+        }
+        try {
+          await saveAdminPremiumAccess(targetEmail, hasAccess, notes, durationMonths, durationDays);
+          setAdminStatus('Premium access saved.', false);
+          var registeredWasLoaded = adminSectionLoaded.registered;
+          markAdminSectionStale('approvals');
+          markAdminSectionStale('registered');
+          markAdminSectionStale('stats');
+          markAdminSectionStale('blocked');
+          await refreshAdminSection('approvals', true);
+          if (registeredWasLoaded) await refreshAdminSection('registered', true);
+          if (targetEmail === email) await refreshPremiumUi(email);
+        } catch (e) {
+          setAdminStatus((e && e.message) ? e.message : 'Unable to save premium access.', true);
+        }
+      });
+
+      document.getElementById('adminResetBtn').addEventListener('click', function () {
+        resetAdminForm();
+      });
+
+      function setAdminPwdStatus(text, isError) {
+        var node = document.getElementById('adminPwdStatus');
+        if (!node) return;
+        node.textContent = text || '';
+        node.style.color = isError ? '#d4462f' : '';
+      }
+
+      function resetAdminPwdForm() {
+        var emailEl = document.getElementById('adminPwdEmail');
+        var pwdEl = document.getElementById('adminPwdNew');
+        var sugEl = document.getElementById('adminPwdEmailSuggestions');
+        if (emailEl) emailEl.value = '';
+        if (pwdEl) pwdEl.value = '';
+        if (sugEl) sugEl.innerHTML = '';
+        setAdminPwdStatus('', false);
+      }
+
+      function renderAdminPwdEmailSuggestions(items) {
+        var wrap = document.getElementById('adminPwdEmailSuggestions');
+        if (!wrap) return;
+        var matches = items || [];
+        if (!matches.length) {
+          wrap.classList.remove('active');
+          wrap.innerHTML = '';
+          return;
+        }
+        wrap.classList.add('active');
+        wrap.innerHTML = matches.slice(0, 8).map(function (email) {
+          return '<button class="suggestion-chip" type="button" data-admin-pwd-pick="' + escapeHtml(email) + '">' + escapeHtml(email) + '</button>';
+        }).join('');
+      }
+
+      var adminPwdEmailEl = document.getElementById('adminPwdEmail');
+      if (adminPwdEmailEl) {
+        adminPwdEmailEl.addEventListener('input', async function () {
+          var value = this.value.trim().toLowerCase();
+          if (!value) {
+            renderAdminPwdEmailSuggestions([]);
+            return;
+          }
+          try {
+            var payload = await fetchAdminUserEmails(value);
+            renderAdminPwdEmailSuggestions((payload && payload.items) || []);
+          } catch (e) {
+            renderAdminPwdEmailSuggestions([]);
+          }
+        });
+      }
+
+      var adminPwdSuggestionsEl = document.getElementById('adminPwdEmailSuggestions');
+      if (adminPwdSuggestionsEl) {
+        adminPwdSuggestionsEl.addEventListener('click', function (event) {
+          var button = event.target.closest('[data-admin-pwd-pick]');
+          if (!button) return;
+          var picked = button.getAttribute('data-admin-pwd-pick') || '';
+          adminPwdEmailEl.value = picked;
+          renderAdminPwdEmailSuggestions([]);
+        });
+      }
+
+      var adminPwdSaveBtn = document.getElementById('adminPwdSaveBtn');
+      if (adminPwdSaveBtn) {
+        adminPwdSaveBtn.addEventListener('click', async function () {
+          if (!isAdminUser) {
+            setAdminPwdStatus('Admin access is required.', true);
+            return;
+          }
+          var targetEmail = (adminPwdEmailEl.value || '').trim().toLowerCase();
+          var newPwd = document.getElementById('adminPwdNew').value || '';
+          if (!targetEmail || targetEmail.indexOf('@') === -1) {
+            setAdminPwdStatus('Enter a valid student email first.', true);
+            return;
+          }
+          if (newPwd.length < 4) {
+            setAdminPwdStatus('Password must be at least 4 characters.', true);
+            return;
+          }
+          if (!window.confirm('Set a new password for ' + targetEmail + '?\n\nThe old password will stop working immediately. Make sure to share the new password with the student.')) {
+            return;
+          }
+          adminPwdSaveBtn.disabled = true;
+          setAdminPwdStatus('Updating...', false);
+          try {
+            await postJson('/api/admin/set-password', { target_email: targetEmail, password: newPwd });
+            setAdminPwdStatus('Password updated for ' + targetEmail + '. Share the new password with them.', false);
+            document.getElementById('adminPwdNew').value = '';
+          } catch (e) {
+            setAdminPwdStatus((e && e.message) ? e.message : 'Unable to update password.', true);
+          } finally {
+            adminPwdSaveBtn.disabled = false;
+          }
+        });
+      }
+
+      var adminPwdResetBtn = document.getElementById('adminPwdResetBtn');
+      if (adminPwdResetBtn) {
+        adminPwdResetBtn.addEventListener('click', resetAdminPwdForm);
+      }
+
+      var adminClientRefreshBtn = document.getElementById('adminClientRefreshBtn');
+      if (adminClientRefreshBtn) {
+        adminClientRefreshBtn.addEventListener('click', async function () {
+          if (!isAdminUser) {
+            setAdminClientRefreshStatus('Admin access is required.', true);
+            return;
+          }
+          if (!window.confirm(
+            'Refresh all user browsers?\n\n' +
+            'Open account and library pages will reload within about 30 seconds. ' +
+            'Active tests will wait until the user returns to a safe page.'
+          )) return;
+
+          adminClientRefreshBtn.disabled = true;
+          setAdminClientRefreshStatus('Publishing refresh request...', false);
+          try {
+            var payload = await requestClientRefresh();
+            adminDataCache.clientRefresh = payload;
+            renderAdminClientRefreshState(payload);
+            setAdminClientRefreshStatus(
+              'Refresh generation ' + String(payload.generation || 0) + ' published. User browsers are updating.',
+              false
+            );
+            window.setTimeout(function () {
+              if (window.IELTSProgress && typeof window.IELTSProgress.checkClientRefresh === 'function') {
+                window.IELTSProgress.checkClientRefresh();
+              }
+            }, 1800);
+          } catch (e) {
+            setAdminClientRefreshStatus((e && e.message) ? e.message : 'Unable to publish refresh request.', true);
+            adminClientRefreshBtn.disabled = false;
+          }
+        });
+      }
+
+      var adminClientRefreshStateBtn = document.getElementById('adminClientRefreshStateBtn');
+      if (adminClientRefreshStateBtn) {
+        adminClientRefreshStateBtn.addEventListener('click', function () {
+          setAdminClientRefreshStatus('Loading refresh status...', false);
+          refreshAdminClientRefreshState().then(function () {
+            setAdminClientRefreshStatus('Refresh status updated.', false);
+          });
+        });
+      }
+
+      document.getElementById('adminRefreshBtn').addEventListener('click', function () {
+        refreshAdminSection(activeAdminSection, true);
+      });
+
+      document.getElementById('adminSearchBtn').addEventListener('click', function () {
+        refreshAdminList(document.getElementById('adminSearchInput').value.trim());
+      });
+
+      document.getElementById('adminClearSearchBtn').addEventListener('click', function () {
+        document.getElementById('adminSearchInput').value = '';
+        refreshAdminList('');
+      });
+
+      document.getElementById('adminMaterialSearchBtn').addEventListener('click', function () {
+        refreshAdminMaterials(document.getElementById('adminMaterialSearchInput').value.trim());
+      });
+
+      document.getElementById('adminMaterialClearSearchBtn').addEventListener('click', function () {
+        document.getElementById('adminMaterialSearchInput').value = '';
+        refreshAdminMaterials('');
+      });
+
+      document.getElementById('adminExportSearchBtn').addEventListener('click', function () {
+        refreshAdminExportMaterials(document.getElementById('adminExportSearchInput').value.trim());
+      });
+
+      document.getElementById('adminExportClearSearchBtn').addEventListener('click', function () {
+        document.getElementById('adminExportSearchInput').value = '';
+        refreshAdminExportMaterials('');
+      });
+
+      document.getElementById('adminExportMaterialList').addEventListener('change', function (event) {
+        var toggle = event.target.closest('[data-admin-export-select]');
+        if (!toggle || !isAdminUser) return;
+        var key = toggle.getAttribute('data-admin-export-key') || '';
+        if (!key) return;
+        var item = (adminDataCache.exportMaterials || []).find(function (candidate, index) {
+          return getAdminExportMaterialKey(candidate, index) === key;
+        });
+        if (toggle.checked && item) {
+          adminSelectedExportMaterials[key] = item;
+        } else {
+          delete adminSelectedExportMaterials[key];
+        }
+        updateAdminExportSelectionStatus();
+      });
+
+      document.getElementById('adminExportSelectAllBtn').addEventListener('click', function () {
+        if (!isAdminUser) return;
+        (adminDataCache.exportMaterials || []).forEach(function (item, index) {
+          var key = getAdminExportMaterialKey(item, index);
+          if (key) adminSelectedExportMaterials[key] = item;
+        });
+        renderAdminExportOptions(adminDataCache.exportMaterials);
+      });
+
+      document.getElementById('adminExportClearSelectionBtn').addEventListener('click', function () {
+        if (!isAdminUser) return;
+        adminSelectedExportMaterials = {};
+        renderAdminExportOptions(adminDataCache.exportMaterials);
+      });
+
+      document.getElementById('adminExportDownloadBtn').addEventListener('click', async function () {
+        if (!isAdminUser) {
+          setAdminExportStatus('Admin access is required.', true);
+          return;
+        }
+        var selectedItems = getSelectedAdminExportItems();
+        if (!selectedItems.length) {
+          setAdminExportStatus('Choose at least one test first.', true);
+          return;
+        }
+        var button = document.getElementById('adminExportDownloadBtn');
+        button.disabled = true;
+        setAdminExportStatus('Preparing ' + selectedItems.length + ' HTML file(s)...', false);
+        try {
+          var files = [];
+          for (var i = 0; i < selectedItems.length; i += 1) {
+            var item = selectedItems[i];
+            setAdminExportStatus('Preparing HTML file ' + (i + 1) + ' of ' + selectedItems.length + '...', false);
+            var payload = await createAdminExportHtml(item);
+            files.push({
+              name: payload.filename || 'ielts-test.html',
+              content: payload.html || ''
+            });
+          }
+          if (files.length === 1) {
+            downloadTextFile(files[0].name, files[0].content, 'text/html;charset=utf-8');
+          } else {
+            downloadBlob('ielts-html-exports.zip', buildZipBlob(uniqueZipFiles(files)));
+          }
+          setAdminExportStatus('Downloaded ' + selectedItems.length + ' HTML file(s).', false);
+        } catch (e) {
+          setAdminExportStatus((e && e.message) ? e.message : 'Unable to create export HTML.', true);
+        } finally {
+          button.disabled = false;
+        }
+      });
+
+      document.getElementById('adminTargetEmail').addEventListener('input', function () {
+        var value = this.value.trim().toLowerCase();
+        if (!value) {
+          renderAdminEmailSuggestions([]);
+          return;
+        }
+        refreshAdminEmailBank(value);
+      });
+
+      document.getElementById('adminTableWrap').addEventListener('click', async function (event) {
+        var fillButton = event.target.closest('[data-admin-fill]');
+        if (fillButton) {
+          document.getElementById('adminTargetEmail').value = fillButton.getAttribute('data-admin-fill') || '';
+          document.getElementById('adminAccessSelect').value = fillButton.getAttribute('data-admin-approved') === '1' ? 'approved' : 'blocked';
+          document.getElementById('adminDurationMonths').value = fillButton.getAttribute('data-admin-months') || '1';
+          document.getElementById('adminDurationDays').value = fillButton.getAttribute('data-admin-days') || '0';
+          document.getElementById('adminNotes').value = fillButton.getAttribute('data-admin-notes') || '';
+          activateView('admin');
+          return;
+        }
+
+        var removeButton = event.target.closest('[data-admin-remove]');
+        if (!removeButton || !isAdminUser) return;
+        var targetEmail = (removeButton.getAttribute('data-admin-remove') || '').trim().toLowerCase();
+        if (!targetEmail) return;
+        try {
+          await removeAdminPremiumAccess(targetEmail);
+          setAdminStatus('Premium access entry removed.', false);
+          var registeredWasLoaded = adminSectionLoaded.registered;
+          markAdminSectionStale('approvals');
+          markAdminSectionStale('registered');
+          markAdminSectionStale('stats');
+          await refreshAdminSection('approvals', true);
+          if (registeredWasLoaded) await refreshAdminSection('registered', true);
+          if (targetEmail === email) await refreshPremiumUi(email);
+        } catch (e) {
+          setAdminStatus((e && e.message) ? e.message : 'Unable to remove premium access entry.', true);
+        }
+      });
+
+      document.getElementById('adminEmailSuggestions').addEventListener('click', function (event) {
+        var button = event.target.closest('[data-admin-pick-email]');
+        if (!button) return;
+        document.getElementById('adminTargetEmail').value = button.getAttribute('data-admin-pick-email') || '';
+        renderAdminEmailSuggestions([]);
+      });
+
+      document.getElementById('adminEmailBankWrap').addEventListener('click', function (event) {
+        var button = event.target.closest('[data-admin-pick-email]');
+        if (!button) return;
+        document.getElementById('adminTargetEmail').value = button.getAttribute('data-admin-pick-email') || '';
+        document.getElementById('adminTargetEmail').focus();
+      });
+
+      document.getElementById('adminBansWrap').addEventListener('click', async function (event) {
+        var liftButton = event.target.closest('[data-admin-lift-ban]');
+        if (liftButton && isAdminUser) {
+          var liftBanId = parseInt(liftButton.getAttribute('data-admin-lift-ban'), 10) || 0;
+          if (!liftBanId) return;
+          try {
+            await liftAdminDeviceBan(liftBanId);
+            setAdminStatus('Device ban lifted.', false);
+            await refreshAdminBans();
+          } catch (e) {
+            setAdminStatus((e && e.message) ? e.message : 'Unable to lift this ban.', true);
+          }
+          return;
+        }
+
+        var removeButton = event.target.closest('[data-admin-remove-ban]');
+        if (!removeButton || !isAdminUser) return;
+        var removeBanId = parseInt(removeButton.getAttribute('data-admin-remove-ban'), 10) || 0;
+        if (!removeBanId) return;
+        try {
+          await removeAdminDeviceBan(removeBanId);
+          setAdminStatus('Ban entry removed.', false);
+          await refreshAdminBans();
+        } catch (e) {
+          setAdminStatus((e && e.message) ? e.message : 'Unable to remove this ban.', true);
+        }
+      });
+
+      document.getElementById('adminMaterialsWrap').addEventListener('click', async function (event) {
+        var filterButton = event.target.closest('[data-admin-material-filter]');
+        if (filterButton && isAdminUser) {
+          activeAdminMaterialFilter = filterButton.getAttribute('data-admin-material-filter') || 'all';
+          renderAdminMaterials(adminDataCache.materials);
+          return;
+        }
+        var selectAllToggle = event.target.closest('[data-admin-material-select-all]');
+        if (selectAllToggle && isAdminUser) {
+          getAdminFilteredMaterials().forEach(function (item) {
+            if (!item || !item.material_id) return;
+            adminSelectedMaterials[item.material_id] = !!selectAllToggle.checked;
+          });
+          renderAdminMaterials(adminDataCache.materials);
+          return;
+        }
+        var clearSelectionButton = event.target.closest('[data-admin-material-clear-selection]');
+        if (clearSelectionButton && isAdminUser) {
+          adminSelectedMaterials = {};
+          renderAdminMaterials(adminDataCache.materials);
+          setAdminStatus('Material selection cleared.', false);
+          return;
+        }
+        var selectToggle = event.target.closest('[data-admin-material-select]');
+        if (selectToggle && isAdminUser) {
+          var selectedMaterialId = selectToggle.getAttribute('data-admin-material-id') || '';
+          if (!selectedMaterialId) return;
+          adminSelectedMaterials[selectedMaterialId] = !!selectToggle.checked;
+          return;
+        }
+        var applySelectedButton = event.target.closest('[data-admin-material-apply-selected]');
+        if (applySelectedButton && isAdminUser) {
+          var selectedItems = getSelectedAdminMaterialItems();
+          if (!selectedItems.length) {
+            setAdminStatus('Select at least one material first.', true);
+            return;
+          }
+          var bulkChoice = document.querySelector('input[name="admin-bulk-material-choice"]:checked');
+          try {
+            if (bulkChoice && bulkChoice.value) {
+              await saveAdminBulkMaterialChoice(selectedItems, bulkChoice.value);
+              setAdminStatus('Applied ' + materialAudienceLabel(bulkChoice.value).toLowerCase() + ' to ' + selectedItems.length + ' selected material(s).', false);
+            } else {
+              await saveAdminSelectedMaterialChoices(selectedItems);
+              setAdminStatus('Applied the chosen access settings to ' + selectedItems.length + ' selected material(s).', false);
+            }
+            if (window.IELTSProgress && typeof window.IELTSProgress.initMaterialAccess === 'function') {
+              await window.IELTSProgress.initMaterialAccess(true);
+            }
+            await refreshAdminMaterials(document.getElementById('adminMaterialSearchInput').value.trim());
+          } catch (e) {
+            setAdminStatus((e && e.message) ? e.message : 'Unable to update selected materials.', true);
+          }
+          return;
+        }
+      });
+
+      document.getElementById('resultsList').addEventListener('click', function (event) {
+        var premiumLink = event.target.closest('a[data-premium-required]');
+        if (!premiumLink) return;
+        var canAccess = window.IELTSProgress && typeof window.IELTSProgress.canAccessMaterialHref === 'function'
+          ? window.IELTSProgress.canAccessMaterialHref(premiumLink.getAttribute('href') || '')
+          : true;
+        if (!canAccess) requirePremiumFromAccount(event);
+      });
+
+      function activateView(viewName) {
+        if (viewName === 'admin' && !isAdminUser) {
+          viewName = 'account';
+        }
+        document.querySelectorAll('[data-view-panel]').forEach(function (panel) {
+          panel.classList.toggle('active', panel.getAttribute('data-view-panel') === viewName);
+        });
+        document.querySelectorAll('[data-view-link]').forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('data-view-link') === viewName);
+        });
+      }
+
+      document.querySelectorAll('[data-view-link]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          activateView(link.getAttribute('data-view-link'));
+        });
+      });
+
+      document.querySelectorAll('[data-admin-section-btn]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          activateAdminSection(button.getAttribute('data-admin-section-btn') || 'approvals');
+        });
+      });
+
+      if (initialViewName && initialViewName !== 'admin') activateView(initialViewName);
+    })();
+  </script>
+  <script>
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+  </script>
+</body>
+</html>

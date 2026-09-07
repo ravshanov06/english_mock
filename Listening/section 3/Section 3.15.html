@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CDI IELTS Listening Test Simulation</title>
+    <link rel="stylesheet" href="../../assets/listening-section-test-8787c9c6.css">
+    <link rel="stylesheet" href="../../assets/listening-transcript.css?v=20260729-section-transcripts-visible">
+</head>
+
+
+
+
+<body>
+    <div class="audio-controller-bar hidden">
+        <div class="audio-controller-copy">
+            <div class="audio-controller-title">Listening Audio</div>
+            <div class="audio-controller-note">This player stays pinned at the top while you scroll.</div>
+        </div>
+        <audio id="testAudio" class="audio-controller-player" controls controlsList="nodownload" preload="auto">
+            <source src="Section 3.15.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Loading Screen -->
+    <!-- Loading Screen -->
+     <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2 class="loading-title">Your test will begin shortly</h2>
+            <p class="loading-subtitle">Please wait</p>
+        </div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-heading">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek logo" class="brand-icon brand-icon--start" loading="lazy">
+                <h1 class="start-title">IELTSwithJurabek</h1>
+            </div>
+            <p class="start-subtitle">Are you ready to begin your listening test?</p>
+            <button class="start-button" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+    <!-- Test Interface -->
+    <div id="testInterface" class="test-interface hidden">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="logo-link">
+                    <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                    <div class="ielts-logo">IELTS</div>
+                    <div class="test-id">Test taker ID</div>
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/IELTSwithJurabek" target="_blank" class="support-link">
+                    <i class="fab fa-telegram-plane" aria-hidden="true" style="font-size:1rem;"></i>
+                    IELTSwithJurabek
+                </a>
+            </div>
+            <div class="header-right">
+                <img src="https://cdn.kiberai.uz/content/uploads/2026/01/icon-modified.png" alt="IELTSwithJurabek icon" class="brand-icon brand-icon--tiny" loading="lazy">
+                <button class="icon-button" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="menu-button" id="optionsMenuBtn" aria-label="Options menu">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Part Header -->
+                <div class="part-header">
+                    <div class="part-title-wrapper">
+                       
+                <h1 class="part-title" id="partTitle">PART 3</h1>
+            </div>
+	                <p class="part-instructions" id="partInstructions">Answer Questions 21–30.</p>
+            </div>
+            <!-- Questions Section -->
+                <div class="questions-section">
+                    <h2 class="questions-title" id="questionsTitle">Questions 21–30</h2>
+	                <p class="questions-description" id="questionsDescription">Music school entry and practice.</p>
+
+	                    <!-- Part 2 Content -->
+	                    <div id="part1Content">
+	                        <div class="section-instructions">
+	                            <p class="section-heading">SECTION 3</p>
+	                            <p class="section-subheading"><strong>Music school entry and practice</strong></p>
+	                        </div>
+
+	                        <div class="multiple-choice-card" aria-label="Questions 21–30">
+	                            <h3 class="scenario-title selectable-text">Music school entry and practice</h3>
+	                            <div class="question-group">
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 8px;">Questions 21–22</h4>
+	                                <p class="selectable-text" style="margin-bottom: 12px;">Choose TWO letters, A–E.</p>
+
+	                                <div id="q21" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">Which TWO points do the students most frequently make about their music background before entering music schools?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="checkbox" name="music_background" value="A" class="choice-input" onchange="handleMultiSelect('music_background', 2, this)"><span class="selectable-text">A. they had composed songs</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_background" value="B" class="choice-input" onchange="handleMultiSelect('music_background', 2, this)"><span class="selectable-text">B. they had relevant music qualifications</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_background" value="C" class="choice-input" onchange="handleMultiSelect('music_background', 2, this)"><span class="selectable-text">C. they played more than one instrument</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_background" value="D" class="choice-input" onchange="handleMultiSelect('music_background', 2, this)"><span class="selectable-text">D. they had played in public</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_background" value="E" class="choice-input" onchange="handleMultiSelect('music_background', 2, this)"><span class="selectable-text">E. they had piano lessons</span></label>
+	                                    </div>
+	                                    <div id="q22" tabindex="-1" style="height: 1px;"></div>
+	                                </div>
+
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 8px;">Questions 23–24</h4>
+	                                <p class="selectable-text" style="margin-bottom: 12px;">Choose TWO letters, A–E.</p>
+
+	                                <div id="q23" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">Which TWO points do the students most frequently make about their music practice?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="checkbox" name="music_practice" value="A" class="choice-input" onchange="handleMultiSelect('music_practice', 2, this)"><span class="selectable-text">A. they practised alone</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_practice" value="B" class="choice-input" onchange="handleMultiSelect('music_practice', 2, this)"><span class="selectable-text">B. they practised every day</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_practice" value="C" class="choice-input" onchange="handleMultiSelect('music_practice', 2, this)"><span class="selectable-text">C. they were motivated by fear</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_practice" value="D" class="choice-input" onchange="handleMultiSelect('music_practice', 2, this)"><span class="selectable-text">D. they did not have enough practice</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="music_practice" value="E" class="choice-input" onchange="handleMultiSelect('music_practice', 2, this)"><span class="selectable-text">E. they enjoyed the challenge of playing complex pieces</span></label>
+	                                    </div>
+	                                    <div id="q24" tabindex="-1" style="height: 1px;"></div>
+	                                </div>
+
+	                                <h4 class="selectable-text" style="font-weight: 500; margin-bottom: 8px;">Questions 25–26</h4>
+	                                <p class="selectable-text" style="margin-bottom: 12px;">Choose TWO letters, A–E.</p>
+
+	                                <div id="q25" class="multiple-choice-block" tabindex="-1" style="margin-bottom: 20px;">
+	                                    <div class="selectable-text" style="font-weight: 500;">Which TWO points do the students most frequently make about playing pieces that would be assessed?</div>
+	                                    <div class="multiple-choice">
+	                                        <label class="choice-item"><input type="checkbox" name="assessed_pieces" value="A" class="choice-input" onchange="handleMultiSelect('assessed_pieces', 2, this)"><span class="selectable-text">A. they liked to hear others playing the same piece</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="assessed_pieces" value="B" class="choice-input" onchange="handleMultiSelect('assessed_pieces', 2, this)"><span class="selectable-text">B. they wanted to play unknown pieces</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="assessed_pieces" value="C" class="choice-input" onchange="handleMultiSelect('assessed_pieces', 2, this)"><span class="selectable-text">C. they played a piece by memory</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="assessed_pieces" value="D" class="choice-input" onchange="handleMultiSelect('assessed_pieces', 2, this)"><span class="selectable-text">D. they played a piece selected by the tutor</span></label>
+	                                        <label class="choice-item"><input type="checkbox" name="assessed_pieces" value="E" class="choice-input" onchange="handleMultiSelect('assessed_pieces', 2, this)"><span class="selectable-text">E. they played technical pieces</span></label>
+	                                    </div>
+	                                    <div id="q26" tabindex="-1" style="height: 1px;"></div>
+	                                </div>
+
+	                                <h4 class="selectable-text" style="font-weight: 500; margin: 18px 0 12px;">Questions 27–30</h4>
+	                                <p class="selectable-text" style="margin-bottom: 8px;">What comment do the students make about the following practice?</p>
+	                                <p class="selectable-text" style="margin-bottom: 16px;">Choose FOUR answers from the box and write the correct letter, A–G, next to Questions 27–30.</p>
+
+	                                <div class="matching-section" aria-label="Questions 27–30">
+	                                    <div class="matching-header" aria-hidden="true">
+	                                        <span class="matching-header-left">Practice</span>
+	                                        <span class="matching-header-right">Comments</span>
+	                                    </div>
+	                                    <div class="matching-layout">
+	                                        <div class="people-column">
+	                                            <div class="person-row">
+	                                                <span class="person-label">27. Play solo</span>
+	                                                <div class="drop-zone" id="q27" tabindex="0" data-target="q27" data-group="practice" data-placeholder="27" aria-label="Question 27"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">28. Choose a piece to play</span>
+	                                                <div class="drop-zone" id="q28" tabindex="0" data-target="q28" data-group="practice" data-placeholder="28" aria-label="Question 28"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">29. Play different musical genres</span>
+	                                                <div class="drop-zone" id="q29" tabindex="0" data-target="q29" data-group="practice" data-placeholder="29" aria-label="Question 29"></div>
+	                                            </div>
+	                                            <div class="person-row">
+	                                                <span class="person-label">30. Play duet</span>
+	                                                <div class="drop-zone" id="q30" tabindex="0" data-target="q30" data-group="practice" data-placeholder="30" aria-label="Question 30"></div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="responsibility-list drag-options" aria-label="Practice options" data-group="practice">
+	                                            <button type="button" class="drag-item responsibility-item" data-option="A" data-label="A" data-group="practice">A. it is beneficial</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="B" data-label="B" data-group="practice">B. it is challenging but also enjoyable</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="C" data-label="C" data-group="practice">C. it helps to boost confidence</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="D" data-label="D" data-group="practice">D. it is pleasant to hear</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="E" data-label="E" data-group="practice">E. it is time-consuming</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="F" data-label="F" data-group="practice">F. need to work effectively with others</button>
+	                                            <button type="button" class="drag-item responsibility-item" data-option="G" data-label="G" data-group="practice">G. it happens infrequently</button>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                <div class="submit-section">
+                    <button class="submit-button" onclick="submitTest()" id="submitBtn">Submit Test</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div class="bottom-navigation hidden" id="bottomNavigation">
+	            <div class="parts-navigation">
+	                <div class="part-nav-item">
+	                    <button type="button" class="part-button active" onclick="switchPart(0)" id="part1Btn">Part 3</button>
+	                    <div class="question-numbers" id="part1Questions">
+	                        <button type="button" class="question-number" onclick="focusQuestion(21)">21</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(22)">22</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(23)">23</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(24)">24</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(25)">25</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(26)">26</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(27)">27</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(28)">28</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(29)">29</button>
+	                        <button type="button" class="question-number" onclick="focusQuestion(30)">30</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        <!-- Results Modal -->
+        <div id="resultsModal" class="results-modal hidden">
+            <div class="results-content">
+                <h2 class="results-title">Test Results</h2>
+        <div class="score-summary">
+            <div class="score-item">
+                <div class="score-number" id="totalScore">0/10</div>
+                <div class="score-label">Total Score</div>
+            </div>
+            <div class="score-item">
+                <div class="score-number" id="part3Score">0/10</div>
+                <div class="score-label">Part 3</div>
+            </div>
+        </div>
+                <button class="close-button" onclick="closeResults()">Close Results</button>
+            </div>
+        </div>
+        <!-- Options Modal -->
+        <div id="options-modal" class="modal options-modal hidden">
+            <div class="modal-content" id="options-content">
+                <div class="options-header">
+                    <button class="close-btn" id="options-back" aria-label="Back" style="visibility:hidden;">&#8249;</button>
+                    <div class="options-title" id="options-title">Options</div>
+                    <button class="close-btn" id="close-options" aria-label="Close options">&times;</button>
+                </div>
+                <div id="options-home">
+                    <div class="options-list">
+                        <div class="option-row" data-target="contrast">
+                            <span class="option-label">Contrast
+                                <span class="option-sub" id="contrast-current">Black on white</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="option-row" data-target="textsize">
+                            <span class="option-label">Text size
+                                <span class="option-sub" id="textsize-current">Medium</span>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="contrast-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-contrast="normal">
+                            <span>Black on white</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="whiteblack">
+                            <span>White on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-contrast="yellowblack">
+                            <span>Yellow on black</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="textsize-menu" class="hidden">
+                    <div class="options-list submenu">
+                        <button type="button" data-textsize="small">
+                            <span>Small</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="medium">
+                            <span>Medium</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="large">
+                            <span>Large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                        <button type="button" data-textsize="xlarge">
+                            <span>Extra large</span>
+                            <span class="checkmark"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlight Buttons -->
+        <button id="highlight-btn">Highlight</button>
+        <button id="remove-highlight-btn">Remove</button>
+        <!-- Script -->
+        
+<script src="../../assets/listening-section-test-script-af6a3a3c.js?v=20260522-safari-compat-all"></script>
+
+<script src="../../assets/progress-tracker.js?v=20260727-premium-exit"></script>
+<script src="../../assets/listening-loader-fallback.js?v=20260424-sectionloader3"></script>
+<script src="../../assets/listening-section-progress.js?v=20260704-safari-audio"></script>
+<script src="../../assets/listening-review-mode.js?v=20260519-no-note"></script>
+    <script src="../../assets/highlight-persistence.js?v=20260516-radio-cells"></script>
+    <script src="../../assets/listening-transcript-data-section3-15.js?v=20260729-section-transcripts-visible"></script>
+    <script src="../../assets/listening-transcript.js?v=20260729-section-transcripts-visible"></script>
+</body>
+
+</html>

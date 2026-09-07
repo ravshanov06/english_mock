@@ -1,0 +1,33 @@
+window.READING_ANSWER_EXPLANATIONS={
+  "test":"separate_reading_passage_1_20","reviewed":true,"reviewLevel":"manual-question-by-question",
+  "items":{
+    "1":{"answer":"TRUE","location":"Paragraph 1","evidence":"was popularised in 1989 in a book, Wonderful Life, by Stephen Jay Gould","why":"‘Popularised’ means made widely known or popular. Gould’s book is explicitly identified as the means, so TRUE.","others":"FALSE contradicts ‘popularised’. NOT GIVEN ignores the stated book and effect."},
+    "2":{"answer":"NOT GIVEN","location":"Paragraph 2","evidence":"Charles Walcott, following reports ... is said to have tripped over a block of shale in 1909","why":"The passage explains how Walcott learned of and encountered the fossils, but says nothing about requesting or receiving permission from Canadian authorities. Therefore NOT GIVEN.","others":"TRUE invents an authorization process. FALSE would require a statement that no permission was needed; none appears."},
+    "3":{"answer":"TRUE","location":"Paragraph 3","evidence":"contain impressions of the soft body parts alongside the remains of bones and shells","why":"Soft body parts are stated directly; bones and shells are hard body parts. ‘Alongside’ confirms both occur together, so TRUE.","others":"FALSE contradicts the unusual feature described. NOT GIVEN ignores both categories of remains."},
+    "4":{"answer":"FALSE","location":"Paragraph 4","evidence":"these animals originally existed below an ocean","why":"Animals living below an ocean were marine, not land animals. The mountain location resulted from the ocean bed later being pushed upward. Therefore FALSE.","others":"TRUE confuses the present fossil location with the animals’ original habitat. NOT GIVEN ignores the explicit ocean setting."},
+    "5":{"answer":"FALSE","location":"Paragraph 7","evidence":"It is now thought to be an ancestor of the modern group of arthropods","why":"An ancestor of modern arthropods is related to modern creatures. This directly contradicts ‘unrelated to any modern creature’, so FALSE.","others":"TRUE reverses the evolutionary relationship. NOT GIVEN ignores the explicit ancestry claim."},
+    "6":{"answer":"CAMBRIAN EXPLOSION","location":"Paragraph 3","evidence":"The Burgess Shale began to form soon after a period of time known as the Cambrian explosion","why":"‘Following a time called’ directly paraphrases ‘soon after a period ... known as’. The period is the CAMBRIAN EXPLOSION.","others":"Evolution increased during that period, but EVOLUTION is not the period’s name."},
+    "7":{"answer":"RAILWAY","location":"Paragraph 2","evidence":"fossil finds by construction workers on Canadian railways","why":"The people reporting the finds were constructing a RAILWAY. The passage uses plural ‘railways’, but the note’s article ‘a’ requires the grammatically singular form.","others":"Mountains give the location of the digging, not the structure the workers were building."},
+    "8":{"answer":"1979","location":"Paragraph 6","evidence":"Simon Conway Morris when he re-examined Walcott's specimens in 1979","why":"‘Looked at ... findings again’ paraphrases ‘re-examined ... specimens’. This occurred in 1979.","others":"1909 dates Walcott’s discovery; 1924 marks the end of the first long investigation."},
+    "9":{"answer":"EVOLUTION","location":"Paragraph 8","evidence":"the evolution of such complex life went on uninterrupted","why":"‘Continued’ paraphrases ‘went on uninterrupted’. What continued was the EVOLUTION of complex life.","others":"Preservation conditions ended locally, but evolution itself continued."},
+    "10":{"answer":"FAN","location":"Paragraph 6","evidence":"a tail in the shape of a fan","why":"‘Resembling’ paraphrases ‘in the shape of’. Opabinia’s tail resembled a FAN.","others":"Its body had lobes, while fan describes the tail specifically."},
+    "11":{"answer":"FOOD","location":"Paragraph 6","evidence":"grasping claws ... with which it grabbed food","why":"‘Used to hold’ paraphrases ‘with which it grabbed’. The claws held FOOD.","others":"The proboscis carried the claws, but the object grasped by them was food."},
+    "12":{"answer":"LEECH","location":"Paragraph 6","evidence":"Nectocaris ... could be mistaken for a leech","why":"If it could be mistaken for a leech, it looked like a LEECH.","others":"Fins and tentacles are separate listed features, not the creature used for the comparison."},
+    "13":{"answer":"MOVE","location":"Paragraph 6","evidence":"With its multiplicity of spines and tentacles ... its orientation is a mystery ... making it difficult to work out which way up it went","why":"The intended table answer is MOVE: the reconstruction treats one set of projections as the structures used for locomotion. The passage expresses this indirectly through the problem of determining which side was down and ‘which way up it went’; it does not explicitly use the phrase ‘spines used to move’. The original exercise key confirms MOVE, so this is an inference rather than a direct word-for-word match.","others":"PROTECT is biologically plausible but is not stated anywhere in this passage and is not the source exercise’s answer. Tentacles are listed separately and cannot fill the verb blank."}
+  },
+  "links":{
+    "1":{"clue":"Gould’s book made the fossils widely known.","language":"‘Became widely known’ = was popularised."},
+    "2":{"clue":"Walcott needed official permission.","language":"His discovery route is described; permission is never mentioned."},
+    "3":{"clue":"soft and hard body impressions","language":"Soft parts occur alongside bones and shells."},
+    "4":{"clue":"creatures were land animals","language":"They originally lived below an ocean; the seabed later became mountains."},
+    "5":{"clue":"Hallucigenia has no modern relation","language":"It is thought to be an ancestor of modern arthropods."},
+    "6":{"clue":"formed following the ____","language":"It began soon after the Cambrian explosion."},
+    "7":{"clue":"workers building a ____","language":"They were construction workers on Canadian railways; ‘a’ requires railway."},
+    "8":{"clue":"findings examined again in ____","language":"Conway Morris re-examined the specimens in 1979."},
+    "9":{"clue":"the ____ of complex life continued","language":"Its evolution ‘went on uninterrupted’."},
+    "10":{"clue":"tail resembling a ____","language":"The tail was in the shape of a fan."},
+    "11":{"clue":"claws used to hold ____","language":"The grasping claws grabbed food."},
+    "12":{"clue":"looked like a ____","language":"Nectocaris could be mistaken for a leech."},
+    "13":{"clue":"spines used to ____","language":"Intended answer: move; inferred from the discussion of orientation and which side it moved on."}
+  }
+};
