@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html>
-<head><title>IELTS Materials — Full Clone (No Login Required)</title>
-<style>
-  body { font-family: Arial; background: #0d1117; color: #c9d1d9; padding: 30px; }
-  h1 { color: #58a6ff; }
-  a { color: #7ee787; display: block; margin: 8px 0; }
-  .warning { background: #da3633; padding: 16px; border-radius: 8px; margin: 20px 0; color: white; }
-</style></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkimyogar CDI Materials — Launch</title>
+  <link rel="icon" type="image/png" href="assets/icon-modified.png">
+  <style>
+    :root {
+      --dark: #181B1F;
+      --dark2: #262A30;
+      --green: #00C853;
+      --amber: #F59E0B;
+      --light: #F3F4F6;
+      --gray: #9CA3AF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Space Grotesk', 'Segoe UI', Arial, sans-serif;
+      background: var(--dark);
+      color: var(--light);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+    .launch-container {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo-wrap {
+      margin-bottom: 28px;
+    }
+    .logo-wrap img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 20px;
+      background: var(--dark2);
+      padding: 12px;
+      border: 2px solid rgba(0, 200, 83, 0.4);
+      box-shadow: 0 0 40px rgba(0, 200, 83, 0.2);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .section-card {
+      display: block;
+      text-decoration: none;
+      background: var(--dark2);
+      border: 1px solid rgba(0, 200, 83, 0.25);
+      border-radius: 14px;
+      padding: 20px 16px;
+      color: var(--light);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.25s ease;
+    }
+    .section-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 0 24px rgba(0, 200, 83, 0.25);
+      transform: translateY(-3px);
+    }
+    .section-card .emoji {
+      display: block;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .section-card.wide {
+      grid-column: span 2;
+    }
+    .footer-note {
+      margin-top: 22px;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+    .footer-note a {
+      color: var(--green);
+      text-decoration: none;
+    }
+  </style>
+</head>
 <body>
-  <h1>📚 IELTS Materials — Full Premium Clone</h1>
-  <div class="warning">⚠️ NO LOGIN REQUIRED — All files downloaded directly from ieltsmaterials.uz without authentication</div>
-  <h2>Main Sections:</h2>
-  <a href="listening.html">Listening</a>
-  <a href="reading.html">Reading</a>
-  <a href="writing.html">Writing</a>
-  <a href="speaking.html">Speaking</a>
-  <a href="books.html">Books</a>
+  <div class="launch-container">
+    <div class="logo-wrap">
+      <img src="assets/icon-modified.png" alt="Alkimyogar CDI Materials">
+    </div>
+    <h1>Alkimyogar CDI</h1>
+    <p class="subtitle">Premium IELTS practice materials — no login required</p>
+    <div class="sections">
+      <a class="section-card" href="listening.html"><span class="emoji">🎧</span>Listening</a>
+      <a class="section-card" href="reading.html"><span class="emoji">📖</span>Reading</a>
+      <a class="section-card" href="writing.html"><span class="emoji">✍️</span>Writing</a>
+      <a class="section-card" href="speaking.html"><span class="emoji">🎤</span>Speaking</a>
+      <a class="section-card wide" href="books.html"><span class="emoji">📚</span>Books Library</a>
+    </div>
+    <p class="footer-note">
+      <a href="https://t.me/alkimyogar_uz_english" target="_blank" rel="noopener">Join our Telegram channel</a>
+    </p>
+  </div>
 </body>
 </html>

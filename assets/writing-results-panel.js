@@ -5,7 +5,7 @@
  * panel with:
  *   - Task 1 / Task 2 / Total word counts
  *   - "Download as PDF" (window.print() with a hidden print-only sheet that
- *     carries an IELTSwithJurabek watermark on every page)
+ *     carries an Alkimyogar watermark on every page)
  *   - "View AI Recommendations" (opens the shared AI rec modal)
  *   - "AI Writing Feedback" (opens the Grammarly-style review already on the
  *     page, if loaded)
@@ -118,7 +118,7 @@
 
     sheet.innerHTML =
       '<div class="wr-print-header">' +
-        '<div class="wr-print-brand">IELTSwithJurabek</div>' +
+        '<div class="wr-print-brand">Alkimyogar</div>' +
         '<div class="wr-print-sub">Official Practice Submission &mdash; ' + escapeHtml(label) + '</div>' +
       '</div>' +
       '<div class="wr-print-meta">' +
@@ -139,7 +139,7 @@
         '<div class="wr-print-essay">' + escapeHtml(answers.task2 || '(No response written.)') + '</div>' +
       '</section>' +
       '<div class="wr-print-footer">' +
-        'Generated from ieltsmaterials.uz &mdash; IELTSwithJurabek &copy; ' + new Date().getFullYear() +
+        'Generated from ieltsmaterials.uz &mdash; Alkimyogar &copy; ' + new Date().getFullYear() +
       '</div>';
     return sheet;
   }

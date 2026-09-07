@@ -163,7 +163,7 @@
     print-color-adjust: exact;
   }
 
-  /* Watermark: a large, evenly-tiled diagonal "IELTSwithJurabek" pattern
+  /* Watermark: a large, evenly-tiled diagonal "Alkimyogar" pattern
      that stays clearly visible behind the content on every PDF page while
      still feeling like a watermark (not opaque). */
   #writingPrintSheet::before {
@@ -172,7 +172,7 @@
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320'><g transform='rotate(-28 260 160)'><text x='0' y='200' fill='%231f3268' fill-opacity='0.14' font-family='Helvetica, Arial, sans-serif' font-size='58' font-weight='800' letter-spacing='3'>IELTSwithJurabek</text></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320'><g transform='rotate(-28 260 160)'><text x='0' y='200' fill='%231f3268' fill-opacity='0.14' font-family='Helvetica, Arial, sans-serif' font-size='58' font-weight='800' letter-spacing='3'>Alkimyogar</text></g></svg>");
     background-repeat: repeat;
     background-size: 520px 320px;
     -webkit-print-color-adjust: exact;

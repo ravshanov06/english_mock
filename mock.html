@@ -7,7 +7,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ieltsmaterials.uz/mock">
   <link rel="icon" type="image/png" href="/assets/brand-logo.png">
-  <title>Full IELTS Mock | IELTS CDI Materials</title>
+  <title>Full IELTS Mock | Alkimyogar CDI Materials</title>
   <style>
     * { box-sizing: border-box; }
     [hidden] { display: none !important; }
@@ -38,16 +38,12 @@
         linear-gradient(101deg, transparent 0 94%, rgba(207, 63, 63, .09) 94.15% 94.34%, transparent 94.5% 100%);
       background-size: 280px 100%, 360px 100%, 430px 100%, 520px 100%, 315px 100%, 470px 100%, 390px 100%, 560px 100%;
       background-position: 0 0, 48px 0, 120px 0, -90px 0, 210px 0, 20px 0, 170px 0, -160px 0;
-    }
     body.exam-mode {
       background: #fff;
-    }
     body.mock-frame-open {
       overflow: hidden;
-    }
     body.exam-mode::before {
       display: none;
-    }
     .topbar { --menu-accent: #cf3f3f; --menu-panel-bg: #ffffff; --menu-panel-border: #e6d0d0; --menu-panel-text: #2f2424; --menu-drawer-bg: #ffffff; --menu-drawer-text: #2f2424; --menu-drawer-subtext: #554343; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 12px; border: 1px solid #e9d7d7; border-bottom: 2px solid #cf3f3f; background: linear-gradient(93deg, transparent 0 8%, rgba(207, 63, 63, .09) 8.15% 8.35%, transparent 8.5% 100%), linear-gradient(104deg, transparent 0 18%, rgba(207, 63, 63, .08) 18.15% 18.35%, transparent 18.5% 100%), linear-gradient(74deg, transparent 0 31%, rgba(207, 63, 63, .07) 31.15% 31.34%, transparent 31.5% 100%), linear-gradient(118deg, transparent 0 44%, rgba(207, 63, 63, .07) 44.15% 44.34%, transparent 44.5% 100%), #ffffff; background-size: 280px 100%, 360px 100%, 430px 100%, 520px 100%, 100% 100%; background-position: 0 0, 48px 0, 120px 0, -90px 0, 0 0; position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1200; box-shadow: 0 2px 12px rgba(120, 42, 42, 0.06); }
     body.exam-mode .topbar { display: none; }
     .top-left { display: flex; align-items: center; gap: 112px; min-width: 0; flex: 1; }
@@ -68,47 +64,36 @@
       width: min(1140px, calc(100% - 32px));
       margin: 0 auto;
       padding: 112px 0 64px;
-    }
     body.exam-mode .page {
       width: min(1160px, calc(100% - 32px));
-      min-height: 100vh;
       padding: 40px 0 64px;
-    }
     .intro {
       min-height: calc(100vh - 112px);
       display: grid;
       align-items: center;
       padding: 42px 0;
-    }
     .intro-panel {
       width: min(780px, 100%);
-      margin: 0 auto;
       padding: clamp(26px, 6vw, 54px);
       border: 1px solid #d0d0d0;
       border-radius: 8px;
-      background: #fff;
       box-shadow: 0 22px 50px rgba(0, 0, 0, 0.08);
       text-align: center;
-    }
     h1 {
-      margin: 0;
       color: #b40000;
       font-size: clamp(1.8rem, 4.2vw, 2.8rem);
       line-height: 1.08;
       font-weight: 800;
       letter-spacing: 0;
-    }
     .intro-panel p {
       max-width: 620px;
       margin: 18px auto 28px;
       font-size: .98rem;
       line-height: 1.6;
       color: #333;
-    }
     .primary-btn,
     .mock-btn {
       display: inline-flex;
-      align-items: center;
       justify-content: center;
       min-height: 46px;
       padding: 0 18px;
@@ -120,7 +105,6 @@
       font-weight: 700;
       text-decoration: none;
       cursor: pointer;
-    }
     .primary-btn:hover,
     .mock-btn:hover { background: #000; }
     .mock-btn[disabled],
@@ -129,75 +113,50 @@
       background: #d7d7d7;
       color: #6a6a6a;
       cursor: not-allowed;
-    }
     .mock-title {
       margin: 2px 0 34px;
-      color: #b40000;
       font-size: clamp(1.55rem, 3vw, 2.35rem);
       line-height: 1.15;
       font-weight: 500;
-    }
     .day-row {
-      display: grid;
       grid-template-columns: auto 1fr;
-      align-items: center;
       gap: 42px;
       margin-bottom: 42px;
-    }
     .day-row strong {
       font-size: clamp(1.25rem, 2.4vw, 1.75rem);
-      font-weight: 800;
-    }
     .day-line {
       height: 2px;
       background: #cfcfcf;
-    }
     .mock-list {
-      display: grid;
       gap: 22px;
-    }
     .module-card {
       border: 2px solid #d0d0d0;
-      border-radius: 8px;
-      background: #fff;
       padding: clamp(18px, 3vw, 28px);
-    }
     .module-card.is-locked {
       background: #fbfbfb;
       color: #777;
-    }
     .module-card h2 {
       margin: 0 0 22px;
       font-size: clamp(1.2rem, 2.45vw, 1.7rem);
       line-height: 1.18;
-      font-weight: 800;
-      letter-spacing: 0;
-    }
     .status {
       margin: 0 0 24px;
       color: #a91d2d;
-      font-size: .98rem;
-      font-weight: 800;
-    }
     .status.done { color: #2f7d32; }
     .status.locked { color: #777; }
     .timing {
       margin: 0 0 20px;
       font-size: .96rem;
       color: #222;
-    }
     .info-row {
       min-height: 56px;
       display: flex;
-      align-items: center;
       gap: 14px;
       margin-bottom: 18px;
       padding: 12px 16px;
       border: 2px solid #d2d2d2;
       border-radius: 4px;
-      color: #333;
       font-size: .94rem;
-    }
     .chevron {
       font-size: 1.7rem;
       line-height: 1;
@@ -205,249 +164,115 @@
       display: inline-block;
       color: #000;
       font-weight: 900;
-    }
     .confirmed { color: #4b8b49; }
     .selected-test {
       display: block;
       margin-top: 6px;
       color: #555;
       font-size: .84rem;
-    }
     .completion {
       margin-top: 26px;
       padding: 24px;
       border: 2px solid #b7d7bc;
-      border-radius: 8px;
       background: #f2fbf3;
       color: #17491d;
-    }
     .completion h2 {
       margin: 0 0 8px;
       font-size: 1.35rem;
-    }
     .completion p { margin: 0; line-height: 1.55; }
     .results-grid {
-      display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
       margin-top: 18px;
-    }
     .result-tile {
       padding: 14px;
       border: 1px solid #b7d7bc;
       border-radius: 6px;
-      background: #fff;
-      color: #17491d;
-    }
     .result-tile strong {
-      display: block;
       margin-bottom: 8px;
       font-size: .9rem;
-      color: #111;
-    }
     .result-score {
-      display: block;
-      font-size: 1.35rem;
-      line-height: 1;
-      font-weight: 800;
-    }
     .result-note {
-      display: block;
-      margin-top: 6px;
       font-size: .78rem;
       color: #4c604e;
-    }
     .review-actions {
-      display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 18px;
-    }
     .review-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       min-height: 40px;
       padding: 0 14px;
       border: 1px solid #17491d;
-      border-radius: 4px;
       background: #17491d;
-      color: #fff;
-      font-size: .9rem;
-      font-weight: 700;
-      text-decoration: none;
-    }
     .secondary-actions {
-      display: flex;
       justify-content: flex-end;
       margin-top: 24px;
-    }
     .close-mock-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
-      padding: 0 18px;
-      border: 2px solid #000;
-      border-radius: 3px;
-      background: #191919;
-      color: #fff;
       font: inherit;
-      font-weight: 700;
-      cursor: pointer;
-    }
     .close-mock-btn:hover { background: #000; }
     .mock-test-frame {
-      position: fixed;
       inset: 0;
       z-index: 1250;
-      display: grid;
-      background: #fff;
-    }
     .mock-test-frame iframe {
       width: 100%;
       height: 100%;
       border: 0;
-      display: block;
-      background: #fff;
-    }
     .link-btn {
-      border: 0;
       background: transparent;
-      color: #333;
-      font: inherit;
-      font-weight: 700;
       text-decoration: underline;
-      cursor: pointer;
-    }
     .video-modal {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
       padding: clamp(8px, 1.6vw, 18px);
       background: rgba(0, 0, 0, 0.62);
       z-index: 30;
-    }
     .video-modal.is-open { display: flex; }
     .video-card {
       width: min(1040px, calc(100vw - 18px));
       max-height: calc(100vh - 18px);
       max-height: calc(100dvh - 18px);
-      display: grid;
       grid-template-rows: auto minmax(0, 1fr) auto;
       gap: clamp(8px, 1.3vh, 14px);
-      overflow: hidden;
       padding: clamp(10px, 1.8vw, 18px);
-      border-radius: 8px;
-      background: #fff;
       box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-    }
     .video-card h2 {
-      margin: 0;
-      color: #b40000;
       font-size: clamp(1.05rem, 2.2vw, 1.35rem);
       line-height: 1.25;
-    }
     .video-frame {
-      position: relative;
-      width: 100%;
       min-height: 0;
       max-height: calc(100vh - 128px);
       max-height: calc(100dvh - 128px);
       aspect-ratio: 16 / 9;
       background: #111;
-      border-radius: 6px;
-      overflow: hidden;
-    }
     .video-frame iframe,
     .video-frame video {
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
       object-fit: contain;
-      background: #111;
-    }
     .video-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-      flex-wrap: wrap;
       margin-top: 0;
-    }
     .ghost-btn {
-      min-height: 46px;
       padding: 0 16px;
       border: 1px solid #aaa;
-      border-radius: 3px;
-      background: #fff;
-      color: #222;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
     .confirm-modal {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
       background: rgba(0, 0, 0, 0.46);
       z-index: 1300;
-    }
     .confirm-modal.is-open { display: flex; }
     .confirm-card {
       width: min(460px, 100%);
       padding: 28px;
       border: 1px solid #d5c7c7;
-      border-radius: 8px;
-      background: #fff;
       box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
-      text-align: center;
-    }
     .confirm-card h2 {
       margin: 0 0 12px;
-      color: #b40000;
       font-size: 1.45rem;
       line-height: 1.2;
-    }
     .confirm-card p {
-      margin: 0;
       color: #2d2d2d;
-      font-size: 1rem;
       line-height: 1.55;
-    }
     .confirm-actions {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 24px;
-    }
     .confirm-no,
     .confirm-yes {
       min-width: 104px;
       min-height: 42px;
-      padding: 0 18px;
-      border-radius: 4px;
-      font-size: 1rem;
-      font-weight: 800;
-      cursor: pointer;
-    }
     .confirm-no {
       border: 1px solid #b7b7b7;
-      background: #fff;
-      color: #222;
-    }
-    .confirm-yes {
-      border: 2px solid #000;
-      background: #191919;
-      color: #fff;
-    }
     .confirm-yes:hover { background: #000; }
     .confirm-no:hover { background: #f4f4f4; }
     @media (max-width: 720px) {
@@ -475,43 +300,31 @@
         max-height: calc(100vh - 126px);
         max-height: calc(100dvh - 126px);
         border-radius: 4px;
-      }
       .video-actions { justify-content: stretch; }
       .video-actions button { width: 100%; }
       .confirm-actions { flex-direction: column-reverse; }
       .confirm-no,
       .confirm-yes { width: 100%; }
-    }
     @media (max-height: 720px) {
-      .video-card {
         width: min(920px, calc(100vw - 16px));
-        padding: 10px;
-        gap: 8px;
-      }
-      .video-frame {
         max-height: calc(100vh - 112px);
         max-height: calc(100dvh - 112px);
-      }
       .video-actions .mock-btn {
         min-height: 40px;
         font-size: .92rem;
-      }
-    }
     @media (max-height: 560px) {
       .video-card h2 { font-size: 1rem; }
-      .video-frame {
         max-height: calc(100vh - 96px);
         max-height: calc(100dvh - 96px);
-      }
       .video-actions .mock-btn { min-height: 36px; }
-    }
   </style>
   <link rel="stylesheet" href="assets/header-enhance.css">
+  <link rel="stylesheet" href="assets/brand-override.css">
 </head>
 <body>
   <header class="topbar">
     <div class="top-left">
-      <a class="brand" href="/"><img src="assets/brand-logo.png" alt="IELTS CDI"><span class="brand-text">IELTS Materials</span></a>
+      <a class="brand" href="/"><img src="assets/brand-logo.png" alt="Alkimyogar CDI"><span class="brand-text">Alkimyogar CDI Materials</span></a>
       <nav>
         <ul class="menu-list">
           <li class="menu-item">
@@ -520,64 +333,39 @@
               <li><a href="/">Homepage</a></li>
             </ul>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/listening">Listening</a>
-            <ul class="submenu">
+            <a class="menu-link" href="/listening.html">Listening</a>
               <li><a href="/listening#all">All</a></li>
               <li><a href="/listening#section1">Section 1</a></li>
               <li><a href="/listening#section2">Section 2</a></li>
               <li><a href="/listening#section3">Section 3</a></li>
               <li><a href="/listening#section4">Section 4</a></li>
               <li><a href="/listening#full">Full Listening</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/reading">Reading</a>
-            <ul class="submenu">
+            <a class="menu-link" href="/reading.html">Reading</a>
               <li><a href="/reading#all">All</a></li>
               <li><a href="/reading#passage1">Passage 1</a></li>
               <li><a href="/reading#passage2">Passage 2</a></li>
               <li><a href="/reading#passage3">Passage 3</a></li>
               <li><a href="/reading#full">Full Reading</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/speaking">Speaking</a>
-            <ul class="submenu">
-              <li><a href="/speaking">Part 1 Topics</a></li>
-              <li><a href="/speaking">Part 2 Cue Cards</a></li>
-              <li><a href="/speaking">Part 3 Answers</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/writing">Writing</a>
-            <ul class="submenu">
-              <li><a href="/writing">Task 1 Reports</a></li>
-              <li><a href="/writing">Task 2 Essays</a></li>
-              <li><a href="/writing">Band Feedback</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/mock">Mock</a>
-            <ul class="submenu">
-              <li><a href="/mock">Full Mock</a></li>
-              <li><a href="/mock-results">Mock Results</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="/books">Books</a>
-            <ul class="submenu">
-              <li><a href="/books">IELTS Book List</a></li>
-              <li><a href="/books">Vocabulary Books</a></li>
-              <li><a href="/books">Writing Practice Books</a></li>
-            </ul>
-          </li>
+            <a class="menu-link" href="/speaking.html">Speaking</a>
+              <li><a href="/speaking.html">Part 1 Topics</a></li>
+              <li><a href="/speaking.html">Part 2 Cue Cards</a></li>
+              <li><a href="/speaking.html">Part 3 Answers</a></li>
+            <a class="menu-link" href="/writing.html">Writing</a>
+              <li><a href="/writing.html">Task 1 Reports</a></li>
+              <li><a href="/writing.html">Task 2 Essays</a></li>
+              <li><a href="/writing.html">Band Feedback</a></li>
+            <a class="menu-link" href="/mock.html">Mock</a>
+              <li><a href="/mock.html">Full Mock</a></li>
+              <li><a href="/mock-results.html">Mock Results</a></li>
+            <a class="menu-link" href="/books.html">Books</a>
+              <li><a href="/books.html">IELTS Book List</a></li>
+              <li><a href="/books.html">Vocabulary Books</a></li>
+              <li><a href="/books.html">Writing Practice Books</a></li>
         </ul>
       </nav>
     </div>
     <div class="top-actions" aria-label="Header actions">
-      <a class="login-quick" href="/login">Login</a>
-    </div>
+      <a class="login-quick" href="/login.html">Login</a>
   </header>
 
   <main class="page">
@@ -588,34 +376,25 @@
         <button class="primary-btn" type="button" id="startMockButton">Start Full Mock</button>
       </div>
     </section>
-
     <section id="dashboardView" hidden>
       <h1 class="mock-title">IELTS on Computer Test Tutorial</h1>
       <div class="day-row">
         <strong>Today</strong>
         <div class="day-line" aria-hidden="true"></div>
-      </div>
       <div class="mock-list" id="mockList"></div>
       <div class="secondary-actions">
         <button class="close-mock-btn" type="button" id="closeMockButton">Close</button>
-      </div>
-    </section>
   </main>
-
   <section class="mock-test-frame" id="mockTestFrameView" hidden aria-label="Mock test">
     <iframe id="mockTestFrame" title="IELTS mock test" allow="fullscreen; autoplay" allowfullscreen></iframe>
   </section>
-
   <div class="video-modal" id="videoModal" aria-hidden="true">
     <div class="video-card" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
       <h2 id="videoTitle">Before you start</h2>
       <div class="video-frame" id="videoFrame"></div>
       <div class="video-actions">
         <button class="mock-btn" type="button" id="continueVideoButton">I have watched. Start Test</button>
-      </div>
-    </div>
   </div>
-
   <div class="confirm-modal" id="confirmModal" aria-hidden="true">
     <div class="confirm-card" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMessage">
       <h2 id="confirmTitle">Confirm action</h2>
@@ -623,10 +402,6 @@
       <div class="confirm-actions">
         <button class="confirm-no" type="button" id="confirmNoButton">No</button>
         <button class="confirm-yes" type="button" id="confirmYesButton">Yes</button>
-      </div>
-    </div>
-  </div>
-
   <script src="assets/header-enhance.js?v=20260522-safari-stable" defer></script>
   <script src="assets/progress-tracker.js?v=20260727-premium-exit"></script>
   <script>
@@ -636,19 +411,15 @@
       var MOCK_LAST_COMPLETED_KEY = 'ielts_mock_last_completed';
       var MOCK_FULLSCREEN_KEY = 'ielts_mock_fullscreen_lock';
       var MOCK_ACTIVE_PART_KEY = 'ielts_mock_active_part';
-
       var videoUrls = {
         listening: 'VIDEOS/Listening video.mp4',
         reading: 'VIDEOS/Reading video.mp4',
         writing: 'VIDEOS/Writing video.mp4'
       };
-
       var partMeta = {
         listening: { title: 'IELTS on Computer Listening', timing: '30 minutes', label: 'Listening', next: 'reading' },
         reading: { title: 'IELTS on Computer Reading', timing: '1 hour', label: 'Reading', next: 'writing' },
         writing: { title: 'IELTS on Computer Writing', timing: '1 hour', label: 'Writing', next: null }
-      };
-
       var introView = document.getElementById('introView');
       var dashboardView = document.getElementById('dashboardView');
       var mockList = document.getElementById('mockList');
@@ -677,7 +448,6 @@
       var mockAccessCheckInFlight = false;
       var resumePromptResolved = false;
       var resumePromptOpen = false;
-
       function makeListeningTests() {
         var tests = [{ title: 'Listening Full 1', href: 'Listening/Listening full 1.html', testId: 'listening_full_1' }];
         for (var i = 2; i <= 46; i++) {
@@ -688,47 +458,27 @@
           });
         }
         return tests;
-      }
-
       function makeReadingTests() {
         var tests = [{ title: 'Reading Full 1', href: 'Reading/Reading full 1.html', testId: 'reading_full_1' }];
         for (var i = 2; i <= 115; i++) {
-          tests.push({
             title: 'Reading Full ' + i,
             href: 'Reading/CDI Pack Mar-APR Read ' + i + '.html',
             testId: 'reading_test_' + i
-          });
-        }
-        return tests;
-      }
-
       function makeWritingTests() {
         var tests = [];
         for (var i = 1; i <= 22; i++) {
-          tests.push({
             title: 'Writing Full ' + i,
             href: 'Writing/Writing full ' + i + '.html',
             testId: 'writing_full_' + i
-          });
-        }
-        return tests;
-      }
-
       var pools = {
         listening: makeListeningTests(),
         reading: makeReadingTests(),
         writing: makeWritingTests()
-      };
-
       function pick(list) {
         return list[Math.floor(Math.random() * list.length)];
-      }
-
       function normalizePath(path) {
         try { path = decodeURIComponent(path); } catch (e) {}
         return String(path || '').replace(/\\/g, '/').replace(/^\/+/, '').split('?')[0].split('#')[0].toLowerCase();
-      }
-
       function loadMock() {
         if (memoryMock && memoryMock.tests) return memoryMock;
         var parsed = null;
@@ -739,32 +489,20 @@
           try {
             parsed = JSON.parse(localStorage.getItem(MOCK_KEY) || 'null');
           } catch (e) {}
-        }
         if (parsed && parsed.tests) {
           memoryMock = parsed;
-          try {
             sessionStorage.setItem(MOCK_KEY, JSON.stringify(parsed));
             if (parsed.id) sessionStorage.setItem(MOCK_ID_KEY, parsed.id);
-          } catch (e) {}
           return parsed;
-        }
         return memoryMock;
-      }
-
       function saveMock(mock) {
         memoryMock = mock;
-        try {
           sessionStorage.setItem(MOCK_KEY, JSON.stringify(mock));
           sessionStorage.setItem(MOCK_ID_KEY, mock.id);
           sessionStorage.setItem(MOCK_FULLSCREEN_KEY, '1');
-        } catch (e) {}
-        try {
           localStorage.setItem(MOCK_KEY, JSON.stringify(mock));
           localStorage.setItem(MOCK_ID_KEY, mock.id);
           localStorage.setItem(MOCK_FULLSCREEN_KEY, '1');
-        } catch (e) {}
-      }
-
       function createMock() {
         resumePromptResolved = true;
         var mock = {
@@ -779,37 +517,25 @@
             listening: false,
             reading: false,
             writing: false
-          },
           results: {}
         };
         saveMock(mock);
         preloadMockListeningAudio(mock);
         return mock;
-      }
-
       function clearMock() {
         memoryMock = null;
-        try {
           sessionStorage.removeItem(MOCK_KEY);
           sessionStorage.removeItem(MOCK_ID_KEY);
           sessionStorage.removeItem(MOCK_ACTIVE_PART_KEY);
           sessionStorage.removeItem(MOCK_FULLSCREEN_KEY);
-        } catch (e) {}
-        try {
           localStorage.removeItem(MOCK_KEY);
           localStorage.removeItem(MOCK_ID_KEY);
           localStorage.removeItem(MOCK_ACTIVE_PART_KEY);
           localStorage.removeItem(MOCK_FULLSCREEN_KEY);
-        } catch (e) {}
-      }
-
       function loadProgressData() {
         if (window.IELTSProgress && typeof window.IELTSProgress.loadData === 'function') {
           return window.IELTSProgress.loadData() || {};
-        }
         return {};
-      }
-
       function setStartMockChecking(checking) {
         if (!startMockButton) return;
         if (checking) {
@@ -823,67 +549,43 @@
           startMockButton.textContent = startMockButton.dataset.originalText || 'Start Full Mock';
           startMockButton.removeAttribute('aria-busy');
           startMockButton.disabled = false;
-        }
-      }
-
       function showMockPremiumRequired() {
         if (window.IELTSProgress && typeof window.IELTSProgress.showPremiumRequired === 'function') {
           window.IELTSProgress.showPremiumRequired();
           return;
-        }
         openConfirm(
           'Premium Access Required',
           'Full IELTS Mock is available only for premium users. Ask the admin to enable premium access for this account.',
           function () {}
         );
-      }
-
       function ensureMockPremiumAccess() {
         if (!window.IELTSProgress || typeof window.IELTSProgress.initPremiumAccess !== 'function') {
           showMockPremiumRequired();
           return Promise.resolve(false);
-        }
         return window.IELTSProgress.initPremiumAccess(true).then(function (premium) {
           premium = premium || {};
           if (premium.hasAccess || premium.isAdmin) return true;
-          showMockPremiumRequired();
           return false;
         }).catch(function () {
-          showMockPremiumRequired();
-          return false;
         });
-      }
-
       function resolveUrl(path, baseUrl) {
-        try {
           return new URL(path, baseUrl || window.location.href).href;
         } catch (e) {
           return String(path || '');
-        }
-      }
-
       function extractScriptSources(html, pageUrl) {
         var scripts = [];
         String(html || '').replace(/<script\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi, function (_, src) {
           if (/listening-full-test-script/i.test(src)) {
             scripts.push(resolveUrl(src, pageUrl));
-          }
           return _;
-        });
         return scripts;
-      }
-
       function extractAudioSequence(scriptText) {
         var match = String(scriptText || '').match(/\baudioSequence\s*=\s*\[([\s\S]*?)\]\s*;/);
         if (!match) return [];
         var sources = [];
         match[1].replace(/["']([^"']+\.(?:mp3|mp4|m4a|webm))["']/gi, function (_, source) {
           sources.push(source);
-          return _;
-        });
         return sources;
-      }
-
       function startAudioDownload(audioUrl) {
         if (!audioUrl) return;
         var link = document.createElement('link');
@@ -891,13 +593,11 @@
         link.as = 'audio';
         link.href = audioUrl;
         document.head.appendChild(link);
-
         var audio = new Audio();
         audio.preload = 'auto';
         audio.src = audioUrl;
         try { audio.load(); } catch (e) {}
         listeningAudioPreloads.push(audio);
-
         if (window.fetch) {
           fetch(audioUrl, { credentials: 'same-origin', cache: 'force-cache' })
             .then(function (response) {
@@ -905,16 +605,12 @@
               return null;
             })
             .catch(function () {});
-        }
-      }
-
       function preloadMockListeningAudio(mock) {
         var test = mock && mock.tests && mock.tests.listening;
         if (!test || !test.href || !window.fetch) return;
         var pageUrl = resolveUrl(test.href, window.location.href);
         if (!pageUrl || preloadedListeningKey === pageUrl) return;
         preloadedListeningKey = pageUrl;
-
         fetch(pageUrl, { credentials: 'same-origin', cache: 'force-cache' })
           .then(function (response) {
             if (!response.ok) throw new Error('Listening page preload failed');
@@ -932,10 +628,8 @@
                   return extractAudioSequence(scriptText).map(function (audioSource) {
                     return resolveUrl(audioSource, pageUrl);
                   });
-                })
                 .catch(function () { return []; });
             }));
-          })
           .then(function (groups) {
             var seen = {};
             groups.forEach(function (group) {
@@ -945,71 +639,34 @@
                 startAudioDownload(audioUrl);
               });
             });
-          })
           .catch(function () {});
-      }
-
       function setExamMode(active) {
         document.body.classList.toggle('exam-mode', !!active);
-      }
-
       function requestFullscreen() {
         var root = document.documentElement;
         var openFullscreen = root.requestFullscreen || root.webkitRequestFullscreen || root.msRequestFullscreen;
         if (!openFullscreen || document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) return;
-        try {
           var result = openFullscreen.call(root);
           if (result && typeof result.catch === 'function') result.catch(function () {});
-        } catch (e) {}
-      }
-
       function exitFullscreen() {
         var fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
         if (!fullscreenElement) return;
         var closeFullscreen = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
         if (!closeFullscreen) return;
-        try {
           var result = closeFullscreen.call(document);
-          if (result && typeof result.catch === 'function') result.catch(function () {});
-        } catch (e) {}
-      }
-
       function getStoredActivePart() {
         var part = '';
-        try {
           part = sessionStorage.getItem(MOCK_ACTIVE_PART_KEY) || '';
-        } catch (e) {}
         if (!part) {
-          try {
             part = localStorage.getItem(MOCK_ACTIVE_PART_KEY) || '';
-          } catch (e) {}
-        }
         return part;
-      }
-
       function setStoredActivePart(part) {
-        try {
           if (part) sessionStorage.setItem(MOCK_ACTIVE_PART_KEY, part);
           else sessionStorage.removeItem(MOCK_ACTIVE_PART_KEY);
-        } catch (e) {}
-        try {
           if (part) localStorage.setItem(MOCK_ACTIVE_PART_KEY, part);
           else localStorage.removeItem(MOCK_ACTIVE_PART_KEY);
-        } catch (e) {}
-      }
-
       function releaseMockFullscreen() {
-        try {
-          sessionStorage.removeItem(MOCK_FULLSCREEN_KEY);
-          sessionStorage.removeItem(MOCK_ACTIVE_PART_KEY);
-        } catch (e) {}
-        try {
-          localStorage.removeItem(MOCK_FULLSCREEN_KEY);
-          localStorage.removeItem(MOCK_ACTIVE_PART_KEY);
-        } catch (e) {}
         exitFullscreen();
-      }
-
       function openConfirm(title, message, onYes, onCancel, labels) {
         labels = labels || {};
         confirmTitle.textContent = title;
@@ -1021,8 +678,6 @@
         confirmModal.classList.add('is-open');
         confirmModal.setAttribute('aria-hidden', 'false');
         confirmYesButton.focus();
-      }
-
       function closeConfirm(runCancel) {
         var cancelAction = confirmCancelAction;
         confirmModal.classList.remove('is-open');
@@ -1032,8 +687,6 @@
         confirmYesButton.textContent = 'Yes';
         confirmNoButton.textContent = 'No';
         if (runCancel && typeof cancelAction === 'function') cancelAction();
-      }
-
       function findSavedResult(section, test, mock) {
         var data = loadProgressData();
         var results = (((data.tests || {})[section] || {}).results) || [];
@@ -1046,46 +699,29 @@
           if (!submittedAt || submittedAt < createdAt) continue;
           if (String(entry.test_id || '') === testId || normalizePath(entry.href || '') === href) {
             return entry;
-          }
-        }
         return null;
-      }
-
       function reconcileCompletion(mock) {
         mock.results = mock.results || {};
         ['listening', 'reading', 'writing'].forEach(function (section) {
           var result = findSavedResult(section, mock.tests[section], mock);
           if (result && !mock.results[section]) {
             mock.results[section] = result;
-          }
           if (!mock.completed[section] && result) {
             mock.completed[section] = true;
-          }
-        });
-        saveMock(mock);
-      }
-
       function currentUnlockedPart(mock, part) {
         if (part === 'listening') return true;
         if (part === 'reading') return !!mock.completed.listening;
         if (part === 'writing') return !!mock.completed.listening && !!mock.completed.reading;
         return false;
-      }
-
       function allDone(mock) {
         return !!(mock.completed.listening && mock.completed.reading && mock.completed.writing);
-      }
-
       function shouldAskToResume(mock) {
         return !!(mock && mock.tests && !allDone(mock) && !resumePromptResolved && !resumePromptOpen);
-      }
-
       function promptResumeMock(mock) {
         resumePromptOpen = true;
         setExamMode(false);
         introView.hidden = false;
         dashboardView.hidden = true;
-        openConfirm(
           'Continue your mock?',
           'You have an unfinished IELTS mock. Do you want to continue from where you stopped?',
           function () {
@@ -1098,60 +734,35 @@
               return;
             }
             render();
-          },
-          function () {
-            resumePromptOpen = false;
-            resumePromptResolved = true;
             clearMock();
-            render();
-          },
           { yes: 'Continue', no: 'Start new' }
-        );
-      }
-
       function statusText(mock, part) {
         if (mock.completed[part]) return { text: 'Completed', className: 'done' };
         if (!currentUnlockedPart(mock, part)) return { text: 'Locked', className: 'locked' };
         return { text: 'Not completed', className: '' };
-      }
-
       function renderResults(mock) {
         if (!allDone(mock)) return;
         closeTestFrame();
         releaseMockFullscreen();
-        try {
           sessionStorage.setItem(MOCK_LAST_COMPLETED_KEY, JSON.stringify(mock));
-        } catch (e) {}
         clearMock();
         var target = window.location.protocol === 'file:' ? 'mock-results.html' : '/mock-results';
         window.location.href = target;
-      }
-
       function render() {
         var mock = loadMock();
         if (!mock) {
           setExamMode(false);
           introView.hidden = false;
           dashboardView.hidden = true;
-          return;
-        }
         if (resumePromptOpen) {
-          setExamMode(false);
-          introView.hidden = false;
-          dashboardView.hidden = true;
-          return;
-        }
         reconcileCompletion(mock);
         if (shouldAskToResume(mock)) {
           promptResumeMock(mock);
-          return;
-        }
         setExamMode(true);
         if (!mock.completed.listening) preloadMockListeningAudio(mock);
         introView.hidden = true;
         dashboardView.hidden = false;
         mockList.innerHTML = '';
-
         ['listening', 'reading', 'writing'].forEach(function (part) {
           var meta = partMeta[part];
           var test = mock.tests[part];
@@ -1164,7 +775,6 @@
             '<p class="status ' + status.className + '">' + status.text + '</p>' +
             '<p class="timing">Timing: ' + meta.timing + '</p>' +
             '<div class="info-row"><span class="chevron">&gt;</span><span>Test information. <span class="confirmed">Confirmed</span><span class="selected-test">' + test.title + '</span></span></div>';
-
           var button = document.createElement('button');
           button.className = 'mock-btn' + (!unlocked || mock.completed[part] ? ' is-disabled' : '');
           button.type = 'button';
@@ -1172,14 +782,9 @@
           button.textContent = !unlocked ? 'Locked' : (mock.completed[part] ? 'Completed' : ('Start IELTS on Computer ' + meta.label));
           button.addEventListener('click', function () {
             openVideo(part);
-          });
           card.appendChild(button);
           mockList.appendChild(card);
-        });
-
         renderResults(mock);
-      }
-
       function openVideo(part) {
         selectedPart = part;
         clearVideoGate();
@@ -1190,19 +795,13 @@
         if (tutorialVideo && typeof tutorialVideo.play === 'function') {
           var playRequest = tutorialVideo.play();
           if (playRequest && typeof playRequest.catch === 'function') playRequest.catch(function () {});
-        }
         videoModal.classList.add('is-open');
         videoModal.setAttribute('aria-hidden', 'false');
-      }
-
       function clearVideoGate() {
         if (videoGateTimerId) {
           window.clearInterval(videoGateTimerId);
           videoGateTimerId = null;
-        }
         videoGateSecondsLeft = 0;
-      }
-
       function lockVideoContinue(part) {
         videoGateSecondsLeft = 60;
         continueVideoButton.disabled = true;
@@ -1216,79 +815,44 @@
             continueVideoButton.disabled = false;
             continueVideoButton.classList.remove('is-disabled');
             continueVideoButton.textContent = 'I have watched. Start ' + partMeta[part].label;
-          }
         }, 1000);
-      }
-
       function updateVideoContinueText(part) {
         var seconds = Math.max(0, videoGateSecondsLeft);
         continueVideoButton.textContent = 'Available in 0:' + String(seconds).padStart(2, '0') + ' - Start ' + partMeta[part].label;
-      }
-
       function closeVideo() {
-        clearVideoGate();
         videoModal.classList.remove('is-open');
         videoModal.setAttribute('aria-hidden', 'true');
         videoFrame.innerHTML = '';
         selectedPart = null;
-      }
-
       function closeTestFrame() {
         if (testFramePollId) {
           window.clearInterval(testFramePollId);
           testFramePollId = null;
-        }
         testFramePart = null;
         document.body.classList.remove('mock-frame-open');
         mockTestFrameView.hidden = true;
         mockTestFrame.removeAttribute('src');
         setStoredActivePart('');
-      }
-
       function syncAfterTestFrameComplete() {
-        var mock = loadMock();
-        closeTestFrame();
         render();
         if (mock && !allDone(mock)) {
           window.scrollTo({ top: 0, behavior: 'auto' });
-        }
-      }
-
       function checkTestFrameCompletion() {
-        var mock = loadMock();
         if (!mock || !testFramePart) {
           closeTestFrame();
           render();
-          return;
-        }
         if (mock.completed && mock.completed[testFramePart]) {
           syncAfterTestFrameComplete();
-        }
-      }
-
       function applyMockPartCompletion(part, entry) {
-        var mock = loadMock();
         if (!mock || !part || !mock.tests || !mock.tests[part]) return false;
         mock.completed = mock.completed || {};
-        mock.results = mock.results || {};
         mock.completed[part] = true;
         if (entry) mock.results[part] = entry;
-        saveMock(mock);
         syncAfterTestFrameComplete();
         return true;
-      }
-
       function openTestFrame(mock, part) {
         if (!mock || !part || !mock.tests || !mock.tests[part]) return;
         testFramePart = part;
-        try {
-          sessionStorage.setItem(MOCK_FULLSCREEN_KEY, '1');
-          sessionStorage.setItem(MOCK_ID_KEY, mock.id);
-        } catch (e) {}
-        try {
-          localStorage.setItem(MOCK_FULLSCREEN_KEY, '1');
-          localStorage.setItem(MOCK_ID_KEY, mock.id);
-        } catch (e) {}
         setStoredActivePart(part);
         requestFullscreen();
         document.body.classList.add('mock-frame-open');
@@ -1296,13 +860,9 @@
         mockTestFrameView.hidden = false;
         if (testFramePollId) window.clearInterval(testFramePollId);
         testFramePollId = window.setInterval(checkTestFrameCompletion, 1000);
-      }
-
       function appendMockParams(href, mock, part) {
         var separator = href.indexOf('?') === -1 ? '?' : '&';
         return href + separator + 'mock=' + encodeURIComponent(mock.id) + '&mockPart=' + encodeURIComponent(part);
-      }
-
       startMockButton.addEventListener('click', function () {
         if (mockAccessCheckInFlight) return;
         mockAccessCheckInFlight = true;
@@ -1312,55 +872,39 @@
           var pendingMock = createMock();
           openConfirm('Start full mock?', 'Are you sure you want to start the full mock test?', function () {
             requestFullscreen();
-            render();
             window.scrollTo({ top: 0, behavior: 'auto' });
           }, function () {
             if (loadMock() === pendingMock) clearMock();
-          });
         }).finally(function () {
           mockAccessCheckInFlight = false;
           setStartMockChecking(false);
-        });
       });
-
       document.getElementById('closeMockButton').addEventListener('click', function () {
         openConfirm('Close mock?', 'Are you sure you want to lose everything you have done in this mock?', function () {
           clearMock();
           exitFullscreen();
           var target = window.location.protocol === 'file:' ? 'mock.html' : '/mock';
           window.location.href = target;
-        });
-      });
-
       confirmNoButton.addEventListener('click', function () {
         closeConfirm(true);
-      });
       confirmModal.addEventListener('click', function (event) {
         if (event.target === confirmModal) closeConfirm(true);
-      });
       confirmYesButton.addEventListener('click', function () {
         var action = confirmAction;
         closeConfirm(false);
         if (typeof action === 'function') action();
-      });
-
       continueVideoButton.addEventListener('click', function () {
-        var mock = loadMock();
         if (continueVideoButton.disabled) return;
         if (!mock || !selectedPart || !currentUnlockedPart(mock, selectedPart)) return;
         var part = selectedPart;
         closeVideo();
         openTestFrame(mock, part);
-      });
-
       window.addEventListener('message', function (event) {
         if (window.location.protocol !== 'file:' && event.origin !== window.location.origin) return;
         var data = event.data || {};
         if (!data || data.type !== 'ielts-mock-part-complete') return;
         if (applyMockPartCompletion(data.section || testFramePart, data.entry || null)) return;
         checkTestFrameCompletion();
-      });
-
       document.addEventListener('ielts-progress-ready', render);
       render();
     })();

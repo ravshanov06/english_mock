@@ -1629,7 +1629,7 @@
     if (window.location.protocol === 'file:') {
       return getSiteRootPath(window.location.pathname) + 'mock.html';
     }
-    return '/mock';
+    return '/mock.html';
   }
 
   function getFullscreenElement() {

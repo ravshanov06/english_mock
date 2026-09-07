@@ -1,0 +1,98 @@
+/* Alkimyogar Brand Override */
+:root {
+  --brand-dark: #181B1F;
+  --brand-dark2: #262A30;
+  --brand-green: #00C853;
+  --brand-amber: #F59E0B;
+  --brand-light: #F3F4F6;
+}
+
+/* Topbar - dark with green accent */
+.topbar {
+  --menu-accent: #00C853;
+  --menu-panel-bg: #1F2429;
+  --menu-panel-border: #00C853;
+  --menu-panel-text: #F3F4F6;
+  --menu-drawer-bg: #181B1F;
+  --menu-drawer-text: #F3F4F6;
+  --menu-drawer-subtext: #9CA3AF;
+  background: linear-gradient(135deg, #181B1F 0%, #262A30 52%, #1F2429 100%);
+  border-bottom: 2px solid #00C853;
+  border: 1px solid #3A414B;
+}
+
+.brand-text {
+  color: #00C853;
+  text-shadow: 0 0 12px rgba(0, 200, 83, 0.35);
+}
+
+.menu-link {
+  color: #F3F4F6;
+}
+
+.menu-link::after {
+  color: #9CA3AF;
+}
+
+.submenu {
+  background: linear-gradient(180deg, #1F2429 0%, #181B1F 100%);
+  border-top: 2px solid #00C853;
+}
+
+.submenu a {
+  color: #F3F4F6;
+}
+
+.submenu a:hover {
+  background: linear-gradient(180deg, rgba(0,200,83,0.15) 0%, rgba(0,200,83,0.08) 100%);
+}
+
+/* Footer */
+.site-footer {
+  background: #181B1F;
+  color: #9CA3AF;
+  border-top: 2px solid #00C853;
+}
+
+.site-footer h3, .site-footer h4 {
+  color: #00C853;
+}
+
+.site-footer a {
+  color: #F3F4F6;
+}
+
+.site-footer a:hover {
+  color: #00C853;
+}
+
+/* Format cards */
+.format-card {
+  border: 1px solid rgba(0, 200, 83, 0.3);
+  background: #1F2429;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.format-card:hover {
+  box-shadow: 0 16px 28px rgba(0, 200, 83, 0.25);
+}
+
+.format-card h3 {
+  color: #00C853;
+}
+
+.format-card p {
+  color: #9CA3AF;
+}
+
+/* Buttons */
+.start-button, .btn-primary, button[type="submit"] {
+  background: #00C853;
+  color: #181B1F;
+  font-weight: 800;
+}
+
+.start-button:hover, .btn-primary:hover {
+  background: #00E564;
+  box-shadow: 0 0 20px rgba(0, 200, 83, 0.5);
+}

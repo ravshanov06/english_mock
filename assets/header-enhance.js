@@ -48,7 +48,7 @@
     if (!topbar) return;
     var loginQuick = topbar.querySelector('.login-quick');
     var email = getSignedInEmail();
-    var menuLogin = topbar.querySelector('.menu-link[href="/login"]');
+    var menuLogin = topbar.querySelector('.menu-link[href="/login.html"]');
     if (!email) {
       if (loginQuick) {
         loginQuick.textContent = 'Login';
@@ -78,13 +78,13 @@
     if (!q) return null;
 
     var pages = [
-      { href: '/', score: 0, terms: ['home', 'main', 'ielts', 'cdi', 'materials', 'website', 'intro', 'contact', 'method', 'platform', 'online course', 'assessment'] },
-      { href: '/listening', score: 0, terms: ['listening', 'audio', 'section 1', 'section 2', 'section 3', 'section 4', 'transcript', 'note taking'] },
-      { href: '/reading', score: 0, terms: ['reading', 'passage', 'true false not given', 'matching headings', 'vocabulary', 'comprehension'] },
-      { href: '/speaking', score: 0, terms: ['speaking', 'part 1', 'part 2', 'part 3', 'cue card', 'fluency', 'pronunciation'] },
-      { href: '/writing', score: 0, terms: ['writing', 'task 1', 'task 2', 'essay', 'report', 'band feedback', 'grammar'] },
-      { href: '/books', score: 0, terms: ['books', 'book', 'materials', 'vocabulary books', 'practice books'] },
-      { href: '/login', score: 0, terms: ['login', 'sign in', 'signin', 'account', 'password'] }
+      { href: '/index.html', score: 0, terms: ['home', 'main', 'ielts', 'cdi', 'materials', 'website', 'intro', 'contact', 'method', 'platform', 'online course', 'assessment'] },
+      { href: '/listening.html', score: 0, terms: ['listening', 'audio', 'section 1', 'section 2', 'section 3', 'section 4', 'transcript', 'note taking'] },
+      { href: '/reading.html', score: 0, terms: ['reading', 'passage', 'true false not given', 'matching headings', 'vocabulary', 'comprehension'] },
+      { href: '/speaking.html', score: 0, terms: ['speaking', 'part 1', 'part 2', 'part 3', 'cue card', 'fluency', 'pronunciation'] },
+      { href: '/writing.html', score: 0, terms: ['writing', 'task 1', 'task 2', 'essay', 'report', 'band feedback', 'grammar'] },
+      { href: '/books.html', score: 0, terms: ['books', 'book', 'materials', 'vocabulary books', 'practice books'] },
+      { href: '/login.html', score: 0, terms: ['login', 'sign in', 'signin', 'account', 'password'] }
     ];
 
     for (var i = 0; i < pages.length; i += 1) {
